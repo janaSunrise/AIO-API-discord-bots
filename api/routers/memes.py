@@ -1,11 +1,9 @@
 import random
 
-import asyncpraw
-from asyncpraw import exceptions
 from fastapi import APIRouter
-from loguru import logger
 
 from api import config as conf
+from api.config import reddit
 from api.utils import filter_reddit_url
 
 router = APIRouter(
@@ -13,15 +11,6 @@ router = APIRouter(
     tags=["memes"],
     responses={404: {"description": "Not found"}},
 )
-
-try:
-    reddit = asyncpraw.Reddit(
-        client_id=conf.reddit_client_id,
-        client_secret=conf.reddit_client_secret,
-        user_agent=conf.USER_AGENT
-    )
-except exceptions.MissingRequiredAttributeException:
-    logger.error("Please set correct reddit environment variables to run.")
 
 
 # -- Router paths --
