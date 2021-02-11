@@ -39,9 +39,9 @@ be able to do it, this is the perfect method to get started with the self-hostin
 
 ## Contributing
 
-Contributions, issues and feature requests are welcome. After cloning 
-& setting up project locally, you can just submit a PR to this repo and it 
-will be deployed once it's accepted. The contributing file can be found 
+Contributions, issues and feature requests are welcome. After cloning & setting up project locally, you 
+can just submit a PR to this repo and it will be deployed once it's accepted. The contributing file can be 
+found 
 [here](https://github.com/janaSunrise/AIO-API/blob/main/CONTRIBUTING.md).
 
 ⚠️ It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your commit or the PR Created.
