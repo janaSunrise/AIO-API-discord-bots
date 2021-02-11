@@ -7,6 +7,20 @@ from loguru import logger
 # -- Constants definition --
 USER_AGENT = "AIO-API for discord bots"
 
+IMGUR_LINKS = (
+    "https://imgur.com/",
+    "https://i.imgur.com/",
+    "http://i.imgur.com/",
+    "http://imgur.com",
+    "https://m.imgur.com"
+)
+ACCEPTED_EXTENSIONS = (
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".gif"
+)
+
 # -- Reddit variable config --
 reddit_client_id = os.getenv("REDDIT_CLIENT_ID")
 reddit_client_secret = os.getenv("REDDIT_CLIENT_SECRET")
@@ -30,5 +44,21 @@ subreddits_list = {
         "wholesomememes",
         "meirl",
         "DeepFriedMemes",
+    ],
+    "funny": [
+        "blackmagicfuckery",
+        "OldSchoolCool",
+        "nevertellmetheodds",
+        "WatchPeopleDieInside",
+        "BeAmazed",
+        "mildlyinteresting",
+        "MurderedByWords",
+        "reactiongifs",
+        "hmmm",
+        "cursedimages",
+        "nostalgia",
+        "gifsthatkeepongiving",
+        "Unexpected",
+        "fakehistoryporn"
     ]
 }

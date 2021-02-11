@@ -1,16 +1,6 @@
-IMGUR_LINKS = (
-    "https://imgur.com/",
-    "https://i.imgur.com/",
-    "http://i.imgur.com/",
-    "http://imgur.com",
-    "https://m.imgur.com"
-)
-ACCEPTED_EXTENSIONS = (
-    ".png",
-    ".jpg",
-    ".jpeg",
-    ".gif"
-)
+import random
+
+from api.config import IMGUR_LINKS, ACCEPTED_EXTENSIONS
 
 
 def filter_reddit_url(url) -> str:
@@ -32,3 +22,20 @@ def filter_reddit_url(url) -> str:
             url = url
 
     return url
+
+
+async def get_random_post(subreddit):
+    random_post = random.choice(
+        [post async for post in subreddit.hot(limit=500) if not post.is_self]
+    )
+
+    return {
+        "title": random_post.title,
+        "description": random_post.selftext,
+        "url": filter_reddit_url(random_post.url),
+        "post_url": random_post.shortlink,
+        "author": random_post.author.name,
+        "score": random_post.score,
+        "spoilers": subreddit.spoilers_enabled,
+        "nsfw": subreddit.over18
+    }

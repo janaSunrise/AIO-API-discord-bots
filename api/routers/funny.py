@@ -7,8 +7,8 @@ from api.config import reddit
 from api.utils import get_random_post
 
 router = APIRouter(
-    prefix="/memes",
-    tags=["memes"],
+    prefix="/funny",
+    tags=["funny"],
     responses={
         404: {"description": "Not found"},
     },
@@ -19,7 +19,7 @@ router = APIRouter(
 @router.get("/")
 async def root():
     subreddit = await reddit.subreddit(
-        random.choice(conf.subreddits_list["memes"]),
+        random.choice(conf.subreddits_list["funny"]),
         fetch=True
     )
 
