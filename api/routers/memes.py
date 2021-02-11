@@ -31,6 +31,7 @@ async def root():
         "url": filter_reddit_url(random_post.url),
         "post_url": random_post.shortlink,
         "author": random_post.author.name,
+        "score": random_post.score,
         "spoilers": subreddit.spoilers_enabled,
         "nsfw": subreddit.over18
     }
