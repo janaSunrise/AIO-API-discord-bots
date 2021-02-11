@@ -18,8 +18,7 @@ reduces the load on this API too.
 
 Docker is an easy way of containerizing and devlivering your applications quickly and easily, in an 
 convenient way. It's really simple to get started with this, with docker handling all the installation
-and other tasks. You need to set the environment variables based on the file `.env.example` and then
-run `docker-compose up` after getting the project and config ready.
+and other tasks.Configure the environmental variables by renaming the `.env.example` file to `.env` with the respective values. Then, run `docker-compose --env-file .env up` after getting the project and config ready.
 
 ### Self hosting without docker
 
