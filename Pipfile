@@ -9,6 +9,7 @@ name = "pypi"
 fastapi = {extras = ["all"], version = "*"}
 asyncpraw = "*"
 loguru = "*"
+slowapi = "*"
 
 [scripts]
 start = "uvicorn api:app --reload"

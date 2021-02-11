@@ -9,7 +9,9 @@ from api.utils import filter_reddit_url
 router = APIRouter(
     prefix="/memes",
     tags=["memes"],
-    responses={404: {"description": "Not found"}},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
