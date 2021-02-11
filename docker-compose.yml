@@ -10,7 +10,6 @@ services:
       - .:/app:ro
     ports:
       - 8000:8000
-    restart: always
     tty: true
     env_file: 
     - .env

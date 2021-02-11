@@ -31,4 +31,4 @@ EXPOSE 8000
 
 # Start the container
 ENTRYPOINT ["pipenv"]
-CMD ["run", "start"]
+CMD ["run", "prod"]
