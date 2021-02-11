@@ -29,7 +29,6 @@ subreddits_list = {
         "ComedyCemetery",
         "wholesomememes",
         "meirl",
-        "me_irl",
         "DeepFriedMemes",
     ]
 }

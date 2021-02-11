@@ -17,11 +17,11 @@ router = APIRouter(
 @router.get("/")
 async def root():
     subreddit = await reddit.subreddit(
-        random.choice(conf.subreddits_list["memes"])
+        random.choice(conf.subreddits_list["memes"]),
+        fetch=True
     )
-    await subreddit.load()
 
-    posts_list = [post async for post in subreddit.hot(limit=1000) if not post.is_self]
+    posts_list = [post async for post in subreddit.hot(limit=500) if not post.is_self]
 
     random_post = random.choice(posts_list)
 
