@@ -100,3 +100,13 @@ async def birb():
     return {
         "url": json["link"]
     }
+
+
+@router.get("/duck")
+async def duck():
+    async with http_client.session.get("https://random-d.uk/api/v2/random") as resp:
+        json = await resp.json()
+
+    return {
+        "url": json["url"]
+    }
