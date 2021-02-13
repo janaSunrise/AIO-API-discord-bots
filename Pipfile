@@ -11,6 +11,7 @@ asyncpraw = "*"
 loguru = "*"
 slowapi = "*"
 aiohttp = "*"
+beautifulsoup4 = "*"
 
 [scripts]
 start = "uvicorn api:app --reload"
