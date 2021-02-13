@@ -116,3 +116,14 @@ BALL_REPLIES = {
         "I can't believe you've done this",
     ]
 }
+
+# -- study --
+RESPONSES = {
+    200: True,
+    301: "Switching to a different endpoint",
+    400: "Bad Request",
+    401: "Not Authenticated",
+    404: "The resource you tried to access wasn't found on the server.",
+    403: "The resource you’re trying to access is forbidden — you don’t have the right permissions to see it.",
+}
+

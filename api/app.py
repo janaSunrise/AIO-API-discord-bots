@@ -5,13 +5,18 @@ from fastapi import FastAPI
 # -- AIOHTTP client --
 class HttpClient:
     session: aiohttp.ClientSession = None
+    tcp_session: aiohttp.ClientSession = None
 
     def start(self):
         self.session = aiohttp.ClientSession()
+        self.tcp_session = aiohttp.ClientSession(connector=aiohttp.TCPConnector())
 
     async def stop(self):
         await self.session.close()
+        await self.tcp_session.close()
+
         self.session = None
+        self.tcp_session = None
 
     def __call__(self) -> aiohttp.ClientSession:
         assert self.session is not None
@@ -40,10 +45,12 @@ from api.routers import (
     comics,
     fun,
     funny,
+    lyrics,
     games,
     gifs,
     images,
-    memes
+    memes,
+    study
 )
 
 # -- Include the routers --
@@ -51,7 +58,9 @@ app.include_router(animals.router)
 app.include_router(comics.router)
 app.include_router(fun.router)
 app.include_router(funny.router)
+app.include_router(lyrics.router)
 app.include_router(games.router)
 app.include_router(gifs.router)
 app.include_router(images.router)
 app.include_router(memes.router)
+app.include_router(study.router)
