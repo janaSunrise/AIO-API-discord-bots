@@ -1,4 +1,5 @@
 import random
+import json
 
 from api.config import IMGUR_LINKS, ACCEPTED_EXTENSIONS
 
@@ -39,3 +40,12 @@ async def get_random_post(subreddit):
         "spoilers": subreddit.spoilers_enabled,
         "nsfw": subreddit.over18
     }
+
+
+def get_random_text_response(category: str):
+    with open("api/assets/text_games_response.json") as file:
+        data = json.load(file)
+
+    data = data[category]
+
+    return random.choice(data)

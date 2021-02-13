@@ -13,4 +13,3 @@ slowapi = "*"
 
 [scripts]
 start = "uvicorn api:app --reload"
-prod = "uvicorn api:app --reload --host=0.0.0.0"

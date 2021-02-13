@@ -30,5 +30,5 @@ COPY . .
 EXPOSE 8000
 
 # Start the container
-ENTRYPOINT ["pipenv"]
-CMD ["run", "prod"]
+ENTRYPOINT ["uvicorn"]
+CMD ["api:app", "--reload", "--host=0.0.0.0"]
