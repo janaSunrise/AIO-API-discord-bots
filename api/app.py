@@ -46,9 +46,3 @@ app.include_router(funny.router)
 app.include_router(games.router)
 app.include_router(gifs.router)
 app.include_router(memes.router)
-
-
-# -- API endpoints --
-@app.get("/")
-async def root():
-    return {"message": "Hello World"}
