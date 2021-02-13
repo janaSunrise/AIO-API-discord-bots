@@ -1,4 +1,5 @@
-import re
+from html import unescape
+from urllib.parse import quote_plus
 
 import html2text
 from fastapi import APIRouter
@@ -81,9 +82,32 @@ class Search:
         }
 
 
-@router.get("/")
+@router.get("/search")
 async def search(query: str, count: int = 5):
     search_obj = Search()
     data = await search_obj.basic_search(query, category="web", count=count)
 
     return data
+
+
+@router.get("/overflow")
+async def overflow(query: str, questions: int = 6):
+    BASE_URL = "https://api.stackexchange.com/2.2/search/advanced?order=desc&sort=activity&site=stackoverflow&q={query}"
+
+    """Search stackoverflow for a query."""
+    async with http_client.session.get(BASE_URL.format(query=quote_plus(query))) as response:
+        data = await response.json()
+
+    top = data["items"][:questions]
+    result = {}
+
+    for index, item in enumerate(top):
+        result[index] = {
+            "name": unescape(item["title"]),
+            "score": item["score"],
+            "answers": item['answer_count'],
+            "tags": item['tags'],
+            "link": item["link"]
+        }
+
+    return result
