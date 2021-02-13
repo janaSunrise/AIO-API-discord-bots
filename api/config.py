@@ -60,6 +60,15 @@ subreddits_list = {
         "gifsthatkeepongiving",
         "Unexpected",
         "fakehistoryporn"
+    ],
+    "aww": [
+        "AnimalsBeingJerks",
+        "NatureIsFuckingLit",
+        "WhatsWrongWithYourDog",
+        "StartledCats",
+        "natureismetal",
+        "guineapigs",
+        "Rabbits"
     ]
 }
 

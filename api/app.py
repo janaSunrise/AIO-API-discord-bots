@@ -42,6 +42,7 @@ app = FastAPI(docs_url="/", on_startup=[on_start_up], on_shutdown=[on_shutdown])
 
 from api.routers import (
     animals,
+    aww,
     comics,
     fun,
     funny,
@@ -56,6 +57,7 @@ from api.routers import (
 
 # -- Include the routers --
 app.include_router(animals.router)
+app.include_router(aww.router)
 app.include_router(comics.router)
 app.include_router(fun.router)
 app.include_router(funny.router)
