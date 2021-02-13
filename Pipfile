@@ -13,6 +13,7 @@ slowapi = "*"
 aiohttp = "*"
 beautifulsoup4 = "*"
 html2text = "*"
+python-aiml = "*"
 
 [scripts]
 start = "uvicorn api:app --reload"

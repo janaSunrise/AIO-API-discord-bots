@@ -1,0 +1,12 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>LOAD AIML B</pattern>
+        <template>
+            <learn>api/aiml/alice/*.aiml</learn>
+            <learn>api/aiml/free-aiml/*.aiml</learn>
+            <learn>api/aiml/open-aiml/*.aiml</learn>
+            <learn>api/aiml/standard/*.aiml</learn>
+            <learn>api/aiml/custom/*.aiml</learn>
+        </template>
+    </category>
+</aiml>

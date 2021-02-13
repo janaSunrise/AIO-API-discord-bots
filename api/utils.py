@@ -107,3 +107,8 @@ async def get_pod_pages(appid: str, query: str):
             pages.append((title, img))
 
     return pages
+
+
+async def clean_aiml_response(text):
+    for ch in ['/', "'", ".", "\\", "(", ")", '"', '\n', '@', '<', '>']:
+        text = text.replace(ch, '')

@@ -6,6 +6,14 @@
     <template>
         I'm a bot, silly!
     </template>
+
+    <pattern>YEPP</pattern>
+    <template>
+        <li>Aww, great!</li>
+        <li>ohh, nice!</li>
+        <li>okie</li>
+        <li>cool</li>
+    </template>
 </category>
 
 </aiml>

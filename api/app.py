@@ -1,4 +1,5 @@
 import aiohttp
+import aiml
 from fastapi import FastAPI
 
 
@@ -38,9 +39,15 @@ async def on_shutdown() -> None:
 # -- Define the API --
 app = FastAPI(docs_url="/", on_startup=[on_start_up], on_shutdown=[on_shutdown])
 
+# -- Define the other variables --
+AIML_KERNEL = aiml.Kernel()
+AIML_KERNEL.setBotPredicate("name", "Overflow")
+AIML_KERNEL.bootstrap(learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
+
 # -- Imports for router --
 
 from api.routers import (
+    ai,
     animals,
     aww,
     comics,
@@ -56,6 +63,7 @@ from api.routers import (
 )
 
 # -- Include the routers --
+app.include_router(ai.router)
 app.include_router(animals.router)
 app.include_router(aww.router)
 app.include_router(comics.router)
