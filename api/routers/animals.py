@@ -52,3 +52,13 @@ async def fox():
     return {
         "url": json["image"]
     }
+
+
+@router.get("/panda")
+async def panda():
+    async with http_client.session.get("https://some-random-api.ml/img/panda") as resp:
+        json = await resp.json()
+
+    return {
+        "url": json["link"]
+    }
