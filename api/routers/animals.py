@@ -44,6 +44,16 @@ async def dog():
     }
 
 
+@router.get("/dogfact")
+async def dogfact():
+    async with http_client.session.get("https://some-random-api.ml/facts/dog") as resp:
+        json = await resp.json()
+
+    return {
+        "fact": json["fact"]
+    }
+
+
 @router.get("/fox")
 async def fox():
     async with http_client.session.get("https://randomfox.ca/floof/") as resp:
