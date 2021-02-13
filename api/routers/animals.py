@@ -32,3 +32,13 @@ async def catfact():
     return {
         "fact": json["fact"]
     }
+
+
+@router.get("/dog")
+async def dog():
+    async with http_client.session.get("https://dog.ceo/api/breeds/image/random") as resp:
+        json = await resp.json()
+
+    return {
+        "url": json["message"]
+    }
