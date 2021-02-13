@@ -26,7 +26,7 @@ async def cat():
 
 @router.get("/catfact")
 async def catfact():
-    async with http_client.session.get("https://catfact.ninja/fact") as resp:
+    async with http_client.session.get("https://some-random-api.ml/facts/cat") as resp:
         json = await resp.json()
 
     return {
@@ -57,6 +57,16 @@ async def fox():
 @router.get("/panda")
 async def panda():
     async with http_client.session.get("https://some-random-api.ml/img/panda") as resp:
+        json = await resp.json()
+
+    return {
+        "url": json["link"]
+    }
+
+
+@router.get("/koala")
+async def koala():
+    async with http_client.session.get("https://some-random-api.ml/img/koala") as resp:
         json = await resp.json()
 
     return {
