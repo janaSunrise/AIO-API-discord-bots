@@ -1,5 +1,3 @@
-import random
-
 from fastapi import APIRouter
 
 from api.app import http_client
