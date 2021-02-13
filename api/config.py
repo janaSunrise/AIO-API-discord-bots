@@ -24,6 +24,7 @@ ACCEPTED_EXTENSIONS = (
 # -- Reddit variable config --
 reddit_client_id = os.getenv("REDDIT_CLIENT_ID")
 reddit_client_secret = os.getenv("REDDIT_CLIENT_SECRET")
+nasa_api = os.getenv("NASA_API")
 
 try:
     reddit = asyncpraw.Reddit(
