@@ -12,6 +12,7 @@ loguru = "*"
 slowapi = "*"
 aiohttp = "*"
 beautifulsoup4 = "*"
+html2text = "*"
 
 [scripts]
 start = "uvicorn api:app --reload"

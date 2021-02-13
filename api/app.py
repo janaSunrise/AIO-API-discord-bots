@@ -50,6 +50,7 @@ from api.routers import (
     gifs,
     images,
     memes,
+    search,
     study
 )
 
@@ -63,4 +64,5 @@ app.include_router(games.router)
 app.include_router(gifs.router)
 app.include_router(images.router)
 app.include_router(memes.router)
+app.include_router(search.router)
 app.include_router(study.router)
