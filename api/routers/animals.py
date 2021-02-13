@@ -92,3 +92,13 @@ async def koala():
     return {
         "url": json["link"]
     }
+
+
+@router.get("/birb")
+async def birb():
+    async with http_client.session.get("https://some-random-api.ml/img/birb") as resp:
+        json = await resp.json()
+
+    return {
+        "url": json["link"]
+    }
