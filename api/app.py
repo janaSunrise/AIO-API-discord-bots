@@ -1,11 +1,6 @@
 import aiohttp
 from fastapi import FastAPI
 
-from api.routers import animals
-from api.routers import memes
-from api.routers import funny
-from api.routers import games
-
 
 # -- AIOHTTP client --
 class HttpClient:
@@ -26,6 +21,7 @@ class HttpClient:
 http_client = HttpClient()
 
 
+# -- Event handlers --
 async def on_start_up() -> None:
     http_client.start()
 
@@ -36,6 +32,12 @@ async def on_shutdown() -> None:
 
 # -- Define the API --
 app = FastAPI(docs_url="/", on_startup=[on_start_up], on_shutdown=[on_shutdown])
+
+# -- Imports for router --
+from api.routers import animals
+from api.routers import memes
+from api.routers import funny
+from api.routers import games
 
 # -- Include the routers --
 app.include_router(memes.router)
