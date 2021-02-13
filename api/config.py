@@ -127,3 +127,7 @@ RESPONSES = {
     403: "The resource you’re trying to access is forbidden — you don’t have the right permissions to see it.",
 }
 
+# -- Wolfram alpha --
+DEFAULT_OUTPUT_FORMAT = "JSON"
+QUERY = "http://api.wolframalpha.com/v2/{request}?{data}"
+MAX_PODS = 20

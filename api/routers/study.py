@@ -1,7 +1,12 @@
+import io
+import urllib
+
 from fastapi import APIRouter
+from starlette.responses import StreamingResponse
 
 from api import config
 from api.app import http_client
+from api.utils import get_pod_pages
 
 router = APIRouter(
     prefix="/study",
@@ -76,3 +81,33 @@ async def wiki(query: str):
             "error": "No results for your query!"
         }
 
+
+@router.get("/wolfram")
+async def wolfram(appid: str, query: str):
+    url_str = urllib.parse.urlencode({
+        "i": query,
+        "appid": appid,
+        "location": "the moon",
+        "latlong": "0.0,0.0",
+        "ip": "1.1.1.1"
+    })
+    query = config.QUERY.format(request="simple", data=url_str)
+
+    async with http_client.session.get(query) as response:
+        image_bytes = await response.read()
+
+    return StreamingResponse(io.BytesIO(image_bytes), media_type="image/png")
+
+
+@router.get("/wolfram-page")
+async def wolfram_page(appid: str, query: str):
+    pages = await get_pod_pages(appid, query)
+
+    if not pages:
+        return {
+            "error": "No results found!"
+        }
+
+    return {
+        "pages": pages
+    }
