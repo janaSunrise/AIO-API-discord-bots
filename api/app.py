@@ -38,6 +38,7 @@ from api.routers import animals
 from api.routers import funny
 from api.routers import games
 from api.routers import gifs
+from api.routers import images
 from api.routers import memes
 
 # -- Include the routers --
@@ -45,4 +46,5 @@ app.include_router(animals.router)
 app.include_router(funny.router)
 app.include_router(games.router)
 app.include_router(gifs.router)
+app.include_router(images.router)
 app.include_router(memes.router)
