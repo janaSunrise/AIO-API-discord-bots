@@ -10,6 +10,7 @@ fastapi = {extras = ["all"], version = "*"}
 asyncpraw = "*"
 loguru = "*"
 slowapi = "*"
+aiohttp = "*"
 
 [scripts]
 start = "uvicorn api:app --reload"
