@@ -1,3 +1,5 @@
+import random
+
 from fastapi import APIRouter
 
 from api.app import http_client
@@ -27,6 +29,28 @@ async def joke(explicit: bool = False):
     }
 
 
+@router.get("/dadjoke")
+async def dadjoke():
+    async with http_client.session.get("https://icanhazdadjoke.com") as resp:
+        res = await joke.text()
+        res = res.encode("utf-8").decode("utf-8")
+
+    return {
+        "joke": res
+    }
+
+
+@router.get("/excuse")
+async def excuse():
+    async with http_client.session.get("http://pages.cs.wisc.edu/~ballard/bofh/excuses") as resp:
+        data = await resp.text()
+        lines = data.split("\n")
+
+    return {
+        "excuse": random.choice(lines)
+    }
+
+
 @router.get("/chucknorris")
 async def chucknorris():
     async with http_client.session.get("https://api.chucknorris.io/jokes/random") as resp:
@@ -49,8 +73,7 @@ async def why():
 
 @router.get("/yesno")
 async def yesno(question: str):
-    async def get_answer(self, ans: str) -> str:
-        return_str = ""
+    async def get_answer(ans: str) -> str:
         if ans == "yes":
             return_str = "Yes."
         elif ans == "no":
