@@ -92,3 +92,35 @@ async def yesno(question: str):
         "question": question,
         "answer": get_answer(json["answer"])
     }
+
+
+@router.get("/history")
+async def history():
+    async with http_client.session.get('http://numbersapi.com/random/date?json') as resp:
+        json = await resp.json()
+
+    return {
+        "fact": json["text"],
+        "year": json["year"]
+    }
+
+
+@router.get("/mathfact")
+async def mathfact():
+    async with http_client.session.get('http://numbersapi.com/random/math?json') as resp:
+        json = await resp.json()
+
+    return {
+        "fact": json["text"],
+        "number": json["number"]
+    }
+
+
+@router.get("/advice")
+async def advice():
+    async with http_client.session.get("https://api.adviceslip.com/advice") as resp:
+        json = await resp.json(content_type="text/html")
+
+    return {
+        "advice": json["slip"]["advice"]
+    }

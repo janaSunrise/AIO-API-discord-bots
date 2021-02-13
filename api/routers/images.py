@@ -38,6 +38,13 @@ async def triggered(avatar: str):
     }
 
 
+@router.get("/youtube")
+async def youtube(picture: str, name: str, comment: str):
+    return {
+        "url": f"https://some-random-api.ml/canvas/youtube-comment?avatar={picture}&username={name}&comment={comment}"
+    }
+
+
 @router.get("/greyscale")
 async def greyscale(avatar: str):
     return {
