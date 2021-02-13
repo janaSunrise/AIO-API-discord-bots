@@ -51,7 +51,7 @@ async def dares():
 
 
 @router.get("/neverhaveiever")
-async def dares():
+async def nhie():
     nhie_resp = get_random_text_response("nhie")
 
     return {
@@ -60,7 +60,7 @@ async def dares():
 
 
 @router.get("/wouldyourrather")
-async def dares():
+async def wyr():
     wyr_resp = get_random_text_response("wyr")
 
     return {
