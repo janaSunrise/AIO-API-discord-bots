@@ -42,3 +42,13 @@ async def dog():
     return {
         "url": json["message"]
     }
+
+
+@router.get("/fox")
+async def fox():
+    async with http_client.session.get("https://randomfox.ca/floof/") as resp:
+        json = await resp.json()
+
+    return {
+        "url": json["image"]
+    }
