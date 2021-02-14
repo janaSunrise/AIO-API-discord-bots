@@ -27,8 +27,8 @@ RUN pipenv install --system --deploy
 COPY . .
 
 # Expose the fastAPI port
-EXPOSE 8000
+EXPOSE 80
 
 # Start the container
 ENTRYPOINT ["uvicorn"]
-CMD ["api:app", "--reload", "--host=0.0.0.0"]
+CMD ["api:app", "--reload", "--host=0.0.0.0", "--port=80"]
