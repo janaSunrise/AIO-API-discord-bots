@@ -1,4 +1,5 @@
 import sys
+import typing as t
 
 import aiml
 import aiohttp
@@ -13,8 +14,8 @@ from api import config as conf
 
 # -- AIOHTTP client --
 class HttpClient:
-    session: aiohttp.ClientSession = None
-    tcp_session: aiohttp.ClientSession = None
+    session: t.Optional[aiohttp.ClientSession] = None
+    tcp_session: t.Optional[aiohttp.ClientSession] = None
 
     def start(self):
         self.session = aiohttp.ClientSession()
