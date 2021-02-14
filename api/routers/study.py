@@ -4,8 +4,7 @@ import urllib
 from fastapi import APIRouter
 from starlette.responses import StreamingResponse
 
-from api import config
-from api.app import http_client
+from api import config, http_client
 from api.utils import get_pod_pages
 
 router = APIRouter(

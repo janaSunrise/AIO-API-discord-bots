@@ -24,7 +24,7 @@ async def root(message: str):
             aiml_response = aiml_response[0:1800]
 
         return {
-            "response": aiml_response
+            "response": clean_aiml_response(aiml_response)
         }
     except Exception as e:
         logger.critical(f"General Error: {e}")

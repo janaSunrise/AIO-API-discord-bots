@@ -4,8 +4,7 @@ from urllib.parse import quote_plus
 import html2text
 from fastapi import APIRouter
 
-from api import config
-from api.app import http_client
+from api import config, http_client
 
 
 router = APIRouter(

@@ -2,7 +2,7 @@ import random
 import json
 import urllib
 
-from api.app import http_client
+from api import http_client
 from api.config import IMGUR_LINKS, ACCEPTED_EXTENSIONS, DEFAULT_OUTPUT_FORMAT, QUERY, MAX_PODS
 
 

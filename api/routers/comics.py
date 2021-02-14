@@ -3,7 +3,7 @@ import random
 from bs4 import BeautifulSoup
 from fastapi import APIRouter
 
-from api.app import http_client
+from api import http_client
 
 router = APIRouter(
     prefix="/comics",
