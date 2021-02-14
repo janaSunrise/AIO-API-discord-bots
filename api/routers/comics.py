@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 from fastapi import APIRouter
 
 from api import http_client
+from api.core import log_error
 
 router = APIRouter(
     prefix="/comics",
@@ -16,6 +17,7 @@ router = APIRouter(
 
 # -- Router paths --
 @router.get("/ohno")
+@log_error()
 async def ohno():
     """Send a random 'Webcomic Name' comic."""
     url = "http://webcomicname.com/random"
@@ -31,6 +33,7 @@ async def ohno():
 
 
 @router.get("/saturday-morning")
+@log_error()
 async def smbc():
     """Send a random 'Saturday Morning' comic."""
     url = "http://www.smbc-comics.com/comic/archive"
@@ -54,6 +57,7 @@ async def smbc():
 
 
 @router.get("/perry-bible")
+@log_error()
 async def perry_bible():
     """Send a random 'The Perry Bible' comic."""
     url = "http://pbfcomics.com/random"
@@ -69,6 +73,7 @@ async def perry_bible():
 
 
 @router.get("/cah")
+@log_error()
 async def cah():
     """Send a random 'Cyanide and Happiness' comic."""
     url = "http://explosm.net/comics/random"
@@ -84,6 +89,7 @@ async def cah():
 
 
 @router.get("/xkcd")
+@log_error()
 async def xkcd():
     """See a random 'xkcd' comic."""
     url = "https://xkcd.com/info.0.json"
@@ -105,6 +111,7 @@ async def xkcd():
 
 
 @router.get("/mrls")
+@log_error()
 async def mrls():
     """Send a random 'Mr. Lovenstein' comic."""
     url = "http://www.mrlovenstein.com/shuffle"
@@ -120,6 +127,7 @@ async def mrls():
 
 
 @router.get("/chainsaw")
+@log_error()
 async def chainsaw():
     """Send a random 'Chainsawsuit' comic."""
     url = "http://chainsawsuit.com/comic/random/?random&nocache=1"
@@ -135,6 +143,7 @@ async def chainsaw():
 
 
 @router.get("/sarah")
+@log_error()
 async def sarah():
     """Send a random 'Sarah's Scribbles' comic."""
     url = "http://www.gocomics.com/random/sarahs-scribbles"
@@ -150,6 +159,7 @@ async def sarah():
 
 
 @router.get("/garfield")
+@log_error()
 async def garfield():
     """Send a random 'garfield' comic."""
     url = "https://many-api.vercel.app/garfield/random"

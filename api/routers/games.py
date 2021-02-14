@@ -3,6 +3,7 @@ import random
 from fastapi import APIRouter
 
 from api import config as conf
+from api.core import log_error
 from api.utils import get_random_text_response
 
 router = APIRouter(
@@ -16,6 +17,7 @@ router = APIRouter(
 
 # -- Router paths --
 @router.get("/8ball")
+@log_error()
 async def ball8(question: str):
     reply_type = random.randint(1, 3)
 
@@ -33,6 +35,7 @@ async def ball8(question: str):
 
 
 @router.get("/truth")
+@log_error()
 async def truth():
     truth_resp = get_random_text_response("truths")
 
@@ -42,6 +45,7 @@ async def truth():
 
 
 @router.get("/dares")
+@log_error()
 async def dares():
     dare_resp = get_random_text_response("dares")
 
@@ -51,6 +55,7 @@ async def dares():
 
 
 @router.get("/neverhaveiever")
+@log_error()
 async def nhie():
     nhie_resp = get_random_text_response("nhie")
 
@@ -60,6 +65,7 @@ async def nhie():
 
 
 @router.get("/wouldyourrather")
+@log_error()
 async def wyr():
     wyr_resp = get_random_text_response("wyr")
 
