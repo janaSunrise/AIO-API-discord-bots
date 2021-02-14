@@ -50,3 +50,10 @@ Read [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.3
 
 We love people's support in growing and improving. Be sure to leave a ⭐️ if you like the project and 
 also be sure to contribute, if you're interested!
+
+## Maintainers
+
+Me and one of my really closest friends maintain this repo and we aim to provide the best, free open source API for everyone to use and deploy their own instances to make their bot better in a certain way.
+
+- [Sunrit Jana](https://github.com/janaSunrise)
+- [Faholan](https://github.com/Faholan)
