@@ -29,7 +29,7 @@ def filter_reddit_url(url) -> str:
 
 async def get_random_post(subreddit):
     random_post = random.choice(
-        [post async for post in subreddit.hot(limit=500) if not post.is_self]
+        [post async for post in subreddit.hot() if not post.is_self]
     )
 
     return {

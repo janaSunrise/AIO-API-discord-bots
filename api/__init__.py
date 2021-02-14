@@ -69,6 +69,8 @@ from api.routers import (
     images,
     main,
     nasa,
+    neko,
+    nsfw,
     reddit,
     search,
     study
@@ -84,6 +86,8 @@ app.include_router(gifs.router)
 app.include_router(images.router)
 app.include_router(main.router)
 app.include_router(nasa.router)
+app.include_router(neko.router)
+app.include_router(nsfw.router)
 app.include_router(reddit.router)
 app.include_router(search.router)
 app.include_router(study.router)
