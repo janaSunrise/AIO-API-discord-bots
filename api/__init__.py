@@ -53,15 +53,13 @@ if conf.ai_enabled:
 # -- Imports for router --
 from api.routers import (
     animals,
-    aww,
     comics,
     fun,
-    funny,
     lyrics,
     games,
     gifs,
     images,
-    memes,
+    main,
     nasa,
     search,
     study
@@ -69,15 +67,13 @@ from api.routers import (
 
 # -- Include the routers --
 app.include_router(animals.router)
-app.include_router(aww.router)
 app.include_router(comics.router)
 app.include_router(fun.router)
-app.include_router(funny.router)
 app.include_router(lyrics.router)
 app.include_router(games.router)
 app.include_router(gifs.router)
 app.include_router(images.router)
-app.include_router(memes.router)
+app.include_router(main.router)
 app.include_router(nasa.router)
 app.include_router(search.router)
 app.include_router(study.router)
