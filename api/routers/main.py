@@ -46,7 +46,7 @@ async def funny():
 
 
 @router.get("/cursedcomments")
-async def funny():
+async def cursed_comments():
     subreddit = await reddit.subreddit(
         "cursedcomments",
         fetch=True
