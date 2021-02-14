@@ -6,7 +6,7 @@ from api import http_client
 
 router = APIRouter(
     prefix="/fun",
-    tags=["fun"],
+    tags=["Fun endpoints"],
     responses={
         404: {"description": "Not found"},
     },

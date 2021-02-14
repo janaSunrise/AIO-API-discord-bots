@@ -7,7 +7,7 @@ from api import http_client
 
 router = APIRouter(
     prefix="/comics",
-    tags=["comics"],
+    tags=["Interesting comics"],
     responses={
         404: {"description": "Not found"},
     },

@@ -7,7 +7,7 @@ from api.config import reddit
 from api.utils import get_random_post
 
 router = APIRouter(
-    tags=["reddit post"],
+    tags=["Reddit image posts"],
     responses={
         404: {"description": "Not found"},
     },

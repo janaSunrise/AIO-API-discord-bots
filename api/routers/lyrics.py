@@ -4,7 +4,7 @@ from api import http_client
 
 router = APIRouter(
     prefix="/lyrics",
-    tags=["lyrics"],
+    tags=["Song lyrics endpoint"],
     responses={
         404: {"description": "Not found"},
     },

@@ -5,7 +5,7 @@ from api import AIML_KERNEL
 
 router = APIRouter(
     prefix="/ai",
-    tags=["ai"],
+    tags=["AI based chatbot"],
     responses={
         404: {"description": "Not found"},
     },

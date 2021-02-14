@@ -7,7 +7,7 @@ from api.utils import get_random_text_response
 
 router = APIRouter(
     prefix="/games",
-    tags=["games"],
+    tags=["Games endpoints"],
     responses={
         404: {"description": "Not found"},
     },

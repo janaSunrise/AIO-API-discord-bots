@@ -2,7 +2,7 @@ from fastapi import APIRouter
 
 router = APIRouter(
     prefix="/images",
-    tags=["images"],
+    tags=["Image editing endpoint"],
     responses={
         404: {"description": "Not found"},
     },

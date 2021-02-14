@@ -4,7 +4,7 @@ from api import http_client
 
 router = APIRouter(
     prefix="/animals",
-    tags=["animals"],
+    tags=["Images of animals"],
     responses={
         404: {"description": "Not found"},
     },

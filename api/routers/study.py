@@ -9,7 +9,7 @@ from api.utils import get_pod_pages
 
 router = APIRouter(
     prefix="/study",
-    tags=["study"],
+    tags=["Study based commands"],
     responses={
         404: {"description": "Not found"},
     },

@@ -9,7 +9,7 @@ from api import config, http_client
 
 router = APIRouter(
     prefix="/search",
-    tags=["search"],
+    tags=["Searching endpoint"],
     responses={
         404: {"description": "Not found"},
     },

@@ -4,7 +4,7 @@ from api import http_client
 
 router = APIRouter(
     prefix="/gifs",
-    tags=["gifs"],
+    tags=["GIF makers"],
     responses={
         404: {"description": "Not found"},
     },

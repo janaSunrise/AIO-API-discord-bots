@@ -7,7 +7,7 @@ from api.config import nasa_api as NASA_API
 
 router = APIRouter(
     prefix="/nasa",
-    tags=["nasa"],
+    tags=["Nasa info and images"],
     responses={
         404: {"description": "Not found"},
     },
