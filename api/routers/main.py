@@ -43,3 +43,13 @@ async def funny():
     )
 
     return await get_random_post(subreddit)
+
+
+@router.get("/cursedcomments")
+async def funny():
+    subreddit = await reddit.subreddit(
+        "cursedcomments",
+        fetch=True
+    )
+
+    return await get_random_post(subreddit)
