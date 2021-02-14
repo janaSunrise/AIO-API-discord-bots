@@ -1,8 +1,7 @@
 from fastapi import APIRouter
 from loguru import logger
 
-from api.app import AIML_KERNEL
-from api.utils import clean_aiml_response
+from api import AIML_KERNEL
 
 router = APIRouter(
     prefix="/ai",
@@ -24,7 +23,7 @@ async def root(message: str):
             aiml_response = aiml_response[0:1800]
 
         return {
-            "response": clean_aiml_response(aiml_response)
+            "response": aiml_response
         }
     except Exception as e:
         logger.critical(f"General Error: {e}")
