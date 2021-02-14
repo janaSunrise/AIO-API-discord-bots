@@ -29,6 +29,7 @@ async def random_nsfw():
 
 
 @router.get("/4k")
+@log_error()
 async def _4k():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["fourk"]),
@@ -39,6 +40,7 @@ async def _4k():
 
 
 @router.get("/ass")
+@log_error()
 async def ass():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["ass"]),
@@ -49,6 +51,7 @@ async def ass():
 
 
 @router.get("/bdsm")
+@log_error()
 async def bdsm():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["bdsm"]),
@@ -59,6 +62,7 @@ async def bdsm():
 
 
 @router.get("/blowjob")
+@log_error()
 async def blowjob():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["blowjob"]),
@@ -69,6 +73,7 @@ async def blowjob():
 
 
 @router.get("/deepthroat")
+@log_error()
 async def deepthroat():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["deepthroat"]),
@@ -79,6 +84,7 @@ async def deepthroat():
 
 
 @router.get("/hentai")
+@log_error()
 async def hentai():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["hentai"]),
@@ -89,6 +95,7 @@ async def hentai():
 
 
 @router.get("/lesbian")
+@log_error()
 async def lesbian():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["lesbian"]),
@@ -99,6 +106,7 @@ async def lesbian():
 
 
 @router.get("/public")
+@log_error()
 async def public():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["public"]),
@@ -109,6 +117,7 @@ async def public():
 
 
 @router.get("/rule34")
+@log_error()
 async def rule34():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["rule34"]),
@@ -119,6 +128,7 @@ async def rule34():
 
 
 @router.get("/boobs")
+@log_error()
 async def boobs():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["boobs"]),
@@ -129,6 +139,7 @@ async def boobs():
 
 
 @router.get("/milf")
+@log_error()
 async def milf():
     subreddit = await reddit.subreddit(
         random.choice(conf.nsfw_subreddits_list["milf"]),
