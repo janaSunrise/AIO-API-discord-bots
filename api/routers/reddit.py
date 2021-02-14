@@ -2,6 +2,7 @@ import random
 
 from fastapi import APIRouter
 
+from api.core import log_error
 from api.config import reddit
 from api.utils import filter_reddit_url
 
@@ -16,9 +17,9 @@ router = APIRouter(
 
 # -- Router paths --
 @router.get("/hot")
+@log_error()
 async def hot(subreddit: str):
     subreddit = await reddit.subreddit(subreddit, fetch=True)
-
     random_post = random.choice([post async for post in subreddit.hot() if not post.is_self])
 
     return {
@@ -34,9 +35,9 @@ async def hot(subreddit: str):
 
 
 @router.get("/new")
+@log_error()
 async def new(subreddit: str):
     subreddit = await reddit.subreddit(subreddit, fetch=True)
-
     random_post = random.choice(
         [post async for post in subreddit.new() if not post.is_self]
     )
@@ -54,15 +55,16 @@ async def new(subreddit: str):
 
 
 @router.get("/random")
+@log_error()
 async def reddit_random(subreddit: str):
     subreddit = await reddit.subreddit(subreddit, fetch=True)
-
     random_post = await subreddit.random()
 
     if not random_post:
         return {
             "error": "The subreddit doesn't support random post."
         }
+
     return {
         "title": random_post.title,
         "description": random_post.selftext,

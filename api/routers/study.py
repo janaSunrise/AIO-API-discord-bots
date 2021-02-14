@@ -5,6 +5,7 @@ from fastapi import APIRouter
 from starlette.responses import StreamingResponse
 
 from api import config, http_client
+from api.core import log_error
 from api.utils import get_pod_pages
 
 router = APIRouter(
@@ -18,6 +19,7 @@ router = APIRouter(
 
 # -- Router paths --
 @router.get("/urban")
+@log_error()
 async def urban(word: str):
     url = "http://api.urbandictionary.com/v0/define"
     async with http_client.session.get(url, params={"term": word}) as resp:
@@ -30,6 +32,7 @@ async def urban(word: str):
 
 
 @router.get("/calc")
+@log_error()
 async def calc(equation: str):
     params = {"expr": equation}
     url = "http://api.mathjs.org/v4/"
@@ -45,6 +48,7 @@ async def calc(equation: str):
 
 
 @router.get("/wiki")
+@log_error()
 async def wiki(query: str):
     payload = {
         "action": "query",
@@ -82,6 +86,7 @@ async def wiki(query: str):
 
 
 @router.get("/wolfram")
+@log_error()
 async def wolfram(appid: str, query: str):
     url_str = urllib.parse.urlencode({
         "i": query,
@@ -99,6 +104,7 @@ async def wolfram(appid: str, query: str):
 
 
 @router.get("/wolfram-page")
+@log_error()
 async def wolfram_page(appid: str, query: str):
     pages = await get_pod_pages(appid, query)
 

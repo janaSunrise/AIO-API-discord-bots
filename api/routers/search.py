@@ -5,6 +5,7 @@ import html2text
 from fastapi import APIRouter
 
 from api import config, http_client
+from api.core import log_error
 
 
 router = APIRouter(
@@ -82,6 +83,7 @@ class Search:
 
 
 @router.get("/search")
+@log_error()
 async def search(query: str, count: int = 5):
     search_obj = Search()
     data = await search_obj.basic_search(query, category="web", count=count)
@@ -90,6 +92,7 @@ async def search(query: str, count: int = 5):
 
 
 @router.get("/overflow")
+@log_error()
 async def overflow(query: str, questions: int = 6):
     BASE_URL = "https://api.stackexchange.com/2.2/search/advanced?order=desc&sort=activity&site=stackoverflow&q={query}"
 
