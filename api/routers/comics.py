@@ -1,9 +1,9 @@
 import random
 
 from bs4 import BeautifulSoup
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
-from api import http_client
+from api import http_client, limiter
 
 router = APIRouter(
     prefix="/comics",
@@ -16,7 +16,7 @@ router = APIRouter(
 
 # -- Router paths --
 @router.get("/ohno")
-async def ohno():
+async def ohno(request: Request):
     """Send a random 'Webcomic Name' comic."""
     url = "http://webcomicname.com/random"
 

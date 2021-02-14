@@ -1,9 +1,12 @@
 import sys
 
-import aiohttp
 import aiml
+import aiohttp
 from fastapi import FastAPI
 from loguru import logger
+from slowapi import Limiter, _rate_limit_exceeded_handler
+from slowapi.util import get_remote_address
+from slowapi.errors import RateLimitExceeded
 
 from api import config as conf
 
@@ -43,6 +46,11 @@ async def on_shutdown() -> None:
 
 # -- Define the API --
 app = FastAPI(docs_url="/", on_startup=[on_start_up], on_shutdown=[on_shutdown])
+
+# -- Configure the limiter --
+limiter = Limiter(key_func=get_remote_address, default_limits=["20/minute"])
+app.state.limiter = limiter
+app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
 # -- AI section
 if conf.ai_enabled:
