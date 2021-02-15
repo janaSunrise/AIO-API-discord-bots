@@ -4,7 +4,6 @@ import typing as t
 import aiml
 import aiohttp
 from fastapi import FastAPI
-from fastapi.openapi.utils import get_openapi
 from loguru import logger
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.util import get_remote_address
@@ -47,25 +46,15 @@ async def on_shutdown() -> None:
 
 
 # -- Define the API --
-app = FastAPI(docs_url="/", on_startup=[on_start_up], on_shutdown=[on_shutdown])
-
-
-# -- Custom OpenAPI documentation --
-def custom_openapi():
-    if app.openapi_schema:
-        return app.openapi_schema
-
-    openapi_schema = get_openapi(
-        title="AIO API",
-        version="0.1.0",
-        description="The only api you'll ever need to make your discord bot spicy, fun and stand out.",
-        routes=app.routes,
-    )
-    app.openapi_schema = openapi_schema
-    return app.openapi_schema
-
-
-app.openapi = custom_openapi
+app = FastAPI(
+    title="AIO API",
+    version="0.1.0",
+    description="The only api you'll ever need to make your discord bot spicy, fun and stand out.",
+    docs_url="/",
+    redoc_url=None,
+    on_startup=[on_start_up],
+    on_shutdown=[on_shutdown]
+)
 
 # -- Configure the limiter --
 limiter = Limiter(key_func=get_remote_address, default_limits=["20/minute"])
