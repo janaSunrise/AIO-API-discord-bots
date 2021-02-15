@@ -5,10 +5,5 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - ./logs:/app/logs
-      - .:/app:ro
-    ports:
-      - 80:80
     tty: true
     env_file: .env

@@ -4,7 +4,9 @@ FROM python:3.8-slim
 ENV PIPENV_HIDE_EMOJIS=1 \
     PIPENV_IGNORE_VIRTUALENVS=1 \
     PIPENV_NOSPIN=1 \
-    PIPENV_NO_CACHE_DIR=false
+    PIPENV_NO_CACHE_DIR=false \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
 
 # Get the dependencies ready
 RUN apt-get -y update \
