@@ -31,7 +31,7 @@ log_format = "<green>{time:YYYY-MM-DD hh:mm:ss}</green> | <level>{level: <8}</le
 reddit_client_id = os.getenv("REDDIT_CLIENT_ID")
 reddit_client_secret = os.getenv("REDDIT_CLIENT_SECRET")
 nasa_api = os.getenv("NASA_API")
-ai_enabled = os.getenv("AI_ENABLED", default=False).lower() in ["true", 1]
+ai_enabled = os.getenv("AI_ENABLED", default="false").lower() in ["true", 1]
 
 try:
     reddit = asyncpraw.Reddit(
