@@ -5,7 +5,7 @@ from api.core import log_error
 
 router = APIRouter(
     prefix="/ai",
-    tags=["AI based chatbot"],
+    tags=["AI based endpoint."],
     responses={
         404: {"description": "Not found"},
     },
@@ -15,7 +15,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/")
 @log_error()
-async def root(message: str):
+async def root(message: str) -> dict:
     aiml_response = AIML_KERNEL.respond(message)
     aiml_response = aiml_response.replace("://", "").replace("@", "")  # Prevent tagging and links
 

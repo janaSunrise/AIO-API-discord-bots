@@ -15,7 +15,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/")
 @log_error()
-async def lyrics(request: Request, songname: str):
+async def lyrics(request: Request, songname: str) -> dict:
     """Get the lyrics for some song which you need."""
     async with http_client.session.get(f"https://some-random-api.ml/lyrics?title={songname}") as resp:
         json = await resp.json()
