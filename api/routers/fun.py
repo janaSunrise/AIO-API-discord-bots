@@ -17,7 +17,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/joke")
 @log_error()
-async def joke(explicit: bool = False):
+async def joke(explicit: bool = False) -> dict:
     if explicit:
         url = "http://api.icndb.com/jokes/random"
     else:
@@ -26,60 +26,50 @@ async def joke(explicit: bool = False):
     async with http_client.session.get(url) as resp:
         json = await resp.json()
 
-    return {
-        "joke": json["value"]["joke"].replace("&quote", '"')
-    }
+    return {"joke": json["value"]["joke"].replace("&quote", '"')}
 
 
 @router.get("/dadjoke")
 @log_error()
-async def dadjoke():
+async def dad_joke() -> dict:
     async with http_client.session.get("https://icanhazdadjoke.com") as resp:
         res = await joke.text()
         res = res.encode("utf-8").decode("utf-8")
 
-    return {
-        "joke": res
-    }
+    return {"joke": res}
 
 
 @router.get("/excuse")
 @log_error()
-async def excuse():
+async def excuse() -> dict:
     async with http_client.session.get("http://pages.cs.wisc.edu/~ballard/bofh/excuses") as resp:
         data = await resp.text()
         lines = data.split("\n")
 
-    return {
-        "excuse": random.choice(lines)
-    }
+    return {"excuse": random.choice(lines)}
 
 
 @router.get("/chucknorris")
 @log_error()
-async def chucknorris():
+async def chuck_norris() -> dict:
     async with http_client.session.get("https://api.chucknorris.io/jokes/random") as resp:
         json = await resp.json()
 
-    return {
-        "joke": json["value"]
-    }
+    return {"joke": json["value"]}
 
 
 @router.get("/why")
 @log_error()
-async def why():
+async def why() -> dict:
     async with http_client.session.get("https://nekos.life/api/why") as resp:
         json = await resp.json()
 
-    return {
-        "why": json["why"]
-    }
+    return {"why": json["why"]}
 
 
 @router.get("/yesno")
 @log_error()
-async def yesno(question: str):
+async def yesno(question: str) -> dict:
     async def get_answer(ans: str) -> str:
         if ans == "yes":
             return_str = "Yes."
@@ -103,7 +93,7 @@ async def yesno(question: str):
 
 @router.get("/history")
 @log_error()
-async def history():
+async def history() -> dict:
     async with http_client.session.get('http://numbersapi.com/random/date?json') as resp:
         json = await resp.json()
 
@@ -115,7 +105,7 @@ async def history():
 
 @router.get("/mathfact")
 @log_error()
-async def mathfact():
+async def mathfact() -> dict:
     async with http_client.session.get('http://numbersapi.com/random/math?json') as resp:
         json = await resp.json()
 
@@ -127,10 +117,8 @@ async def mathfact():
 
 @router.get("/advice")
 @log_error()
-async def advice():
+async def advice() -> dict:
     async with http_client.session.get("https://api.adviceslip.com/advice") as resp:
         json = await resp.json(content_type="text/html")
 
-    return {
-        "advice": json["slip"]["advice"]
-    }
+    return {"advice": json["slip"]["advice"]}

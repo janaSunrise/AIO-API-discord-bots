@@ -15,32 +15,26 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/wink")
 @log_error()
-async def wink():
+async def wink() -> dict:
     async with http_client.session.get("https://some-random-api.ml/animu/wink") as resp:
         json = await resp.json()
 
-    return {
-        "url": json["link"]
-    }
+    return {"url": json["link"]}
 
 
 @router.get("/pat")
 @log_error()
-async def pat():
+async def pat() -> dict:
     async with http_client.session.get("https://some-random-api.ml/animu/pat") as resp:
         json = await resp.json()
 
-    return {
-        "url": json["link"]
-    }
+    return {"url": json["link"]}
 
 
 @router.get("/hug")
 @log_error()
-async def hug():
+async def hug() -> dict:
     async with http_client.session.get("https://some-random-api.ml/animu/hug") as resp:
         json = await resp.json()
 
-    return {
-        "url": json["link"]
-    }
+    return {"url": json["link"]}

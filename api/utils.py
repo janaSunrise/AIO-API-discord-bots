@@ -27,10 +27,8 @@ def filter_reddit_url(url) -> str:
     return url
 
 
-async def get_random_post(subreddit):
-    random_post = random.choice(
-        [post async for post in subreddit.hot() if not post.is_self]
-    )
+async def get_random_post(subreddit) -> dict:
+    random_post = random.choice([post async for post in subreddit.hot() if not post.is_self])
 
     return {
         "title": random_post.title,
@@ -44,7 +42,7 @@ async def get_random_post(subreddit):
     }
 
 
-def get_random_text_response(category: str):
+def get_random_text_response(category: str) -> str:
     with open("api/assets/text_games_response.json") as file:
         data = json.load(file)
 
@@ -53,7 +51,7 @@ def get_random_text_response(category: str):
     return random.choice(data)
 
 
-async def get_pod_pages(appid: str, query: str):
+async def get_pod_pages(appid: str, query: str) -> list:
     """Get the Wolfram API pod pages for the provided query."""
     url_str = urllib.parse.urlencode({
         "input": query,

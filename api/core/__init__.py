@@ -1,14 +1,15 @@
 import functools
+import typing as t
 
 from loguru import logger
 
 
 # -- Decorators --
-def log_error():
+def log_error() -> t.Any:
     """Decorator for logging errors."""
-    def error_logging(func):
+    def error_logging(func: t.Callable) -> t.Callable:
         @functools.wraps(func)
-        async def wrapper(*args, **kwargs):
+        async def wrapper(*args, **kwargs) -> t.Any:
             try:
                 return await func(*args, **kwargs)
             except Exception as e:

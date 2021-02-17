@@ -18,7 +18,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/8ball")
 @log_error()
-async def ball8(question: str):
+async def ball8(question: str) -> dict:
     reply_type = random.randint(1, 3)
 
     if reply_type == 1:
@@ -36,12 +36,10 @@ async def ball8(question: str):
 
 @router.get("/truth")
 @log_error()
-async def truth():
+async def truth() -> dict:
     truth_resp = get_random_text_response("truths")
 
-    return {
-        "truth": truth_resp
-    }
+    return {"truth": truth_resp}
 
 
 @router.get("/dares")
@@ -49,26 +47,20 @@ async def truth():
 async def dares():
     dare_resp = get_random_text_response("dares")
 
-    return {
-        "dare": dare_resp
-    }
+    return {"dare": dare_resp}
 
 
 @router.get("/neverhaveiever")
 @log_error()
-async def nhie():
+async def nhie() -> dict:
     nhie_resp = get_random_text_response("nhie")
 
-    return {
-        "never_have_i_ever": "Have you ever .." + nhie_resp
-    }
+    return {"never_have_i_ever": f"Have you ever ..{nhie_resp}"}
 
 
 @router.get("/wouldyourrather")
 @log_error()
-async def wyr():
+async def wyr() -> dict:
     wyr_resp = get_random_text_response("wyr")
 
-    return {
-        "would_you_rather": "Would you rather .." + wyr_resp
-    }
+    return {"would_you_rather": f"Would you rather ..{wyr_resp}"}

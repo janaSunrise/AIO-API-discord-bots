@@ -17,11 +17,11 @@ class HttpClient:
     session: t.Optional[aiohttp.ClientSession] = None
     tcp_session: t.Optional[aiohttp.ClientSession] = None
 
-    def start(self):
+    def start(self) -> None:
         self.session = aiohttp.ClientSession()
         self.tcp_session = aiohttp.ClientSession(connector=aiohttp.TCPConnector())
 
-    async def stop(self):
+    async def stop(self) -> None:
         await self.session.close()
         await self.tcp_session.close()
 

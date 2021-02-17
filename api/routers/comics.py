@@ -18,7 +18,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/ohno")
 @log_error()
-async def ohno():
+async def ohno() -> dict:
     """Send a random 'Webcomic Name' comic."""
     url = "http://webcomicname.com/random"
 
@@ -27,14 +27,12 @@ async def ohno():
 
     img_url = soup.find(property="og:image")["content"]
 
-    return {
-        "url": img_url
-    }
+    return {"url": img_url}
 
 
 @router.get("/saturday-morning")
 @log_error()
-async def smbc():
+async def smbc() -> dict:
     """Send a random 'Saturday Morning' comic."""
     url = "http://www.smbc-comics.com/comic/archive"
 
@@ -51,14 +49,12 @@ async def smbc():
         soup = BeautifulSoup(await resp.text(), "html.parser")
         img_url = soup.find(property="og:image")["content"]
 
-    return {
-        "url": img_url
-    }
+    return {"url": img_url}
 
 
 @router.get("/perry-bible")
 @log_error()
-async def perry_bible():
+async def perry_bible() -> dict:
     """Send a random 'The Perry Bible' comic."""
     url = "http://pbfcomics.com/random"
 
@@ -67,14 +63,12 @@ async def perry_bible():
 
     img_url = soup.find(property="og:image")["content"]
 
-    return {
-        "url": img_url
-    }
+    return {"url": img_url}
 
 
 @router.get("/cah")
 @log_error()
-async def cah():
+async def cah() -> dict:
     """Send a random 'Cyanide and Happiness' comic."""
     url = "http://explosm.net/comics/random"
 
@@ -83,14 +77,12 @@ async def cah():
 
     img_url = soup.find(property="og:image")["content"]
 
-    return {
-        "url": img_url
-    }
+    return {"url": img_url}
 
 
 @router.get("/xkcd")
 @log_error()
-async def xkcd():
+async def xkcd() -> dict:
     """See a random 'xkcd' comic."""
     url = "https://xkcd.com/info.0.json"
 
@@ -105,14 +97,12 @@ async def xkcd():
         if response.status == 200:
             data = await response.json()
 
-    return {
-        "url": data["img"]
-    }
+    return {"url": data["img"]}
 
 
 @router.get("/mrls")
 @log_error()
-async def mrls():
+async def mrls() -> dict:
     """Send a random 'Mr. Lovenstein' comic."""
     url = "http://www.mrlovenstein.com/shuffle"
 
@@ -121,14 +111,12 @@ async def mrls():
 
     img_url = f"http://www.mrlovenstein.com{soup.find(id='comic_main_image')['src']}"
 
-    return {
-        "url": img_url
-    }
+    return {"url": img_url}
 
 
 @router.get("/chainsaw")
 @log_error()
-async def chainsaw():
+async def chainsaw() -> dict:
     """Send a random 'Chainsawsuit' comic."""
     url = "http://chainsawsuit.com/comic/random/?random&nocache=1"
 
@@ -137,14 +125,12 @@ async def chainsaw():
 
     img_url = soup.find(property="og:image")["content"]
 
-    return {
-        "url": img_url
-    }
+    return {"url": img_url}
 
 
 @router.get("/sarah")
 @log_error()
-async def sarah():
+async def sarah() -> dict:
     """Send a random 'Sarah's Scribbles' comic."""
     url = "http://www.gocomics.com/random/sarahs-scribbles"
 
@@ -153,21 +139,17 @@ async def sarah():
 
     img_url = soup.find(property="og:image")["content"]
 
-    return {
-        "url": img_url
-    }
+    return {"url": img_url}
 
 
 @router.get("/garfield")
 @log_error()
-async def garfield():
+async def garfield() -> dict:
     """Send a random 'garfield' comic."""
     url = "https://many-api.vercel.app/garfield/random"
 
     async with http_client.session.get(url) as response:
         img_url = (await response.json())["url"]
 
-    return {
-        "url": img_url
-    }
+    return {"url": img_url}
 
