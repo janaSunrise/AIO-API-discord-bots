@@ -20,20 +20,18 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/urban")
 @log_error()
-async def urban(word: str):
+async def urban(word: str) -> dict:
     url = "http://api.urbandictionary.com/v0/define"
     async with http_client.session.get(url, params={"term": word}) as resp:
         json = await resp.json()
         data = json.get("list", [])
 
-    return {
-        "data": data
-    }
+    return {"data": data}
 
 
 @router.get("/calc")
 @log_error()
-async def calc(equation: str):
+async def calc(equation: str) -> dict:
     params = {"expr": equation}
     url = "http://api.mathjs.org/v4/"
 
@@ -49,7 +47,7 @@ async def calc(equation: str):
 
 @router.get("/wiki")
 @log_error()
-async def wiki(query: str):
+async def wiki(query: str) -> dict:
     payload = {
         "action": "query",
         "titles": query.replace(" ", "_"),
@@ -62,9 +60,7 @@ async def wiki(query: str):
     }
 
     async with http_client.tcp_session.get(
-            "https://en.wikipedia.org/w/api.ph",
-            params=payload,
-            headers={"user-agent": config.USER_AGENT}
+            "https://en.wikipedia.org/w/api.php", params=payload, headers={"user-agent": config.USER_AGENT}
     ) as res:
         result = await res.json()
 
@@ -80,14 +76,12 @@ async def wiki(query: str):
                 "url": url
             }
     except KeyError:
-        return {
-            "error": "No results for your query!"
-        }
+        return {"error": "No results for your query!"}
 
 
 @router.get("/wolfram")
 @log_error()
-async def wolfram(appid: str, query: str):
+async def wolfram(appid: str, query: str) -> StreamingResponse:
     url_str = urllib.parse.urlencode({
         "i": query,
         "appid": appid,
@@ -105,14 +99,10 @@ async def wolfram(appid: str, query: str):
 
 @router.get("/wolfram-page")
 @log_error()
-async def wolfram_page(appid: str, query: str):
+async def wolfram_page(appid: str, query: str) -> dict:
     pages = await get_pod_pages(appid, query)
 
     if not pages:
-        return {
-            "error": "No results found!"
-        }
+        return {"error": "No results found!"}
 
-    return {
-        "pages": pages
-    }
+    return {"pages": pages}

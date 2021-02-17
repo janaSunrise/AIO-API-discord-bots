@@ -16,7 +16,7 @@ router = APIRouter(
 
 
 # -- Helper function --
-async def neko_get(url: str):
+async def neko_get(url: str) -> str:
     """Gets pictures from Neko API."""
     async with http_client.session.get("https://api.nekos.dev/api/v3/" + url) as response:
         req = await response.json()
@@ -27,212 +27,176 @@ async def neko_get(url: str):
 # -- Router paths --
 @router.get("/neko")
 @log_error()
-async def neko():
+async def neko() -> dict:
     sources = ["images/nsfw/gif/neko", "images/nsfw/img/neko_lewd", "images/nsfw/img/neko_ero"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/lewd")
 @log_error()
-async def lewd():
+async def lewd() -> dict:
     sources = ["images/nsfw/img/classic_lewd", "images/nsfw/img/neko_lewd", "images/nsfw/img/neko_ero"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/blowjob")
 @log_error()
-async def neko_blowjob():
+async def neko_blowjob() -> dict:
     sources = ["images/nsfw/gif/blow_job", "images/nsfw/img/blowjob_lewd"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/pussy")
 @log_error()
-async def neko_pussy():
+async def neko_pussy() -> dict:
     sources = ["images/nsfw/gif/pussy_wank", "images/nsfw/gif/pussy", "images/nsfw/img/pussy_lewd"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/cum")
 @log_error()
-async def cum():
+async def cum() -> dict:
     sources = ["images/nsfw/gif/cum", "images/nsfw/img/cum_lewd"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/bdsm")
 @log_error()
-async def bdsm():
+async def bdsm() -> dict:
     url = await neko_get("images/nsfw/img/bdsm_lewd")
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/trap")
 @log_error()
-async def trap():
+async def trap() -> dict:
     sources = ["images/nsfw/img/trap_lewd", "images/nsfw/img/futanari_lewd"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/furry")
 @log_error()
-async def furry():
+async def furry() -> dict:
     sources = ["images/nsfw/gif/yiff", "images/nsfw/img/yiff_lewd"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/feet")
 @log_error()
-async def feet():
+async def feet() -> dict:
     sources = ["images/nsfw/gif/feet", "images/nsfw/img/feet_lewd", "images/nsfw/img/feet_ero"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/yuri")
 @log_error()
-async def yuri():
+async def yuri() -> dict:
     sources = ["images/nsfw/gif/yuri", "images/nsfw/img/yuri_lewd", "images/nsfw/img/yuri_ero"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/solo")
 @log_error()
-async def solo():
+async def solo() -> dict:
     sources = ["images/nsfw/gif/girls_solo", "images/nsfw/img/solo_lewd"]
     url = await neko_get(random.choice(sources))
 
-    return {
-        "url": url
-    }
+    return {"url": url}
 
 
 @router.get("/yandere")
 @log_error()
-async def yandere():
+async def yandere() -> dict:
     query = "https://yande.re/post/random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, 'html.parser')
 
     image = soup.find(id="highres").get("href")
-    return {
-        "url": image
-    }
+    return {"url": image}
 
 
 @router.get("/e621")
 @log_error()
-async def e621():
+async def e621() -> dict:
     query = "https://e621.net/post/random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, 'html.parser')
 
     image = soup.find(id="highres").get("href")
-    return {
-        "url": image
-    }
+    return {"url": image}
 
 
 @router.get("/rule34")
 @log_error()
-async def rule34():
+async def rule34() -> dict:
     query = "http://rule34.xxx/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, 'html.parser')
 
     image = soup.find(id="image").get("src")
-    return {
-        "url": image
-    }
+    return {"url": image}
 
 
 @router.get("/danbooru")
 @log_error()
-async def danbooru():
+async def danbooru() -> dict:
     query = "http://danbooru.donmai.us/posts/random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, 'html.parser')
 
     image = soup.find(id="image").get("src")
-    return {
-        "url": image
-    }
+    return {"url": image}
 
 
 @router.get("/gelbooru")
 @log_error()
-async def gelbooru():
+async def gelbooru() -> dict:
     query = "http://www.gelbooru.com/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, 'html.parser')
 
     image = soup.find(id="image").get("src")
-    return {
-        "url": image
-    }
+    return {"url": image}
 
 
 @router.get("/xbooru")
 @log_error()
-async def xbooru():
+async def xbooru() -> dict:
     query = "http://xbooru.com/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, 'html.parser')
 
     image = soup.find(id="image").get("src")
-    return {
-        "url": image
-    }
+    return {"url": image}
 
 
 @router.get("/lolibooru")
 @log_error()
-async def lolibooru():
+async def lolibooru() -> dict:
     query = "https://lolibooru.moe/post/random/"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, 'html.parser')
 
     image = soup.find(id="image").get("src")
     image = image.replace(' ', '%20')
-    return {
-        "url": image
-    }
+    return {"url": image}
 

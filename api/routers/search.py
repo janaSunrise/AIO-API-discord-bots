@@ -84,7 +84,7 @@ class Search:
 
 @router.get("/search")
 @log_error()
-async def search(query: str, count: int = 5):
+async def search(query: str, count: int = 5) -> dict:
     search_obj = Search()
     data = await search_obj.basic_search(query, category="web", count=count)
 
@@ -93,10 +93,10 @@ async def search(query: str, count: int = 5):
 
 @router.get("/overflow")
 @log_error()
-async def overflow(query: str, questions: int = 6):
+async def overflow(query: str, questions: int = 6) -> dict:
+    """Search stackoverflow for a query."""
     BASE_URL = "https://api.stackexchange.com/2.2/search/advanced?order=desc&sort=activity&site=stackoverflow&q={query}"
 
-    """Search stackoverflow for a query."""
     async with http_client.session.get(BASE_URL.format(query=quote_plus(query))) as response:
         data = await response.json()
 

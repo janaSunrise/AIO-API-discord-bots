@@ -18,43 +18,27 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/memes")
 @log_error()
-async def memes():
-    subreddit = await reddit.subreddit(
-        random.choice(conf.subreddits_list["memes"]),
-        fetch=True
-    )
-
+async def memes() -> dict:
+    subreddit = await reddit.subreddit(random.choice(conf.subreddits_list["memes"]), fetch=True)
     return await get_random_post(subreddit)
 
 
 @router.get("/aww")
 @log_error()
-async def aww():
-    subreddit = await reddit.subreddit(
-        random.choice(conf.subreddits_list["aww"]),
-        fetch=True
-    )
-
+async def aww() -> dict:
+    subreddit = await reddit.subreddit(random.choice(conf.subreddits_list["aww"]), fetch=True)
     return await get_random_post(subreddit)
 
 
 @router.get("/funny")
 @log_error()
-async def funny():
-    subreddit = await reddit.subreddit(
-        random.choice(conf.subreddits_list["funny"]),
-        fetch=True
-    )
-
+async def funny() -> dict:
+    subreddit = await reddit.subreddit(random.choice(conf.subreddits_list["funny"]), fetch=True)
     return await get_random_post(subreddit)
 
 
 @router.get("/cursedcomments")
 @log_error()
 async def cursed_comments():
-    subreddit = await reddit.subreddit(
-        "cursedcomments",
-        fetch=True
-    )
-
+    subreddit = await reddit.subreddit("cursedcomments", fetch=True)
     return await get_random_post(subreddit)
