@@ -37,25 +37,26 @@ class HttpClient:
 http_client = HttpClient()
 
 
-# -- Event handlers --
-async def on_start_up() -> None:
-    http_client.start()
-
-
-async def on_shutdown() -> None:
-    await http_client.stop()
-
-
 # -- Define the API --
 app = FastAPI(
     title="AIO API",
     version="0.1.0",
     description="The only api you'll ever need to make your discord bot spicy, fun and stand out.",
     docs_url="/",
-    redoc_url=None,
-    on_startup=[on_start_up],
-    on_shutdown=[on_shutdown]
+    redoc_url=None
 )
+
+
+# -- Event handlers --
+@app.on_event("startup")
+async def on_start_up() -> None:
+    http_client.start()
+
+
+@app.on_event("shutdown")
+async def on_shutdown() -> None:
+    await http_client.stop()
+
 
 # -- Configure the limiter --
 limiter = Limiter(key_func=get_remote_address, default_limits=["15/minute"])
