@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api import http_client
 from api.core import log_error
@@ -15,7 +15,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/wink")
 @log_error()
-async def wink() -> dict:
+async def wink(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/animu/wink") as resp:
         json = await resp.json()
 
@@ -24,7 +24,7 @@ async def wink() -> dict:
 
 @router.get("/pat")
 @log_error()
-async def pat() -> dict:
+async def pat(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/animu/pat") as resp:
         json = await resp.json()
 
@@ -33,7 +33,7 @@ async def pat() -> dict:
 
 @router.get("/hug")
 @log_error()
-async def hug() -> dict:
+async def hug(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/animu/hug") as resp:
         json = await resp.json()
 

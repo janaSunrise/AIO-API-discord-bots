@@ -1,6 +1,6 @@
 import random
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api import http_client
 from api.core import log_error
@@ -18,7 +18,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/apod")
 @log_error()
-async def apod() -> dict:
+async def apod(request: Request) -> dict:
     async with http_client.session.get(f"https://api.nasa.gov/planetary/apod?api_key={NASA_API}") as resp:
         data = await resp.json()
 
@@ -31,7 +31,7 @@ async def apod() -> dict:
 
 @router.get("/nasa-search")
 @log_error()
-async def nasa_search(query: str) -> dict:
+async def nasa_search(request: Request, query: str) -> dict:
     async with http_client.session.get(f"https://images-api.nasa.gov/search?q={query}") as resp:
         data = await resp.json()
 
@@ -51,7 +51,7 @@ async def nasa_search(query: str) -> dict:
 
 @router.get("/epic")
 @log_error()
-async def epic(max: int = 1) -> dict:
+async def epic(request: Request, max: int = 1) -> dict:
     async with http_client.session.get("https://epic.gsfc.nasa.gov/api/images.php") as response:
         json = await response.json()
 

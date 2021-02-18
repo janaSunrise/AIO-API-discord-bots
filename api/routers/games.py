@@ -1,6 +1,6 @@
 import random
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api import config as conf
 from api.core import log_error
@@ -18,7 +18,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/8ball")
 @log_error()
-async def ball8(question: str) -> dict:
+async def ball8(request: Request, question: str) -> dict:
     reply_type = random.randint(1, 3)
 
     if reply_type == 1:
@@ -36,7 +36,7 @@ async def ball8(question: str) -> dict:
 
 @router.get("/truth")
 @log_error()
-async def truth() -> dict:
+async def truth(request: Request) -> dict:
     truth_resp = get_random_text_response("truths")
 
     return {"truth": truth_resp}
@@ -44,7 +44,7 @@ async def truth() -> dict:
 
 @router.get("/dares")
 @log_error()
-async def dares():
+async def dares(request: Request):
     dare_resp = get_random_text_response("dares")
 
     return {"dare": dare_resp}
@@ -52,7 +52,7 @@ async def dares():
 
 @router.get("/neverhaveiever")
 @log_error()
-async def nhie() -> dict:
+async def nhie(request: Request) -> dict:
     nhie_resp = get_random_text_response("nhie")
 
     return {"never_have_i_ever": f"Have you ever ..{nhie_resp}"}
@@ -60,7 +60,7 @@ async def nhie() -> dict:
 
 @router.get("/wouldyourrather")
 @log_error()
-async def wyr() -> dict:
+async def wyr(request: Request) -> dict:
     wyr_resp = get_random_text_response("wyr")
 
     return {"would_you_rather": f"Would you rather ..{wyr_resp}"}

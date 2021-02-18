@@ -1,7 +1,7 @@
 import io
 import urllib
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 from starlette.responses import StreamingResponse
 
 from api import config, http_client
@@ -20,7 +20,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/urban")
 @log_error()
-async def urban(word: str) -> dict:
+async def urban(request: Request, word: str) -> dict:
     url = "http://api.urbandictionary.com/v0/define"
     async with http_client.session.get(url, params={"term": word}) as resp:
         json = await resp.json()
@@ -31,7 +31,7 @@ async def urban(word: str) -> dict:
 
 @router.get("/calc")
 @log_error()
-async def calc(equation: str) -> dict:
+async def calc(request: Request, equation: str) -> dict:
     params = {"expr": equation}
     url = "http://api.mathjs.org/v4/"
 
@@ -47,7 +47,7 @@ async def calc(equation: str) -> dict:
 
 @router.get("/wiki")
 @log_error()
-async def wiki(query: str) -> dict:
+async def wiki(request: Request, query: str) -> dict:
     payload = {
         "action": "query",
         "titles": query.replace(" ", "_"),
@@ -81,7 +81,7 @@ async def wiki(query: str) -> dict:
 
 @router.get("/wolfram")
 @log_error()
-async def wolfram(appid: str, query: str) -> StreamingResponse:
+async def wolfram(request: Request, appid: str, query: str) -> StreamingResponse:
     url_str = urllib.parse.urlencode({
         "i": query,
         "appid": appid,
@@ -99,7 +99,7 @@ async def wolfram(appid: str, query: str) -> StreamingResponse:
 
 @router.get("/wolfram-page")
 @log_error()
-async def wolfram_page(appid: str, query: str) -> dict:
+async def wolfram_page(request: Request, appid: str, query: str) -> dict:
     pages = await get_pod_pages(appid, query)
 
     if not pages:

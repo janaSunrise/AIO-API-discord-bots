@@ -1,6 +1,6 @@
 import random
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api import config as conf
 from api.core import log_error
@@ -18,27 +18,27 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/memes")
 @log_error()
-async def memes() -> dict:
+async def memes(request: Request) -> dict:
     subreddit = await reddit.subreddit(random.choice(conf.subreddits_list["memes"]), fetch=True)
     return await get_random_post(subreddit)
 
 
 @router.get("/aww")
 @log_error()
-async def aww() -> dict:
+async def aww(request: Request) -> dict:
     subreddit = await reddit.subreddit(random.choice(conf.subreddits_list["aww"]), fetch=True)
     return await get_random_post(subreddit)
 
 
 @router.get("/funny")
 @log_error()
-async def funny() -> dict:
+async def funny(request: Request) -> dict:
     subreddit = await reddit.subreddit(random.choice(conf.subreddits_list["funny"]), fetch=True)
     return await get_random_post(subreddit)
 
 
 @router.get("/cursedcomments")
 @log_error()
-async def cursed_comments():
+async def cursed_comments(request: Request):
     subreddit = await reddit.subreddit("cursedcomments", fetch=True)
     return await get_random_post(subreddit)

@@ -1,6 +1,6 @@
 import random
 
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api.core import log_error
 from api.config import reddit
@@ -18,7 +18,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/hot")
 @log_error()
-async def hot(subreddit: str) -> dict:
+async def hot(request: Request, subreddit: str) -> dict:
     subreddit = await reddit.subreddit(subreddit, fetch=True)
     random_post = random.choice([post async for post in subreddit.hot() if not post.is_self])
 
@@ -36,7 +36,7 @@ async def hot(subreddit: str) -> dict:
 
 @router.get("/new")
 @log_error()
-async def new(subreddit: str) -> dict:
+async def new(request: Request, subreddit: str) -> dict:
     subreddit = await reddit.subreddit(subreddit, fetch=True)
     random_post = random.choice(
         [post async for post in subreddit.new() if not post.is_self]
@@ -56,7 +56,7 @@ async def new(subreddit: str) -> dict:
 
 @router.get("/random")
 @log_error()
-async def reddit_random(subreddit: str) -> dict:
+async def reddit_random(request: Request, subreddit: str) -> dict:
     subreddit = await reddit.subreddit(subreddit, fetch=True)
     random_post = await subreddit.random()
 

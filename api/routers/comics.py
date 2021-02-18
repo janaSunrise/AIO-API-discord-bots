@@ -1,7 +1,7 @@
 import random
 
 from bs4 import BeautifulSoup
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api import http_client
 from api.core import log_error
@@ -18,7 +18,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/ohno")
 @log_error()
-async def ohno() -> dict:
+async def ohno(request: Request) -> dict:
     """Send a random 'Webcomic Name' comic."""
     url = "http://webcomicname.com/random"
 
@@ -32,7 +32,7 @@ async def ohno() -> dict:
 
 @router.get("/saturday-morning")
 @log_error()
-async def smbc() -> dict:
+async def smbc(request: Request) -> dict:
     """Send a random 'Saturday Morning' comic."""
     url = "http://www.smbc-comics.com/comic/archive"
 
@@ -54,7 +54,7 @@ async def smbc() -> dict:
 
 @router.get("/perry-bible")
 @log_error()
-async def perry_bible() -> dict:
+async def perry_bible(request: Request) -> dict:
     """Send a random 'The Perry Bible' comic."""
     url = "http://pbfcomics.com/random"
 
@@ -68,7 +68,7 @@ async def perry_bible() -> dict:
 
 @router.get("/cah")
 @log_error()
-async def cah() -> dict:
+async def cah(request: Request) -> dict:
     """Send a random 'Cyanide and Happiness' comic."""
     url = "http://explosm.net/comics/random"
 
@@ -82,7 +82,7 @@ async def cah() -> dict:
 
 @router.get("/xkcd")
 @log_error()
-async def xkcd() -> dict:
+async def xkcd(request: Request) -> dict:
     """See a random 'xkcd' comic."""
     url = "https://xkcd.com/info.0.json"
 
@@ -102,7 +102,7 @@ async def xkcd() -> dict:
 
 @router.get("/mrls")
 @log_error()
-async def mrls() -> dict:
+async def mrls(request: Request) -> dict:
     """Send a random 'Mr. Lovenstein' comic."""
     url = "http://www.mrlovenstein.com/shuffle"
 
@@ -116,7 +116,7 @@ async def mrls() -> dict:
 
 @router.get("/chainsaw")
 @log_error()
-async def chainsaw() -> dict:
+async def chainsaw(request: Request) -> dict:
     """Send a random 'Chainsawsuit' comic."""
     url = "http://chainsawsuit.com/comic/random/?random&nocache=1"
 
@@ -130,7 +130,7 @@ async def chainsaw() -> dict:
 
 @router.get("/sarah")
 @log_error()
-async def sarah() -> dict:
+async def sarah(request: Request) -> dict:
     """Send a random 'Sarah's Scribbles' comic."""
     url = "http://www.gocomics.com/random/sarahs-scribbles"
 
@@ -144,7 +144,7 @@ async def sarah() -> dict:
 
 @router.get("/garfield")
 @log_error()
-async def garfield() -> dict:
+async def garfield(request: Request) -> dict:
     """Send a random 'garfield' comic."""
     url = "https://many-api.vercel.app/garfield/random"
 

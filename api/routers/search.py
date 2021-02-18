@@ -2,7 +2,7 @@ from html import unescape
 from urllib.parse import quote_plus
 
 import html2text
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api import config, http_client
 from api.core import log_error
@@ -84,7 +84,7 @@ class Search:
 
 @router.get("/search")
 @log_error()
-async def search(query: str, count: int = 5) -> dict:
+async def search(request: Request, query: str, count: int = 5) -> dict:
     search_obj = Search()
     data = await search_obj.basic_search(query, category="web", count=count)
 
@@ -93,7 +93,7 @@ async def search(query: str, count: int = 5) -> dict:
 
 @router.get("/overflow")
 @log_error()
-async def overflow(query: str, questions: int = 6) -> dict:
+async def overflow(request: Request, query: str, questions: int = 6) -> dict:
     """Search stackoverflow for a query."""
     BASE_URL = "https://api.stackexchange.com/2.2/search/advanced?order=desc&sort=activity&site=stackoverflow&q={query}"
 

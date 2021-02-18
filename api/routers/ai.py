@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api import AIML_KERNEL
 from api.core import log_error
@@ -15,7 +15,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/")
 @log_error()
-async def root(message: str) -> dict:
+async def root(request: Request, message: str) -> dict:
     aiml_response = AIML_KERNEL.respond(message)
     aiml_response = aiml_response.replace("://", "").replace("@", "")  # Prevent tagging and links
 

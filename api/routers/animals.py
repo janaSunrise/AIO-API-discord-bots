@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Request
 
 from api import http_client
 from api.core import log_error
@@ -15,7 +15,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/cat")
 @log_error()
-async def cat() -> dict:
+async def cat(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/img/cat") as resp:
         json = await resp.json()
 
@@ -24,7 +24,7 @@ async def cat() -> dict:
 
 @router.get("/catfact")
 @log_error()
-async def catfact() -> dict:
+async def cat_fact(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/facts/cat") as resp:
         json = await resp.json()
 
@@ -33,7 +33,7 @@ async def catfact() -> dict:
 
 @router.get("/dog")
 @log_error()
-async def dog() -> dict:
+async def dog(request: Request) -> dict:
     async with http_client.session.get("https://dog.ceo/api/breeds/image/random") as resp:
         json = await resp.json()
 
@@ -42,7 +42,7 @@ async def dog() -> dict:
 
 @router.get("/dogfact")
 @log_error()
-async def dogfact() -> dict:
+async def dog_fact(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/facts/dog") as resp:
         json = await resp.json()
 
@@ -51,7 +51,7 @@ async def dogfact() -> dict:
 
 @router.get("/pandafact")
 @log_error()
-async def pandafact() -> dict:
+async def panda_fact(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/facts/panda") as resp:
         json = await resp.json()
 
@@ -60,7 +60,7 @@ async def pandafact() -> dict:
 
 @router.get("/fox")
 @log_error()
-async def fox() -> dict:
+async def fox(request: Request) -> dict:
     async with http_client.session.get("https://randomfox.ca/floof/") as resp:
         json = await resp.json()
 
@@ -69,7 +69,7 @@ async def fox() -> dict:
 
 @router.get("/panda")
 @log_error()
-async def panda() -> dict:
+async def panda(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/img/panda") as resp:
         json = await resp.json()
 
@@ -78,7 +78,7 @@ async def panda() -> dict:
 
 @router.get("/koala")
 @log_error()
-async def koala() -> dict:
+async def koala(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/img/koala") as resp:
         json = await resp.json()
 
@@ -87,7 +87,7 @@ async def koala() -> dict:
 
 @router.get("/birb")
 @log_error()
-async def birb() -> dict:
+async def birb(request: Request) -> dict:
     async with http_client.session.get("https://some-random-api.ml/img/birb") as resp:
         json = await resp.json()
 
@@ -96,7 +96,7 @@ async def birb() -> dict:
 
 @router.get("/duck")
 @log_error()
-async def duck() -> dict:
+async def duck(request: Request) -> dict:
     async with http_client.session.get("https://random-d.uk/api/v2/random") as resp:
         json = await resp.json()
 
