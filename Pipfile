@@ -14,8 +14,8 @@ aiohttp = "*"
 beautifulsoup4 = "*"
 html2text = "*"
 python-aiml = "*"
-fastapi-plugins = "*"
 aioredis = "*"
+fastapi-cache2 = {extras = ["redis"], version = "*"}
 
 [scripts]
 start = "uvicorn api:app --reload"

@@ -51,7 +51,7 @@ def get_random_text_response(category: str) -> str:
     return random.choice(data)
 
 
-async def get_pod_pages(appid: str, query: str) -> list:
+async def get_pod_pages(appid: str, query: str):
     """Get the Wolfram API pod pages for the provided query."""
     url_str = urllib.parse.urlencode({
         "input": query,
@@ -73,26 +73,18 @@ async def get_pod_pages(appid: str, query: str) -> list:
         # API key not set up correctly
         if result["error"]["msg"] == "Invalid appid":
             message = "Wolfram API key is invalid or missing."
-            return {
-                "error": message
-            }
+            return {"error": message}
 
         message = "Something went wrong internally with your request, please notify staff!"
-        return {
-            "error": message
-        }
+        return {"error": message}
 
     if not result["success"]:
         message = f"I couldn't find anything for {query}."
-        return {
-            "error": message
-        }
+        return {"error": message}
 
     if not result["numpods"]:
         message = "Could not find any results."
-        return {
-            "error": message
-        }
+        return {"error": message}
 
     pods = result["pods"]
     pages = []

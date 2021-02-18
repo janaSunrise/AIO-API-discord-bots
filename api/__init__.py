@@ -3,9 +3,7 @@ import typing as t
 
 import aiml
 import aiohttp
-import aioredis
-import fastapi_plugins
-from fastapi import FastAPI, Depends
+from fastapi import FastAPI
 from loguru import logger
 from slowapi import Limiter, _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
@@ -39,11 +37,6 @@ class HttpClient:
 http_client = HttpClient()
 
 
-# -- FastAPI plugins config --
-class AppSettings(fastapi_plugins.RedisSettings):
-    api_name: str = str(__name__)
-
-
 # -- Define the API --
 app = FastAPI(
     title="AIO API",
@@ -52,21 +45,18 @@ app = FastAPI(
     docs_url="/",
     redoc_url=None
 )
-plugin_config = AppSettings()
+global redis
 
 
 # -- Event handlers --
 @app.on_event("startup")
 async def on_start_up() -> None:
     http_client.start()
-    await fastapi_plugins.redis_plugin.init_app(app, config=plugin_config)
-    await fastapi_plugins.redis_plugin.init()
 
 
 @app.on_event("shutdown")
 async def on_shutdown() -> None:
     await http_client.stop()
-    await fastapi_plugins.redis_plugin.terminate()
 
 
 # -- Configure the limiter --
@@ -80,12 +70,6 @@ if conf.ai_enabled:
     AIML_KERNEL = aiml.Kernel()
     AIML_KERNEL.setBotPredicate("name", "Overflow")
     AIML_KERNEL.bootstrap(learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
-
-
-# -- Router paths --
-@app.get("/cache-ping")
-async def cache_ping(cache: aioredis.Redis = Depends(fastapi_plugins.depends_redis)) -> dict:
-    return dict(ping=await cache.ping())
 
 # -- Imports for router --
 from api.routers import (
