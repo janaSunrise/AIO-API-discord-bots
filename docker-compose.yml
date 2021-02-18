@@ -1,9 +1,17 @@
 version: '3'
 
 services:
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
   api:
     build:
       context: .
       dockerfile: Dockerfile
     tty: true
     env_file: .env
+    environment:
+      REDIS_TYPE: redis
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
