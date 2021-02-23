@@ -15,9 +15,11 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/")
 @log_error()
-async def lyrics(request: Request, songname: str) -> dict:
+async def lyrics(_: Request, songname: str) -> dict:
     """Get the lyrics for some song which you need."""
-    async with http_client.session.get(f"https://some-random-api.ml/lyrics?title={songname}") as resp:
+    async with http_client.session.get(
+        f"https://some-random-api.ml/lyrics?title={songname}"
+    ) as resp:
         json = await resp.json()
 
     return {
@@ -26,4 +28,3 @@ async def lyrics(request: Request, songname: str) -> dict:
         "lyrics": json["lyrics"],
         "thumbnail": json["thumbnail"]["genius"]
     }
-

@@ -15,9 +15,11 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/wink")
 @log_error()
-async def wink(request: Request) -> dict:
+async def wink(_: Request) -> dict:
     """Get a random wink gif."""
-    async with http_client.session.get("https://some-random-api.ml/animu/wink") as resp:
+    async with http_client.session.get(
+        "https://some-random-api.ml/animu/wink"
+    ) as resp:
         json = await resp.json()
 
     return {"url": json["link"]}
@@ -25,9 +27,11 @@ async def wink(request: Request) -> dict:
 
 @router.get("/pat")
 @log_error()
-async def pat(request: Request) -> dict:
+async def pat(_: Request) -> dict:
     """Get a random pat gif."""
-    async with http_client.session.get("https://some-random-api.ml/animu/pat") as resp:
+    async with http_client.session.get(
+        "https://some-random-api.ml/animu/pat"
+    ) as resp:
         json = await resp.json()
 
     return {"url": json["link"]}
@@ -35,9 +39,11 @@ async def pat(request: Request) -> dict:
 
 @router.get("/hug")
 @log_error()
-async def hug(request: Request) -> dict:
+async def hug(_: Request) -> dict:
     """Get a random hug gif."""
-    async with http_client.session.get("https://some-random-api.ml/animu/hug") as resp:
+    async with http_client.session.get(
+        "https://some-random-api.ml/animu/hug"
+    ) as resp:
         json = await resp.json()
 
     return {"url": json["link"]}

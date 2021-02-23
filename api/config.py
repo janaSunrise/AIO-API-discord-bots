@@ -48,7 +48,7 @@ except exceptions.MissingRequiredAttributeException:
 
 # -- Subreddit config --
 subreddits_list = {
-    "memes": frozenset({
+    "memes": (
         "ComedyCemetery",
         "dankmemes",
         "DeepFriedMemes",
@@ -56,8 +56,8 @@ subreddits_list = {
         "meirl",
         "memes",
         "wholesomememes",
-    }),
-    "funny": frozenset({
+    ),
+    "funny": (
         "BeAmazed",
         "blackmagicfuckery",
         "cursedimages",
@@ -72,8 +72,8 @@ subreddits_list = {
         "reactiongifs",
         "Unexpected",
         "WatchPeopleDieInside",
-    }),
-    "aww": frozenset({
+    ),
+    "aww": (
         "AnimalsBeingJerks",
         "guineapigs",
         "NatureIsFuckingLit",
@@ -81,11 +81,11 @@ subreddits_list = {
         "Rabbits",
         "StartledCats",
         "WhatsWrongWithYourDog",
-    })
+    )
 }
 
 nsfw_subreddits_list = {
-    "all": frozenset({
+    "all": (
         "2busty2hide",
         "amateur",
         "AsiansGoneWild",
@@ -163,22 +163,22 @@ nsfw_subreddits_list = {
         "workgonewild",
         "wouldyoufuckmywife",
         "yogapants",
-    }),
-    "fourk": frozenset({
+    ),
+    "fourk": (
         "closeup",
         "HighResNSFW",
         "nsfw_hd",
         "NSFW_Wallpapers",
         "UHDnsfw",
-    }),
-    "ahegao": frozenset({
+    ),
+    "ahegao": (
         "AhegaoGirls",
         "EyeRollOrgasm",
         "MouthWideOpen",
         "O_Faces",
         "RealAhegao",
-    }),
-    "ass": frozenset({
+    ),
+    "ass": (
         "ass",
         "asshole",
         "AssholeBehindThong",
@@ -202,8 +202,8 @@ nsfw_subreddits_list = {
         "pawg",
         "TheUnderbun",
         "Underbun",
-    }),
-    "anal":  frozenset({
+    ),
+    "anal":  (
         "anal",
         "analgonewild",
         "AnalGW",
@@ -212,14 +212,14 @@ nsfw_subreddits_list = {
         "buttsex",
         "buttsthatgrip",
         "MasterOfAnal",
-    }),
-    "bdsm": frozenset({
+    ),
+    "bdsm": (
         "bdsm",
         "BDSMGW",
         "ropeart",
         "shibari",
-    }),
-    "blowjob": frozenset({
+    ),
+    "blowjob": (
         "AsianBlowjobs",
         "blowbang",
         "BlowjobEyeContact",
@@ -229,8 +229,8 @@ nsfw_subreddits_list = {
         "OralCreampie",
         "SuckingItDry",
         "SwordSwallowers",
-    }),
-    "boobs": frozenset({
+    ),
+    "boobs": (
         "AreolasGW",
         "BestTits",
         "bigboobs",
@@ -263,19 +263,19 @@ nsfw_subreddits_list = {
         "tits",
         "Titties",
         "TittyDrop",
-    }),
-    "cunnilingus": frozenset({
+    ),
+    "cunnilingus": (
         "cunnilingus",
         "CunnilingusSelfie",
         "Hegoesdown",
-    }),
-    "bottomless": frozenset({
+    ),
+    "bottomless": (
         "Bottomless",
         "nopanties",
         "Pantiesdown",
         "upskirt",
-    }),
-    "cumshots": frozenset({
+    ),
+    "cumshots": (
         "amateurcumsluts",
         "bodyshots",
         "ContainTheLoad",
@@ -290,36 +290,36 @@ nsfw_subreddits_list = {
         "OralCreampie",
         "pulsatingcumshots",
         "unexpectedcum",
-    }),
-    "dick": frozenset({
+    ),
+    "dick": (
         "cock",
         "DickPics4Freedom",
         "mangonewild",
         "MassiveCock",
         "penis",
         "ThickDick",
-    }),
-    "doublepenetration": frozenset({
+    ),
+    "doublepenetration": (
         "doublepenetration",
         "dp_porn",
         "Technical_DP",
-    }),
-    "deepthroat": frozenset({
+    ),
+    "deepthroat": (
         "deepthroat",
         "DeepThroatTears",
         "SwordSwallowers",
-    }),
-    "gay": frozenset({
+    ),
+    "gay": (
         "gayporn",
         "ladybonersgw",
         "mangonewild",
-    }),
-    "group": frozenset({
+    ),
+    "group": (
         "GroupOfNudeGirls",
         "GroupOfNudeMILFs",
         "groupsex",
-    }),
-    "hentai": frozenset({
+    ),
+    "hentai": (
         "AnimeBooty",
         "ecchigifs",
         "hentai",
@@ -328,14 +328,14 @@ nsfw_subreddits_list = {
         "oppai_gif",
         "thick_hentai",
         "thighdeology",
-    }),
-    "lesbian": frozenset({
+    ),
+    "lesbian": (
         "amateurlesbians",
         "HDLesbianGifs",
         "lesbians",
         "Lesbian_gifs",
-    }),
-    "milf": frozenset({
+    ),
+    "milf": (
         "amateur_milfs",
         "ChocolateMilf",
         "GroupOfNudeMILFs",
@@ -347,8 +347,8 @@ nsfw_subreddits_list = {
         "Milfie",
         "MILFs",
         "puremilf",
-    }),
-    "public": frozenset({
+    ),
+    "public": (
         "casualnudity",
         "FlashingAndFlaunting",
         "FlashingGirls",
@@ -357,8 +357,8 @@ nsfw_subreddits_list = {
         "publicplug",
         "RealPublicNudity",
         "Unashamed",
-    }),
-    "rule34": frozenset({
+    ),
+    "rule34": (
         "AvatarPorn",
         "Overwatch_Porn",
         "rule34",
@@ -367,15 +367,15 @@ nsfw_subreddits_list = {
         "Rule34Overwatch",
         "Rule_34",
         "WesternHentai",
-    }),
-    "thigh": frozenset({
+    ),
+    "thigh": (
         "leggingsgonewild",
         "ThickThighs",
         "Thigh",
         "thighhighs",
         "Thighs",
-    }),
-    "trap": frozenset({
+    ),
+    "trap": (
         "DeliciousTraps",
         "GoneWildTrans",
         "SexyShemales",
@@ -387,8 +387,8 @@ nsfw_subreddits_list = {
         "Transex",
         "trapgifs",
         "traps",
-    }),
-    "wild": frozenset({
+    ),
+    "wild": (
         "altgonewild",
         "AsiansGoneWild",
         "BigBoobsGonewild",
@@ -410,8 +410,8 @@ nsfw_subreddits_list = {
         "TallGoneWild",
         "UnderwearGW",
         "workgonewild",
-    }),
-    "redhead": frozenset({
+    ),
+    "redhead": (
         "FireBush",
         "FreckledRedheads",
         "ginger",
@@ -420,12 +420,12 @@ nsfw_subreddits_list = {
         "redheads",
         "redheadxxx",
         "thesluttyginger",
-    }),
+    ),
 }
 
 # -- 8Ball config --
 BALL_REPLIES = {
-    "positive": frozenset({
+    "positive": (
         "Absolutely!",
         "Affirmative!",
         "Alright.",
@@ -443,8 +443,8 @@ BALL_REPLIES = {
         "Yep.",
         "You got it!",
         "You're the boss!",
-    }),
-    "negative": frozenset({
+    ),
+    "negative": (
         "Certainly not.",
         "Fat chance.",
         "Huh? No.",
@@ -462,8 +462,8 @@ BALL_REPLIES = {
         "Not likely.",
         "Nuh-uh.",
         "Out of the question.",
-    }),
-    "error": frozenset({
+    ),
+    "error": (
         "Are you trying to kill me?",
         "Do you mind?",
         "I can't believe you've done this",
@@ -474,7 +474,7 @@ BALL_REPLIES = {
         "You blew it.",
         "You have to stop.",
         "You're bad at computers.",
-    }),
+    ),
 }
 
 # -- study --

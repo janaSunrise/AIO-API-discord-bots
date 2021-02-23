@@ -18,9 +18,11 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/apod")
 @log_error()
-async def apod(request: Request) -> dict:
+async def apod(_: Request) -> dict:
     """Get the astronomy picture of the day."""
-    async with http_client.session.get(f"https://api.nasa.gov/planetary/apod?api_key={NASA_API}") as resp:
+    async with http_client.session.get(
+        f"https://api.nasa.gov/planetary/apod?api_key={NASA_API}"
+    ) as resp:
         data = await resp.json()
 
     return {
@@ -32,9 +34,11 @@ async def apod(request: Request) -> dict:
 
 @router.get("/nasa-search")
 @log_error()
-async def nasa_search(request: Request, query: str) -> dict:
+async def nasa_search(_: Request, query: str) -> dict:
     """Lookup nasa for your queries."""
-    async with http_client.session.get(f"https://images-api.nasa.gov/search?q={query}") as resp:
+    async with http_client.session.get(
+        f"https://images-api.nasa.gov/search?q={query}"
+    ) as resp:
         data = await resp.json()
 
     items = data["collection"]["items"]
@@ -47,23 +51,28 @@ async def nasa_search(request: Request, query: str) -> dict:
             "img": item["links"][0]["href"],
             "id": item['data'][0]['nasa_id']
         }
-    else:
-        return {"error": "No results found!"}
+    return {"error": "No results found!"}
 
 
 @router.get("/epic")
 @log_error()
-async def epic(request: Request, max: int = 1) -> dict:
+async def epic(_: Request, maximum: int = 1) -> dict:
     """Get to know about a nasa EPIC."""
-    async with http_client.session.get("https://epic.gsfc.nasa.gov/api/images.php") as response:
+    async with http_client.session.get(
+        "https://epic.gsfc.nasa.gov/api/images.php"
+    ) as response:
         json = await response.json()
 
     result = {}
 
-    for i in range(min(max, len(json))):
+    for i in range(min(maximum, len(json))):
         result[i] = {
             "description": json[i].get("caption"),
-            "img": "https://epic.gsfc.nasa.gov/epic-archive/jpg/" + json[i]["image"] + ".jpg"
+            "img": (
+                "https://epic.gsfc.nasa.gov/epic-archive/jpg/"
+                + json[i]["image"]
+                + ".jpg"
+            )
         }
 
     return result

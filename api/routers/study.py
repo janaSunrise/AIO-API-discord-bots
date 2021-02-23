@@ -22,7 +22,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/urban")
 @log_error()
-async def urban(request: Request, word: str) -> dict:
+async def urban(_: Request, word: str) -> dict:
     """Lookup urban dictionary for a term."""
     url = "http://api.urbandictionary.com/v0/define"
     async with http_client.session.get(url, params={"term": word}) as resp:
@@ -34,7 +34,7 @@ async def urban(request: Request, word: str) -> dict:
 
 @router.get("/calc")
 @log_error()
-async def calc(request: Request, equation: str) -> dict:
+async def calc(_: Request, equation: str) -> dict:
     """Get computers to solve your maths equation/"""
     params = {"expr": equation}
     url = "http://api.mathjs.org/v4/"
@@ -44,17 +44,22 @@ async def calc(request: Request, equation: str) -> dict:
         try:
             response = config.RESPONSES[resp.status]
         except KeyError:
-            return {"error": "❌ Invalid Equation Specified, Please Recheck the Equation"}
+            return {
+                "error": (
+                    "❌ Invalid Equation Specified, "
+                    "Please Recheck the Equation"
+                ),
+            }
 
         return {"answer": r}
 
 
 @router.get("/word-definition")
 @log_error()
-async def word_def(request: Request, word: str) -> dict:
+async def word_def(_: Request, word: str) -> dict:
     url = "https://www.vocabulary.com/dictionary/" + word + ""
     htmlfile = urllib.request.urlopen(url)
-    soup = BeautifulSoup(htmlfile, 'lxml')
+    soup = BeautifulSoup(htmlfile, "lxml")
 
     soup1 = soup.find(class_="short")
 
@@ -79,7 +84,7 @@ async def word_def(request: Request, word: str) -> dict:
 
 @router.get("/wiki")
 @log_error()
-async def wiki(request: Request, query: str) -> dict:
+async def wiki(_: Request, query: str) -> dict:
     """Search wikipedia for your knowledge hunt."""
     payload = {
         "action": "query",
@@ -93,7 +98,9 @@ async def wiki(request: Request, query: str) -> dict:
     }
 
     async with http_client.tcp_session.get(
-            "https://en.wikipedia.org/w/api.php", params=payload, headers={"user-agent": config.USER_AGENT}
+        "https://en.wikipedia.org/w/api.php",
+        params=payload,
+        headers={"user-agent": config.USER_AGENT},
     ) as res:
         result = await res.json()
 
@@ -101,7 +108,9 @@ async def wiki(request: Request, query: str) -> dict:
         for page in result["query"]["pages"]:
             title = page["title"]
             description = page["extract"].strip().replace("\n", "\n\n")
-            url = "https://en.wikipedia.org/wiki/{}".format(title.replace(" ", "_"))
+            url = "https://en.wikipedia.org/wiki/{}".format(
+                title.replace(" ", "_")
+            )
 
             return {
                 "title": title,
@@ -114,7 +123,7 @@ async def wiki(request: Request, query: str) -> dict:
 
 @router.get("/wolfram")
 @log_error()
-async def wolfram(request: Request, appid: str, query: str) -> StreamingResponse:
+async def wolfram(_: Request, appid: str, query: str) -> StreamingResponse:
     """Lookup wolfram alpha for your queries."""
     url_str = urllib.parse.urlencode({
         "i": query,
@@ -133,7 +142,7 @@ async def wolfram(request: Request, appid: str, query: str) -> StreamingResponse
 
 @router.get("/wolfram-page")
 @log_error()
-async def wolfram_page(request: Request, appid: str, query: str) -> dict:
+async def wolfram_page(_: Request, appid: str, query: str) -> dict:
     """Get a wolfram page containing images."""
     pages = await get_pod_pages(appid, query)
 
@@ -145,9 +154,11 @@ async def wolfram_page(request: Request, appid: str, query: str) -> dict:
 
 @router.get("/latex")
 @log_error()
-async def latex(request: Request, equation: str) -> t.Union[dict, StreamingResponse]:
+async def latex(_: Request, equation: str) -> t.Union[dict, StreamingResponse]:
     """Get a latex rendered image."""
-    LATEX_URL = "https://latex.codecogs.com/gif.download?%5Cbg_white%20%5Clarge%20"
+    LATEX_URL = (
+        "https://latex.codecogs.com/gif.download?%5Cbg_white%20%5Clarge%20"
+    )
 
     raw_eq = r"{}".format(equation)
     url_eq = urllib.parse.quote(raw_eq)

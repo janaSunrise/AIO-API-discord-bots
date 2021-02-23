@@ -18,28 +18,10 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/hot")
 @log_error()
-async def hot(request: Request, subreddit: str) -> dict:
-    subreddit = await reddit.subreddit(subreddit, fetch=True)
-    random_post = random.choice([post async for post in subreddit.hot() if not post.is_self])
-
-    return {
-        "title": random_post.title,
-        "description": random_post.selftext,
-        "url": filter_reddit_url(random_post.url),
-        "post_url": random_post.shortlink,
-        "author": random_post.author.name,
-        "score": random_post.score,
-        "spoilers": subreddit.spoilers_enabled,
-        "nsfw": subreddit.over18
-    }
-
-
-@router.get("/new")
-@log_error()
-async def new(request: Request, subreddit: str) -> dict:
-    subreddit = await reddit.subreddit(subreddit, fetch=True)
+async def hot(_: Request, subreddit: str) -> dict:
+    sub = await reddit.subreddit(subreddit, fetch=True)
     random_post = random.choice(
-        [post async for post in subreddit.new() if not post.is_self]
+        [post async for post in sub.hot() if not post.is_self]
     )
 
     return {
@@ -49,16 +31,36 @@ async def new(request: Request, subreddit: str) -> dict:
         "post_url": random_post.shortlink,
         "author": random_post.author.name,
         "score": random_post.score,
-        "spoilers": subreddit.spoilers_enabled,
-        "nsfw": subreddit.over18
+        "spoilers": sub.spoilers_enabled,
+        "nsfw": sub.over18
+    }
+
+
+@router.get("/new")
+@log_error()
+async def new(_: Request, subreddit: str) -> dict:
+    sub = await reddit.subreddit(subreddit, fetch=True)
+    random_post = random.choice(
+        [post async for post in sub.new() if not post.is_self]
+    )
+
+    return {
+        "title": random_post.title,
+        "description": random_post.selftext,
+        "url": filter_reddit_url(random_post.url),
+        "post_url": random_post.shortlink,
+        "author": random_post.author.name,
+        "score": random_post.score,
+        "spoilers": sub.spoilers_enabled,
+        "nsfw": sub.over18
     }
 
 
 @router.get("/random")
 @log_error()
-async def reddit_random(request: Request, subreddit: str) -> dict:
-    subreddit = await reddit.subreddit(subreddit, fetch=True)
-    random_post = await subreddit.random()
+async def reddit_random(_: Request, subreddit: str) -> dict:
+    sub = await reddit.subreddit(subreddit, fetch=True)
+    random_post = await sub.random()
 
     if not random_post:
         return {"error": "The subreddit doesn't support random post."}
@@ -70,6 +72,6 @@ async def reddit_random(request: Request, subreddit: str) -> dict:
         "post_url": random_post.shortlink,
         "author": random_post.author.name,
         "score": random_post.score,
-        "spoilers": subreddit.spoilers_enabled,
-        "nsfw": subreddit.over18
+        "spoilers": sub.spoilers_enabled,
+        "nsfw": sub.over18
     }

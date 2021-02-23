@@ -28,18 +28,24 @@ class Search:
         self.tomd.body_width = 0
 
     @staticmethod
-    async def _search_logic(query: str, category: str = "web", count: int = 5) -> list:
+    async def _search_logic(
+        query: str,
+        category: str = "web",
+        count: int = 5,
+    ) -> list:
         """Use scrapestack and the Qwant API to find search results."""
         base = "https://api.qwant.com/api"
 
-        search_url = f"{base}/search/{category}" \
-                     f"?count={count}" \
-                     f"&q={query.replace(' ', '+')}" \
-                     f"&t=web&locale=en_US&uiv=4"
+        url = (
+            f"{base}/search/{category}"
+            f"?count={count}"
+            f"&q={query.replace(' ', '+')}"
+            f"&t=web&locale=en_US&uiv=4"
+        )
 
         # Searching
         headers = {"User-Agent": config.USER_AGENT}
-        async with http_client.session.get(search_url, headers=headers) as resp:
+        async with http_client.session.get(url, headers=headers) as resp:
             to_parse = await resp.json()
 
         return to_parse["data"]["result"]["items"]
@@ -55,7 +61,9 @@ class Search:
             return {"error": f"No results found for `{query}`."}
 
         # Gets the first entry's data
-        first_title = self.tomd.handle(results[0]["title"]).rstrip("\n").strip("<>")
+        first_title = self.tomd.handle(
+            results[0]["title"]
+        ).rstrip("\n").strip("<>")
         first_url = results[0]["url"]
         first_desc = self.tomd.handle(results[0]["desc"]).rstrip("\n")
 
@@ -84,7 +92,7 @@ class Search:
 
 @router.get("/search")
 @log_error()
-async def search(request: Request, query: str, count: int = 5) -> dict:
+async def search(_: Request, query: str, count: int = 5) -> dict:
     """Search for your queires on the web."""
     search_obj = Search()
     data = await search_obj.basic_search(query, category="web", count=count)
@@ -94,11 +102,16 @@ async def search(request: Request, query: str, count: int = 5) -> dict:
 
 @router.get("/overflow")
 @log_error()
-async def overflow(request: Request, query: str, questions: int = 6) -> dict:
+async def overflow(_: Request, query: str, questions: int = 6) -> dict:
     """Search stackoverflow for a query."""
-    BASE_URL = "https://api.stackexchange.com/2.2/search/advanced?order=desc&sort=activity&site=stackoverflow&q={query}"
+    BASE_URL = (
+        "https://api.stackexchange.com/2.2/search/advanced?order=desc&"
+        "sort=activity&site=stackoverflow&q={query}"
+    )
 
-    async with http_client.session.get(BASE_URL.format(query=quote_plus(query))) as response:
+    async with http_client.session.get(
+        BASE_URL.format(query=quote_plus(query))
+    ) as response:
         data = await response.json()
 
     top = data["items"][:questions]
