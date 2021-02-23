@@ -3,7 +3,13 @@ import json
 import urllib
 
 from api import http_client
-from api.config import IMGUR_LINKS, ACCEPTED_EXTENSIONS, DEFAULT_OUTPUT_FORMAT, QUERY, MAX_PODS
+from api.config import (
+    IMGUR_LINKS,
+    ACCEPTED_EXTENSIONS,
+    DEFAULT_OUTPUT_FORMAT,
+    QUERY,
+    MAX_PODS
+)
 
 
 def filter_reddit_url(url) -> str:
@@ -14,21 +20,21 @@ def filter_reddit_url(url) -> str:
             elif url.endswith(".gifv"):
                 url = url[:-1]
             elif url.endswith(ACCEPTED_EXTENSIONS):
-                url = url
+                pass
             else:
                 url = url + ".png"
         elif url.startswith("https://gfycat.com/"):
             url_cut = url.replace("https://gfycat.com/", "")
 
             url = f"https://thumbs.gfycat.com/{url_cut}-size_restricted.gif"
-        elif url.endswith(ACCEPTED_EXTENSIONS):
-            url = url
 
     return url
 
 
 async def get_random_post(subreddit) -> dict:
-    random_post = random.choice([post async for post in subreddit.hot() if not post.is_self])
+    random_post = random.choice(
+        [post async for post in subreddit.hot() if not post.is_self]
+    )
 
     return {
         "title": random_post.title,

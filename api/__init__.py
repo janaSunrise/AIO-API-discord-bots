@@ -15,22 +15,35 @@ from api import config as conf
 
 # -- AIOHTTP client --
 class HttpClient:
-    session: t.Optional[aiohttp.ClientSession] = None
-    tcp_session: t.Optional[aiohttp.ClientSession] = None
+    _session: t.Optional[aiohttp.ClientSession] = None
+    _tcp_session: t.Optional[aiohttp.ClientSession] = None
 
     def start(self) -> None:
-        self.session = aiohttp.ClientSession()
-        self.tcp_session = aiohttp.ClientSession(connector=aiohttp.TCPConnector())
+        self._session = aiohttp.ClientSession()
+        self._tcp_session = aiohttp.ClientSession(
+            connector=aiohttp.TCPConnector()
+        )
+
+    @property
+    def session(self) -> aiohttp.ClientSession:
+        if not self._session:
+            raise ValueError("Instance isn't started")
+        return self._session
+
+    @property
+    def tcp_session(self) -> aiohttp.ClientSession:
+        if not self._tcp_session:
+            raise ValueError("Instance isn't started")
+        return self._tcp_session
 
     async def stop(self) -> None:
         await self.session.close()
         await self.tcp_session.close()
 
-        self.session = None
-        self.tcp_session = None
+        self._session = None
+        self._tcp_session = None
 
     def __call__(self) -> aiohttp.ClientSession:
-        assert self.session is not None
         return self.session
 
 
