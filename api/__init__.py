@@ -53,12 +53,11 @@ http_client = HttpClient()
 # -- Define the API --
 app = FastAPI(
     title="AIO API",
-    version="0.1.0",
+    version=conf.VERSION,
     description="The only api you'll ever need to make your discord bot spicy, fun and stand out.",
     docs_url="/",
     redoc_url=None
 )
-global redis
 
 
 # -- Event handlers --

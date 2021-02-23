@@ -4,8 +4,12 @@ import asyncpraw
 from asyncpraw import exceptions
 from loguru import logger
 
+# -- API Configuration --
+VERSION = "0.1.0"
+
 # -- Constants definition --
 USER_AGENT = "AIO-API for discord bots"
+NEKOBOT_API_ROOT = "https://nekobot.xyz/api/imagegen"
 
 IMGUR_LINKS = (
     "https://imgur.com/",
