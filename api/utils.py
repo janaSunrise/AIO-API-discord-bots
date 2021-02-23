@@ -32,9 +32,7 @@ def filter_reddit_url(url) -> str:
 
 
 async def get_random_post(subreddit) -> dict:
-    random_post = random.choice(
-        [post async for post in subreddit.hot() if not post.is_self]
-    )
+    random_post = random.choice([post async for post in subreddit.hot() if not post.is_self])
 
     return {
         "title": random_post.title,
@@ -70,13 +68,12 @@ async def get_pod_pages(appid: str, query: str):
     })
     request_url = QUERY.format(request="query", data=url_str)
 
-    async with http_client.get(request_url) as response:
+    async with http_client.session.get(request_url) as response:
         json = await response.json(content_type='text/plain')
 
     result = json["queryresult"]
 
     if result["error"]:
-        # API key not set up correctly
         if result["error"]["msg"] == "Invalid appid":
             message = "Wolfram API key is invalid or missing."
             return {"error": message}
