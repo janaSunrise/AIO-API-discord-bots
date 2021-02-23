@@ -131,3 +131,13 @@ async def advice(request: Request) -> dict:
         json = await resp.json(content_type="text/html")
 
     return {"advice": json["slip"]["advice"]}
+
+
+@router.get("/advice")
+@log_error()
+async def inspire(request: Request) -> dict:
+    """Get inspired."""
+    async with http_client.session.get('https://affirmations.dev/') as r:
+        res = await r.json()
+
+    return {"advice": res["affirmation"]}
