@@ -18,7 +18,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/ohno")
 @log_error()
-async def ohno(request: Request) -> dict:
+async def ohno(_: Request) -> dict:
     """Send a random 'Webcomic Name' comic."""
     url = "http://webcomicname.com/random"
 
@@ -32,20 +32,28 @@ async def ohno(request: Request) -> dict:
 
 @router.get("/saturday-morning")
 @log_error()
-async def smbc(request: Request) -> dict:
+async def smbc(_: Request) -> dict:
     """Send a random 'Saturday Morning' comic."""
     url = "http://www.smbc-comics.com/comic/archive"
 
-    async with http_client.session.get(url, headers={"Connection": "keep-alive"}) as response:
+    async with http_client.session.get(
+        url,
+        headers={"Connection": "keep-alive"},
+    ) as response:
         soup = BeautifulSoup(await response.text(), "html.parser")
 
     all_comics = soup.find("select", attrs={"name": "comic"})
-    all_comics_url_stubs = [option["value"] for option in all_comics.findChildren()]
+    all_comics_url_stubs = [
+        option["value"] for option in all_comics.findChildren()
+    ]
 
     random_comic = random.choice(all_comics_url_stubs)
     comic_url = f"http://www.smbc-comics.com/{random_comic}"
 
-    async with http_client.session.get(comic_url, headers={"Connection": "keep-alive"}) as resp:
+    async with http_client.session.get(
+        comic_url,
+        headers={"Connection": "keep-alive"},
+    ) as resp:
         soup = BeautifulSoup(await resp.text(), "html.parser")
         img_url = soup.find(property="og:image")["content"]
 
@@ -54,7 +62,7 @@ async def smbc(request: Request) -> dict:
 
 @router.get("/perry-bible")
 @log_error()
-async def perry_bible(request: Request) -> dict:
+async def perry_bible(_: Request) -> dict:
     """Send a random 'The Perry Bible' comic."""
     url = "http://pbfcomics.com/random"
 
@@ -68,7 +76,7 @@ async def perry_bible(request: Request) -> dict:
 
 @router.get("/cah")
 @log_error()
-async def cah(request: Request) -> dict:
+async def cah(_: Request) -> dict:
     """Send a random 'Cyanide and Happiness' comic."""
     url = "http://explosm.net/comics/random"
 
@@ -82,11 +90,13 @@ async def cah(request: Request) -> dict:
 
 @router.get("/xkcd")
 @log_error()
-async def xkcd(request: Request) -> dict:
+async def xkcd(_: Request) -> dict:
     """See a random 'xkcd' comic."""
     url = "https://xkcd.com/info.0.json"
 
-    async with http_client.session.get("https://xkcd.com/info.0.json") as response:
+    async with http_client.session.get(
+        "https://xkcd.com/info.0.json"
+    ) as response:
         data = await response.json()
 
     random_comic = random.randint(1, data["num"])
@@ -102,21 +112,24 @@ async def xkcd(request: Request) -> dict:
 
 @router.get("/mrls")
 @log_error()
-async def mrls(request: Request) -> dict:
+async def mrls(_: Request) -> dict:
     """Send a random 'Mr. Lovenstein' comic."""
     url = "http://www.mrlovenstein.com/shuffle"
 
     async with http_client.session.get(url) as response:
         soup = BeautifulSoup(await response.text(), "html.parser")
 
-    img_url = f"http://www.mrlovenstein.com{soup.find(id='comic_main_image')['src']}"
+    img_url = (
+        "http://www.mrlovenstein.com"
+        + soup.find(id="comic_main_image")["src"]
+    )
 
     return {"url": img_url}
 
 
 @router.get("/chainsaw")
 @log_error()
-async def chainsaw(request: Request) -> dict:
+async def chainsaw(_: Request) -> dict:
     """Send a random 'Chainsawsuit' comic."""
     url = "http://chainsawsuit.com/comic/random/?random&nocache=1"
 
@@ -130,7 +143,7 @@ async def chainsaw(request: Request) -> dict:
 
 @router.get("/sarah")
 @log_error()
-async def sarah(request: Request) -> dict:
+async def sarah(_: Request) -> dict:
     """Send a random 'Sarah's Scribbles' comic."""
     url = "http://www.gocomics.com/random/sarahs-scribbles"
 
@@ -144,7 +157,7 @@ async def sarah(request: Request) -> dict:
 
 @router.get("/garfield")
 @log_error()
-async def garfield(request: Request) -> dict:
+async def garfield(_: Request) -> dict:
     """Send a random 'garfield' comic."""
     url = "https://many-api.vercel.app/garfield/random"
 
@@ -152,4 +165,3 @@ async def garfield(request: Request) -> dict:
         img_url = (await response.json())["url"]
 
     return {"url": img_url}
-

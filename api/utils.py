@@ -69,9 +69,9 @@ async def get_pod_pages(appid: str, query: str):
     request_url = QUERY.format(request="query", data=url_str)
 
     async with http_client.session.get(request_url) as response:
-        json = await response.json(content_type='text/plain')
+        data = await response.json(content_type='text/plain')
 
-    result = json["queryresult"]
+    result = data["queryresult"]
 
     if result["error"]:
         if result["error"]["msg"] == "Invalid appid":

@@ -17,7 +17,7 @@ router = APIRouter(
 # -- Router paths --
 @router.get("/joke")
 @log_error()
-async def joke(request: Request, explicit: bool = False) -> dict:
+async def joke(_: Request, explicit: bool = False) -> dict:
     """Get a random joke."""
     if explicit:
         url = "http://api.icndb.com/jokes/random"
@@ -32,10 +32,10 @@ async def joke(request: Request, explicit: bool = False) -> dict:
 
 @router.get("/dadjoke")
 @log_error()
-async def dad_joke(request: Request) -> dict:
+async def dad_joke(_: Request) -> dict:
     """Get a random dad joke."""
     async with http_client.session.get("https://icanhazdadjoke.com") as resp:
-        res = await joke.text()
+        res = await resp.text()
         res = res.encode("utf-8").decode("utf-8")
 
     return {"joke": res}
@@ -43,9 +43,11 @@ async def dad_joke(request: Request) -> dict:
 
 @router.get("/excuse")
 @log_error()
-async def excuse(request: Request) -> dict:
+async def excuse(_: Request) -> dict:
     """Generate an excuse for any occasion."""
-    async with http_client.session.get("http://pages.cs.wisc.edu/~ballard/bofh/excuses") as resp:
+    async with http_client.session.get(
+        "http://pages.cs.wisc.edu/~ballard/bofh/excuses"
+    ) as resp:
         data = await resp.text()
         lines = data.split("\n")
 
@@ -54,9 +56,11 @@ async def excuse(request: Request) -> dict:
 
 @router.get("/chucknorris")
 @log_error()
-async def chuck_norris(request: Request) -> dict:
+async def chuck_norris(_: Request) -> dict:
     """Have a funny chuck norris style joke."""
-    async with http_client.session.get("https://api.chucknorris.io/jokes/random") as resp:
+    async with http_client.session.get(
+        "https://api.chucknorris.io/jokes/random"
+    ) as resp:
         json = await resp.json()
 
     return {"joke": json["value"]}
@@ -64,7 +68,7 @@ async def chuck_norris(request: Request) -> dict:
 
 @router.get("/why")
 @log_error()
-async def why(request: Request) -> dict:
+async def why(_: Request) -> dict:
     """Get to know a random why question."""
     async with http_client.session.get("https://nekos.life/api/why") as resp:
         json = await resp.json()
@@ -74,7 +78,7 @@ async def why(request: Request) -> dict:
 
 @router.get("/yesno")
 @log_error()
-async def yesno(request: Request, question: str) -> dict:
+async def yesno(_: Request, question: str) -> dict:
     """Get a random answer for a yes no question."""
     async def get_answer(ans: str) -> str:
         if ans == "yes":
@@ -93,41 +97,47 @@ async def yesno(request: Request, question: str) -> dict:
 
     return {
         "question": question,
-        "answer": get_answer(json["answer"])
+        "answer": get_answer(json["answer"]),
     }
 
 
 @router.get("/history")
 @log_error()
-async def history(request: Request) -> dict:
+async def history(_: Request) -> dict:
     """Get to know about an interesting history date."""
-    async with http_client.session.get('http://numbersapi.com/random/date?json') as resp:
+    async with http_client.session.get(
+        "http://numbersapi.com/random/date?json"
+    ) as resp:
         json = await resp.json()
 
     return {
         "fact": json["text"],
-        "year": json["year"]
+        "year": json["year"],
     }
 
 
 @router.get("/mathfact")
 @log_error()
-async def mathfact(request: Request) -> dict:
+async def mathfact(_: Request) -> dict:
     """Get to know an interesting math fact."""
-    async with http_client.session.get('http://numbersapi.com/random/math?json') as resp:
+    async with http_client.session.get(
+        "http://numbersapi.com/random/math?json"
+    ) as resp:
         json = await resp.json()
 
     return {
         "fact": json["text"],
-        "number": json["number"]
+        "number": json["number"],
     }
 
 
 @router.get("/advice")
 @log_error()
-async def advice(request: Request) -> dict:
+async def advice(_: Request) -> dict:
     """Get an useful advice."""
-    async with http_client.session.get("https://api.adviceslip.com/advice") as resp:
+    async with http_client.session.get(
+        "https://api.adviceslip.com/advice"
+    ) as resp:
         json = await resp.json(content_type="text/html")
 
     return {"advice": json["slip"]["advice"]}
@@ -135,9 +145,11 @@ async def advice(request: Request) -> dict:
 
 @router.get("/advice")
 @log_error()
-async def inspire(request: Request) -> dict:
+async def inspire(_: Request) -> dict:
     """Get inspired."""
-    async with http_client.session.get('https://affirmations.dev/') as r:
-        res = await r.json()
+    async with http_client.session.get(
+        "https://affirmations.dev/"
+    ) as response:
+        res = await response.json()
 
     return {"advice": res["affirmation"]}
