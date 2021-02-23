@@ -85,6 +85,7 @@ class Search:
 @router.get("/search")
 @log_error()
 async def search(request: Request, query: str, count: int = 5) -> dict:
+    """Search for your queires on the web."""
     search_obj = Search()
     data = await search_obj.basic_search(query, category="web", count=count)
 

@@ -19,6 +19,7 @@ router = APIRouter(
 @router.get("/apod")
 @log_error()
 async def apod(request: Request) -> dict:
+    """Get the astronomy picture of the day."""
     async with http_client.session.get(f"https://api.nasa.gov/planetary/apod?api_key={NASA_API}") as resp:
         data = await resp.json()
 
@@ -32,6 +33,7 @@ async def apod(request: Request) -> dict:
 @router.get("/nasa-search")
 @log_error()
 async def nasa_search(request: Request, query: str) -> dict:
+    """Lookup nasa for your queries."""
     async with http_client.session.get(f"https://images-api.nasa.gov/search?q={query}") as resp:
         data = await resp.json()
 
@@ -52,6 +54,7 @@ async def nasa_search(request: Request, query: str) -> dict:
 @router.get("/epic")
 @log_error()
 async def epic(request: Request, max: int = 1) -> dict:
+    """Get to know about a nasa EPIC."""
     async with http_client.session.get("https://epic.gsfc.nasa.gov/api/images.php") as response:
         json = await response.json()
 

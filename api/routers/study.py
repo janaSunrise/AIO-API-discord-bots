@@ -1,4 +1,5 @@
 import io
+import typing as t
 import urllib
 
 from fastapi import APIRouter, Request
@@ -21,6 +22,7 @@ router = APIRouter(
 @router.get("/urban")
 @log_error()
 async def urban(request: Request, word: str) -> dict:
+    """Lookup urban dictionary for a term."""
     url = "http://api.urbandictionary.com/v0/define"
     async with http_client.session.get(url, params={"term": word}) as resp:
         json = await resp.json()
@@ -32,6 +34,7 @@ async def urban(request: Request, word: str) -> dict:
 @router.get("/calc")
 @log_error()
 async def calc(request: Request, equation: str) -> dict:
+    """Get computers to solve your maths equation/"""
     params = {"expr": equation}
     url = "http://api.mathjs.org/v4/"
 
@@ -48,6 +51,7 @@ async def calc(request: Request, equation: str) -> dict:
 @router.get("/wiki")
 @log_error()
 async def wiki(request: Request, query: str) -> dict:
+    """Search wikipedia for your knowledge hunt."""
     payload = {
         "action": "query",
         "titles": query.replace(" ", "_"),
@@ -82,6 +86,7 @@ async def wiki(request: Request, query: str) -> dict:
 @router.get("/wolfram")
 @log_error()
 async def wolfram(request: Request, appid: str, query: str) -> StreamingResponse:
+    """Lookup wolfram alpha for your queries."""
     url_str = urllib.parse.urlencode({
         "i": query,
         "appid": appid,
@@ -100,9 +105,28 @@ async def wolfram(request: Request, appid: str, query: str) -> StreamingResponse
 @router.get("/wolfram-page")
 @log_error()
 async def wolfram_page(request: Request, appid: str, query: str) -> dict:
+    """Get a wolfram page containing images."""
     pages = await get_pod_pages(appid, query)
 
     if not pages:
         return {"error": "No results found!"}
 
     return {"pages": pages}
+
+
+@router.get("/latex")
+@log_error()
+async def latex(request: Request, equation: str) -> t.Union[dict, StreamingResponse]:
+    """Get a latex rendered image."""
+    LATEX_URL = "https://latex.codecogs.com/gif.download?%5Cbg_white%20%5Clarge%20"
+
+    raw_eq = r"{}".format(equation)
+    url_eq = urllib.parse.quote(raw_eq)
+
+    async with http_client.session.get(LATEX_URL + url_eq) as result:
+        img = await result.read()
+
+    if not 200 <= result.status < 300:
+        return {"error": f"{equation} is not a valid expression or equation"}
+
+    return StreamingResponse(io.BytesIO(img), media_type="image/png")
