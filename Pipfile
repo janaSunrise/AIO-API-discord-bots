@@ -15,6 +15,7 @@ beautifulsoup4 = "*"
 html2text = "*"
 python-aiml = "*"
 aioredis = "*"
+lxml = "*"
 
 [scripts]
 start = "uvicorn api:app --reload"

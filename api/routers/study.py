@@ -2,6 +2,7 @@ import io
 import typing as t
 import urllib
 
+from bs4 import BeautifulSoup
 from fastapi import APIRouter, Request
 from starlette.responses import StreamingResponse
 
@@ -46,6 +47,34 @@ async def calc(request: Request, equation: str) -> dict:
             return {"error": "❌ Invalid Equation Specified, Please Recheck the Equation"}
 
         return {"answer": r}
+
+
+@router.get("/word-definition")
+@log_error()
+async def word_def(request: Request, word: str) -> dict:
+    url = "https://www.vocabulary.com/dictionary/" + word + ""
+    htmlfile = urllib.request.urlopen(url)
+    soup = BeautifulSoup(htmlfile, 'lxml')
+
+    soup1 = soup.find(class_="short")
+
+    try:
+        short_meaning = soup1.get_text()
+    except AttributeError:
+        return {"error": "No such word!"}
+
+    soup2 = soup.find(class_="long")
+    long_meaning = soup2.get_text()
+
+    soup3 = soup.find(class_="instances")
+    txt = soup3.get_text()
+    instances = txt.rstrip()
+
+    return {
+        "short": short_meaning,
+        "long": long_meaning,
+        "instances": ' '.join(instances.split())
+    }
 
 
 @router.get("/wiki")
