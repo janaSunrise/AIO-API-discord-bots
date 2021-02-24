@@ -103,18 +103,21 @@ async def wiki(_: Request, query: str) -> dict:
         result = await res.json()
 
     try:
-        for page in result["query"]["pages"]:
-            title = page["title"]
-            description = page["extract"].strip().replace("\n", "\n\n")
-            url = "https://en.wikipedia.org/wiki/{}".format(
-                title.replace(" ", "_")
-            )
-
-            return {
-                "title": title,
-                "description": description,
-                "url": url
-            }
+        return {
+            "query": query,
+            "results": [
+                {
+                    "title": page["title"],
+                    "description": page["extract"].strip().replace(
+                        "\n",
+                        "\n\n",
+                    ),
+                    "url": "https://en.wikipedia.org/wiki/{}".format(
+                        page["title"].replace(" ", "_")
+                    ),
+                } for page in result["query"]["pages"]
+            ],
+        }
     except KeyError:
         return {"error": "No results for your query!"}
 
