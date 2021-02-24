@@ -40,10 +40,8 @@ async def calc(_: Request, equation: str) -> dict:
     url = "http://api.mathjs.org/v4/"
 
     async with http_client.session.get(url, params=params) as resp:
-        r = await resp.text()
-        try:
-            response = config.RESPONSES[resp.status]
-        except KeyError:
+        response = await resp.text()
+        if resp.status not in config.RESPONSES:
             return {
                 "error": (
                     "❌ Invalid Equation Specified, "
@@ -51,7 +49,7 @@ async def calc(_: Request, equation: str) -> dict:
                 ),
             }
 
-        return {"answer": r}
+        return {"answer": response}
 
 
 @router.get("/word-definition")
