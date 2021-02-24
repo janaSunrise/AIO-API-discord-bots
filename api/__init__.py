@@ -17,10 +17,13 @@ from api import routers
 
 # -- AIOHTTP client --
 class HttpClient:
+    """HTTP client used for requests."""
+
     _session: t.Optional[aiohttp.ClientSession] = None
     _tcp_session: t.Optional[aiohttp.ClientSession] = None
 
     def start(self) -> None:
+        """Start the client."""
         self._session = aiohttp.ClientSession()
         self._tcp_session = aiohttp.ClientSession(
             connector=aiohttp.TCPConnector()
@@ -28,17 +31,20 @@ class HttpClient:
 
     @property
     def session(self) -> aiohttp.ClientSession:
+        """Return the session, raising an error if there isn't any."""
         if not self._session:
             raise ValueError("Instance isn't started")
         return self._session
 
     @property
     def tcp_session(self) -> aiohttp.ClientSession:
+        """Return the tcp session, raising an error if there isn't any."""
         if not self._tcp_session:
             raise ValueError("Instance isn't started")
         return self._tcp_session
 
     async def stop(self) -> None:
+        """Stop the client"""
         await self.session.close()
         await self.tcp_session.close()
 
@@ -56,7 +62,10 @@ http_client = HttpClient()
 app = FastAPI(
     title="AIO API",
     version=conf.VERSION,
-    description="The only api you'll ever need to make your discord bot spicy, fun and stand out.",
+    description=(
+        "The only api you'll ever need to make your discord bot spicy, "
+        "fun and stand out."
+    ),
     docs_url="/",
     redoc_url=None
 )
@@ -105,8 +114,8 @@ for router in conf.ROUTERS:
     if hasattr(routers, router):
         app.include_router(getattr(routers, router).router)
     else:
-        logger.warn(f"Router {router} included but not found")
+        logger.warning(f"Router {router} included but not found")
 
 # -- AI Section --
 if conf.ai_enabled:
-    app.include_router(routers.ai)
+    app.include_router(routers.ai.router)
