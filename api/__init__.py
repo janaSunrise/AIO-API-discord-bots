@@ -12,6 +12,8 @@ from slowapi.util import get_remote_address
 
 from api import config as conf
 
+from api import routers
+
 
 # -- AIOHTTP client --
 class HttpClient:
@@ -63,11 +65,13 @@ app = FastAPI(
 # -- Event handlers --
 @app.on_event("startup")
 async def on_start_up() -> None:
+    """Initialize stuff on startup."""
     http_client.start()
 
 
 @app.on_event("shutdown")
 async def on_shutdown() -> None:
+    """Cleanup hook."""
     await http_client.stop()
 
 
@@ -77,54 +81,32 @@ app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(SlowAPIMiddleware)
 
+# -- Logger configuration --
+logger.configure(handlers=[
+    dict(sink=sys.stdout, format=conf.log_format, level=conf.log_level),
+    dict(
+        sink=conf.log_file,
+        format=conf.log_format,
+        level=conf.log_level,
+        rotation="500 MB",
+    ),
+])
+
 # -- AI section
 if conf.ai_enabled:
     AIML_KERNEL = aiml.Kernel()
     AIML_KERNEL.setBotPredicate("name", "Overflow")
-    AIML_KERNEL.bootstrap(learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
+    AIML_KERNEL.bootstrap(
+        learnFiles=["api/std-startup.xml"],
+        commands=["LOAD AIML B"]
+    )
 
-# -- Imports for router --
-from api.routers import (
-    animals,
-    comics,
-    fun,
-    lyrics,
-    games,
-    gifs,
-    images,
-    main,
-    nasa,
-    neko,
-    nsfw,
-    reddit,
-    search,
-    study
-)
-
-# -- Include the routers --
-app.include_router(animals.router)
-app.include_router(comics.router)
-app.include_router(fun.router)
-app.include_router(lyrics.router)
-app.include_router(games.router)
-app.include_router(gifs.router)
-app.include_router(images.router)
-app.include_router(main.router)
-app.include_router(nasa.router)
-app.include_router(neko.router)
-app.include_router(nsfw.router)
-app.include_router(reddit.router)
-app.include_router(search.router)
-app.include_router(study.router)
+for router in conf.ROUTERS:
+    if hasattr(routers, router):
+        app.include_router(getattr(routers, router).router)
+    else:
+        logger.warn(f"Router {router} included but not found")
 
 # -- AI Section --
 if conf.ai_enabled:
-    from api.routers import ai
-    app.include_router(ai.router)
-
-
-# -- Logger configuration --
-logger.configure(handlers=[
-    dict(sink=sys.stdout, format=conf.log_format, level=conf.log_level),
-    dict(sink=conf.log_file, format=conf.log_format, level=conf.log_level, rotation="500 MB")
-])
+    app.include_router(routers.ai)

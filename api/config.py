@@ -7,6 +7,23 @@ from loguru import logger
 # -- API Configuration --
 VERSION = "0.1.0"
 
+ROUTERS = (
+    "animals",
+    "comics",
+    "fun",
+    "lyrics",
+    "games",
+    "gifs",
+    "images",
+    "main",
+    "nasa",
+    "neko",
+    "nsfw",
+    "reddit",
+    "search",
+    "study",
+)
+
 # -- Constants definition --
 USER_AGENT = "AIO-API for discord bots"
 NEKOBOT_API_ROOT = "https://nekobot.xyz/api/imagegen"
