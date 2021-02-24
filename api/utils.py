@@ -11,6 +11,9 @@ from api.config import (
     MAX_PODS
 )
 
+with open("api/assets/text_games_response.json") as file:
+    TEXT_GAMES_RESPONSE = json.load(file)
+
 
 def filter_reddit_url(url) -> str:
     if not url.startswith("https://v.redd.it/") or url.startswith("https://youtube.com/"):
@@ -32,7 +35,9 @@ def filter_reddit_url(url) -> str:
 
 
 async def get_random_post(subreddit) -> dict:
-    random_post = random.choice([post async for post in subreddit.hot() if not post.is_self])
+    random_post = random.choice(
+        [post async for post in subreddit.hot() if not post.is_self]
+    )
 
     return {
         "title": random_post.title,
@@ -47,10 +52,7 @@ async def get_random_post(subreddit) -> dict:
 
 
 def get_random_text_response(category: str) -> str:
-    with open("api/assets/text_games_response.json") as file:
-        data = json.load(file)
-
-    data = data[category]
+    data = TEXT_GAMES_RESPONSE[category]
 
     return random.choice(data)
 
