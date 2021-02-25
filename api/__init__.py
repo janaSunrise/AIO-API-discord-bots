@@ -3,6 +3,7 @@ import typing as t
 
 import aiml
 import aiohttp
+from aioredis import create_redis_pool, Redis
 from fastapi import FastAPI
 from loguru import logger
 from slowapi import Limiter, _rate_limit_exceeded_handler
@@ -10,15 +11,10 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
 from slowapi.util import get_remote_address
 
-from api import config as conf
-
-from api import routers
-
 
 # -- AIOHTTP client --
 class HttpClient:
     """HTTP client used for requests."""
-
     _session: t.Optional[aiohttp.ClientSession] = None
     _tcp_session: t.Optional[aiohttp.ClientSession] = None
 
@@ -55,10 +51,34 @@ class HttpClient:
         return self.session
 
 
+# -- Redis service --
+class RedisService:
+    _pool: Redis = None
+
+    def __init__(self, host: str, password: str):
+        self.host = host
+        self.password = password
+
+    async def start(self) -> None:
+        self._pool = await create_redis_pool(f'redis://{self.host}', password=self.password)
+
+    async def stop(self) -> None:
+        self.pool.close()
+        await self.pool.wait_closed()
+
+    @property
+    def pool(self) -> Redis:
+        if not self._pool:
+            raise ValueError("Instance isn't started")
+        return self._pool
+
+
 http_client = HttpClient()
 
 
 # -- Define the API --
+from api import config as conf
+
 app = FastAPI(
     title="AIO API",
     version=conf.VERSION,
@@ -109,6 +129,9 @@ if conf.ai_enabled:
         learnFiles=["api/std-startup.xml"],
         commands=["LOAD AIML B"]
     )
+
+# -- Loader
+from api import routers
 
 for router in conf.ROUTERS:
     if hasattr(routers, router):
