@@ -29,10 +29,7 @@ async def ball8(_: Request, question: str) -> dict:
     else:
         answer = random.choice(conf.BALL_REPLIES["error"])
 
-    return {
-        "question": question,
-        "answer": answer
-    }
+    return {"question": question, "answer": answer}
 
 
 @router.get("/truth")

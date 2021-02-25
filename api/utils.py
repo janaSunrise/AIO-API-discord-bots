@@ -1,22 +1,19 @@
-import random
 import json
+import random
 import urllib
 
 from api import http_client
-from api.config import (
-    IMGUR_LINKS,
-    ACCEPTED_EXTENSIONS,
-    DEFAULT_OUTPUT_FORMAT,
-    QUERY,
-    MAX_PODS
-)
+from api.config import (ACCEPTED_EXTENSIONS, DEFAULT_OUTPUT_FORMAT,
+                        IMGUR_LINKS, MAX_PODS, QUERY)
 
 with open("api/assets/text_games_response.json") as file:
     TEXT_GAMES_RESPONSE = json.load(file)
 
 
 def filter_reddit_url(url) -> str:
-    if not url.startswith("https://v.redd.it/") or url.startswith("https://youtube.com/"):
+    if not url.startswith("https://v.redd.it/") or url.startswith(
+        "https://youtube.com/"
+    ):
         if url.startswith(IMGUR_LINKS):
             if url.endswith(".mp4"):
                 url = url[:-3] + "gif"
@@ -47,7 +44,7 @@ async def get_random_post(subreddit) -> dict:
         "author": random_post.author.name,
         "score": random_post.score,
         "spoilers": subreddit.spoilers_enabled,
-        "nsfw": subreddit.over18
+        "nsfw": subreddit.over18,
     }
 
 
@@ -59,19 +56,21 @@ def get_random_text_response(category: str) -> str:
 
 async def get_pod_pages(appid: str, query: str):
     """Get the Wolfram API pod pages for the provided query."""
-    url_str = urllib.parse.urlencode({
-        "input": query,
-        "appid": appid,
-        "output": DEFAULT_OUTPUT_FORMAT,
-        "format": "image,plaintext",
-        "location": "the moon",
-        "latlong": "0.0,0.0",
-        "ip": "1.1.1.1"
-    })
+    url_str = urllib.parse.urlencode(
+        {
+            "input": query,
+            "appid": appid,
+            "output": DEFAULT_OUTPUT_FORMAT,
+            "format": "image,plaintext",
+            "location": "the moon",
+            "latlong": "0.0,0.0",
+            "ip": "1.1.1.1",
+        }
+    )
     request_url = QUERY.format(request="query", data=url_str)
 
     async with http_client.session.get(request_url) as response:
-        data = await response.json(content_type='text/plain')
+        data = await response.json(content_type="text/plain")
 
     result = data["queryresult"]
 
@@ -80,7 +79,9 @@ async def get_pod_pages(appid: str, query: str):
             message = "Wolfram API key is invalid or missing."
             return {"error": message}
 
-        message = "Something went wrong internally with your request, please notify staff!"
+        message = (
+            "Something went wrong internally with your request, please notify staff!"
+        )
         return {"error": message}
 
     if not result["success"]:
@@ -97,7 +98,8 @@ async def get_pod_pages(appid: str, query: str):
         subs = pod.get("subpods")
 
         for sub in subs:
-            title = sub.get("title") or sub.get("plaintext") or sub.get("id", "")
+            title = sub.get("title") or sub.get(
+                "plaintext") or sub.get("id", "")
             img = sub["img"]["src"]
             pages.append((title, img))
 

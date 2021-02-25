@@ -3,8 +3,8 @@ import random
 from fastapi import APIRouter, Request
 
 from api import config as conf
-from api.core import log_error
 from api.config import reddit
+from api.core import log_error
 from api.utils import get_random_post
 
 router = APIRouter(

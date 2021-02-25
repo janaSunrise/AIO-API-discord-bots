@@ -23,7 +23,7 @@ async def neko_get(url: str) -> str:
     ) as response:
         req = await response.json()
 
-    return req['data']['response']["url"]
+    return req["data"]["response"]["url"]
 
 
 # -- Router paths --
@@ -150,7 +150,7 @@ async def solo(_: Request) -> dict:
 async def yandere(_: Request) -> dict:
     query = "https://yande.re/post/random"
     page = await (await http_client.session.get(query)).text()
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     image = soup.find(id="highres").get("href")
     return {"url": image}
@@ -161,7 +161,7 @@ async def yandere(_: Request) -> dict:
 async def e621(_: Request) -> dict:
     query = "https://e621.net/post/random"
     page = await (await http_client.session.get(query)).text()
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     image = soup.find(id="highres").get("href")
     return {"url": image}
@@ -172,7 +172,7 @@ async def e621(_: Request) -> dict:
 async def rule34(_: Request) -> dict:
     query = "http://rule34.xxx/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     image = soup.find(id="image").get("src")
     return {"url": image}
@@ -183,7 +183,7 @@ async def rule34(_: Request) -> dict:
 async def danbooru(_: Request) -> dict:
     query = "http://danbooru.donmai.us/posts/random"
     page = await (await http_client.session.get(query)).text()
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     image = soup.find(id="image").get("src")
     return {"url": image}
@@ -194,7 +194,7 @@ async def danbooru(_: Request) -> dict:
 async def gelbooru(_: Request) -> dict:
     query = "http://www.gelbooru.com/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     image = soup.find(id="image").get("src")
     return {"url": image}
@@ -205,7 +205,7 @@ async def gelbooru(_: Request) -> dict:
 async def xbooru(_: Request) -> dict:
     query = "http://xbooru.com/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     image = soup.find(id="image").get("src")
     return {"url": image}
@@ -216,8 +216,8 @@ async def xbooru(_: Request) -> dict:
 async def lolibooru(_: Request) -> dict:
     query = "https://lolibooru.moe/post/random/"
     page = await (await http_client.session.get(query)).text()
-    soup = BeautifulSoup(page, 'html.parser')
+    soup = BeautifulSoup(page, "html.parser")
 
     image = soup.find(id="image").get("src")
-    image = image.replace(' ', '%20')
+    image = image.replace(" ", "%20")
     return {"url": image}

@@ -3,7 +3,7 @@ import typing as t
 
 import aiml
 import aiohttp
-from aioredis import create_redis_pool, Redis
+from aioredis import Redis, create_redis_pool
 from fastapi import FastAPI
 from loguru import logger
 from slowapi import Limiter, _rate_limit_exceeded_handler
@@ -11,10 +11,14 @@ from slowapi.errors import RateLimitExceeded
 from slowapi.middleware import SlowAPIMiddleware
 from slowapi.util import get_remote_address
 
+from api import config as conf
+from api import routers
+
 
 # -- AIOHTTP client --
 class HttpClient:
     """HTTP client used for requests."""
+
     _session: t.Optional[aiohttp.ClientSession] = None
     _tcp_session: t.Optional[aiohttp.ClientSession] = None
 
@@ -22,8 +26,7 @@ class HttpClient:
         """Start the client."""
         self._session = aiohttp.ClientSession()
         self._tcp_session = aiohttp.ClientSession(
-            connector=aiohttp.TCPConnector()
-        )
+            connector=aiohttp.TCPConnector())
 
     @property
     def session(self) -> aiohttp.ClientSession:
@@ -60,7 +63,9 @@ class RedisService:
         self.password = password
 
     async def start(self) -> None:
-        self._pool = await create_redis_pool(f'redis://{self.host}', password=self.password)
+        self._pool = await create_redis_pool(
+            f"redis://{self.host}", password=self.password
+        )
 
     async def stop(self) -> None:
         self.pool.close()
@@ -77,7 +82,6 @@ http_client = HttpClient()
 
 
 # -- Define the API --
-from api import config as conf
 
 app = FastAPI(
     title="AIO API",
@@ -87,7 +91,7 @@ app = FastAPI(
         "fun and stand out."
     ),
     docs_url="/",
-    redoc_url=None
+    redoc_url=None,
 )
 
 
@@ -111,27 +115,26 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(SlowAPIMiddleware)
 
 # -- Logger configuration --
-logger.configure(handlers=[
-    dict(sink=sys.stdout, format=conf.log_format, level=conf.log_level),
-    dict(
-        sink=conf.log_file,
-        format=conf.log_format,
-        level=conf.log_level,
-        rotation="500 MB",
-    ),
-])
+logger.configure(
+    handlers=[
+        dict(sink=sys.stdout, format=conf.log_format, level=conf.log_level),
+        dict(
+            sink=conf.log_file,
+            format=conf.log_format,
+            level=conf.log_level,
+            rotation="500 MB",
+        ),
+    ]
+)
 
 # -- AI section
 if conf.ai_enabled:
     AIML_KERNEL = aiml.Kernel()
     AIML_KERNEL.setBotPredicate("name", "Overflow")
     AIML_KERNEL.bootstrap(
-        learnFiles=["api/std-startup.xml"],
-        commands=["LOAD AIML B"]
-    )
+        learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
 
 # -- Loader
-from api import routers
 
 for router in conf.ROUTERS:
     if hasattr(routers, router):
