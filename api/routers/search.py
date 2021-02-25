@@ -7,7 +7,6 @@ from fastapi import APIRouter, Request
 from api import config, http_client
 from api.core import log_error
 
-
 router = APIRouter(
     prefix="/search",
     tags=["Searching endpoint"],
@@ -62,32 +61,22 @@ class Search:
 
         # Gets the first entry's data
         first_title = self.tomd.handle(
-            results[0]["title"]
-        ).rstrip("\n").strip("<>")
+            results[0]["title"]).rstrip("\n").strip("<>")
         first_url = results[0]["url"]
         first_desc = self.tomd.handle(results[0]["desc"]).rstrip("\n")
 
-        first_dict = {
-            "title": first_title,
-            "description": first_desc,
-            "url": first_url
-        }
+        first_dict = {"title": first_title,
+                      "description": first_desc, "url": first_url}
 
         # Builds the substring for each of the other result.
         other_results = []
 
-        for result in results[1: count]:
+        for result in results[1:count]:
             title = self.tomd.handle(result["title"]).rstrip("\n")
             url = result["url"]
-            other_results.append({
-                "title": title,
-                "url": url
-            })
+            other_results.append({"title": title, "url": url})
 
-        return {
-            "main": first_dict,
-            "others": other_results
-        }
+        return {"main": first_dict, "others": other_results}
 
 
 @router.get("/search")
@@ -121,9 +110,9 @@ async def overflow(_: Request, query: str, questions: int = 6) -> dict:
         result[index] = {
             "name": unescape(item["title"]),
             "score": item["score"],
-            "answers": item['answer_count'],
-            "tags": item['tags'],
-            "link": item["link"]
+            "answers": item["answer_count"],
+            "tags": item["tags"],
+            "link": item["link"],
         }
 
     return result

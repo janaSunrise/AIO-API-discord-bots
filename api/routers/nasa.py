@@ -3,8 +3,8 @@ import random
 from fastapi import APIRouter, Request
 
 from api import http_client
-from api.core import log_error
 from api.config import nasa_api as NASA_API
+from api.core import log_error
 
 router = APIRouter(
     prefix="/nasa",
@@ -28,7 +28,7 @@ async def apod(_: Request) -> dict:
     return {
         "title": data["title"],
         "explanation": data["explanation"],
-        "img": data["hdurl"]
+        "img": data["hdurl"],
     }
 
 
@@ -49,7 +49,7 @@ async def nasa_search(_: Request, query: str) -> dict:
         return {
             "description": item["data"][0]["description"],
             "img": item["links"][0]["href"],
-            "id": item['data'][0]['nasa_id']
+            "id": item["data"][0]["nasa_id"],
         }
     return {"error": "No results found!"}
 
@@ -72,7 +72,7 @@ async def epic(_: Request, maximum: int = 1) -> dict:
                 "https://epic.gsfc.nasa.gov/epic-archive/jpg/"
                 + json[i]["image"]
                 + ".jpg"
-            )
+            ),
         }
 
     return result
