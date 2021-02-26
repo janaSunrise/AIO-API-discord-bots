@@ -44,8 +44,7 @@ async def calc(_: Request, equation: str) -> dict:
         if resp.status not in config.RESPONSES:
             return {
                 "error": (
-                    "❌ Invalid Equation Specified, "
-                    "Please Recheck the Equation"
+                    "❌ Invalid Equation Specified, " "Please Recheck the Equation"
                 ),
             }
 
@@ -78,7 +77,7 @@ async def word_def(_: Request, word: str) -> dict:
     return {
         "short": short_meaning,
         "long": long_meaning,
-        "instances": ' '.join(instances.split())
+        "instances": " ".join(instances.split()),
     }
 
 
@@ -94,7 +93,7 @@ async def wiki(_: Request, query: str) -> dict:
         "prop": "extracts",
         "exintro": "1",
         "redirects": "1",
-        "explaintext": "1"
+        "explaintext": "1",
     }
 
     async with http_client.tcp_session.get(
@@ -110,14 +109,17 @@ async def wiki(_: Request, query: str) -> dict:
             "results": [
                 {
                     "title": page["title"],
-                    "description": page["extract"].strip().replace(
+                    "description": page["extract"]
+                    .strip()
+                    .replace(
                         "\n",
                         "\n\n",
                     ),
                     "url": "https://en.wikipedia.org/wiki/{}".format(
                         page["title"].replace(" ", "_")
                     ),
-                } for page in result["query"]["pages"]
+                }
+                for page in result["query"]["pages"]
             ],
         }
     except KeyError:
@@ -128,13 +130,15 @@ async def wiki(_: Request, query: str) -> dict:
 @log_error()
 async def wolfram(_: Request, appid: str, query: str) -> StreamingResponse:
     """Lookup wolfram alpha for your queries."""
-    url_str = urllib.parse.urlencode({
-        "i": query,
-        "appid": appid,
-        "location": "the moon",
-        "latlong": "0.0,0.0",
-        "ip": "1.1.1.1"
-    })
+    url_str = urllib.parse.urlencode(
+        {
+            "i": query,
+            "appid": appid,
+            "location": "the moon",
+            "latlong": "0.0,0.0",
+            "ip": "1.1.1.1",
+        }
+    )
     query = config.QUERY.format(request="simple", data=url_str)
 
     async with http_client.session.get(query) as response:
@@ -159,9 +163,7 @@ async def wolfram_page(_: Request, appid: str, query: str) -> dict:
 @log_error()
 async def latex(_: Request, equation: str) -> t.Union[dict, StreamingResponse]:
     """Get a latex rendered image."""
-    LATEX_URL = (
-        "https://latex.codecogs.com/gif.download?%5Cbg_white%20%5Clarge%20"
-    )
+    LATEX_URL = "https://latex.codecogs.com/gif.download?%5Cbg_white%20%5Clarge%20"
 
     raw_eq = r"{}".format(equation)
     url_eq = urllib.parse.quote(raw_eq)
