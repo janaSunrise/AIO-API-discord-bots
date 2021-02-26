@@ -56,8 +56,10 @@ async def calc(_: Request, equation: str) -> dict:
 @log_error()
 async def word_def(_: Request, word: str) -> dict:
     url = "https://www.vocabulary.com/dictionary/" + word + ""
-    htmlfile = urllib.request.urlopen(url)
-    soup = BeautifulSoup(htmlfile, "lxml")
+
+    async with http_client.session.get(url) as resp:
+        htmlfile = await resp.text()
+        soup = BeautifulSoup(htmlfile, "lxml")
 
     soup1 = soup.find(class_="short")
 
