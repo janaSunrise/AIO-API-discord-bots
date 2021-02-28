@@ -43,8 +43,7 @@ async def smbc(_: Request) -> dict:
         soup = BeautifulSoup(await response.text(), "html.parser")
 
     all_comics = soup.find("select", attrs={"name": "comic"})
-    all_comics_url_stubs = [option["value"]
-                            for option in all_comics.findChildren()]
+    all_comics_url_stubs = [option["value"] for option in all_comics.findChildren()]
 
     random_comic = random.choice(all_comics_url_stubs)
     comic_url = f"http://www.smbc-comics.com/{random_comic}"
@@ -116,8 +115,7 @@ async def mrls(_: Request) -> dict:
     async with http_client.session.get(url) as response:
         soup = BeautifulSoup(await response.text(), "html.parser")
 
-    img_url = "http://www.mrlovenstein.com" + \
-        soup.find(id="comic_main_image")["src"]
+    img_url = "http://www.mrlovenstein.com" + soup.find(id="comic_main_image")["src"]
 
     return {"url": img_url}
 

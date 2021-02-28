@@ -60,13 +60,11 @@ class Search:
             return {"error": f"No results found for `{query}`."}
 
         # Gets the first entry's data
-        first_title = self.tomd.handle(
-            results[0]["title"]).rstrip("\n").strip("<>")
+        first_title = self.tomd.handle(results[0]["title"]).rstrip("\n").strip("<>")
         first_url = results[0]["url"]
         first_desc = self.tomd.handle(results[0]["desc"]).rstrip("\n")
 
-        first_dict = {"title": first_title,
-                      "description": first_desc, "url": first_url}
+        first_dict = {"title": first_title, "description": first_desc, "url": first_url}
 
         # Builds the substring for each of the other result.
         other_results = []

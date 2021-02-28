@@ -3,8 +3,13 @@ import random
 import urllib
 
 from api import http_client
-from api.config import (ACCEPTED_EXTENSIONS, DEFAULT_OUTPUT_FORMAT,
-                        IMGUR_LINKS, MAX_PODS, QUERY)
+from api.config import (
+    ACCEPTED_EXTENSIONS,
+    DEFAULT_OUTPUT_FORMAT,
+    IMGUR_LINKS,
+    MAX_PODS,
+    QUERY,
+)
 
 with open("api/assets/text_games_response.json") as file:
     TEXT_GAMES_RESPONSE = json.load(file)
@@ -98,8 +103,7 @@ async def get_pod_pages(appid: str, query: str):
         subs = pod.get("subpods")
 
         for sub in subs:
-            title = sub.get("title") or sub.get(
-                "plaintext") or sub.get("id", "")
+            title = sub.get("title") or sub.get("plaintext") or sub.get("id", "")
             img = sub["img"]["src"]
             pages.append((title, img))
 
