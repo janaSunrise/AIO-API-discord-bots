@@ -2,6 +2,9 @@
 
 The only api you'll ever need to make your discord bot spicy, fun and stand out.
 
+**NOTE**: The environments shown in the deployment tab isn't real, and we aren't using it. 
+We have our own server, where we are hosting the app. Please kindly ignore it.
+
 ## About
 
 This is an API developed to simplify the work of discord bot developers. Usually people find
