@@ -16,7 +16,9 @@ def log_error() -> t.Any:
             try:
                 return await func(*args, **kwargs)
             except Exception as e:
-                logger_.error(f"ERROR: {e!r} | Location: {func.__name__}", exc_info=True)
+                logger_.error(
+                    f"ERROR: {e!r} | Location: {func.__name__}", exc_info=True
+                )
                 return {"error": f"{e!r} | Please try again later."}
 
         return wrapper
