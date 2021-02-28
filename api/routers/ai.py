@@ -1,6 +1,5 @@
 from fastapi import APIRouter, Request
 
-from api import AIML_KERNEL
 from api.core import log_error
 
 router = APIRouter(
@@ -17,6 +16,8 @@ router = APIRouter(
 @log_error()
 async def root(_: Request, message: str) -> dict:
     """The chatbot endpoint to simulate a person talking."""
+    from api import AIML_KERNEL  # To prevent circular import
+
     aiml_response = AIML_KERNEL.respond(message)
     aiml_response = aiml_response.replace("://", "").replace("@", "")
     # Prevent tagging and links
