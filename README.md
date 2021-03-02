@@ -2,12 +2,17 @@
 
 The only api you'll ever need to make your discord bot spicy, fun and stand out.
 
+**NOTE**: The environments shown in the deployment tab isn't real, and we aren't using it. 
+We have our own server, where we are hosting the app. Please kindly ignore it.
+
 ## About
 
 This is an API developed to simplify the work of discord bot developers. Usually people find
 various sources to get image editing, memes, funny images, and such from different sources.
 This simplifies the work of the developer by binding everything in one by combining APIs, and
 Some implementation of my own too.
+
+The live version can be used and integrated, and is available at [aio-api.ml](https://aio-api.ml).
 
 ## Installation
 

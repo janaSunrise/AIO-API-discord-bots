@@ -2,8 +2,8 @@ import random
 
 from fastapi import APIRouter, Request
 
-from api.core import log_error
 from api.config import reddit
+from api.core import log_error
 from api.utils import filter_reddit_url
 
 router = APIRouter(
@@ -20,9 +20,7 @@ router = APIRouter(
 @log_error()
 async def hot(_: Request, subreddit: str) -> dict:
     sub = await reddit.subreddit(subreddit, fetch=True)
-    random_post = random.choice(
-        [post async for post in sub.hot() if not post.is_self]
-    )
+    random_post = random.choice([post async for post in sub.hot() if not post.is_self])
 
     return {
         "title": random_post.title,
@@ -32,7 +30,7 @@ async def hot(_: Request, subreddit: str) -> dict:
         "author": random_post.author.name,
         "score": random_post.score,
         "spoilers": sub.spoilers_enabled,
-        "nsfw": sub.over18
+        "nsfw": sub.over18,
     }
 
 
@@ -40,9 +38,7 @@ async def hot(_: Request, subreddit: str) -> dict:
 @log_error()
 async def new(_: Request, subreddit: str) -> dict:
     sub = await reddit.subreddit(subreddit, fetch=True)
-    random_post = random.choice(
-        [post async for post in sub.new() if not post.is_self]
-    )
+    random_post = random.choice([post async for post in sub.new() if not post.is_self])
 
     return {
         "title": random_post.title,
@@ -52,7 +48,7 @@ async def new(_: Request, subreddit: str) -> dict:
         "author": random_post.author.name,
         "score": random_post.score,
         "spoilers": sub.spoilers_enabled,
-        "nsfw": sub.over18
+        "nsfw": sub.over18,
     }
 
 
@@ -73,5 +69,5 @@ async def reddit_random(_: Request, subreddit: str) -> dict:
         "author": random_post.author.name,
         "score": random_post.score,
         "spoilers": sub.spoilers_enabled,
-        "nsfw": sub.over18
+        "nsfw": sub.over18,
     }

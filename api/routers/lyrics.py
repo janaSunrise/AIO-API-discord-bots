@@ -26,5 +26,5 @@ async def lyrics(_: Request, songname: str) -> dict:
         "title": json["title"],
         "author": json["author"],
         "lyrics": json["lyrics"],
-        "thumbnail": json["thumbnail"]["genius"]
+        "thumbnail": json["thumbnail"]["genius"],
     }

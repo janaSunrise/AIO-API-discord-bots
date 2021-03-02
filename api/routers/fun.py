@@ -80,6 +80,7 @@ async def why(_: Request) -> dict:
 @log_error()
 async def yesno(_: Request, question: str) -> dict:
     """Get a random answer for a yes no question."""
+
     async def get_answer(ans: str) -> str:
         if ans == "yes":
             return_str = "Yes."
@@ -174,9 +175,7 @@ async def insult(_: Request) -> dict:
 @log_error()
 async def advice(_: Request) -> dict:
     """Get an useful advice."""
-    async with http_client.session.get(
-        "https://api.adviceslip.com/advice"
-    ) as resp:
+    async with http_client.session.get("https://api.adviceslip.com/advice") as resp:
         json = await resp.json(content_type="text/html")
 
     return {"advice": json["slip"]["advice"]}
@@ -186,9 +185,7 @@ async def advice(_: Request) -> dict:
 @log_error()
 async def inspire(_: Request) -> dict:
     """Get inspired."""
-    async with http_client.session.get(
-        "https://affirmations.dev/"
-    ) as response:
+    async with http_client.session.get("https://affirmations.dev/") as response:
         res = await response.json()
 
     return {"advice": res["affirmation"]}

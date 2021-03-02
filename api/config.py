@@ -33,14 +33,9 @@ IMGUR_LINKS = (
     "https://i.imgur.com/",
     "http://i.imgur.com/",
     "http://imgur.com",
-    "https://m.imgur.com"
+    "https://m.imgur.com",
 )
-ACCEPTED_EXTENSIONS = (
-    ".png",
-    ".jpg",
-    ".jpeg",
-    ".gif"
-)
+ACCEPTED_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif")
 
 # -- Logger configuration --
 log_file = "logs/server.log"
@@ -60,7 +55,7 @@ try:
     reddit = asyncpraw.Reddit(
         client_id=reddit_client_id,
         client_secret=reddit_client_secret,
-        user_agent=USER_AGENT
+        user_agent=USER_AGENT,
     )
 except exceptions.MissingRequiredAttributeException:
     logger.error("Please set correct reddit environment variables to run.")
@@ -100,7 +95,7 @@ subreddits_list = {
         "Rabbits",
         "StartledCats",
         "WhatsWrongWithYourDog",
-    )
+    ),
 }
 
 nsfw_subreddits_list = {
@@ -222,7 +217,7 @@ nsfw_subreddits_list = {
         "TheUnderbun",
         "Underbun",
     ),
-    "anal":  (
+    "anal": (
         "anal",
         "analgonewild",
         "AnalGW",

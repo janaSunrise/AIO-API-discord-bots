@@ -17,9 +17,7 @@ router = APIRouter(
 @log_error()
 async def cat(_: Request) -> dict:
     """Get a random cat image."""
-    async with http_client.session.get(
-        "https://some-random-api.ml/img/cat"
-    ) as resp:
+    async with http_client.session.get("https://some-random-api.ml/img/cat") as resp:
         json = await resp.json()
 
     return {"url": json["link"]}
@@ -29,9 +27,7 @@ async def cat(_: Request) -> dict:
 @log_error()
 async def cat_fact(_: Request) -> dict:
     """Get a random cat fact."""
-    async with http_client.session.get(
-        "https://some-random-api.ml/facts/cat"
-    ) as resp:
+    async with http_client.session.get("https://some-random-api.ml/facts/cat") as resp:
         json = await resp.json()
 
     return {"fact": json["fact"]}
@@ -52,9 +48,7 @@ async def dog(_: Request) -> dict:
 @log_error()
 async def dog_fact(_: Request) -> dict:
     """Get a random dog image."""
-    async with http_client.session.get(
-        "https://some-random-api.ml/facts/dog"
-    ) as resp:
+    async with http_client.session.get("https://some-random-api.ml/facts/dog") as resp:
         json = await resp.json()
 
     return {"fact": json["fact"]}
@@ -76,9 +70,7 @@ async def panda_fact(_: Request) -> dict:
 @log_error()
 async def fox(_: Request) -> dict:
     """Get a random fox image."""
-    async with http_client.session.get(
-        "https://randomfox.ca/floof/"
-    ) as resp:
+    async with http_client.session.get("https://randomfox.ca/floof/") as resp:
         json = await resp.json()
 
     return {"url": json["image"]}
@@ -88,9 +80,7 @@ async def fox(_: Request) -> dict:
 @log_error()
 async def panda(_: Request) -> dict:
     """Get a random panda image."""
-    async with http_client.session.get(
-        "https://some-random-api.ml/img/panda"
-    ) as resp:
+    async with http_client.session.get("https://some-random-api.ml/img/panda") as resp:
         json = await resp.json()
 
     return {"url": json["link"]}
@@ -100,9 +90,7 @@ async def panda(_: Request) -> dict:
 @log_error()
 async def koala(_: Request) -> dict:
     """Get a random koala image."""
-    async with http_client.session.get(
-        "https://some-random-api.ml/img/koala"
-    ) as resp:
+    async with http_client.session.get("https://some-random-api.ml/img/koala") as resp:
         json = await resp.json()
 
     return {"url": json["link"]}
@@ -112,9 +100,7 @@ async def koala(_: Request) -> dict:
 @log_error()
 async def birb(_: Request) -> dict:
     """Get a random bird image."""
-    async with http_client.session.get(
-        "https://some-random-api.ml/img/birb"
-    ) as resp:
+    async with http_client.session.get("https://some-random-api.ml/img/birb") as resp:
         json = await resp.json()
 
     return {"url": json["link"]}
@@ -124,9 +110,7 @@ async def birb(_: Request) -> dict:
 @log_error()
 async def duck(_: Request) -> dict:
     """Get a random duck image."""
-    async with http_client.session.get(
-        "https://random-d.uk/api/v2/random"
-    ) as resp:
+    async with http_client.session.get("https://random-d.uk/api/v2/random") as resp:
         json = await resp.json()
 
     return {"url": json["url"]}
