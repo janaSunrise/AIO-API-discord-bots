@@ -131,6 +131,45 @@ async def mathfact(_: Request) -> dict:
     }
 
 
+@router.get("/yearfact")
+@log_error()
+async def yearfact(_: Request) -> dict:
+    """Get to know an interesting year fact."""
+    async with http_client.session.get(
+        "http://numbersapi.com/random/year?json"
+    ) as resp:
+        json = await resp.json()
+
+    return {
+        "fact": json["text"],
+        "year": json["number"],
+    }
+
+
+@router.get("/idea")
+@log_error()
+async def idea(_: Request) -> dict:
+    """Get an interesting idea."""
+    async with http_client.session.get(
+        "http://itsthisforthat.com/api.php", params="json"
+    ) as resp:
+        json = await resp.json(content_type="text/javascript")
+
+    return {"idea": f"{json['this']} for {json['that']}"}
+
+
+@router.get("/insult")
+@log_error()
+async def insult(_: Request) -> dict:
+    """Get an random insult."""
+    async with http_client.session.get(
+        "http://quandyfactory.com/insult/json"
+    ) as resp:
+        json = await resp.json()
+
+    return {"insult": json["insult"]}
+
+
 @router.get("/advice")
 @log_error()
 async def advice(_: Request) -> dict:
