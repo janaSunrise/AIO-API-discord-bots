@@ -163,9 +163,7 @@ async def idea(_: Request) -> dict:
 @log_error()
 async def insult(_: Request) -> dict:
     """Get an random insult."""
-    async with http_client.session.get(
-        "http://quandyfactory.com/insult/json"
-    ) as resp:
+    async with http_client.session.get("http://quandyfactory.com/insult/json") as resp:
         json = await resp.json()
 
     return {"insult": json["insult"]}
