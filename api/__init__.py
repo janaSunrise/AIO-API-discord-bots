@@ -1,3 +1,4 @@
+import importlib
 import sys
 import typing as t
 
@@ -18,7 +19,6 @@ from api import routers
 # -- AIOHTTP client --
 class HttpClient:
     """HTTP client used for requests."""
-
     _session: t.Optional[aiohttp.ClientSession] = None
     _tcp_session: t.Optional[aiohttp.ClientSession] = None
 
@@ -132,13 +132,14 @@ if conf.ai_enabled:
     AIML_KERNEL.setBotPredicate("name", "Overflow")
     AIML_KERNEL.bootstrap(learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
 
-# -- Loader
+# -- Loader --
+for routers in conf.ROUTERS:
+    routers = importlib.import_module(f"api.routers.{routers}")
 
-for router in conf.ROUTERS:
-    if hasattr(routers, router):
-        app.include_router(getattr(routers, router).router)
+    if hasattr(routers, "router"):
+        app.include_router(getattr(routers, "router"))
     else:
-        logger.warning(f"Router {router} included but not found")
+        logger.warning(f"Router {routers.__name__} included but not found")
 
 # -- AI Section --
 if conf.ai_enabled:
