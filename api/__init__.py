@@ -19,13 +19,15 @@ from api import routers
 # -- AIOHTTP client --
 class HttpClient:
     """HTTP client used for requests."""
+
     _session: t.Optional[aiohttp.ClientSession] = None
     _tcp_session: t.Optional[aiohttp.ClientSession] = None
 
     def start(self) -> None:
         """Start the client."""
         self._session = aiohttp.ClientSession()
-        self._tcp_session = aiohttp.ClientSession(connector=aiohttp.TCPConnector())
+        self._tcp_session = aiohttp.ClientSession(
+            connector=aiohttp.TCPConnector())
 
     @property
     def session(self) -> aiohttp.ClientSession:
@@ -130,7 +132,8 @@ logger.configure(
 if conf.ai_enabled:
     AIML_KERNEL = aiml.Kernel()
     AIML_KERNEL.setBotPredicate("name", "Overflow")
-    AIML_KERNEL.bootstrap(learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
+    AIML_KERNEL.bootstrap(
+        learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
 
 # -- Loader --
 for routers in conf.ROUTERS:
