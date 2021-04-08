@@ -12,7 +12,7 @@ various sources to get image editing, memes, funny images, and such from differe
 This simplifies the work of the developer by binding everything in one by combining APIs, and
 Some implementation of my own too.
 
-The live version can be used and integrated, and is available at [aio-api.ml](https://aio-api.ml).
+The live version can be used and integrated, and is available at [aio-api-discord.herokuapp.com](http://aio-api-discord.herokuapp.com/).
 
 ## Installation
 
