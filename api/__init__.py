@@ -4,7 +4,6 @@ import typing as t
 
 import aiml
 import aiohttp
-from aioredis import Redis, create_redis_pool
 from fastapi import FastAPI
 from loguru import logger
 from slowapi import Limiter, _rate_limit_exceeded_handler
@@ -51,30 +50,6 @@ class HttpClient:
 
     def __call__(self) -> aiohttp.ClientSession:
         return self.session
-
-
-# -- Redis service --
-class RedisService:
-    _pool: Redis = None
-
-    def __init__(self, host: str, password: str):
-        self.host = host
-        self.password = password
-
-    async def start(self) -> None:
-        self._pool = await create_redis_pool(
-            f"redis://{self.host}", password=self.password
-        )
-
-    async def stop(self) -> None:
-        self.pool.close()
-        await self.pool.wait_closed()
-
-    @property
-    def pool(self) -> Redis:
-        if not self._pool:
-            raise ValueError("Instance isn't started")
-        return self._pool
 
 
 http_client = HttpClient()
