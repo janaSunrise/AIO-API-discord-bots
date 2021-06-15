@@ -3,9 +3,9 @@ version: '3'
 services:
   api:
     volumes:
-      - ./logs:/app/logs
+      - ./logs:/app/logs:rw
       - .:/app:ro
     ports:
-      - 8000:80
+      - 127.0.0.1:8000:80
     environment:
       PRODUCTION: 'false'
