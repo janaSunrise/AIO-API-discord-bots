@@ -178,7 +178,13 @@ nsfw_subreddits_list = {
         "wouldyoufuckmywife",
         "yogapants",
     ),
-    "fourk": ("closeup", "HighResNSFW", "nsfw_hd", "NSFW_Wallpapers", "UHDnsfw",),
+    "fourk": (
+        "closeup",
+        "HighResNSFW",
+        "nsfw_hd",
+        "NSFW_Wallpapers",
+        "UHDnsfw",
+    ),
     "ahegao": (
         "AhegaoGirls",
         "EyeRollOrgasm",
@@ -221,7 +227,12 @@ nsfw_subreddits_list = {
         "buttsthatgrip",
         "MasterOfAnal",
     ),
-    "bdsm": ("bdsm", "BDSMGW", "ropeart", "shibari",),
+    "bdsm": (
+        "bdsm",
+        "BDSMGW",
+        "ropeart",
+        "shibari",
+    ),
     "blowjob": (
         "AsianBlowjobs",
         "blowbang",
@@ -267,8 +278,17 @@ nsfw_subreddits_list = {
         "Titties",
         "TittyDrop",
     ),
-    "cunnilingus": ("cunnilingus", "CunnilingusSelfie", "Hegoesdown",),
-    "bottomless": ("Bottomless", "nopanties", "Pantiesdown", "upskirt",),
+    "cunnilingus": (
+        "cunnilingus",
+        "CunnilingusSelfie",
+        "Hegoesdown",
+    ),
+    "bottomless": (
+        "Bottomless",
+        "nopanties",
+        "Pantiesdown",
+        "upskirt",
+    ),
     "cumshots": (
         "amateurcumsluts",
         "bodyshots",
@@ -293,10 +313,26 @@ nsfw_subreddits_list = {
         "penis",
         "ThickDick",
     ),
-    "doublepenetration": ("doublepenetration", "dp_porn", "Technical_DP",),
-    "deepthroat": ("deepthroat", "DeepThroatTears", "SwordSwallowers",),
-    "gay": ("gayporn", "ladybonersgw", "mangonewild",),
-    "group": ("GroupOfNudeGirls", "GroupOfNudeMILFs", "groupsex",),
+    "doublepenetration": (
+        "doublepenetration",
+        "dp_porn",
+        "Technical_DP",
+    ),
+    "deepthroat": (
+        "deepthroat",
+        "DeepThroatTears",
+        "SwordSwallowers",
+    ),
+    "gay": (
+        "gayporn",
+        "ladybonersgw",
+        "mangonewild",
+    ),
+    "group": (
+        "GroupOfNudeGirls",
+        "GroupOfNudeMILFs",
+        "groupsex",
+    ),
     "hentai": (
         "AnimeBooty",
         "ecchigifs",
@@ -307,7 +343,12 @@ nsfw_subreddits_list = {
         "thick_hentai",
         "thighdeology",
     ),
-    "lesbian": ("amateurlesbians", "HDLesbianGifs", "lesbians", "Lesbian_gifs",),
+    "lesbian": (
+        "amateurlesbians",
+        "HDLesbianGifs",
+        "lesbians",
+        "Lesbian_gifs",
+    ),
     "milf": (
         "amateur_milfs",
         "ChocolateMilf",
@@ -341,7 +382,13 @@ nsfw_subreddits_list = {
         "Rule_34",
         "WesternHentai",
     ),
-    "thigh": ("leggingsgonewild", "ThickThighs", "Thigh", "thighhighs", "Thighs",),
+    "thigh": (
+        "leggingsgonewild",
+        "ThickThighs",
+        "Thigh",
+        "thighhighs",
+        "Thighs",
+    ),
     "trap": (
         "DeliciousTraps",
         "GoneWildTrans",

@@ -5,7 +5,9 @@ from api.core import log_error
 router = APIRouter(
     prefix="/animals",
     tags=["Images of animals"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
