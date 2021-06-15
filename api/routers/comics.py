@@ -8,7 +8,9 @@ from api.core import log_error
 router = APIRouter(
     prefix="/comics",
     tags=["Interesting comics"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
@@ -36,7 +38,8 @@ async def smbc(request: Request) -> dict:
     http_client = request.app.state.http_client
 
     async with http_client.session.get(
-        url, headers={"Connection": "keep-alive"},
+        url,
+        headers={"Connection": "keep-alive"},
     ) as response:
         soup = BeautifulSoup(await response.text(), "html.parser")
 
@@ -47,7 +50,8 @@ async def smbc(request: Request) -> dict:
     comic_url = f"http://www.smbc-comics.com/{random_comic}"
 
     async with http_client.session.get(
-        comic_url, headers={"Connection": "keep-alive"},
+        comic_url,
+        headers={"Connection": "keep-alive"},
     ) as resp:
         soup = BeautifulSoup(await resp.text(), "html.parser")
         img_url = soup.find(property="og:image")["content"]

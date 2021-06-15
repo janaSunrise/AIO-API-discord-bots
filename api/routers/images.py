@@ -8,13 +8,18 @@ from api.core import log_error
 router = APIRouter(
     prefix="/images",
     tags=["Image editing endpoint"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
 @log_error()
 async def fetch_nekobot_api(http_client, params: dict) -> t.Any:
-    async with http_client.session.get(conf.NEKOBOT_API_ROOT, params=params,) as resp:
+    async with http_client.session.get(
+        conf.NEKOBOT_API_ROOT,
+        params=params,
+    ) as resp:
         json = await resp.json()
 
     return json["message"]
@@ -136,7 +141,11 @@ async def stickbug(request: Request, image_url: str) -> dict:
     http_client = request.app.state.http_client
     return {
         "image": await fetch_nekobot_api(
-            http_client, {"type": "stickbug", "url": image_url,}
+            http_client,
+            {
+                "type": "stickbug",
+                "url": image_url,
+            },
         )
     }
 
