@@ -3,7 +3,11 @@ from fastapi import APIRouter, Request
 from api.core import log_error
 
 router = APIRouter(
-    prefix="/gifs", tags=["GIF makers"], responses={404: {"description": "Not found"},},
+    prefix="/gifs",
+    tags=["GIF makers"],
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
