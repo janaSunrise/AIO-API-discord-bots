@@ -4,15 +4,13 @@ from urllib.parse import quote_plus
 import html2text
 from fastapi import APIRouter, Request
 
-from api import config, http_client
+from api import config
 from api.core import log_error
 
 router = APIRouter(
     prefix="/search",
     tags=["Searching endpoint"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
@@ -28,9 +26,7 @@ class Search:
 
     @staticmethod
     async def _search_logic(
-        query: str,
-        category: str = "web",
-        count: int = 5,
+        http_client, query: str, category: str = "web", count: int = 5,
     ) -> list:
         """Use scrapestack and the Qwant API to find search results."""
         base = "https://api.qwant.com/api"
@@ -49,9 +45,9 @@ class Search:
 
         return to_parse["data"]["result"]["items"]
 
-    async def basic_search(self, query: str, category: str, count: int):
+    async def basic_search(self, http_client, query: str, category: str, count: int):
         """Basic search formatting."""
-        results = await self._search_logic(query, category, count=count)
+        results = await self._search_logic(http_client, query, category, count=count)
 
         count = len(results)
 
@@ -79,18 +75,22 @@ class Search:
 
 @router.get("/search")
 @log_error()
-async def search(_: Request, query: str, count: int = 5) -> dict:
+async def search(request: Request, query: str, count: int = 5) -> dict:
     """Search for your queires on the web."""
     search_obj = Search()
-    data = await search_obj.basic_search(query, category="web", count=count)
+    http_client = request.app.state.http_client
+    data = await search_obj.basic_search(
+        http_client, query, category="web", count=count
+    )
 
     return data
 
 
 @router.get("/overflow")
 @log_error()
-async def overflow(_: Request, query: str, questions: int = 6) -> dict:
+async def overflow(request: Request, query: str, questions: int = 6) -> dict:
     """Search stackoverflow for a query."""
+    http_client = request.app.state.http_client
     BASE_URL = (
         "https://api.stackexchange.com/2.2/search/advanced?order=desc&"
         "sort=activity&site=stackoverflow&q={query}"

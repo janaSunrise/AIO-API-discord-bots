@@ -2,7 +2,6 @@ import json
 import random
 import urllib
 
-from api import http_client
 from api.config import (
     ACCEPTED_EXTENSIONS,
     DEFAULT_OUTPUT_FORMAT,
@@ -59,7 +58,7 @@ def get_random_text_response(category: str) -> str:
     return random.choice(data)
 
 
-async def get_pod_pages(appid: str, query: str):
+async def get_pod_pages(http_client, appid: str, query: str):
     """Get the Wolfram API pod pages for the provided query."""
     url_str = urllib.parse.urlencode(
         {

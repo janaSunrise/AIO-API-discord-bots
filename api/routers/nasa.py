@@ -2,24 +2,23 @@ import random
 
 from fastapi import APIRouter, Request
 
-from api import http_client
 from api.config import nasa_api as NASA_API
 from api.core import log_error
 
 router = APIRouter(
     prefix="/nasa",
     tags=["Nasa info and images"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
 # -- Router paths --
 @router.get("/apod")
 @log_error()
-async def apod(_: Request) -> dict:
+async def apod(request: Request) -> dict:
     """Get the astronomy picture of the day."""
+    http_client = request.app.state.http_client
+
     async with http_client.session.get(
         f"https://api.nasa.gov/planetary/apod?api_key={NASA_API}"
     ) as resp:
@@ -34,8 +33,10 @@ async def apod(_: Request) -> dict:
 
 @router.get("/nasa-search")
 @log_error()
-async def nasa_search(_: Request, query: str) -> dict:
+async def nasa_search(request: Request, query: str) -> dict:
     """Lookup nasa for your queries."""
+    http_client = request.app.state.http_client
+
     async with http_client.session.get(
         f"https://images-api.nasa.gov/search?q={query}"
     ) as resp:
@@ -56,8 +57,10 @@ async def nasa_search(_: Request, query: str) -> dict:
 
 @router.get("/epic")
 @log_error()
-async def epic(_: Request, maximum: int = 1) -> dict:
+async def epic(request: Request, maximum: int = 1) -> dict:
     """Get to know about a nasa EPIC."""
+    http_client = request.app.state.http_client
+
     async with http_client.session.get(
         "https://epic.gsfc.nasa.gov/api/images.php"
     ) as response:

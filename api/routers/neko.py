@@ -3,20 +3,17 @@ import random
 from bs4 import BeautifulSoup
 from fastapi import APIRouter, Request
 
-from api import http_client
 from api.core import log_error
 
 router = APIRouter(
     prefix="/neko",
     tags=["Neko NSFW images endpoint"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
 # -- Helper function --
-async def neko_get(url: str) -> str:
+async def neko_get(http_client, url: str) -> str:
     """Gets pictures from Neko API."""
     async with http_client.session.get(
         "https://api.nekos.dev/api/v3/" + url
@@ -29,125 +26,137 @@ async def neko_get(url: str) -> str:
 # -- Router paths --
 @router.get("/neko")
 @log_error()
-async def neko(_: Request) -> dict:
+async def neko(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = (
         "images/nsfw/gif/neko",
         "images/nsfw/img/neko_lewd",
         "images/nsfw/img/neko_ero",
     )
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/lewd")
 @log_error()
-async def lewd(_: Request) -> dict:
+async def lewd(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = (
         "images/nsfw/img/classic_lewd",
         "images/nsfw/img/neko_lewd",
         "images/nsfw/img/neko_ero",
     )
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/blowjob")
 @log_error()
-async def neko_blowjob(_: Request) -> dict:
+async def neko_blowjob(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = ("images/nsfw/gif/blow_job", "images/nsfw/img/blowjob_lewd")
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/pussy")
 @log_error()
-async def neko_pussy(_: Request) -> dict:
+async def neko_pussy(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = (
         "images/nsfw/gif/pussy_wank",
         "images/nsfw/gif/pussy",
         "images/nsfw/img/pussy_lewd",
     )
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/cum")
 @log_error()
-async def cum(_: Request) -> dict:
+async def cum(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = ("images/nsfw/gif/cum", "images/nsfw/img/cum_lewd")
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/bdsm")
 @log_error()
-async def bdsm(_: Request) -> dict:
-    url = await neko_get("images/nsfw/img/bdsm_lewd")
+async def bdsm(request: Request) -> dict:
+    http_client = request.app.state.http_client
+    url = await neko_get(http_client, "images/nsfw/img/bdsm_lewd")
 
     return {"url": url}
 
 
 @router.get("/trap")
 @log_error()
-async def trap(_: Request) -> dict:
+async def trap(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = ("images/nsfw/img/trap_lewd", "images/nsfw/img/futanari_lewd")
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/furry")
 @log_error()
-async def furry(_: Request) -> dict:
+async def furry(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = ("images/nsfw/gif/yiff", "images/nsfw/img/yiff_lewd")
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/feet")
 @log_error()
-async def feet(_: Request) -> dict:
+async def feet(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = (
         "images/nsfw/gif/feet",
         "images/nsfw/img/feet_lewd",
         "images/nsfw/img/feet_ero",
     )
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/yuri")
 @log_error()
-async def yuri(_: Request) -> dict:
+async def yuri(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = (
         "images/nsfw/gif/yuri",
         "images/nsfw/img/yuri_lewd",
         "images/nsfw/img/yuri_ero",
     )
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/solo")
 @log_error()
-async def solo(_: Request) -> dict:
+async def solo(request: Request) -> dict:
+    http_client = request.app.state.http_client
     sources = ("images/nsfw/gif/girls_solo", "images/nsfw/img/solo_lewd")
-    url = await neko_get(random.choice(sources))
+    url = await neko_get(http_client, random.choice(sources))
 
     return {"url": url}
 
 
 @router.get("/yandere")
 @log_error()
-async def yandere(_: Request) -> dict:
+async def yandere(request: Request) -> dict:
+    http_client = request.app.state.http_client
     query = "https://yande.re/post/random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, "html.parser")
@@ -158,7 +167,8 @@ async def yandere(_: Request) -> dict:
 
 @router.get("/e621")
 @log_error()
-async def e621(_: Request) -> dict:
+async def e621(request: Request) -> dict:
+    http_client = request.app.state.http_client
     query = "https://e621.net/post/random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, "html.parser")
@@ -169,7 +179,8 @@ async def e621(_: Request) -> dict:
 
 @router.get("/rule34")
 @log_error()
-async def rule34(_: Request) -> dict:
+async def rule34(request: Request) -> dict:
+    http_client = request.app.state.http_client
     query = "http://rule34.xxx/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, "html.parser")
@@ -180,7 +191,8 @@ async def rule34(_: Request) -> dict:
 
 @router.get("/danbooru")
 @log_error()
-async def danbooru(_: Request) -> dict:
+async def danbooru(request: Request) -> dict:
+    http_client = request.app.state.http_client
     query = "http://danbooru.donmai.us/posts/random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, "html.parser")
@@ -191,7 +203,8 @@ async def danbooru(_: Request) -> dict:
 
 @router.get("/gelbooru")
 @log_error()
-async def gelbooru(_: Request) -> dict:
+async def gelbooru(request: Request) -> dict:
+    http_client = request.app.state.http_client
     query = "http://www.gelbooru.com/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, "html.parser")
@@ -202,7 +215,8 @@ async def gelbooru(_: Request) -> dict:
 
 @router.get("/xbooru")
 @log_error()
-async def xbooru(_: Request) -> dict:
+async def xbooru(request: Request) -> dict:
+    http_client = request.app.state.http_client
     query = "http://xbooru.com/index.php?page=post&s=random"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, "html.parser")
@@ -213,7 +227,8 @@ async def xbooru(_: Request) -> dict:
 
 @router.get("/lolibooru")
 @log_error()
-async def lolibooru(_: Request) -> dict:
+async def lolibooru(request: Request) -> dict:
+    http_client = request.app.state.http_client
     query = "https://lolibooru.moe/post/random/"
     page = await (await http_client.session.get(query)).text()
     soup = BeautifulSoup(page, "html.parser")

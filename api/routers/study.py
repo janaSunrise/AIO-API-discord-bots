@@ -6,24 +6,23 @@ from bs4 import BeautifulSoup
 from fastapi import APIRouter, Request
 from starlette.responses import StreamingResponse
 
-from api import config, http_client
+from api import config
 from api.core import log_error
 from api.utils import get_pod_pages
 
 router = APIRouter(
     prefix="/study",
     tags=["Study based commands"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
 # -- Router paths --
 @router.get("/urban")
 @log_error()
-async def urban(_: Request, word: str) -> dict:
+async def urban(request: Request, word: str) -> dict:
     """Lookup urban dictionary for a term."""
+    http_client = request.app.state.http_client
     url = "http://api.urbandictionary.com/v0/define"
     async with http_client.session.get(url, params={"term": word}) as resp:
         json = await resp.json()
@@ -34,8 +33,9 @@ async def urban(_: Request, word: str) -> dict:
 
 @router.get("/calc")
 @log_error()
-async def calc(_: Request, equation: str) -> dict:
+async def calc(request: Request, equation: str) -> dict:
     """Get computers to solve your maths equation/"""
+    http_client = request.app.state.http_client
     params = {"expr": equation}
     url = "http://api.mathjs.org/v4/"
 
@@ -53,8 +53,9 @@ async def calc(_: Request, equation: str) -> dict:
 
 @router.get("/word-definition")
 @log_error()
-async def word_def(_: Request, word: str) -> dict:
-    url = "https://www.vocabulary.com/dictionary/" + word + ""
+async def word_def(request: Request, word: str) -> dict:
+    url = "https://www.vocabulary.com/dictionary/" + word
+    http_client = request.app.state.http_client
 
     async with http_client.session.get(url) as resp:
         htmlfile = await resp.text()
@@ -83,8 +84,9 @@ async def word_def(_: Request, word: str) -> dict:
 
 @router.get("/wiki")
 @log_error()
-async def wiki(_: Request, query: str) -> dict:
+async def wiki(request: Request, query: str) -> dict:
     """Search wikipedia for your knowledge hunt."""
+    http_client = request.app.state.http_client
     payload = {
         "action": "query",
         "titles": query.replace(" ", "_"),
@@ -109,12 +111,7 @@ async def wiki(_: Request, query: str) -> dict:
             "results": [
                 {
                     "title": page["title"],
-                    "description": page["extract"]
-                    .strip()
-                    .replace(
-                        "\n",
-                        "\n\n",
-                    ),
+                    "description": page["extract"].strip().replace("\n", "\n\n",),
                     "url": "https://en.wikipedia.org/wiki/{}".format(
                         page["title"].replace(" ", "_")
                     ),
@@ -128,8 +125,9 @@ async def wiki(_: Request, query: str) -> dict:
 
 @router.get("/wolfram")
 @log_error()
-async def wolfram(_: Request, appid: str, query: str) -> StreamingResponse:
+async def wolfram(request: Request, appid: str, query: str) -> StreamingResponse:
     """Lookup wolfram alpha for your queries."""
+    http_client = request.app.state.http_client
     url_str = urllib.parse.urlencode(
         {
             "i": query,
@@ -149,9 +147,10 @@ async def wolfram(_: Request, appid: str, query: str) -> StreamingResponse:
 
 @router.get("/wolfram-page")
 @log_error()
-async def wolfram_page(_: Request, appid: str, query: str) -> dict:
+async def wolfram_page(request: Request, appid: str, query: str) -> dict:
     """Get a wolfram page containing images."""
-    pages = await get_pod_pages(appid, query)
+    http_client = request.app.state.http_client
+    pages = await get_pod_pages(http_client, appid, query)
 
     if not pages:
         return {"error": "No results found!"}
@@ -161,8 +160,9 @@ async def wolfram_page(_: Request, appid: str, query: str) -> dict:
 
 @router.get("/latex")
 @log_error()
-async def latex(_: Request, equation: str) -> t.Union[dict, StreamingResponse]:
+async def latex(request: Request, equation: str) -> t.Union[dict, StreamingResponse]:
     """Get a latex rendered image."""
+    http_client = request.app.state.http_client
     LATEX_URL = "https://latex.codecogs.com/gif.download?%5Cbg_white%20%5Clarge%20"
 
     raw_eq = r"{}".format(equation)

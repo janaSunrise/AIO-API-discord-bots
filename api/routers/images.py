@@ -3,24 +3,18 @@ import typing as t
 from fastapi import APIRouter, Request
 
 from api import config as conf
-from api import http_client
 from api.core import log_error
 
 router = APIRouter(
     prefix="/images",
     tags=["Image editing endpoint"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
 @log_error()
-async def fetch_nekobot_api(params: dict) -> t.Any:
-    async with http_client.session.get(
-        conf.NEKOBOT_API_ROOT,
-        params=params,
-    ) as resp:
+async def fetch_nekobot_api(http_client, params: dict) -> t.Any:
+    async with http_client.session.get(conf.NEKOBOT_API_ROOT, params=params,) as resp:
         json = await resp.json()
 
     return json["message"]
@@ -29,89 +23,120 @@ async def fetch_nekobot_api(params: dict) -> t.Any:
 # -- Router paths --
 @router.get("/clyde")
 @log_error()
-async def clyde(_: Request, text: str) -> dict:
-    return {"image": await fetch_nekobot_api({"type": "clyde", "text": text})}
+async def clyde(request: Request, text: str) -> dict:
+    http_client = request.app.state.http_client
+
+    return {
+        "image": await fetch_nekobot_api(http_client, {"type": "clyde", "text": text})
+    }
 
 
 @router.get("/captcha")
 @log_error()
-async def captcha(_: Request, username: str, image_url: str) -> dict:
+async def captcha(request: Request, username: str, image_url: str) -> dict:
+    http_client = request.app.state.http_client
+
     return {
         "image": await fetch_nekobot_api(
-            {"type": "captcha", "url": image_url, "username": username}
+            http_client, {"type": "captcha", "url": image_url, "username": username}
         )
     }
 
 
 @router.get("/changemymind")
 @log_error()
-async def cmm(_: Request, text: str) -> dict:
-    return {"image": await fetch_nekobot_api({"type": "changemymind", "text": text})}
+async def cmm(request: Request, text: str) -> dict:
+    http_client = request.app.state.http_client
+    return {
+        "image": await fetch_nekobot_api(
+            http_client, {"type": "changemymind", "text": text}
+        )
+    }
 
 
 @router.get("/iphonex")
 @log_error()
-async def iphonex(_: Request, image_url: str) -> dict:
-    return {"image": await fetch_nekobot_api({"type": "iphonex", "url": image_url})}
+async def iphonex(request: Request, image_url: str) -> dict:
+    http_client = request.app.state.http_client
+    return {
+        "image": await fetch_nekobot_api(
+            http_client, {"type": "iphonex", "url": image_url}
+        )
+    }
 
 
 @router.get("/kms")
 @log_error()
-async def kms(_: Request, image_url: str) -> dict:
-    return {"image": await fetch_nekobot_api({"type": "kms", "url": image_url})}
+async def kms(request: Request, image_url: str) -> dict:
+    http_client = request.app.state.http_client
+    return {
+        "image": await fetch_nekobot_api(http_client, {"type": "kms", "url": image_url})
+    }
 
 
 @router.get("/trap")
 @log_error()
-async def trap(_: Request, name: str, author: str, image_url: str) -> dict:
+async def trap(request: Request, name: str, author: str, image_url: str) -> dict:
+    http_client = request.app.state.http_client
     return {
         "image": await fetch_nekobot_api(
-            {"type": "trap", "name": name, "author": author, "image": image_url}
+            http_client,
+            {"type": "trap", "name": name, "author": author, "image": image_url},
         )
     }
 
 
 @router.get("/nichijou")
 @log_error()
-async def nichijou(_: Request, text: str) -> dict:
-    return {"image": await fetch_nekobot_api({"type": "nichijou", "text": text})}
+async def nichijou(request: Request, text: str) -> dict:
+    http_client = request.app.state.http_client
+    return {
+        "image": await fetch_nekobot_api(
+            http_client, {"type": "nichijou", "text": text}
+        )
+    }
 
 
 @router.get("/trumptweet")
 @log_error()
-async def trumptweet(_: Request, text: str) -> dict:
-    return {"image": await fetch_nekobot_api({"type": "trumptweet", "text": text})}
+async def trumptweet(request: Request, text: str) -> dict:
+    http_client = request.app.state.http_client
+    return {
+        "image": await fetch_nekobot_api(
+            http_client, {"type": "trumptweet", "text": text}
+        )
+    }
 
 
 @router.get("/tweet")
 @log_error()
-async def tweet(_: Request, username: str, text: str) -> dict:
+async def tweet(request: Request, username: str, text: str) -> dict:
+    http_client = request.app.state.http_client
     return {
         "image": await fetch_nekobot_api(
-            {"type": "tweet", "username": username, "text": text}
+            http_client, {"type": "tweet", "username": username, "text": text}
         )
     }
 
 
 @router.get("/magik")
 @log_error()
-async def magik(_: Request, image_url: str, intensity: int = 5) -> dict:
+async def magik(request: Request, image_url: str, intensity: int = 5) -> dict:
+    http_client = request.app.state.http_client
     return {
         "image": await fetch_nekobot_api(
-            {"type": "magik", "image": image_url, "intensity": intensity}
+            http_client, {"type": "magik", "image": image_url, "intensity": intensity}
         )
     }
 
 
 @router.get("/stickbug")
 @log_error()
-async def stickbug(_: Request, image_url: str) -> dict:
+async def stickbug(request: Request, image_url: str) -> dict:
+    http_client = request.app.state.http_client
     return {
         "image": await fetch_nekobot_api(
-            {
-                "type": "stickbug",
-                "url": image_url,
-            }
+            http_client, {"type": "stickbug", "url": image_url,}
         )
     }
 
@@ -172,6 +197,6 @@ async def threshold(_: Request, avatar: str) -> dict:
 async def colorviewer(_: Request, color: str) -> dict:
     return {
         "url": (
-            "https://some-random-api.ml/canvas/colorviewer" f"?color={color.strip('#')}"
+            f"https://some-random-api.ml/canvas/colorviewer?color={color.strip('#')}"
         ),
     }
