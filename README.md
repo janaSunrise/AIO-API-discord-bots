@@ -21,18 +21,21 @@ reduces the load on this API too.
 
 ## Docker
 
-Docker is an easy way of containerizing and devlivering your applications quickly and easily, in an 
+Docker is an easy way of containerizing and delivering your applications quickly and easily, in a 
 convenient way. It's really simple to get started with this, with docker handling all the installation
 and other tasks.Configure the environmental variables by renaming the `.env.example` file to `.env` with the respective 
 values. Once you have your environmental variables and config, follow the guide below.
 
 Docker mini guide:
 
-- To start developement environment: `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up`
+- To start development environment: `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up`
 - To start production deployment: `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up`
 - To stop the container: `docker-compose down`
 - To rebuild the container: `docker-compose --build`
 
+**NOTE**: The server runs on `127.0.0.1:8000` in Dev environment, and `0.0.0.0:80` in Production environment.
+You can change them as you like, in the respective docker compose files and use them 
+(If you're using docker for Development or Self-Hosting your own instance).
 
 ### Self hosting without docker
 
