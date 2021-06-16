@@ -59,7 +59,7 @@ async def nhie(_: Request) -> dict:
     return {"never_have_i_ever": f"Have you ever ..{nhie_resp}"}
 
 
-@router.get("/wouldyourrather")
+@router.get("/wouldyourather")
 @log_error()
 async def wyr(_: Request) -> dict:
     """Play would you rather."""

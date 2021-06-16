@@ -24,7 +24,7 @@ async def cat(request: Request) -> dict:
     return {"url": json["link"]}
 
 
-@router.get("/catfact")
+@router.get("/cat-fact")
 @log_error()
 async def cat_fact(request: Request) -> dict:
     """Get a random cat fact."""
@@ -49,7 +49,7 @@ async def dog(request: Request) -> dict:
     return {"url": json["message"]}
 
 
-@router.get("/dogfact")
+@router.get("/dog-fact")
 @log_error()
 async def dog_fact(request: Request) -> dict:
     """Get a random dog image."""
@@ -61,7 +61,7 @@ async def dog_fact(request: Request) -> dict:
     return {"fact": json["fact"]}
 
 
-@router.get("/pandafact")
+@router.get("/panda-fact")
 @log_error()
 async def panda_fact(request: Request) -> dict:
     """Get a random interesting fact about pandas."""

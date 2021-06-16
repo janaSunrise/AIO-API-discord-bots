@@ -129,7 +129,7 @@ async def history(request: Request) -> dict:
     }
 
 
-@router.get("/mathfact")
+@router.get("/math-fact")
 @log_error()
 async def mathfact(request: Request) -> dict:
     """Get to know an interesting math fact."""
@@ -146,7 +146,7 @@ async def mathfact(request: Request) -> dict:
     }
 
 
-@router.get("/yearfact")
+@router.get("/year-fact")
 @log_error()
 async def yearfact(request: Request) -> dict:
     """Get to know an interesting year fact."""
@@ -201,7 +201,7 @@ async def advice(request: Request) -> dict:
     return {"advice": json["slip"]["advice"]}
 
 
-@router.get("/advice")
+@router.get("/inspire")
 @log_error()
 async def inspire(request: Request) -> dict:
     """Get inspired."""
