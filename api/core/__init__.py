@@ -5,7 +5,7 @@ from loguru import logger
 
 
 # -- Decorators --
-def log_error() -> t.Any:
+def log_error() -> t.Callable:
     """Decorator for logging errors."""
 
     def error_logging(func: t.Callable) -> t.Callable:
