@@ -8,7 +8,9 @@ from api.core import log_error
 router = APIRouter(
     prefix="/nasa",
     tags=["Nasa info and images"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 

@@ -11,6 +11,7 @@ from slowapi.util import get_remote_address
 
 from api import config as conf
 from api import routers
+
 from .models import HttpClient
 
 # -- Define the API --
@@ -63,7 +64,8 @@ logger.configure(
 if conf.ai_enabled:
     AIML_KERNEL = aiml.Kernel()
     AIML_KERNEL.setBotPredicate("name", "Overflow")
-    AIML_KERNEL.bootstrap(learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
+    AIML_KERNEL.bootstrap(
+        learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
 
 # -- Loader --
 for routers in conf.ROUTERS:
