@@ -5,7 +5,9 @@ from api.core import log_error
 router = APIRouter(
     prefix="/lyrics",
     tags=["Song lyrics endpoint"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 

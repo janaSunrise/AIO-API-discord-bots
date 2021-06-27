@@ -10,7 +10,9 @@ from api.core import log_error
 router = APIRouter(
     prefix="/search",
     tags=["Searching endpoint"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
@@ -26,7 +28,10 @@ class Search:
 
     @staticmethod
     async def _search_logic(
-        http_client, query: str, category: str = "web", count: int = 5,
+        http_client,
+        query: str,
+        category: str = "web",
+        count: int = 5,
     ) -> list:
         """Use scrapestack and the Qwant API to find search results."""
         base = "https://api.qwant.com/api"
@@ -56,11 +61,13 @@ class Search:
             return {"error": f"No results found for `{query}`."}
 
         # Gets the first entry's data
-        first_title = self.tomd.handle(results[0]["title"]).rstrip("\n").strip("<>")
+        first_title = self.tomd.handle(
+            results[0]["title"]).rstrip("\n").strip("<>")
         first_url = results[0]["url"]
         first_desc = self.tomd.handle(results[0]["desc"]).rstrip("\n")
 
-        first_dict = {"title": first_title, "description": first_desc, "url": first_url}
+        first_dict = {"title": first_title,
+                      "description": first_desc, "url": first_url}
 
         # Builds the substring for each of the other result.
         other_results = []
