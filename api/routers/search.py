@@ -10,9 +10,7 @@ from api.core import log_error
 router = APIRouter(
     prefix="/search",
     tags=["Searching endpoint"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
@@ -28,10 +26,7 @@ class Search:
 
     @staticmethod
     async def _search_logic(
-        http_client,
-        query: str,
-        category: str = "web",
-        count: int = 5,
+        http_client, query: str, category: str = "web", count: int = 5,
     ) -> list:
         """Use scrapestack and the Qwant API to find search results."""
         base = "https://api.qwant.com/api"

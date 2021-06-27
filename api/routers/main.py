@@ -8,10 +8,7 @@ from api.core import log_error
 from api.utils import get_random_post
 
 router = APIRouter(
-    tags=["Reddit image posts"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    tags=["Reddit image posts"], responses={404: {"description": "Not found"},},
 )
 
 
@@ -21,8 +18,7 @@ router = APIRouter(
 async def memes(_: Request) -> dict:
     """Have an awesome meme."""
     subreddit = await reddit.subreddit(
-        random.choice(conf.subreddits_list["memes"]),
-        fetch=True,
+        random.choice(conf.subreddits_list["memes"]), fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -32,8 +28,7 @@ async def memes(_: Request) -> dict:
 async def aww(_: Request) -> dict:
     """Get an image that makes you say "aww"."""
     subreddit = await reddit.subreddit(
-        random.choice(conf.subreddits_list["aww"]),
-        fetch=True,
+        random.choice(conf.subreddits_list["aww"]), fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -43,8 +38,7 @@ async def aww(_: Request) -> dict:
 async def funny(_: Request) -> dict:
     """Get a random funny image."""
     subreddit = await reddit.subreddit(
-        random.choice(conf.subreddits_list["funny"]),
-        fetch=True,
+        random.choice(conf.subreddits_list["funny"]), fetch=True,
     )
     return await get_random_post(subreddit)
 

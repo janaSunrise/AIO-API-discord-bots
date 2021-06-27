@@ -7,9 +7,7 @@ from api.core import log_error
 router = APIRouter(
     prefix="/fun",
     tags=["Fun endpoints"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
