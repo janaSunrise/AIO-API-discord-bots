@@ -1,9 +1,9 @@
 ## AIO API
 
-The only api you'll ever need to make your discord bot spicy, fun and stand out.
+The only APII you'll ever need to make your discord bot spicy, fun and stand out.
 
-**NOTE**: The environments shown in the deployment tab isn't real, and we aren't using it. 
-We have our own server, where we are hosting the app. Please kindly ignore it.
+**NOTE**: The environments shown in the deployment tab is not being used.
+We have the app hosted on our own server, please ignore it.
 
 ## About
 
