@@ -1,6 +1,6 @@
 ## AIO API
 
-The only APII you'll ever need to make your discord bot spicy, fun and stand out.
+The only API you'll ever need to make your discord bot spicy, fun and stand out.
 
 **NOTE**: The environments shown in the deployment tab is not being used.
 We have the app hosted on our own server, please ignore it.
@@ -33,7 +33,7 @@ Docker mini guide:
 - To stop the container: `docker-compose down`
 - To rebuild the container: `docker-compose --build`
 
-**NOTE**: The server runs on `127.0.0.1:8000` in Dev environment, and `0.0.0.0:80` in Production environment.
+**NOTE**: The server runs on `127.0.0.1:8000` in dev environment, and `0.0.0.0:80` in Production environment.
 You can change them as you like, in the respective docker compose files and use them 
 (If you're using docker for Development or Self-Hosting your own instance).
 
