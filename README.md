@@ -2,9 +2,6 @@
 
 The only API you'll ever need to make your discord bot spicy, fun and stand out.
 
-**NOTE**: The environments shown in the deployment tab is not being used.
-We have the app hosted on our own server, please ignore it.
-
 ## About
 
 This is an API developed to simplify the work of discord bot developers. Usually people find
@@ -19,7 +16,7 @@ The live version can be used and integrated, and is available at [aio-api-discor
 This is a guide to help you self host the API, and use it privately which simplifies the work, and
 reduces the load on this API too.
 
-## Docker
+### Docker
 
 Docker is an easy way of containerizing and delivering your applications quickly and easily, in a 
 convenient way. It's really simple to get started with this, with docker handling all the installation
