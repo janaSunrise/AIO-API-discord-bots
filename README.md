@@ -1,9 +1,6 @@
 ## AIO API
 
-The only api you'll ever need to make your discord bot spicy, fun and stand out.
-
-**NOTE**: The environments shown in the deployment tab isn't real, and we aren't using it.
-We have our own server, where we are hosting the app. Please kindly ignore it.
+The only API you'll ever need to make your discord bot spicy, fun and stand out.
 
 ## About
 
@@ -19,7 +16,7 @@ The live version can be used and integrated, and is available at [aio-api-discor
 This is a guide to help you self host the API, and use it privately which simplifies the work, and
 reduces the load on this API too.
 
-## Docker
+### Docker
 
 Docker is an easy way of containerizing and delivering your applications quickly and easily, in a
 convenient way. It's really simple to get started with this, with docker handling all the installation
@@ -33,9 +30,9 @@ Docker mini guide:
 - To stop the container: `docker-compose down`
 - To rebuild the container: `docker-compose --build`
 
-**NOTE**: The server runs on `127.0.0.1:8000` in Dev environment, and `0.0.0.0:80` in Production environment.
-You can change them as you like, in the respective docker compose files and use them
-(If you're using docker for Development or Self-Hosting your own instance).
+**NOTE**: The server runs on `127.0.0.1:8000` in dev environment, and `0.0.0.0:80` in Production environment.
+You can change them as needed, in the respective docker compose files and use them. (If you're using docker 
+for development or self-hosting your own instance).
 
 ### Self hosting without docker
 
