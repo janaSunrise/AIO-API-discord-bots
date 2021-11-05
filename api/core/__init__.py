@@ -4,7 +4,6 @@ import typing as t
 from loguru import logger
 
 
-# -- Decorators --
 def log_error() -> t.Callable:
     """Decorator for logging errors."""
 

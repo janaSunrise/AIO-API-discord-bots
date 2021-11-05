@@ -43,7 +43,9 @@ async def on_shutdown() -> None:
 
 # -- Configure the limiter --
 limiter = Limiter(key_func=get_remote_address, default_limits=["1/2 seconds"])
+
 app.state.limiter = limiter
+
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.add_middleware(SlowAPIMiddleware)
 
@@ -55,17 +57,20 @@ logger.configure(
             sink=conf.log_file,
             format=conf.log_format,
             level=conf.log_level,
-            rotation="500 MB",
+            rotation="300 MB",
         ),
     ]
 )
 
-# -- AI section --
+# Chatbot
 if conf.ai_enabled:
     AIML_KERNEL = aiml.Kernel()
     AIML_KERNEL.setBotPredicate("name", "Overflow")
     AIML_KERNEL.bootstrap(
-        learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
+        learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"]
+    )
+
+    app.include_router(routers.ai.router)
 
 # -- Loader --
 for routers in conf.ROUTERS:
@@ -75,7 +80,3 @@ for routers in conf.ROUTERS:
         app.include_router(getattr(routers, "router"))
     else:
         logger.warning(f"Router {routers.__name__} included but not found")
-
-# -- AI Section --
-if conf.ai_enabled:
-    app.include_router(routers.ai.router)
