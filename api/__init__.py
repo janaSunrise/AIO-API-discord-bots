@@ -12,6 +12,7 @@ from slowapi.util import get_remote_address
 from api import config as conf
 from api import routers
 
+from .core import ROUTES
 from .models import HttpClient
 
 # -- Define the API --
@@ -66,17 +67,15 @@ logger.configure(
 if conf.ai_enabled:
     AIML_KERNEL = aiml.Kernel()
     AIML_KERNEL.setBotPredicate("name", "Overflow")
-    AIML_KERNEL.bootstrap(
-        learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"]
-    )
+    AIML_KERNEL.bootstrap(learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
 
     app.include_router(routers.ai.router)
 
-# -- Loader --
-for routers in conf.ROUTERS:
-    routers = importlib.import_module(f"api.routers.{routers}")
+# Auto route loader
+for route in ROUTES:
+    router = importlib.import_module(route)
 
-    if hasattr(routers, "router"):
-        app.include_router(getattr(routers, "router"))
+    if hasattr(router, "router"):
+        app.include_router(getattr(router, "router"))
     else:
-        logger.warning(f"Router {routers.__name__} included but not found")
+        print(f"[WARNING] Router {router.__name__} included but not found")

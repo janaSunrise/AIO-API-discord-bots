@@ -12,8 +12,7 @@ class HttpClient:
     def start(self) -> None:
         """Start the client."""
         self._session = aiohttp.ClientSession()
-        self._tcp_session = aiohttp.ClientSession(
-            connector=aiohttp.TCPConnector())
+        self._tcp_session = aiohttp.ClientSession(connector=aiohttp.TCPConnector())
 
     @property
     def session(self) -> aiohttp.ClientSession:

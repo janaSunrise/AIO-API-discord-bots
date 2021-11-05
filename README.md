@@ -2,7 +2,7 @@
 
 The only api you'll ever need to make your discord bot spicy, fun and stand out.
 
-**NOTE**: The environments shown in the deployment tab isn't real, and we aren't using it. 
+**NOTE**: The environments shown in the deployment tab isn't real, and we aren't using it.
 We have our own server, where we are hosting the app. Please kindly ignore it.
 
 ## About
@@ -21,9 +21,9 @@ reduces the load on this API too.
 
 ## Docker
 
-Docker is an easy way of containerizing and delivering your applications quickly and easily, in a 
+Docker is an easy way of containerizing and delivering your applications quickly and easily, in a
 convenient way. It's really simple to get started with this, with docker handling all the installation
-and other tasks.Configure the environmental variables by renaming the `.env.example` file to `.env` with the respective 
+and other tasks.Configure the environmental variables by renaming the `.env.example` file to `.env` with the respective
 values. Once you have your environmental variables and config, follow the guide below.
 
 Docker mini guide:
@@ -34,7 +34,7 @@ Docker mini guide:
 - To rebuild the container: `docker-compose --build`
 
 **NOTE**: The server runs on `127.0.0.1:8000` in Dev environment, and `0.0.0.0:80` in Production environment.
-You can change them as you like, in the respective docker compose files and use them 
+You can change them as you like, in the respective docker compose files and use them
 (If you're using docker for Development or Self-Hosting your own instance).
 
 ### Self hosting without docker
@@ -46,7 +46,7 @@ be able to do it, this is the perfect method to get started with the self-hostin
 - Clone or fork the repository, whichever suits you better.
 - Install `pipenv`, a virtual env for python. Command: **`pip install pipenv`**
 - Create the virtual environment and prepare it for usage using `pipenv update`
-- Configure the environmental variables by renaming the `.env.example` file to `.env` with the respective 
+- Configure the environmental variables by renaming the `.env.example` file to `.env` with the respective
   values for it. If you're using heroku or other platforms that have option for external environmental
   variables, use that instead of `.env`
 - Configure the options and settings available in `config.py` inside the API module, according to your
@@ -55,9 +55,9 @@ be able to do it, this is the perfect method to get started with the self-hostin
 
 ## Contributing
 
-Contributions, issues and feature requests are welcome. After cloning & setting up project locally, you 
-can just submit a PR to this repo and it will be deployed once it's accepted. The contributing file can be 
-found 
+Contributions, issues and feature requests are welcome. After cloning & setting up project locally, you
+can just submit a PR to this repo and it will be deployed once it's accepted. The contributing file can be
+found
 [here](https://github.com/janaSunrise/AIO-API/blob/main/CONTRIBUTING.md).
 
 ⚠️ It’s good to have descriptive commit messages, or PR titles so that other contributors can understand about your commit or the PR Created.
@@ -65,7 +65,7 @@ Read [conventional commits](https://www.conventionalcommits.org/en/v1.0.0-beta.3
 
 ## Show your support
 
-We love people's support in growing and improving. Be sure to leave a ⭐️ if you like the project and 
+We love people's support in growing and improving. Be sure to leave a ⭐️ if you like the project and
 also be sure to contribute, if you're interested!
 
 ## Maintainers

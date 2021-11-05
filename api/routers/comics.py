@@ -8,9 +8,7 @@ from api.core import log_error
 router = APIRouter(
     prefix="/comics",
     tags=["Comics endpoint"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
@@ -38,21 +36,18 @@ async def smbc(request: Request) -> dict:
     http_client = request.app.state.http_client
 
     async with http_client.session.get(
-        url,
-        headers={"Connection": "keep-alive"},
+        url, headers={"Connection": "keep-alive"},
     ) as response:
         soup = BeautifulSoup(await response.text(), "html.parser")
 
     all_comics = soup.find("select", attrs={"name": "comic"})
-    all_comics_url_stubs = [option["value"]
-                            for option in all_comics.findChildren()]
+    all_comics_url_stubs = [option["value"] for option in all_comics.findChildren()]
 
     random_comic = random.choice(all_comics_url_stubs)
     comic_url = f"http://www.smbc-comics.com/{random_comic}"
 
     async with http_client.session.get(
-        comic_url,
-        headers={"Connection": "keep-alive"},
+        comic_url, headers={"Connection": "keep-alive"},
     ) as resp:
         soup = BeautifulSoup(await resp.text(), "html.parser")
         img_url = soup.find(property="og:image")["content"]
@@ -121,8 +116,7 @@ async def mrls(request: Request) -> dict:
     async with http_client.session.get(url) as response:
         soup = BeautifulSoup(await response.text(), "html.parser")
 
-    img_url = "http://www.mrlovenstein.com" + \
-        soup.find(id="comic_main_image")["src"]
+    img_url = "http://www.mrlovenstein.com" + soup.find(id="comic_main_image")["src"]
 
     return {"url": img_url}
 

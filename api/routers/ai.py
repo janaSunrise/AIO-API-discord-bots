@@ -5,9 +5,7 @@ from api.core import log_error
 router = APIRouter(
     prefix="/ai",
     tags=["AI based endpoint"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 

@@ -5,9 +5,7 @@ from api.core import log_error
 router = APIRouter(
     prefix="/gifs",
     tags=["GIF generation endpoints"],
-    responses={
-        404: {"description": "Not found"},
-    },
+    responses={404: {"description": "Not found"},},
 )
 
 
