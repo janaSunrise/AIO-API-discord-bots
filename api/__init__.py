@@ -67,7 +67,8 @@ logger.configure(
 if conf.ai_enabled:
     AIML_KERNEL = aiml.Kernel()
     AIML_KERNEL.setBotPredicate("name", "Overflow")
-    AIML_KERNEL.bootstrap(learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
+    AIML_KERNEL.bootstrap(
+        learnFiles=["api/std-startup.xml"], commands=["LOAD AIML B"])
 
     app.include_router(routers.ai.router)
 

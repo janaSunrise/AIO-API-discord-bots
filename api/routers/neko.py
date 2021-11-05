@@ -8,7 +8,9 @@ from api.core import log_error
 router = APIRouter(
     prefix="/neko",
     tags=["Neko NSFW images endpoint"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
