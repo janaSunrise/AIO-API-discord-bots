@@ -9,7 +9,9 @@ from api.utils import filter_reddit_url
 router = APIRouter(
     prefix="/reddit",
     tags=["Custom reddit post endpoint"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 

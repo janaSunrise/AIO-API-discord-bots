@@ -13,7 +13,9 @@ from api.utils import get_pod_pages
 router = APIRouter(
     prefix="/study",
     tags=["Study based commands"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
@@ -111,7 +113,12 @@ async def wiki(request: Request, query: str) -> dict:
             "results": [
                 {
                     "title": page["title"],
-                    "description": page["extract"].strip().replace("\n", "\n\n",),
+                    "description": page["extract"]
+                    .strip()
+                    .replace(
+                        "\n",
+                        "\n\n",
+                    ),
                     "url": "https://en.wikipedia.org/wiki/{}".format(
                         page["title"].replace(" ", "_")
                     ),
