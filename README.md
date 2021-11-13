@@ -34,7 +34,7 @@ Docker mini guide:
 You can change them as needed, in the respective docker compose files and use them. (If you're using docker 
 for development or self-hosting your own instance).
 
-### Self hosting without docker
+### Self-hosting without docker
 
 This is a clean and neat way of hosting without using docker. You can follow this if docker doesn't work
 well on your system, or it doesn't support it. Containers are resource intensive, and your PC might not
@@ -67,7 +67,8 @@ also be sure to contribute, if you're interested!
 
 ## Maintainers
 
-Me and one of my really closest friends maintain this repo and we aim to provide the best, free open source API for everyone to use and deploy their own instances to make their bot better in a certain way.
+Me and one of my really closest friends maintain this repo and we aim to provide the best, free open source API for everyone to use and deploy
+their own instances to make their bot better in a certain way.
 
 - [Sunrit Jana](https://github.com/janaSunrise)
 - [Faholan](https://github.com/Faholan)
