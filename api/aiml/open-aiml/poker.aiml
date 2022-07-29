@@ -13,7 +13,7 @@
 
 <!-- Introduce the game -->
 
-<category> 
+<category>
 <pattern>5CARDPOKER</pattern>
 <template>
 Welcome to the <bot name="name"/>version of 5 card "Jacks or Better" draw poker.<br/>
@@ -25,7 +25,7 @@ Type START to play my poker game.
 
 <!-- First round. Sets up the bank and plays one round. -->
 
-<category> 
+<category>
 <pattern>START</pattern>
 <that>TYPE START TO PLAY MY POKER GAME</that>
 <template>
@@ -65,7 +65,7 @@ Jacks or Better - $5
 
 <!-- Main loop for the game -->
 
-<category> 
+<category>
 <pattern>PKMAINLOOP</pattern>
 <template>
 <think>
@@ -100,7 +100,7 @@ Jacks or Better - $5
 
 <!-- Draws out 10 random cards and make sure they are different. If it can't pull 10 different cards after 2 goes then choose a set from the prearranged deck -->
 
-<category> 
+<category>
 <pattern>PKDRAWNEWDECK</pattern>
 <template>
 <think>
@@ -136,7 +136,7 @@ Jacks or Better - $5
 
 <!-- Choose a random card number -->
 
-<category> 
+<category>
 <pattern>PKDRAWCARD</pattern>
 <template>
 	<random>
@@ -160,7 +160,7 @@ Jacks or Better - $5
 
 <!-- Choose a random card suit -->
 
-<category> 
+<category>
 <pattern>PKDRAWSUIT</pattern>
 <template>
 	<random>
@@ -175,7 +175,7 @@ Jacks or Better - $5
 
 <!-- Check that the cards it has pulled out are different -->
 
-<category> 
+<category>
 <pattern>PKCHECKDIFFCARDS</pattern>
 <template>
 <think>
@@ -325,7 +325,7 @@ Jacks or Better - $5
 
 <!-- If the two cards are the same, check the suits -->
 
-<category> 
+<category>
 <pattern>PKCHECKDIFFCARDS2</pattern>
 <template>
 <think>
@@ -351,7 +351,7 @@ Jacks or Better - $5
 
 <!-- Check that the suits are different on matching cards otherwise we have drawn two cards the same -->
 
-<category> 
+<category>
 <pattern>PKCHECKDIFFSUITS</pattern>
 <template>
 <think>
@@ -368,7 +368,7 @@ Jacks or Better - $5
 
 <!-- The machine couldn't pick 10 random cards so we allocate it 10 from this pre-shuffled deck -->
 
-<category> 
+<category>
 <pattern>PKCHOOSEOWNCARDS</pattern>
 <template>
 <think>
@@ -449,7 +449,7 @@ Jacks or Better - $5
 
 <!-- Which cards does the player want to hold. Check that the choice is a valid one -->
 
-<topic name="5CARDPOKER"> 
+<topic name="5CARDPOKER">
 <category>
 <pattern>_</pattern>
 <template>
@@ -572,7 +572,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- Category to swap card A -->
 
-<category> 
+<category>
 <pattern>PKSWAPA</pattern>
 <template>
 <think>
@@ -586,7 +586,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- Category to swap card B -->
 
-<category> 
+<category>
 <pattern>PKSWAPB</pattern>
 <template>
 <think>
@@ -600,7 +600,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- Category to swap card C -->
 
-<category> 
+<category>
 <pattern>PKSWAPC</pattern>
 <template>
 <think>
@@ -614,7 +614,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- Category to swap card D -->
 
-<category> 
+<category>
 <pattern>PKSWAPD</pattern>
 <template>
 <think>
@@ -628,7 +628,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- Category to swap card E -->
 
-<category> 
+<category>
 <pattern>PKSWAPE</pattern>
 <template>
 <think>
@@ -722,7 +722,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- A complicated category to check for winning combinations. It starts at Jacks or Better and works up to Royal Flush so only the highest win is remembered -->
 
-<category> 
+<category>
 <pattern>PKCHECKWINNER</pattern>
 <template>
 <think>
@@ -891,7 +891,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- This checks for a pair. Used in Jacks or Better and Full House -->
 
-<category> 
+<category>
 <pattern>PKCHECKTWOCARDS</pattern>
 <template>
 <think>
@@ -917,7 +917,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- This checks for 3 of a kind and also flags up a possible full house -->
 
-<category> 
+<category>
 <pattern>PKCHECKTHREECARDS</pattern>
 <template>
 <think>
@@ -943,7 +943,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- Checks for 4 of a kind -->
 
-<category> 
+<category>
 <pattern>PKCHECKFOURCARDS</pattern>
 <template>
 <think>
@@ -969,7 +969,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- Keeps a running count. Used in picking a new deck and counting pairs -->
 
-<category> 
+<category>
 <pattern>PKADDKOUNT</pattern>
 <template>
 <think>
@@ -992,7 +992,7 @@ E)<get name="card5"/>of<get name="suit5"/> <get name="holdcard5"/><br/><br/>
 
 <!-- Add any winnings, display the cards, check for bankrupt or break the bank and offer to play again -->
 
-<category> 
+<category>
 <pattern>PKENDLOOP</pattern>
 <template>
 	<condition name="bestresult">
@@ -1023,7 +1023,7 @@ Bank = $<get name="dispbank"/>.<br/>
 
 <!-- These next few categories are used for adding prizes to the bank and subtracting $5 a go -->
 
-<category> 
+<category>
 <pattern>PKBANKSUB5</pattern>
 <template>
 <think>
@@ -1035,7 +1035,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>PKBANKSUB10</pattern>
 <template>
 <think>
@@ -1055,7 +1055,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>PKBANKSUB100</pattern>
 <template>
 <think>
@@ -1075,7 +1075,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>PKBANKSUB1000</pattern>
 <template>
 <think>
@@ -1095,7 +1095,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>PKBANK5</pattern>
 <template>
 <think>
@@ -1107,7 +1107,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>PKBANK10</pattern>
 <template>
 <think>
@@ -1127,7 +1127,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>PKBANK100</pattern>
 <template>
 <think>
@@ -1147,7 +1147,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>PKBANK1000</pattern>
 <template>
 <think>
@@ -1170,7 +1170,7 @@ Bank = $<get name="dispbank"/>.<br/>
 
 <!-- These last few categories ask if the player wants another go and quits out if not -->
 
-<category> 
+<category>
 <pattern>Y</pattern>
 <that>PLAY AGAIN Y N</that>
 <template>
@@ -1178,7 +1178,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>YES</pattern>
 <that>PLAY AGAIN Y N</that>
 <template>
@@ -1186,7 +1186,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>N</pattern>
 <that>PLAY AGAIN Y N</that>
 <template>
@@ -1194,7 +1194,7 @@ Bank = $<get name="dispbank"/>.<br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>NO</pattern>
 <that>PLAY AGAIN Y N</that>
 <template>
@@ -1202,7 +1202,7 @@ Thanks for playing.<br/><br/>Your final bank was $<get name="bankth"/><get name=
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>PKQUITGAME</pattern>
 <template>
 Thanks for playing.<br/><br/>Your final bank was $<get name="bankth"/><get name="bankhu"/><get name="bankte"/><get name="bankon"/>.

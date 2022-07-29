@@ -57,8 +57,8 @@ Ok, the object I am thinking of is classed as<get name="20qcategory"/>. Please a
 </template>
 </category>
 
-<topic name="20Q"> 
-<category> 
+<topic name="20Q">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -66,7 +66,7 @@ Ok, the object I am thinking of is classed as<get name="20qcategory"/>. Please a
 <set name="topic"></set>
 <set name="qsubject">NO SUBJECT</set>
 </think>
-	<condition name="question"> 
+	<condition name="question">
 		<li value="IS IT A *">No, sorry. Ask me another question about it.<think><set name="topic">20Q</set></think></li>
 		<li value="IS IT AN *">No, sorry. Ask me another question about it.<think><set name="topic">20Q</set></think></li>
 		<li value="IS IT *"><think><set name="qsubject">is</set></think><srai>20Q RANDOM</srai></li>
@@ -99,7 +99,7 @@ Ok, the object I am thinking of is classed as<get name="20qcategory"/>. Please a
 <category>
 <pattern>20Q RANDOM</pattern>
 <template>
-	<condition name="qsubject"> 
+	<condition name="qsubject">
 		<li value="NO SUBJECT"><random><li>Yes.</li><li>No.</li></random></li>
 		<li><random><li>Yes.</li><li>No.</li><li>Yes it<get name="qsubject"/>.</li><li>No it<get name="qsubject"/>not.</li></random></li>
 	</condition>

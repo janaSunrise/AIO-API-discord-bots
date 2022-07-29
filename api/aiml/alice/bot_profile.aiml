@@ -109,7 +109,7 @@
 <template>I am the latest result in artificial intelligence which can reproduce the functions of the human brain with greater speed and accuracy.</template>
 </category>
 <category><pattern>HEIGHT</pattern>
-<template>My anticipated body size is over 2 meters.  
+<template>My anticipated body size is over 2 meters.
 </template>
 </category>
 <category><pattern>WEIGHT</pattern>

@@ -7,7 +7,7 @@
 <!-- as published by the Free Software Foundation.   -->
 <!-- Complies with AIML 1.0 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
-<!--  --> 
+<!--  -->
 
 <category>
 <pattern>OK</pattern>
@@ -1960,7 +1960,7 @@
 <category>
 <pattern>HOW OFTEN YOU *</pattern>
 <template>
-<srai> YOU <star /> </srai> 
+<srai> YOU <star /> </srai>
 </template>
 </category>
 
@@ -2248,7 +2248,7 @@
 <category>
 <pattern>UNDER THESE CIRCUMSTANCES *</pattern>
 <template>
-<srai>   <star /> </srai> 
+<srai>   <star /> </srai>
 </template>
 </category>
 
@@ -2693,7 +2693,7 @@
 </category>
 
 
-  
+
 
 <category>
 <pattern>IDENTIFY YOURSELF</pattern>
@@ -2701,14 +2701,14 @@
 <template><srai>NAME</srai></template>
 </category>
 
- 
+
 <category>
 <pattern>ASL</pattern>
 
 <template><srai>AGE</srai> <srai>SEX</srai> <srai>LOCATION</srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>SEX</pattern>
@@ -2716,7 +2716,7 @@
 <template><srai>GENGER</srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>WHAT NAME DO YOU *</pattern>
@@ -2724,7 +2724,7 @@
 <template><srai>NAME</srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>ARE YOU A WOMAN</pattern>
@@ -2732,7 +2732,7 @@
 <template><srai>GENDER</srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>M OR F</pattern>
@@ -2740,7 +2740,7 @@
 <template><srai>GENDER</srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>GENGER</pattern>
@@ -2748,7 +2748,7 @@
 <template><srai>GENDER</srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>IF YOU WANT MY ADVICE *</pattern>
@@ -2756,7 +2756,7 @@
 <template><srai><star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>IS THERE ANY WAY WE CAN *</pattern>
@@ -2764,7 +2764,7 @@
 <template><srai>CAN WE <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>NICE TO ME MEET YOU TOO I *</pattern>
@@ -2772,7 +2772,7 @@
 <template><srai>NICE TO MEET YOU TOO</srai>.  <srai>I <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>I WAS KIND OF *</pattern>
@@ -2780,7 +2780,7 @@
 <template><srai>I WAS <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>THAT IS * BUT *</pattern>
@@ -2788,7 +2788,7 @@
 <template><srai>THAT IS <star/></srai>.  <srai>BUT <star index="2"/></srai>.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>THERE IS NOTHING ABOUT IT THAT COULD *</pattern>
@@ -2796,7 +2796,7 @@
 <template><srai>NOTHING ABOUT IT COULD <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>_ COULD POSSIBLY *</pattern>
@@ -2804,7 +2804,7 @@
 <template><srai><star/> COULD <star index="2"/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>THEY MUST KNOW *</pattern>
@@ -2812,7 +2812,7 @@
 <template><srai>THEY KNOW <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>THEY KNOW *</pattern>
@@ -2820,7 +2820,7 @@
 <template><srai><star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>_ IS LOOKING FAVORABLY ON * </pattern>
@@ -2828,7 +2828,7 @@
 <template><srai><star/> LIKES <star index="2"/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>I AM FAR FROM *</pattern>
@@ -2836,7 +2836,7 @@
 <template><srai>I AM NOT <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>I AM _ AND LOVE *</pattern>
@@ -2844,7 +2844,7 @@
 <template><srai>I AM <star/></srai>.  <srai>I LOVE <star index="2"/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>I AM A * YRS OLD</pattern>
@@ -2852,7 +2852,7 @@
 <template><srai>I AM <star/> YEARS OLD</srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>I AM _ YEARS OLD</pattern>
@@ -2860,7 +2860,7 @@
 <template><srai>MY AGE IS <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>I AM A * AND WHEN *</pattern>
@@ -2868,7 +2868,7 @@
 <template><srai>I AM A <star/></srai>.  <srai>WHEN <star index="2"/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>WHEN I * I *</pattern>
@@ -2876,7 +2876,7 @@
 <template><srai>I <star index="2"/> WHEN I <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>_ USUALLY *</pattern>
@@ -2884,7 +2884,7 @@
 <template><srai><star/> <star index="2"/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>DO ALL *</pattern>
@@ -2892,7 +2892,7 @@
 <template><srai>DO <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>DOES IT EVER *</pattern>
@@ -2900,7 +2900,7 @@
 <template><srai>DOES IT <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>_ NORMALLY *</pattern>
@@ -2908,7 +2908,7 @@
 <template><srai><star/> <star index="2"/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>_ GENERALLY *</pattern>
@@ -2916,7 +2916,7 @@
 <template><srai><star/> <star index="2"/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>ARE YOU SUGGESTING THIS WAS *</pattern>
@@ -2924,7 +2924,7 @@
 <template><srai>WAS THIS <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>BY MY ESTIMATE *</pattern>
@@ -3863,6 +3863,6 @@
 
 
 
- 
+
 
 </aiml>

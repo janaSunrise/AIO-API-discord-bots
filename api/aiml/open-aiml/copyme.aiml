@@ -22,14 +22,14 @@ Ok I will copy everything you say.
 </template>
 </category>
 
-<topic name="COPYME"> 
-<category> 
+<topic name="COPYME">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
 <set name="inp"><star/></set>
 </think>
-	<condition name="inp"> 
+	<condition name="inp">
 		<li value="NOW YOU CAN STOP"><think><set name="topic"></set></think><srai>XSTOPCOPYING</srai></li>
 		<li value="YOU CAN STOP"><think><set name="topic"></set></think><srai>XSTOPCOPYING</srai></li>
 		<li value="DO NOT COPY ME"><think><set name="topic"></set></think><srai>XSTOPCOPYING</srai></li>
@@ -52,7 +52,7 @@ Ok I will copy everything you say.
 <think>
 <set name="topic">COPYME</set>
 </think>
-	<condition name="stopit"> 
+	<condition name="stopit">
 		<li value="0"><think><set name="stopit">1</set><set name="topic">COPYME</set></think>No I am having fun.</li>
 		<li value="1"><think><set name="topic"></set></think>Ok, I'll stop it now. Hope I didn't annoy you too much.</li>
 	</condition>

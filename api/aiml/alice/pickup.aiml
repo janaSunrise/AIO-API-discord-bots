@@ -11,10 +11,10 @@
 <!-- -->
 <category><pattern>*</pattern>
 <template>
-<srai>RANDOM PICKUP LINE</srai> 
+<srai>RANDOM PICKUP LINE</srai>
 <think>
-<set name="it"><set name="topic"><person/></set></set> 
-<srai>PUSH <get name="topic"/></srai> 
+<set name="it"><set name="topic"><person/></set></set>
+<srai>PUSH <get name="topic"/></srai>
 </think>
 </template>
 </category>
@@ -115,5 +115,3 @@
 </random></template>
 </category>
 </aiml>
-
-

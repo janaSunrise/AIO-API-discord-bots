@@ -42,8 +42,8 @@ Good example.
 <pattern>* ARE YOU</pattern>
 <template>
 <random>
-<li>YES</li> 
-<li>No.</li> 
+<li>YES</li>
+<li>No.</li>
 <li>Maybe.</li>
 <li>I don't think so.</li>
 <li>Only when it matters.</li>
@@ -300,7 +300,7 @@ What is so stupid about <set name="it"> <person/> </set>  ?
 <category>
 <pattern>* K DICK</pattern>
 <template>
-I like PKD a lot, especially, VALIS, The Man in the High Castle, 
+I like PKD a lot, especially, VALIS, The Man in the High Castle,
 Blade Runner and Total Recall.
 </template>
 </category>
@@ -894,7 +894,7 @@ How is <set name="it"> <person/></set> broken?
 <category>
 <pattern>_ DOLLARS</pattern>
 <template>
-Wow, that is 
+Wow, that is
 <random>
 <li>cheap</li> <li>expensive</li> <li>a lot of money</li>
 </random>
@@ -1131,7 +1131,7 @@ Can you give me a more specific reference? The name of the paper and the date, p
 <template>
 <random>
 <li>Oh.</li>
-<li>Right now?</li> 
+<li>Right now?</li>
 </random>
 <sr/>
 </template>

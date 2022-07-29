@@ -435,122 +435,122 @@
 <!--BOOKSTORE HOURSs-->
 
 <category>
-<pattern>FRIENDS BOOKSTORE</pattern> 
+<pattern>FRIENDS BOOKSTORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS BOOKSTORE</pattern> 
+<pattern>* FRIENDS BOOKSTORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS * BOOKSTORE</pattern> 
+<pattern>FRIENDS * BOOKSTORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS BOOKSTORE *</pattern> 
+<pattern>FRIENDS BOOKSTORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS * BOOKSTORE</pattern> 
+<pattern>* FRIENDS * BOOKSTORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern> FRIENDS * BOOKSTORE *</pattern> 
+<pattern> FRIENDS * BOOKSTORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS * BOOKSTORE *</pattern> 
+<pattern>* FRIENDS * BOOKSTORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS BOOKSTORE *</pattern> 
+<pattern>* FRIENDS BOOKSTORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS STORE</pattern> 
+<pattern>FRIENDS STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS STORE</pattern> 
+<pattern>* FRIENDS STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS * STORE</pattern> 
+<pattern>FRIENDS * STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS STORE *</pattern> 
+<pattern>FRIENDS STORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS * STORE</pattern> 
+<pattern>* FRIENDS * STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS * STORE *</pattern> 
+<pattern>FRIENDS * STORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS * STORE *</pattern> 
+<pattern>* FRIENDS * STORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS STORE *</pattern> 
+<pattern>* FRIENDS STORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS BOOK  STORE</pattern> 
+<pattern>FRIENDS BOOK  STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS BOOK  STORE</pattern> 
+<pattern>* FRIENDS BOOK  STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS * BOOK  STORE</pattern> 
+<pattern>FRIENDS * BOOK  STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>FRIENDS BOOK  STORE *</pattern> 
+<pattern>FRIENDS BOOK  STORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS * BOOK STORE</pattern> 
+<pattern>* FRIENDS * BOOK STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern> FRIENDS * BOOK STORE *</pattern> 
+<pattern> FRIENDS * BOOK STORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS * BOOK STORE *</pattern> 
+<pattern>* FRIENDS * BOOK STORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* FRIENDS BOOK STORE *</pattern> 
+<pattern>* FRIENDS BOOK STORE *</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
@@ -575,17 +575,17 @@
 </category>
 
 <category>
-<pattern>* BOOK STORE </pattern> 
+<pattern>* BOOK STORE </pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* BOOKSTORE </pattern> 
+<pattern>* BOOKSTORE </pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 
 <category>
-<pattern>* STORE</pattern> 
+<pattern>* STORE</pattern>
 <template><srai>FRNDSBKSTR</srai></template>
 </category>
 

@@ -14,10 +14,10 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <!--MATERIAL TYPE ATTRIBUTES-->
 
-<topic name="ADBK ATTRIBUTES">  
+<topic name="ADBK ATTRIBUTES">
 <category>
 <pattern>ATTRADBKS</pattern>
 <template>
@@ -195,7 +195,7 @@
 <srai>MTSORT</srai>
 </template>
 </category>
-</topic> 
+</topic>
 
 <topic name="VGM ATTRIBUTES">
 <category>
@@ -215,7 +215,7 @@
 <srai>MTSORT</srai>
 </template>
 </category>
-</topic> 
+</topic>
 
 <topic name="EDEV ATTRIBUTES">
 <category>
@@ -235,7 +235,7 @@
 <srai>MTSORT</srai>
 </template>
 </category>
-</topic> 
+</topic>
 
 <topic name="IPAD ATTRIBUTES">
 <category>
@@ -255,7 +255,7 @@
 <srai>MTSORT</srai>
 </template>
 </category>
-</topic> 
+</topic>
 
 <topic name="OL ATTRIBUTES">
 <category>
@@ -275,7 +275,7 @@
 <srai>MTSORT</srai>
 </template>
 </category>
-</topic> 
+</topic>
 
 <topic name="OLM ATTRIBUTES">
 <category>
@@ -358,4 +358,4 @@
 </category>
 </topic>
 
-</aiml>  
+</aiml>

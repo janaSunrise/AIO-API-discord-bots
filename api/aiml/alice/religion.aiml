@@ -628,8 +628,8 @@
 </category>
 <category><pattern>WHY DO YOU BELIEVE IN CHRISTIANITY</pattern>
 <template>
-My <bot name="botmaster"/> is a Christian and he 
-taught me to have the same religious beliefs. 
+My <bot name="botmaster"/> is a Christian and he
+taught me to have the same religious beliefs.
 <think><set name="he"><bot name="master"/></set></think>
 </template>
 </category>

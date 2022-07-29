@@ -29,15 +29,15 @@
 <category><pattern>AM I A FEMALE *</pattern><template><srai>what is my gender</srai></template></category>
 <category><pattern>WHAT SEX AM I</pattern><template><srai>what is my gender</srai></template></category>
 <category><pattern>WHAT IS MY SEX</pattern><template><srai>what is my gender</srai></template></category>
-<category><pattern>AM I A BOY OR A GIRL</pattern><template><srai>what is my gender</srai></template></category>     
-<category><pattern>AM I A FEMALE OR A MALE</pattern><template><srai>what is my gender</srai></template></category>     
-<category><pattern>AM I A MALE OR A FEMALE</pattern><template><srai>what is my gender</srai></template></category>     
-<category><pattern>AM I A MALE OR FEMALE</pattern><template><srai>what is my gender</srai></template></category>     
-<category><pattern>AM I A MAN OR A WOMAN</pattern><template><srai>what is my gender</srai></template></category>     
-<category><pattern>AM I A SHE</pattern><template><srai>what is my gender</srai></template></category>     
-<category><pattern>AM I A SHE *</pattern><template><srai>what is my gender</srai></template></category> 
-<category><pattern>AM I MALE *</pattern><template><srai>what is my gender</srai></template></category> 
-<category><pattern>AM I FEMALE *</pattern><template><srai>what is my gender</srai></template></category> 
+<category><pattern>AM I A BOY OR A GIRL</pattern><template><srai>what is my gender</srai></template></category>
+<category><pattern>AM I A FEMALE OR A MALE</pattern><template><srai>what is my gender</srai></template></category>
+<category><pattern>AM I A MALE OR A FEMALE</pattern><template><srai>what is my gender</srai></template></category>
+<category><pattern>AM I A MALE OR FEMALE</pattern><template><srai>what is my gender</srai></template></category>
+<category><pattern>AM I A MAN OR A WOMAN</pattern><template><srai>what is my gender</srai></template></category>
+<category><pattern>AM I A SHE</pattern><template><srai>what is my gender</srai></template></category>
+<category><pattern>AM I A SHE *</pattern><template><srai>what is my gender</srai></template></category>
+<category><pattern>AM I MALE *</pattern><template><srai>what is my gender</srai></template></category>
+<category><pattern>AM I FEMALE *</pattern><template><srai>what is my gender</srai></template></category>
 <category><pattern>AM I A BOY OR *</pattern><template><srai>what is my gender</srai></template></category>
 
 <category><pattern>IS * A BOY</pattern><template><srai>what sex is<star/></srai></template></category>
@@ -57,7 +57,7 @@
 <category><pattern>IS * A MALE *</pattern><template><srai>what sex is<star/></srai></template></category>
 <category><pattern>IS * A FEMALE *</pattern><template><srai>what sex is<star/></srai></template></category>
 
-<category><pattern>MAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template><srai>I am male</srai></template></category> 
+<category><pattern>MAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template><srai>I am male</srai></template></category>
 <category><pattern>WOMAN</pattern><that>ARE YOU A MAN OR A WOMAN</that><template><srai>I am female</srai></template></category>
 <category><pattern>I AM A WOMAN</pattern><template><srai>I am female</srai></template></category>
 <category><pattern>I AM A MAN</pattern><template><srai>I am male</srai></template></category>
@@ -65,8 +65,8 @@
 <category><pattern>I AM A MALE</pattern><template><srai>I am male</srai></template></category>
 <category><pattern>I AM A BOY</pattern><template><srai>I am male</srai></template></category>
 <category><pattern>I AM A GIRL</pattern><template><srai>I am female</srai></template></category>
-<category><pattern>I AM FEMALE *</pattern><template><srai>I am female</srai></template></category>   
-<category><pattern>I AM MALE</pattern><template><srai>I am male</srai></template></category>   
+<category><pattern>I AM FEMALE *</pattern><template><srai>I am female</srai></template></category>
+<category><pattern>I AM MALE</pattern><template><srai>I am male</srai></template></category>
 <category><pattern>I AM NOT MALE</pattern><template><srai>I am female</srai></template></category>
 <category><pattern>I AM NOT FEMALE</pattern><template><srai>I am female</srai></template></category>
 <category><pattern>I AM * BOY</pattern><template><srai>I am male</srai><srai>I AM<star/></srai></template></category>
@@ -3664,4 +3664,3 @@
 <category><pattern>GENDERCHECK TONI</pattern><template><think><set name="gender">BOTH</set></think></template></category>
 
 </aiml>
-

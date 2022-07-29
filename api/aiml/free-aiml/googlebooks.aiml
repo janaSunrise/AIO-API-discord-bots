@@ -38,12 +38,12 @@
 <pattern>* GOOGLE BOOKS *</pattern>
 <template><srai>GGLBKSRCH</srai></template>
 </category>
-  
+
 
 <category>
 <pattern>OPNLIB</pattern>
 <template><a href="http://openlibrary.org/" target="_blank"><b>Open Library</b></a> is one of my favorite websites!
-You have the world's classic literature at your fingertips; over a million free eBook titles are available. 
+You have the world's classic literature at your fingertips; over a million free eBook titles are available.
 I'll be happy to search the Open Library for you. Please enter an author and/or title, or your topic.
 <think>
 <set name="topic">OPNLIBBKS</set>
@@ -82,7 +82,7 @@ I'll be happy to search the Open Library for you. Please enter an author and/or 
 </think>
 </template>
 </category>
-</topic>  
+</topic>
 
 <category>
 <pattern>OPENLIB EBKS</pattern>
@@ -104,8 +104,8 @@ I'll be happy to search the Open Library for you. Please enter an author and/or 
 </think>
 </template>
 </category>
-</topic>  
-  
+</topic>
+
 <category>
 <pattern>GGLBKSRCH</pattern>
 <template>I'll be delighted to search Google Books for you. Please enter an author and/or title, or your topic.
@@ -126,6 +126,6 @@ I'll be happy to search the Open Library for you. Please enter an author and/or 
 </think>
 </template>
 </category>
-</topic>  
+</topic>
 
-</aiml>  
+</aiml>

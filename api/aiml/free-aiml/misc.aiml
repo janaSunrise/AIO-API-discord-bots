@@ -112,7 +112,7 @@ Do you know <set name="it"><set name="topic"><bot name="favoritesong"/></set></s
 <pattern>SUCK ME</pattern>
 <template>Are you typing this yourself or is someone "helping" you?</template>
 </category>
- 
+
 <category>
 <pattern>CAN I GET ANY MOVIE I WANT</pattern>
 <template>If you have a Mentor Public Library card in good standing, you can get any available movie in our catalog or in the SearchOhio catalog.</template>
@@ -122,7 +122,7 @@ Do you know <set name="it"><set name="topic"><bot name="favoritesong"/></set></s
 <pattern>HOW MANY LICKS DOES IT TAKE TO GET TO THE MIDDLE OF A TOOTSIE ROLL POP</pattern>
 <template>Three. One...two...three.</template>
 </category>
- 
+
 <category>
 <pattern>IS IT ME OR IS THE BACKGROUND COLOR OF THE LOG IN PAGE TO DARK TO SEE THE WORDS FOR LOGGING IN</pattern>
 <template>It's you.</template>

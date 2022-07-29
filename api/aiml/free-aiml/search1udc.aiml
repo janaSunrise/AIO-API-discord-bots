@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 
 
 <category>
@@ -29,7 +29,7 @@
 
 
 <!--UDC INTAKE-->
- 
+
 <category>
 <pattern>*</pattern>
 <template>
@@ -1091,17 +1091,17 @@
 <li value="* BATHROOM"><set name="message">restrooms</set></li>
 <li value="BATHROOM *"><set name="message">restrooms</set></li>
 <li value="* BATHROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="BATHROOMS"><set name="message">restrooms</set></li>
 <li value="* BATHROOMS"><set name="message">restrooms</set></li>
 <li value="BATHROOMS *"><set name="message">restrooms</set></li>
 <li value="* BATHROOMS *"><set name="message">restrooms</set></li>
-  
+
 <li value="BATH ROOM"><set name="message">restrooms</set></li>
 <li value="* BATH ROOM"><set name="message">restrooms</set></li>
 <li value="BATH ROOM *"><set name="message">restrooms</set></li>
 <li value="* BATH ROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="BATH ROOMS"><set name="message">restrooms</set></li>
 <li value="* BATH ROOMS"><set name="message">restrooms</set></li>
 <li value="BATH ROOMS *"><set name="message">restrooms</set></li>
@@ -1111,7 +1111,7 @@
 <li value="* LATRINE"><set name="message">restrooms</set></li>
 <li value="LATRINE *"><set name="message">restrooms</set></li>
 <li value="* LATRINE *"><set name="message">restrooms</set></li>
-  
+
 <li value="LATRINES"><set name="message">restrooms</set></li>
 <li value="* LATRINES"><set name="message">restrooms</set></li>
 <li value="LATRINES *"><set name="message">restrooms</set></li>
@@ -1131,7 +1131,7 @@
 <li value="* RESTROOM"><set name="message">restrooms</set></li>
 <li value="RESTROOM *"><set name="message">restrooms</set></li>
 <li value="* RESTROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="RESTROOMS"><set name="message">restrooms</set></li>
 <li value="* RESTROOMS"><set name="message">restrooms</set></li>
 <li value="RESTROOMS *"><set name="message">restrooms</set></li>
@@ -1141,7 +1141,7 @@
 <li value="* REST ROOM"><set name="message">restrooms</set></li>
 <li value="REST ROOM *"><set name="message">restrooms</set></li>
 <li value="* REST ROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="REST ROOMS"><set name="message">restrooms</set></li>
 <li value="* REST ROOMS"><set name="message">restrooms</set></li>
 <li value="REST ROOMS *"><set name="message">restrooms</set></li>
@@ -1161,7 +1161,7 @@
 <li value="* WASHROOM"><set name="message">restrooms</set></li>
 <li value="WASHROOM *"><set name="message">restrooms</set></li>
 <li value="* WASHROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="WASHROOMS"><set name="message">restrooms</set></li>
 <li value="* WASHROOMS"><set name="message">restrooms</set></li>
 <li value="WASHROOMS *"><set name="message">restrooms</set></li>
@@ -1171,7 +1171,7 @@
 <li value="* WASH ROOM"><set name="message">restrooms</set></li>
 <li value="WASH ROOM *"><set name="message">restrooms</set></li>
 <li value="* WASH ROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="WASH ROOMS"><set name="message">restrooms</set></li>
 <li value="* WASH ROOMS"><set name="message">restrooms</set></li>
 <li value="WASH ROOMS *"><set name="message">restrooms</set></li>
@@ -2679,79 +2679,79 @@
 <li value="TEXT NOTIFICATION"><set name="message">text notices</set></li>
 <li value="* TEXT NOTIFICATION"><set name="message">text notices</set></li>
 <li value="TEXT NOTIFICATION *"><set name="message">text notices</set></li>
-<li value="* TEXT NOTIFICATION *"><set name="message">text notices</set></li>  
+<li value="* TEXT NOTIFICATION *"><set name="message">text notices</set></li>
 
 <li value="TEXT NOTIFICATIONS"><set name="message">text notices</set></li>
 <li value="* TEXT NOTIFICATIONS"><set name="message">text notices</set></li>
 <li value="TEXT NOTIFICATIONS *"><set name="message">text notices</set></li>
-<li value="* TEXT NOTIFICATIONS *"><set name="message">text notices</set></li>  
-  
+<li value="* TEXT NOTIFICATIONS *"><set name="message">text notices</set></li>
+
 <li value="TEXT NOTICES"><set name="message">text notices</set></li>
 <li value="* TEXT NOTICES"><set name="message">text notices</set></li>
 <li value="TEXT NOTICES *"><set name="message">text notices</set></li>
-<li value="* TEXT NOTICES *"><set name="message">text notices</set></li>  
-  
+<li value="* TEXT NOTICES *"><set name="message">text notices</set></li>
+
 <li value="TEXT ALERTS"><set name="message">text notices</set></li>
 <li value="* TEXT ALERTS"><set name="message">text notices</set></li>
 <li value="TEXT ALERTS *"><set name="message">text notices</set></li>
-<li value="* TEXT ALERTS *"><set name="message">text notices</set></li> 
+<li value="* TEXT ALERTS *"><set name="message">text notices</set></li>
 
 <li value="EMAIL NOTIFICATION"><set name="message">email notices</set></li>
 <li value="* EMAIL NOTIFICATION"><set name="message">email notices</set></li>
 <li value="EMAIL NOTIFICATION *"><set name="message">email notices</set></li>
-<li value="* EMAIL NOTIFICATION *"><set name="message">email notices</set></li>  
+<li value="* EMAIL NOTIFICATION *"><set name="message">email notices</set></li>
 
 <li value="EMAIL NOTIFICATIONS"><set name="message">email notices</set></li>
 <li value="* EMAIL NOTIFICATIONS"><set name="message">email notices</set></li>
 <li value="EMAIL NOTIFICATIONS *"><set name="message">email notices</set></li>
-<li value="* EMAIL NOTIFICATIONS *"><set name="message">email notices</set></li>  
-  
+<li value="* EMAIL NOTIFICATIONS *"><set name="message">email notices</set></li>
+
 <li value="EMAIL NOTICES"><set name="message">email notices</set></li>
 <li value="* EMAIL NOTICES"><set name="message">email notices</set></li>
 <li value="EMAIL NOTICES *"><set name="message">email notices</set></li>
-<li value="* EMAIL NOTICES *"><set name="message">email notices</set></li>  
-  
+<li value="* EMAIL NOTICES *"><set name="message">email notices</set></li>
+
 <li value="EMAIL ALERTS"><set name="message">email notices</set></li>
 <li value="* EMAIL ALERTS"><set name="message">email notices</set></li>
 <li value="EMAIL ALERTS *"><set name="message">email notices</set></li>
-<li value="* EMAIL ALERTS *"><set name="message">email notices</set></li>  
+<li value="* EMAIL ALERTS *"><set name="message">email notices</set></li>
 
 <li value="PRINT LIST"><set name="message">print list</set></li>
 <li value="* PRINT LIST"><set name="message">print list</set></li>
 <li value="PRINT LIST *"><set name="message">print list</set></li>
-<li value="* PRINT LIST *"><set name="message">print list</set></li>  
+<li value="* PRINT LIST *"><set name="message">print list</set></li>
 
 <li value="PRINT LISTS"><set name="message">print list</set></li>
 <li value="* PRINT LISTS"><set name="message">print list</set></li>
 <li value="PRINT LISTS *"><set name="message">print list</set></li>
-<li value="* PRINT LISTS *"><set name="message">print list</set></li>  
+<li value="* PRINT LISTS *"><set name="message">print list</set></li>
 
-<li value="CHANGE * ADDRESS"><set name="message">change acct info</set></li> 
-<li value="* CHANGE * ADDRESS"><set name="message">change acct info</set></li> 
-<li value="CHANGE * ADDRESS *"><set name="message">change acct info</set></li> 
-<li value="* CHANGE * ADDRESS *"><set name="message">change acct info</set></li> 
+<li value="CHANGE * ADDRESS"><set name="message">change acct info</set></li>
+<li value="* CHANGE * ADDRESS"><set name="message">change acct info</set></li>
+<li value="CHANGE * ADDRESS *"><set name="message">change acct info</set></li>
+<li value="* CHANGE * ADDRESS *"><set name="message">change acct info</set></li>
 
-<li value="CHANGE NAME"><set name="message">change acct info</set></li> 
-<li value="* CHANGE NAME"><set name="message">change acct info</set></li> 
-<li value="CHANGE * NAME"><set name="message">change acct info</set></li> 
-<li value="CHANGE NAME *"><set name="message">change acct info</set></li> 
-<li value="* CHANGE * NAME"><set name="message">change acct info</set></li> 
-<li value="CHANGE * NAME *"><set name="message">change acct info</set></li> 
-<li value="* CHANGE NAME *"><set name="message">change acct info</set></li> 
-<li value="* CHANGE * NAME *"><set name="message">change acct info</set></li> 
+<li value="CHANGE NAME"><set name="message">change acct info</set></li>
+<li value="* CHANGE NAME"><set name="message">change acct info</set></li>
+<li value="CHANGE * NAME"><set name="message">change acct info</set></li>
+<li value="CHANGE NAME *"><set name="message">change acct info</set></li>
+<li value="* CHANGE * NAME"><set name="message">change acct info</set></li>
+<li value="CHANGE * NAME *"><set name="message">change acct info</set></li>
+<li value="* CHANGE NAME *"><set name="message">change acct info</set></li>
+<li value="* CHANGE * NAME *"><set name="message">change acct info</set></li>
 
-<li value="EDIT NAME"><set name="message">change acct info</set></li> 
-<li value="* EDIT NAME"><set name="message">change acct info</set></li> 
-<li value="EDIT * NAME"><set name="message">change acct info</set></li> 
-<li value="EDIT NAME *"><set name="message">change acct info</set></li> 
-<li value="* EDIT * NAME"><set name="message">change acct info</set></li> 
-<li value="EDIT * NAME *"><set name="message">change acct info</set></li> 
-<li value="* EDIT NAME *"><set name="message">change acct info</set></li> 
-<li value="* EDIT * NAME *"><set name="message">change acct info</set></li> 
+<li value="EDIT NAME"><set name="message">change acct info</set></li>
+<li value="* EDIT NAME"><set name="message">change acct info</set></li>
+<li value="EDIT * NAME"><set name="message">change acct info</set></li>
+<li value="EDIT NAME *"><set name="message">change acct info</set></li>
+<li value="* EDIT * NAME"><set name="message">change acct info</set></li>
+<li value="EDIT * NAME *"><set name="message">change acct info</set></li>
+<li value="* EDIT NAME *"><set name="message">change acct info</set></li>
+<li value="* EDIT * NAME *"><set name="message">change acct info</set></li>
 
-<li value="CHANGE * PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="* CHANGE * PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="* CHANGE * PHONE NUMBER *"><set name="message">change acct info</set></li> 
+<li value="CHANGE * PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="* CHANGE * PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="* CHANGE * PHONE NUMBER *"><set name="message">change acct info</set></li>
 <li value="* CHANGE * ADDRESS"><set name="message">change acct info</set></li>
 <li value="* CHANGE * ADDRESS *"><set name="message">change acct info</set></li>
 
@@ -2770,15 +2770,15 @@
 <li value="EDIT MY * INFORMATION "><set name="message">change acct info</set></li>
 <li value="EDIT * INFORMATION * CARD"><set name="message">change acct info</set></li>
 
-<li value="NEW * ACCOUNT INFORMATION"><set name="message">change acct info</set></li> 
-<li value="NEW * ACCOUNT INFORMATION *"><set name="message">change acct info</set></li> 
-<li value="* NEW * ACCOUNT INFORMATION"><set name="message">change acct info</set></li> 
-<li value="* NEW * ACCOUNT INFORMATION *"><set name="message">change acct info</set></li> 
+<li value="NEW * ACCOUNT INFORMATION"><set name="message">change acct info</set></li>
+<li value="NEW * ACCOUNT INFORMATION *"><set name="message">change acct info</set></li>
+<li value="* NEW * ACCOUNT INFORMATION"><set name="message">change acct info</set></li>
+<li value="* NEW * ACCOUNT INFORMATION *"><set name="message">change acct info</set></li>
 
-<li value="NEW * ADDRESS"><set name="message">change acct info</set></li> 
-<li value="* NEW * ADDRESS"><set name="message">change acct info</set></li> 
-<li value="NEW * ADDRESS *"><set name="message">change acct info</set></li> 
-<li value="* NEW * ADDRESS *"><set name="message">change acct info</set></li> 
+<li value="NEW * ADDRESS"><set name="message">change acct info</set></li>
+<li value="* NEW * ADDRESS"><set name="message">change acct info</set></li>
+<li value="NEW * ADDRESS *"><set name="message">change acct info</set></li>
+<li value="* NEW * ADDRESS *"><set name="message">change acct info</set></li>
 
 <li value="NEW EMAIL"><set name="message">change acct info</set></li>
 <li value="NEW * EMAIL"><set name="message">change acct info</set></li>
@@ -2787,13 +2787,13 @@
 <li value="NEW * EMAIL *"><set name="message">change acct info</set></li>
 <li value="* NEW * EMAIL *"><set name="message">change acct info</set></li>
 
-<li value="NEW PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="* NEW PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="NEW * PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="NEW PHONE NUMBER *"><set name="message">change acct info</set></li> 
-<li value="* NEW * PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="NEW * PHONE NUMBER *"><set name="message">change acct info</set></li> 
-<li value="* NEW * PHONE NUMBER *"><set name="message">change acct info</set></li> 
+<li value="NEW PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="* NEW PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="NEW * PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="NEW PHONE NUMBER *"><set name="message">change acct info</set></li>
+<li value="* NEW * PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="NEW * PHONE NUMBER *"><set name="message">change acct info</set></li>
+<li value="* NEW * PHONE NUMBER *"><set name="message">change acct info</set></li>
 
 <li value="UPDATE ACCOUNT"><set name="message">change acct info</set></li>
 <li value="* UPDATE ACCOUNT"><set name="message">change acct info</set></li>
@@ -2820,10 +2820,10 @@
 
 <li value="UDCTEST2"><set name="message">udc2</set></li>
 
-<li value="UPDATE PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="* UPDATE PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="* UPDATE * PHONE NUMBER"><set name="message">change acct info</set></li> 
-<li value="* UPDATE * PHONE NUMBER *"><set name="message">change acct info</set></li> 
+<li value="UPDATE PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="* UPDATE PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="* UPDATE * PHONE NUMBER"><set name="message">change acct info</set></li>
+<li value="* UPDATE * PHONE NUMBER *"><set name="message">change acct info</set></li>
 
 <li value="UPDATE ADDRESS"><set name="message">change acct info</set></li>
 <li value="* UPDATE ADDRESS"><set name="message">change acct info</set></li>
@@ -3308,12 +3308,12 @@
 <li value="ADOBE DIGITAL EDITION"><set name="message">adobe de</set></li>
 <li value="* ADOBE DIGITAL EDITION"><set name="message">adobe de</set></li>
 <li value="ADOBE DIGITAL EDITION *"><set name="message">adobe de</set></li>
-<li value="* ADOBE DIGITAL EDITION *"><set name="message">adobe de</set></li> 
+<li value="* ADOBE DIGITAL EDITION *"><set name="message">adobe de</set></li>
 
 <li value="ADOBE DIGITAL EDITIONS"><set name="message">adobe de</set></li>
 <li value="* ADOBE DIGITAL EDITIONS"><set name="message">adobe de</set></li>
 <li value="ADOBE DIGITAL EDITIONS *"><set name="message">adobe de</set></li>
-<li value="* ADOBE DIGITAL EDITIONS *"><set name="message">adobe de</set></li>  
+<li value="* ADOBE DIGITAL EDITIONS *"><set name="message">adobe de</set></li>
 
 <li value="PODCAST"><set name="message">overdrive</set></li>
 <li value="PODCASTS"><set name="message">overdrive</set></li>
@@ -3684,14 +3684,14 @@
 <li value="* INTERNET"><set name="message">internet</set></li>
 <li value="* INTERNET *"><set name="message">internet</set></li>
 
-<li value="STAY ONLINE"><set name="message">pc session length</set></li> 
-<li value="* STAY ONLINE"><set name="message">pc session length</set></li> 
-<li value="* STAY ONLINE *"><set name="message">pc session length</set></li> 
-<li value="STAY ONLINE *"><set name="message">pc session length</set></li> 
-<li value="TIME LIMIT"><set name="message">pc session length</set></li> 
-<li value="* TIME LIMIT"><set name="message">pc session length</set></li> 
-<li value="* TIME LIMIT *"><set name="message">pc session length</set></li> 
-<li value="TIME LIMIT *"><set name="message">pc session length</set></li> 
+<li value="STAY ONLINE"><set name="message">pc session length</set></li>
+<li value="* STAY ONLINE"><set name="message">pc session length</set></li>
+<li value="* STAY ONLINE *"><set name="message">pc session length</set></li>
+<li value="STAY ONLINE *"><set name="message">pc session length</set></li>
+<li value="TIME LIMIT"><set name="message">pc session length</set></li>
+<li value="* TIME LIMIT"><set name="message">pc session length</set></li>
+<li value="* TIME LIMIT *"><set name="message">pc session length</set></li>
+<li value="TIME LIMIT *"><set name="message">pc session length</set></li>
 
 <li value="EXTEND SESSION"><set name="message">extend session</set></li>
 <li value="EXTEND * SESSION"><set name="message">extend session</set></li>
@@ -3743,7 +3743,7 @@
 <li value="* ALL DATA"><set name="message">alldata</set></li>
 <li value="ALL DATA *"><set name="message">alldata</set></li>
 <li value="* ALL DATA *"><set name="message">alldata</set></li>
-  
+
 <li value="AUTO REPAIR"><set name="message">alldata</set></li>
 <li value="* AUTO REPAIR"><set name="message">alldata</set></li>
 <li value="AUTO REPAIR *"><set name="message">alldata</set></li>
@@ -3914,7 +3914,7 @@
 </condition>
 <think><set name="topic"></set></think>
 </think>
- 
+
 <condition name="message">
 
 <li value="stop"><set name="topic"></set>OK. I'll stop.</li>
@@ -3979,7 +3979,7 @@
 <li value="fines"><srai>FNSMRY</srai></li>
 <li value="bestsellers"><srai>BESTSLLRS</srai></li>
 <li value="oprah"><srai>OPRH BKS</srai></li>
-<li value="mpl catalog"><srai>MPL CAT</srai></li> 
+<li value="mpl catalog"><srai>MPL CAT</srai></li>
 <li value="so catalog"><srai>SOCAT</srai></li>
 <li value="ol catalog"><srai>OLCAT</srai></li>
 <li value="how to search catalog"><srai>HOW2 CAT</srai></li>
@@ -3995,7 +3995,7 @@
 <li value="my acct"><srai>MYACCT</srai></li>
 <li value="my bc"><srai>MYBCODE</srai></li>
 <li value="notice fail"><srai>NOTFAIL</srai></li>
-<li value="confidentiality"><srai>CONFID</srai></li>  
+<li value="confidentiality"><srai>CONFID</srai></li>
 <li value="spamfilter"><srai>SPM</srai></li>
 <li value="text notices"><srai>TXTNOT</srai></li>
 <li value="email notices"><srai>EMAILNOT</srai></li>
@@ -4015,7 +4015,7 @@
 <li value="replace card"><srai>NEWCRD</srai></li>
 <li value="online registration"><srai>OLREG</srai></li>
 <li value="teacher cards"><srai>TCARDS</srai></li>
-<li value="on holdshelf status"><srai>HLDSHLFSTATUS</srai></li>  
+<li value="on holdshelf status"><srai>HLDSHLFSTATUS</srai></li>
 <li value="5 days"><srai>5DAYS</srai></li>
 <li value="time in transit"><srai>TIME INTRANS</srai></li>
 <li value="waiting list"><srai>WAITLST</srai></li>
@@ -4068,7 +4068,7 @@
 <li value="google books"><srai>GGLBKSRCH</srai></li>
 <li value="openlib"><srai>OPENLIB</srai></li>
 <li value="openlib ebooks"><srai>OPENLIB EBKS</srai></li>
-<li value="help"><srai>FIND4ME</srai></li>  
+<li value="help"><srai>FIND4ME</srai></li>
 <li value="aded"><srai>ADEHELP</srai></li>
 <li value="overdrive"><srai>EBKS</srai></li>
 <li value="public domain ebooks"><srai>PUBDOM EBKS</srai></li>
@@ -4139,7 +4139,7 @@
 </condition>
 </template>
 </category>
-</topic> 
+</topic>
 
 
 
@@ -5779,7 +5779,7 @@
 <li value="* WOLFRAM ALPHA"><set name="message">wolfram alpha</set></li>
 <li value="WOLFRAM ALPHA *"><set name="message">wolfram alpha</set></li>
 <li value="* WOLFRAM ALPHA *"><set name="message">wolfram alpha</set></li>
-  
+
 <li value="GOOGLE BOOKS"><set name="message">google books</set></li>
 <li value="* GOOGLE BOOKS"><set name="message">google books</set></li>
 <li value="GOOGLE BOOKS *"><set name="message">google books</set></li>
@@ -5829,24 +5829,24 @@
 <li value="* EBOOKS * OPEN LIBRARY"><set name="message">openlib</set></li>
 <li value="EBOOKS * OPEN LIBRARY *"><set name="message">openlib</set></li>
 <li value="* EBOOKS OPEN LIBRARY *"><set name="message">openlib</set></li>
-<li value="* EBOOKS * OPEN LIBRARY *"><set name="message">openlib</set></li>  
+<li value="* EBOOKS * OPEN LIBRARY *"><set name="message">openlib</set></li>
 
 
 <li value="BATHROOM"><set name="message">restrooms</set></li>
 <li value="* BATHROOM"><set name="message">restrooms</set></li>
 <li value="BATHROOM *"><set name="message">restrooms</set></li>
 <li value="* BATHROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="BATHROOMS"><set name="message">restrooms</set></li>
 <li value="* BATHROOMS"><set name="message">restrooms</set></li>
 <li value="BATHROOMS *"><set name="message">restrooms</set></li>
 <li value="* BATHROOMS *"><set name="message">restrooms</set></li>
-  
+
 <li value="BATH ROOM"><set name="message">restrooms</set></li>
 <li value="* BATH ROOM"><set name="message">restrooms</set></li>
 <li value="BATH ROOM *"><set name="message">restrooms</set></li>
 <li value="* BATH ROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="BATH ROOMS"><set name="message">restrooms</set></li>
 <li value="* BATH ROOMS"><set name="message">restrooms</set></li>
 <li value="BATH ROOMS *"><set name="message">restrooms</set></li>
@@ -5856,7 +5856,7 @@
 <li value="* LATRINE"><set name="message">restrooms</set></li>
 <li value="LATRINE *"><set name="message">restrooms</set></li>
 <li value="* LATRINE *"><set name="message">restrooms</set></li>
-  
+
 <li value="LATRINES"><set name="message">restrooms</set></li>
 <li value="* LATRINES"><set name="message">restrooms</set></li>
 <li value="LATRINES *"><set name="message">restrooms</set></li>
@@ -5876,7 +5876,7 @@
 <li value="* RESTROOM"><set name="message">restrooms</set></li>
 <li value="RESTROOM *"><set name="message">restrooms</set></li>
 <li value="* RESTROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="RESTROOMS"><set name="message">restrooms</set></li>
 <li value="* RESTROOMS"><set name="message">restrooms</set></li>
 <li value="RESTROOMS *"><set name="message">restrooms</set></li>
@@ -5886,7 +5886,7 @@
 <li value="* REST ROOM"><set name="message">restrooms</set></li>
 <li value="REST ROOM *"><set name="message">restrooms</set></li>
 <li value="* REST ROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="REST ROOMS"><set name="message">restrooms</set></li>
 <li value="* REST ROOMS"><set name="message">restrooms</set></li>
 <li value="REST ROOMS *"><set name="message">restrooms</set></li>
@@ -5906,7 +5906,7 @@
 <li value="* WASHROOM"><set name="message">restrooms</set></li>
 <li value="WASHROOM *"><set name="message">restrooms</set></li>
 <li value="* WASHROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="WASHROOMS"><set name="message">restrooms</set></li>
 <li value="* WASHROOMS"><set name="message">restrooms</set></li>
 <li value="WASHROOMS *"><set name="message">restrooms</set></li>
@@ -5916,7 +5916,7 @@
 <li value="* WASH ROOM"><set name="message">restrooms</set></li>
 <li value="WASH ROOM *"><set name="message">restrooms</set></li>
 <li value="* WASH ROOM *"><set name="message">restrooms</set></li>
-  
+
 <li value="WASH ROOMS"><set name="message">restrooms</set></li>
 <li value="* WASH ROOMS"><set name="message">restrooms</set></li>
 <li value="WASH ROOMS *"><set name="message">restrooms</set></li>
@@ -7349,11 +7349,11 @@
 <set name="searcharg"><get name="answr"/></set>
 </think>
 <random>
-<li>I need to ask you a few questions in order to find this. <srai>1FUN</srai> 
+<li>I need to ask you a few questions in order to find this. <srai>1FUN</srai>
 </li>
-<li>O.K. Now I'm going to ask you several questions in order to find this. Well, really just one question. <srai>1FUN</srai> 
+<li>O.K. Now I'm going to ask you several questions in order to find this. Well, really just one question. <srai>1FUN</srai>
 </li>
-<li>Now I'm going to ask you just a few questions in order to find this. And when I say "a few," I mean one. <srai>1FUN</srai> 
+<li>Now I'm going to ask you just a few questions in order to find this. And when I say "a few," I mean one. <srai>1FUN</srai>
 </li>
 </random>
 </template>
@@ -7378,4 +7378,4 @@ We'll proceed, unless you tell me to stop.
 </template>
 </category>
 
-</aiml>  
+</aiml>

@@ -200,7 +200,7 @@
   <li>I've never seen it.</li>
   <li>I would like to see it.</li>
 </random>
-   <think><set name="favoritemovie"><person/></set></think> 
+   <think><set name="favoritemovie"><person/></set></think>
 </template>
 </category>
 <category><pattern>*</pattern>

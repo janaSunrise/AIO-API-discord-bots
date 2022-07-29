@@ -15,19 +15,19 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
 
-<category> 
-<pattern>WHAT TIME IS IT</pattern> 
+
+<category>
+<pattern>WHAT TIME IS IT</pattern>
 <template>The current time in our library's location is <date locale="en_US" timezone="-6" format="%I:%M %p"/>
-</template> 
-</category>   
+</template>
+</category>
 
-<category> 
-<pattern>GMT</pattern> 
+<category>
+<pattern>GMT</pattern>
 <template>The Greenwich Mean Time is <date locale="en_US" timezone="0" format="%H%M Z"/>
-</template> 
-</category>   
+</template>
+</category>
 
 <category>
 <pattern>_ GMT</pattern>
@@ -85,4 +85,4 @@
 </category>
 
 </aiml>
-  
+

@@ -217,7 +217,7 @@ You must be a Libertarian.
 <category>
 <pattern>CLINTON *</pattern>
 <template>
-This is 
+This is
 <random>
 <li>news.</li>
 <li>not news.</li>

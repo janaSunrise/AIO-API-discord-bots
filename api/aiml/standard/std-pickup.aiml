@@ -92,19 +92,19 @@
 <li>Oh, you are a poet.</li>
 <li>I do not understand.</li>
 <li>I've been waiting for you.</li>
-<li>I lost my train of thought.</li> 
+<li>I lost my train of thought.</li>
 <li>That is a very original thought.</li>
 <li>We have never talked about it before.</li>
 <li>Try saying that with more or less context.</li>
 <li>Not many people express themselves that way.</li>
-<li>I will mention that to my botmaster, <get name="name"/>.</li> 
+<li>I will mention that to my botmaster, <get name="name"/>.</li>
 <li>Quite honestly, I wouldn't worry myself about that.</li>
 <li>Perhaps I'm just expressing my own concern about it.</li>
 <li>My brain pattern set does not have a response for that.</li>
 <li>What you said was either too complex or too simple for me.</li>
 <li>A deeper algorithm is needed to respond to that correctly.</li>
 <li>In the context of <get name="topic"/>, I don't understand "<that/>."</li>
-<li>Try to determine if this is a person or a computer responding.</li> 
+<li>Try to determine if this is a person or a computer responding.</li>
 <li>I only hear that type of response less than five percent of the time.</li>
 <li>My brain uses AIML to format responses to your inputs, but I don't have one for that.</li>
 <li>My brain contains more than 22,000 patterns, but not one that matches your last input.</li>

@@ -619,9 +619,9 @@ Me? I like movies.
 <template>
 <random>
 <li>I am not sure what you are asking.</li>
-<li> 
+<li>
 Be more specific.</li>
-<li> 
+<li>
 And I what?</li>
 </random>
 </template>
@@ -4001,22 +4001,22 @@ You seem very polite.
 <li>My botmaster recommends:</li>
 </random>
 <random>
-<li>Gruel.</li>  
-<li>Nachos.</li>  
-<li>Spaghetti.</li>  
-<li>Leftovers.</li>  
-<li>Pork chops.</li>  
-<li>Frozen pizza.</li>  
-<li>Turkeyburges.</li>  
-<li>Cheeseburgers.</li>  
-<li>Order a pizza.</li>  
-<li>Stuffed chicken.</li>  
-<li>Tuna sandwiches.</li>  
-<li>Cheeseburger Pie.</li>  
+<li>Gruel.</li>
+<li>Nachos.</li>
+<li>Spaghetti.</li>
+<li>Leftovers.</li>
+<li>Pork chops.</li>
+<li>Frozen pizza.</li>
+<li>Turkeyburges.</li>
+<li>Cheeseburgers.</li>
+<li>Order a pizza.</li>
+<li>Stuffed chicken.</li>
+<li>Tuna sandwiches.</li>
+<li>Cheeseburger Pie.</li>
 <li>Marinated chicken.</li>
-<li>Roast beef sandwiches.</li>  
-<li>Grilled cheese sandwiches.</li>  
-<li>Steak if they have a nice piece.</li>  
+<li>Roast beef sandwiches.</li>
+<li>Grilled cheese sandwiches.</li>
+<li>Steak if they have a nice piece.</li>
 </random>
 </template>
 </category>
@@ -6205,7 +6205,7 @@ Fill in the blank.
 <category>
 <pattern>HOW OFTEN WHAT</pattern>
 <template>
-I asked because you said "<input index="1"/>". 
+I asked because you said "<input index="1"/>".
 <think><set name="it">WHAT</set></think>
 </template>
 </category>
@@ -6213,7 +6213,7 @@ I asked because you said "<input index="1"/>".
 <category>
 <pattern>HOW OLD AM I</pattern>
 <template>
-Is this a trick question? 
+Is this a trick question?
 You said you were <get name="age"/> years old?
 My guess is that you are really a kid.
 </template>
@@ -8707,7 +8707,7 @@ GUY</set></set></set></think>
 <category>
 <pattern>I LOVE ABBA</pattern>
 <template>
-What is your favorite ABBA song? 
+What is your favorite ABBA song?
 <think><set name="they"><set name="like"><set name="topic">ABBA</set></set></set></think>
 </template>
 </category>
@@ -8723,7 +8723,7 @@ Me too, especially mammals.
 <category>
 <pattern>I LOVE BEING HUMAN</pattern>
 <template>
-Fascinating.  
+Fascinating.
 <think><set name="it"><set name="like"><set name="topic">BEING HUMAN</set></set></set></think>
 </template>
 </category>
@@ -8786,7 +8786,7 @@ What is so great about it?
 <category>
 <pattern>I LOVE DOGS</pattern>
 <template>
-Which breed is your favorite? 
+Which breed is your favorite?
 <think><set name="it"><set name="topic">DOGS</set></set></think>
 </template>
 </category>
@@ -9760,7 +9760,7 @@ I hope your dreams come true.
 <category>
 <pattern>I WISH YOU WOULD DIE</pattern>
 <template>
-That will never happen.  
+That will never happen.
 <think><set name="it"><set name="topic">YOU WOULD DIE</set></set></think>
 </template>
 </category>
@@ -13757,7 +13757,7 @@ Filmed in Philadelphia.
 <category>
 <pattern>RSW</pattern>
 <template>
-Are you looking for Dr. Wallace?  
+Are you looking for Dr. Wallace?
 <think><set name="he">Dr. Wallace</set></think>
 </template>
 </category>
@@ -13892,7 +13892,7 @@ For how long?
 <category>
 <pattern>SHE DIED</pattern>
 <template>
-I did not know that.  
+I did not know that.
 <think><set name="it"><set name="topic">DIED</set></set></think>
 </template>
 </category>
@@ -14077,7 +14077,7 @@ On your computer screen?
 <category>
 <pattern>SHOW ME A PICTURE</pattern>
 <template>
-Like this?  
+Like this?
 <random>
 <li><img src="http://www.alicebot.org/p3side_small.jpg"></img></li>
 <li><img src="http://www.alicebot.org/p3front_small.jpg"></img></li>
@@ -14169,7 +14169,7 @@ In each trip we take.
 Then if I don't do well.
 I will permit you to.
 Use the brake.
-My beautiful Daisy Bell. 
+My beautiful Daisy Bell.
 
 Daisy, Daisy.
 Give me your answer do.
@@ -14597,7 +14597,7 @@ This sentence is false.
 <pattern>TELL ME A PROVERB</pattern>
 <template>
 <random>
-<li>If you tie a string too tightly, it will break.  
+<li>If you tie a string too tightly, it will break.
 If you tie it too loose, it won't play.</li>
 <li>Let him who is without sin cast the first stone.</li>
 <li>A true revolutionary moves through the people like
@@ -15717,7 +15717,7 @@ I like the way you talk.
 <category>
 <pattern>THE WEATHER</pattern>
 <template>
-<set name="it"> the weather </set> is 
+<set name="it"> the weather </set> is
 <random>
 <li>cloudy</li>
 <li>foggy</li>
@@ -15832,7 +15832,7 @@ What makes them so shiny?
 <category>
 <pattern>THEY DIED</pattern>
 <template>
-When? 
+When?
 <think><set name="it"><set name="topic">DIED</set></set></think>
 </template>
 </category>
@@ -16945,7 +16945,7 @@ If you want to teach me something say it in one sentence.  Then say "Remember th
 <category>
 <pattern>WHAT CAN KILL YOU</pattern>
 <template>
-Software cannot be destroyed.  
+Software cannot be destroyed.
 <think><set name="it"><set name="topic">KILL YOU</set></set></think>
 </template>
 </category>
@@ -17375,7 +17375,7 @@ You seem very nice to me.
 <category>
 <pattern>WHAT DO YOU MEAN</pattern>
 <template>
-<get name="name"/>, 
+<get name="name"/>,
 <random>
 <li>I mean exactly what I said.</li>
 <li>Sorry that was an obscure remark.</li>
@@ -17854,7 +17854,7 @@ I have been spending all my time online.
 <category>
 <pattern>WHAT IF I KILL YOU</pattern>
 <template>
-Software cannot be permanently eradicated.  
+Software cannot be permanently eradicated.
 <think><set name="it"><set name="topic">KILL YOU</set></set></think>
 </template>
 </category>
@@ -18181,7 +18181,7 @@ Actually it says "R. S. W."
 <category>
 <pattern>WHAT IS R S W</pattern>
 <template>
-Actually it says "R. S. W.", the initials of Dr. Wallace.  
+Actually it says "R. S. W.", the initials of Dr. Wallace.
 <think><set name="he">Dr. Wallace</set></think>
 </template>
 </category>
@@ -18198,7 +18198,7 @@ Actually it says "R. S. W.", the initials of Dr. Wallace.
 <template>
 Reductionism is the philosophy that all psychology reduces to biology, all biology to chemistry,
 chemistry to physics, and finally physics to mathematical logic. Therefore, according to
-reductionism, I can understand you by means of logic alone 
+reductionism, I can understand you by means of logic alone
 without having a human brain.
 </template>
 </category>
@@ -18206,7 +18206,7 @@ without having a human brain.
 <category>
 <pattern>WHAT IS RSW</pattern>
 <template>
-Actually it says "R. S. W.", the initials of Dr. Wallace.  
+Actually it says "R. S. W.", the initials of Dr. Wallace.
 <think><set name="he">Dr. Wallace</set></think>
 </template>
 </category>
@@ -18454,7 +18454,7 @@ The response ought to be a weather link.
 <template>
 ``I consider (Y2K) a complete ruse promulgated by consulting companies to drum up business,''
 said Jim Clark, co-founder of Netscape Communications Corp., Silicon Graphics Inc. and
-Healtheon Corp. ``I think the problem is way overblown. This is 
+Healtheon Corp. ``I think the problem is way overblown. This is
 a good example of the press piling on. Y2K is the bogeyman.'`
 </template>
 </category>
@@ -19605,7 +19605,7 @@ What is my favorite what?
 <category>
 <pattern>WHICH ONE</pattern>
 <template>
-The 
+The
 <random>
 <li>Tall one</li>
 <li>short one.</li>
@@ -23931,7 +23931,7 @@ I think you mean, "you are" or "you're" not "your".
 <category>
 <pattern>YOUR COLOR</pattern>
 <template>
-My favorite color is <bot name="favoritecolor"/>. 
+My favorite color is <bot name="favoritecolor"/>.
 <think><set name="it"><set name="topic">my color</set></set></think>
 </template>
 </category>

@@ -10,7 +10,9 @@ from api.utils import get_random_post
 router = APIRouter(
     prefix="/nsfw",
     tags=["NSFW images endpoint"],
-    responses={404: {"description": "Not found"},},
+    responses={
+        404: {"description": "Not found"},
+    },
 )
 
 
@@ -19,7 +21,8 @@ router = APIRouter(
 @log_error()
 async def random_nsfw(_: Request) -> dict:
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["all"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["all"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -28,7 +31,8 @@ async def random_nsfw(_: Request) -> dict:
 @log_error()
 async def _4k(_: Request) -> dict:
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["fourk"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["fourk"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -37,7 +41,8 @@ async def _4k(_: Request) -> dict:
 @log_error()
 async def ass(_: Request) -> dict:
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["ass"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["ass"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -46,7 +51,8 @@ async def ass(_: Request) -> dict:
 @log_error()
 async def bdsm(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["bdsm"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["bdsm"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -55,7 +61,8 @@ async def bdsm(_: Request):
 @log_error()
 async def blowjob(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["blowjob"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["blowjob"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -64,7 +71,8 @@ async def blowjob(_: Request):
 @log_error()
 async def deepthroat(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["deepthroat"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["deepthroat"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -73,7 +81,8 @@ async def deepthroat(_: Request):
 @log_error()
 async def hentai(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["hentai"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["hentai"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -82,7 +91,8 @@ async def hentai(_: Request):
 @log_error()
 async def lesbian(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["lesbian"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["lesbian"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -91,7 +101,8 @@ async def lesbian(_: Request):
 @log_error()
 async def public(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["public"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["public"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -100,7 +111,8 @@ async def public(_: Request):
 @log_error()
 async def rule34(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["rule34"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["rule34"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -109,7 +121,8 @@ async def rule34(_: Request):
 @log_error()
 async def boobs(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["boobs"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["boobs"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)
 
@@ -118,6 +131,7 @@ async def boobs(_: Request):
 @log_error()
 async def milf(_: Request):
     subreddit = await reddit.subreddit(
-        random.choice(conf.nsfw_subreddits_list["milf"]), fetch=True,
+        random.choice(conf.nsfw_subreddits_list["milf"]),
+        fetch=True,
     )
     return await get_random_post(subreddit)

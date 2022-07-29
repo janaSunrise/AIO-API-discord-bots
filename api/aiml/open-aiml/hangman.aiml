@@ -309,40 +309,40 @@ Guess a letter.
 
 
 <category>
-<pattern>XTAKELIFE</pattern> 
+<pattern>XTAKELIFE</pattern>
 <template>
 <think>
-	<condition name="lives"> 
+	<condition name="lives">
 		<li value="10 lives"><set name="lives">9 lives</set></li>
-		<li value="9 lives"><set name="lives">8 lives</set></li> 
-		<li value="8 lives"><set name="lives">7 lives</set></li> 
-		<li value="7 lives"><set name="lives">6 lives</set></li> 
-		<li value="6 lives"><set name="lives">5 lives</set></li> 
-		<li value="5 lives"><set name="lives">4 lives</set></li> 
-		<li value="4 lives"><set name="lives">3 lives</set></li> 
-		<li value="3 lives"><set name="lives">2 lives</set></li> 
-		<li value="2 lives"><set name="lives">1 life</set></li> 
-		<li value="1 life"><set name="lives">0 lives</set></li> 
+		<li value="9 lives"><set name="lives">8 lives</set></li>
+		<li value="8 lives"><set name="lives">7 lives</set></li>
+		<li value="7 lives"><set name="lives">6 lives</set></li>
+		<li value="6 lives"><set name="lives">5 lives</set></li>
+		<li value="5 lives"><set name="lives">4 lives</set></li>
+		<li value="4 lives"><set name="lives">3 lives</set></li>
+		<li value="3 lives"><set name="lives">2 lives</set></li>
+		<li value="2 lives"><set name="lives">1 life</set></li>
+		<li value="1 life"><set name="lives">0 lives</set></li>
 	</condition>
-</think> 
+</think>
 </template>
 </category>
 
 <category>
-<pattern>XCOUNTLETTERS</pattern> 
+<pattern>XCOUNTLETTERS</pattern>
 <template>
 <think>
-	<condition name="kount"> 
+	<condition name="kount">
 		<li value="0"><set name="kount">1</set></li>
-		<li value="1"><set name="kount">2</set></li> 
-		<li value="2"><set name="kount">3</set></li> 
-		<li value="3"><set name="kount">4</set></li> 
-		<li value="4"><set name="kount">5</set></li> 
-		<li value="5"><set name="kount">6</set></li> 
-		<li value="6"><set name="kount">7</set></li> 
-		<li value="7"><set name="kount">8</set></li> 
-		<li value="8"><set name="kount">9</set></li> 
-		<li value="9"><set name="kount">10</set></li> 
+		<li value="1"><set name="kount">2</set></li>
+		<li value="2"><set name="kount">3</set></li>
+		<li value="3"><set name="kount">4</set></li>
+		<li value="4"><set name="kount">5</set></li>
+		<li value="5"><set name="kount">6</set></li>
+		<li value="6"><set name="kount">7</set></li>
+		<li value="7"><set name="kount">8</set></li>
+		<li value="8"><set name="kount">9</set></li>
+		<li value="9"><set name="kount">10</set></li>
 		<li value="10"><set name="kount">11</set></li>
 		<li value="11"><set name="kount">12</set></li>
 		<li value="12"><set name="kount">13</set></li>
@@ -355,7 +355,7 @@ Guess a letter.
 		<li value="19"><set name="kount">20</set></li>
 		<li value="20"><set name="kount">21</set></li>
 	</condition>
-</think> 
+</think>
 </template>
 </category>
 

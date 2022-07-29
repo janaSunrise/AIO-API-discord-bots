@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
 <pattern>ACCOUNT</pattern>
 <template><srai>ACCT</srai></template>
@@ -1038,19 +1038,19 @@ I'm often asked about accounts. What is your question about library accounts?
 <li value="good standing"><srai>GOODST</srai></li>
 
 <li value="in use by system"><srai>RECINUSE</srai></li>
-  
+
 <li value="my account"><srai>AYACCT</srai></li>
 
 <li value="notice fail"><srai>NOTFAIL</srai></li>
-  
+
 <li value="confidentiality"><srai>CONFID</srai></li>
 
 <li value="spam"><srai>SPM</srai></li>
 
 <li value="texts"><srai>TXTNOT</srai></li>
-  
+
 <li value="email alerts"><srai>EMAILNOT</srai></li>
-  
+
 <li value="print lists"><srai>PRNTLSTS</srai></li>
 <li value="change account info"><srai>XACCTINFO</srai></li>
 <li value="reading history"><srai>RHIST</srai></li>

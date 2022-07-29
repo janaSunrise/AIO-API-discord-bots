@@ -14,85 +14,85 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
- 
-  
+
+
+
 <category>
 <pattern>CHRISTMAS *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
 <set name="searcharg">CHRISTMAS <star/></set>
 <set name="search">catkey</set></think>
 </template>
-</category> 
+</category>
 
 <category>
 <pattern>_ CHRISTMAS</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
 <set name="searcharg"><star/> CHRISTMAS</set>
 <set name="search">catkey</set></think>
 </template>
-</category> 
-  
+</category>
+
 <category>
 <pattern>_ CHRISTMAS *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
 <set name="searcharg"><star/> CHRISTMAS <star index="2"/></set>
 <set name="search">catkey</set></think>
 </template>
-</category> 
-  
+</category>
+
 <category>
 <pattern>CHRISTMAS *</pattern>
 <that>_ MOVIE IS ABOUT IN JUST A FEW WORDS</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
 <set name="searcharg">CHRISTMAS <star/></set>
 <set name="search">catkey</set></think>
 </template>
-</category> 
+</category>
 
 <category>
 <pattern>_ CHRISTMAS</pattern>
 <that>_ MOVIE IS ABOUT IN JUST A FEW WORDS</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
 <set name="searcharg"><star/> CHRISTMAS</set>
 <set name="search">catkey</set></think>
 </template>
-</category> 
-  
+</category>
+
 <category>
 <pattern>_ CHRISTMAS *</pattern>
 <that>_ MOVIE IS ABOUT IN JUST A FEW WORDS</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
 <set name="searcharg"><star/> CHRISTMAS <star index="2"/></set>
 <set name="search">catkey</set></think>
 </template>
-</category> 
-  
+</category>
+
 <category>
 <pattern>COMPUTER</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -104,7 +104,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>COMPUTER *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -116,7 +116,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>_ COMPUTER</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -128,7 +128,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>_ COMPUTER *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -140,7 +140,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>COMPUTERS</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -152,7 +152,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>COMPUTER *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -164,7 +164,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>_ COMPUTERS</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -176,7 +176,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>_ COMPUTERS *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -189,7 +189,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>DOGS</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -201,7 +201,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>DOGS *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -213,7 +213,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>_ DOGS</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -225,7 +225,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>_ DOGS *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -307,7 +307,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>NEVERMIND</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -319,7 +319,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>_ NEVERMIND</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -331,7 +331,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>NEVERMIND *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -343,7 +343,7 @@ The results will open as a new window or as a new tab. <br/><br/>
 <category>
 <pattern>_ NEVERMIND *</pattern>
 <that>ENTER THE AUTHOR OR THE TITLE OR THE TOPIC</that>
-<template>Let's take a look in our catalog. Here are the closest matches based on what you told me. 
+<template>Let's take a look in our catalog. Here are the closest matches based on what you told me.
 The results will open as a new window or as a new tab. <br/><br/>
 <srai>CONCL</srai>
 <think>
@@ -980,7 +980,7 @@ I can find maps for you. Using just a few words, tell me what you want a map of.
 <category>
 <pattern>MAP OF *</pattern>
 <template>Here's your map. If you don't
-see it, turn off your pop up blocker and ask me again. 
+see it, turn off your pop up blocker and ask me again.
 <think>
 <set name="search">gmaps</set>
 <set name="searcharg"><star/></set>
@@ -1002,7 +1002,7 @@ see it, turn off your pop up blocker and ask me again.
 <category>
 <pattern>* MAP OF *</pattern>
 <template>Here's your map. If you don't
-see it, turn off your pop up blocker and ask me again.                   
+see it, turn off your pop up blocker and ask me again.
 <think>
 <set name="search">gmaps</set>
 <set name="searcharg"><star index="2"/></set>
@@ -1023,7 +1023,7 @@ see it, turn off your pop up blocker and ask me again.
 
  <category>
 <pattern>WX</pattern>
-<template>It's a pleasant seventy degrees inside this computer. (By the way, it's pretty dusty in here. You really ought to clean this thing out.) 
+<template>It's a pleasant seventy degrees inside this computer. (By the way, it's pretty dusty in here. You really ought to clean this thing out.)
 For your local weather conditions and forecast, type your zip code, just five numbers, and press "enter"
 <think>
 <set name="topic">WXFRCST</set>

@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 
 <category>
 <pattern>EREADER</pattern>
@@ -155,7 +155,7 @@
 <set name="topic">EREADERS</set>
 </think>
 <srai>ERDRS</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern>KINDLE</pattern>
@@ -285,7 +285,7 @@
 <set name="topic">EREADERS</set>
 </think>
 <srai>ERDRS</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern>NOOK</pattern>
@@ -415,12 +415,12 @@
 <set name="topic">EREADERS</set>
 </think>
 <srai>ERDRS</srai></template>
-</category> 
-  
+</category>
+
 <category>
 <pattern>GENEREADERS</pattern>
 <template>The Library has iPads, Kindles, and Nooks that you may check out, and also eBooks for you to download to your own readers. What would you like to know
-about eBook readers or eBooks? 
+about eBook readers or eBooks?
 <think>
 <set name="topic">ERQ</set>
 </think>
@@ -1966,7 +1966,7 @@ about eBook readers or eBooks?
 </template>
 </category>
 </topic>
-  
+
 
 
 </aiml>

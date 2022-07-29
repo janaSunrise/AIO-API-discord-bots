@@ -20,7 +20,7 @@
 <category>
 <pattern>HLDS</pattern>
 <template>
-I'm often asked about placing holds and requesting items. 
+I'm often asked about placing holds and requesting items.
 <random>
 <li>What would you like to know about holds?</li>
 <li>What is your question about holds?</li>

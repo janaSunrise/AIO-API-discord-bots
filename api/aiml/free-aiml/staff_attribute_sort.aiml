@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
 <pattern>CALL *</pattern>
 <template>
@@ -26,7 +26,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* CALL</pattern>
@@ -38,7 +38,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* CALL *</pattern>
@@ -50,7 +50,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>    
+</category>
 
 <category>
 <pattern>CONTACT *</pattern>
@@ -62,7 +62,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* CONTACT</pattern>
@@ -74,7 +74,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* CONTACT *</pattern>
@@ -86,7 +86,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>CONTACTING *</pattern>
@@ -98,7 +98,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* CONTACTING</pattern>
@@ -110,7 +110,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* CONTACTING *</pattern>
@@ -122,7 +122,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>EXTENSION *</pattern>
@@ -134,7 +134,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* EXTENSION</pattern>
@@ -146,7 +146,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* EXTENSION *</pattern>
@@ -158,7 +158,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category> 
+</category>
 
 <category>
 <pattern>PHONE *</pattern>
@@ -170,7 +170,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* PHONE</pattern>
@@ -182,7 +182,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* PHONE *</pattern>
@@ -194,8 +194,8 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
-  
+</category>
+
 <category>
 <pattern>EMAIL *</pattern>
 <template>
@@ -206,7 +206,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* EMAIL</pattern>
@@ -218,7 +218,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* EMAIL *</pattern>
@@ -230,7 +230,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>FAX NUMBER *</pattern>
@@ -242,7 +242,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* FAX NUMBER</pattern>
@@ -254,7 +254,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* FAX NUMBER *</pattern>
@@ -266,7 +266,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>WHO IS *</pattern>
@@ -278,7 +278,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* WHO IS *</pattern>
@@ -290,7 +290,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>* WHO * IS</pattern>
@@ -302,7 +302,7 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category> 
+</category>
 
 <category>
 <pattern>* WHO * IS *</pattern>
@@ -314,8 +314,8 @@
 </think>
 <srai>STAFFSORT1</srai>
 </template>
-</category> 
-  
+</category>
+
 <topic name="STAFF SORT">
 <category>
 <pattern>STAFFSORT1</pattern>
@@ -330,17 +330,17 @@
 <li value="HEADLANDS"><set name="message">mplhdls</set></li>
 <li value="* HEADLANDS"><set name="message">mplhdls</set></li>
 <li value="HEADLANDS *"><set name="message">mplhdls</set></li>
-<li value="* HEADLANDS *"><set name="message">mplhdls</set></li> 
+<li value="* HEADLANDS *"><set name="message">mplhdls</set></li>
 
 <li value="LAKE"><set name="message">mplmol</set></li>
 <li value="* LAKE"><set name="message">mplmol</set></li>
 <li value="LAKE *"><set name="message">mplmol</set></li>
-<li value="* LAKE *"><set name="message">mplmol</set></li> 
+<li value="* LAKE *"><set name="message">mplmol</set></li>
 
 <li value="MAIN"><set name="message">mplmain</set></li>
 <li value="* MAIN"><set name="message">mplmain</set></li>
 <li value="MAIN *"><set name="message">mplmain</set></li>
-<li value="* MAIN *"><set name="message">mplmain</set></li>  
+<li value="* MAIN *"><set name="message">mplmain</set></li>
 
 <li value="MOL"><set name="message">mplmol</set></li>
 <li value="* MOL"><set name="message">mplmol</set></li>
@@ -430,217 +430,217 @@
 <li value="AMANDA DENSMORE"><set name="message">adensmore</set></li>
 <li value="* AMANDA DENSMORE"><set name="message">adensmore</set></li>
 <li value="AMANDA DENSMORE *"><set name="message">adensmore</set></li>
-<li value="* AMANDA DENSMORE *"><set name="message">adensmore</set></li>  
+<li value="* AMANDA DENSMORE *"><set name="message">adensmore</set></li>
 
 <li value="AMANDA DENSMORE S"><set name="message">adensmore</set></li>
 <li value="* AMANDA DENSMORE S"><set name="message">adensmore</set></li>
 <li value="AMANDA DENSMORE S *"><set name="message">adensmore</set></li>
-<li value="* AMANDA DENSMORE S *"><set name="message">adensmore</set></li> 
+<li value="* AMANDA DENSMORE S *"><set name="message">adensmore</set></li>
 
 <li value="AMANDA"><set name="message">adensmore</set></li>
 <li value="* AMANDA"><set name="message">adensmore</set></li>
 <li value="AMANDA *"><set name="message">adensmore</set></li>
-<li value="* AMANDA *"><set name="message">adensmore</set></li>  
+<li value="* AMANDA *"><set name="message">adensmore</set></li>
 
 <li value="AMANDA S"><set name="message">adensmore</set></li>
 <li value="* AMANDA S"><set name="message">adensmore</set></li>
 <li value="AMANDA S *"><set name="message">adensmore</set></li>
-<li value="* AMANDA S *"><set name="message">adensmore</set></li> 
+<li value="* AMANDA S *"><set name="message">adensmore</set></li>
 
 <li value="KIM SIDORICK"><set name="message">ksidorick</set></li>
 <li value="* KIM SIDORICK"><set name="message">ksidorick</set></li>
 <li value="KIM SIDORICK *"><set name="message">ksidorick</set></li>
-<li value="* KIM SIDORICK *"><set name="message">ksidorick</set></li>  
+<li value="* KIM SIDORICK *"><set name="message">ksidorick</set></li>
 
 <li value="KIM SIDORICK S"><set name="message">ksidorick</set></li>
 <li value="* KIM SIDORICK S"><set name="message">ksidorick</set></li>
 <li value="KIM SIDORICK S *"><set name="message">ksidorick</set></li>
-<li value="* KIM SIDORICK S *"><set name="message">ksidorick</set></li> 
+<li value="* KIM SIDORICK S *"><set name="message">ksidorick</set></li>
 
 <li value="KIM"><set name="message">ksidorick</set></li>
 <li value="* KIM"><set name="message">ksidorick</set></li>
 <li value="KIM *"><set name="message">ksidorick</set></li>
-<li value="* KIM *"><set name="message">ksidorick</set></li>  
+<li value="* KIM *"><set name="message">ksidorick</set></li>
 
 <li value="KIM S"><set name="message">ksidorick</set></li>
 <li value="* KIM S"><set name="message">ksidorick</set></li>
 <li value="KIM S *"><set name="message">ksidorick</set></li>
-<li value="* KIM S *"><set name="message">ksidorick</set></li> 
+<li value="* KIM S *"><set name="message">ksidorick</set></li>
 
 <li value="MARLENE PELYHES"><set name="message">mpelyhes</set></li>
 <li value="* MARLENE PELYHES"><set name="message">mpelyhes</set></li>
 <li value="MARLENE PELYHES *"><set name="message">mpelyhes</set></li>
-<li value="* MARLENE PELYHES *"><set name="message">mpelyhes</set></li>  
+<li value="* MARLENE PELYHES *"><set name="message">mpelyhes</set></li>
 
 <li value="MARLENE PELYHES S"><set name="message">mpelyhes</set></li>
 <li value="* MARLENE PELYHES S"><set name="message">mpelyhes</set></li>
 <li value="MARLENE PELYHES S *"><set name="message">mpelyhes</set></li>
-<li value="* MARLENE PELYHES S *"><set name="message">mpelyhes</set></li> 
+<li value="* MARLENE PELYHES S *"><set name="message">mpelyhes</set></li>
 
 <li value="MARLENE"><set name="message">mpelyhes</set></li>
 <li value="* MARLENE"><set name="message">mpelyhes</set></li>
 <li value="MARLENE *"><set name="message">mpelyhes</set></li>
-<li value="* MARLENE *"><set name="message">mpelyhes</set></li>  
+<li value="* MARLENE *"><set name="message">mpelyhes</set></li>
 
 <li value="MARLENE S"><set name="message">mpelyhes</set></li>
 <li value="* MARLENE S"><set name="message">mpelyhes</set></li>
 <li value="MARLENE S *"><set name="message">mpelyhes</set></li>
-<li value="* MARLENE S *"><set name="message">mpelyhes</set></li> 
+<li value="* MARLENE S *"><set name="message">mpelyhes</set></li>
 
 <li value="BARBARA HAUER"><set name="message">bhauer</set></li>
 <li value="* BARBARA HAUER"><set name="message">bhauer</set></li>
 <li value="BARBARA HAUER *"><set name="message">bhauer</set></li>
-<li value="* BARBARA HAUER *"><set name="message">bhauer</set></li>  
+<li value="* BARBARA HAUER *"><set name="message">bhauer</set></li>
 
 <li value="BARBARA HAUER S"><set name="message">bhauer</set></li>
 <li value="* BARBARA HAUER S"><set name="message">bhauer</set></li>
 <li value="BARBARA HAUER S *"><set name="message">bhauer</set></li>
-<li value="* BARBARA HAUER S *"><set name="message">bhauer</set></li> 
+<li value="* BARBARA HAUER S *"><set name="message">bhauer</set></li>
 
 <li value="BARBARA"><set name="message">bhauer</set></li>
 <li value="* BARBARA"><set name="message">bhauer</set></li>
 <li value="BARBARA *"><set name="message">bhauer</set></li>
-<li value="* BARBARA *"><set name="message">bhauer</set></li>  
+<li value="* BARBARA *"><set name="message">bhauer</set></li>
 
 <li value="BARBARA S"><set name="message">bhauer</set></li>
 <li value="* BARBARA S"><set name="message">bhauer</set></li>
 <li value="BARBARA S *"><set name="message">bhauer</set></li>
-<li value="* BARBARA S *"><set name="message">bhauer</set></li> 
+<li value="* BARBARA S *"><set name="message">bhauer</set></li>
 
 <li value="BARB HAUER"><set name="message">bhauer</set></li>
 <li value="* BARB HAUER"><set name="message">bhauer</set></li>
 <li value="BARB HAUER *"><set name="message">bhauer</set></li>
-<li value="* BARB HAUER *"><set name="message">bhauer</set></li>  
+<li value="* BARB HAUER *"><set name="message">bhauer</set></li>
 
 <li value="BARB HAUER S"><set name="message">bhauer</set></li>
 <li value="* BARB HAUER S"><set name="message">bhauer</set></li>
 <li value="BARB HAUER S *"><set name="message">bhauer</set></li>
-<li value="* BARB HAUER S *"><set name="message">bhauer</set></li> 
+<li value="* BARB HAUER S *"><set name="message">bhauer</set></li>
 
 <li value="BARB"><set name="message">bhauer</set></li>
 <li value="* BARB"><set name="message">bhauer</set></li>
 <li value="BARB *"><set name="message">bhauer</set></li>
-<li value="* BARB *"><set name="message">bhauer</set></li>  
+<li value="* BARB *"><set name="message">bhauer</set></li>
 
 <li value="BARB S"><set name="message">bhauer</set></li>
 <li value="* BARB S"><set name="message">bhauer</set></li>
 <li value="BARB S *"><set name="message">bhauer</set></li>
-<li value="* BARB S *"><set name="message">bhauer</set></li> 
+<li value="* BARB S *"><set name="message">bhauer</set></li>
 
 <li value="GREG PRESKE"><set name="message">gpreske</set></li>
 <li value="* GREG PRESKE"><set name="message">gpreske</set></li>
 <li value="GREG PRESKE *"><set name="message">gpreske</set></li>
-<li value="* GREG PRESKE *"><set name="message">gpreske</set></li>  
+<li value="* GREG PRESKE *"><set name="message">gpreske</set></li>
 
 <li value="GREG PRESKE S"><set name="message">gpreske</set></li>
 <li value="* GREG PRESKE S"><set name="message">gpreske</set></li>
 <li value="GREG PRESKE S *"><set name="message">gpreske</set></li>
-<li value="* GREG PRESKE S *"><set name="message">gpreske</set></li> 
+<li value="* GREG PRESKE S *"><set name="message">gpreske</set></li>
 
 <li value="GREG"><set name="message">gpreske</set></li>
 <li value="* GREG"><set name="message">gpreske</set></li>
 <li value="GREG *"><set name="message">gpreske</set></li>
-<li value="* GREG *"><set name="message">gpreske</set></li>  
+<li value="* GREG *"><set name="message">gpreske</set></li>
 
 <li value="GREG S"><set name="message">gpreske</set></li>
 <li value="* GREG S"><set name="message">gpreske</set></li>
 <li value="GREG S *"><set name="message">gpreske</set></li>
-<li value="* GREG S *"><set name="message">gpreske</set></li> 
+<li value="* GREG S *"><set name="message">gpreske</set></li>
 
 <li value="LYNN HAWKINS"><set name="message">lhawkins</set></li>
 <li value="* LYNN HAWKINS"><set name="message">lhawkins</set></li>
 <li value="LYNN HAWKINS *"><set name="message">lhawkins</set></li>
-<li value="* LYNN HAWKINS *"><set name="message">lhawkins</set></li>  
+<li value="* LYNN HAWKINS *"><set name="message">lhawkins</set></li>
 
 <li value="LYNN HAWKINS S"><set name="message">lhawkins</set></li>
 <li value="* LYNN HAWKINS S"><set name="message">lhawkins</set></li>
 <li value="LYNN HAWKINS S *"><set name="message">lhawkins</set></li>
-<li value="* LYNN HAWKINS S *"><set name="message">lhawkins</set></li>  
+<li value="* LYNN HAWKINS S *"><set name="message">lhawkins</set></li>
 
 <li value="LYNN"><set name="message">lhawkins</set></li>
 <li value="* LYNN"><set name="message">lhawkins</set></li>
 <li value="LYNN *"><set name="message">lhawkins</set></li>
-<li value="* LYNN *"><set name="message">lhawkins</set></li>  
+<li value="* LYNN *"><set name="message">lhawkins</set></li>
 
 <li value="LYNN S"><set name="message">lhawkins</set></li>
 <li value="* LYNN S"><set name="message">lhawkins</set></li>
 <li value="LYNN S *"><set name="message">lhawkins</set></li>
-<li value="* LYNN S *"><set name="message">lhawkins</set></li> 
+<li value="* LYNN S *"><set name="message">lhawkins</set></li>
 
 <li value="DIRECTOR"><set name="message">lhawkins</set></li>
 <li value="* DIRECTOR"><set name="message">lhawkins</set></li>
 <li value="DIRECTOR *"><set name="message">lhawkins</set></li>
-<li value="* DIRECTOR *"><set name="message">lhawkins</set></li> 
+<li value="* DIRECTOR *"><set name="message">lhawkins</set></li>
 
 <li value="LIBRARY MANAGER"><set name="message">lhawkins</set></li>
 <li value="* LIBRARY MANAGER"><set name="message">lhawkins</set></li>
 <li value="LIBRARY MANAGER *"><set name="message">lhawkins</set></li>
-<li value="* LIBRARY MANAGER *"><set name="message">lhawkins</set></li> 
+<li value="* LIBRARY MANAGER *"><set name="message">lhawkins</set></li>
 
 <li value="COLLEEN SNYDER"><set name="message">csnyder</set></li>
 <li value="* COLLEEN SNYDER"><set name="message">csnyder</set></li>
 <li value="COLLEEN SNYDER *"><set name="message">csnyder</set></li>
-<li value="* COLLEEN SNYDER *"><set name="message">csnyder</set></li>  
+<li value="* COLLEEN SNYDER *"><set name="message">csnyder</set></li>
 
 <li value="COLLEEN SNYDER S"><set name="message">csnyder</set></li>
 <li value="* COLLEEN SNYDER S"><set name="message">csnyder</set></li>
 <li value="COLLEEN SNYDER S *"><set name="message">csnyder</set></li>
-<li value="* COLLEEN SNYDER S *"><set name="message">csnyder</set></li> 
+<li value="* COLLEEN SNYDER S *"><set name="message">csnyder</set></li>
 
 <li value="COLLEEN"><set name="message">csnyder</set></li>
 <li value="* COLLEEN"><set name="message">csnyder</set></li>
 <li value="COLLEEN *"><set name="message">csnyder</set></li>
-<li value="* COLLEEN *"><set name="message">csnyder</set></li>  
+<li value="* COLLEEN *"><set name="message">csnyder</set></li>
 
 <li value="COLLEEN S"><set name="message">csnyder</set></li>
 <li value="* COLLEEN S"><set name="message">csnyder</set></li>
 <li value="COLLEEN S *"><set name="message">csnyder</set></li>
-<li value="* COLLEEN S *"><set name="message">csnyder</set></li> 
+<li value="* COLLEEN S *"><set name="message">csnyder</set></li>
 
 <li value="FISCAL OFFICER"><set name="message">csnyder</set></li>
 <li value="* FISCAL OFFICER"><set name="message">csnyder</set></li>
 <li value="FISCAL OFFICER *"><set name="message">csnyder</set></li>
-<li value="* FISCAL OFFICER *"><set name="message">csnyder</set></li> 
+<li value="* FISCAL OFFICER *"><set name="message">csnyder</set></li>
 
 <li value="GAIL BOROVIC"><set name="message">gborovic</set></li>
 <li value="* GAIL BOROVIC"><set name="message">gborovic</set></li>
 <li value="GAIL BOROVIC *"><set name="message">gborovic</set></li>
-<li value="* GAIL BOROVIC *"><set name="message">gborovic</set></li>  
+<li value="* GAIL BOROVIC *"><set name="message">gborovic</set></li>
 
 <li value="GAIL BOROVIC S"><set name="message">gborovic</set></li>
 <li value="* GAIL BOROVIC S"><set name="message">gborovic</set></li>
 <li value="GAIL BOROVIC S *"><set name="message">gborovic</set></li>
-<li value="* GAIL BOROVIC S *"><set name="message">gborovic</set></li> 
+<li value="* GAIL BOROVIC S *"><set name="message">gborovic</set></li>
 
 <li value="GAIL"><set name="message">gborovic</set></li>
 <li value="* GAIL"><set name="message">gborovic</set></li>
 <li value="GAIL *"><set name="message">gborovic</set></li>
-<li value="* GAIL *"><set name="message">gborovic</set></li>  
+<li value="* GAIL *"><set name="message">gborovic</set></li>
 
 <li value="GAIL S"><set name="message">gborovic</set></li>
 <li value="* GAIL S"><set name="message">gborovic</set></li>
 <li value="GAIL S *"><set name="message">gborovic</set></li>
-<li value="* GAIL S *"><set name="message">gborovic</set></li> 
+<li value="* GAIL S *"><set name="message">gborovic</set></li>
 
 <li value="PAM ROSE"><set name="message">prose</set></li>
 <li value="* PAM ROSE"><set name="message">prose</set></li>
 <li value="PAM ROSE *"><set name="message">prose</set></li>
-<li value="* PAM ROSE *"><set name="message">prose</set></li>  
+<li value="* PAM ROSE *"><set name="message">prose</set></li>
 
 <li value="PAM ROSE S"><set name="message">prose</set></li>
 <li value="* PAM ROSE S"><set name="message">prose</set></li>
 <li value="PAM ROSE S *"><set name="message">prose</set></li>
-<li value="* PAM ROSE S *"><set name="message">prose</set></li> 
+<li value="* PAM ROSE S *"><set name="message">prose</set></li>
 
 <li value="PAM"><set name="message">prose</set></li>
 <li value="* PAM"><set name="message">prose</set></li>
 <li value="PAM *"><set name="message">prose</set></li>
-<li value="* PAM *"><set name="message">prose</set></li>  
+<li value="* PAM *"><set name="message">prose</set></li>
 
 <li value="PAM S"><set name="message">prose</set></li>
 <li value="* PAM S"><set name="message">prose</set></li>
 <li value="PAM S *"><set name="message">prose</set></li>
-<li value="* PAM S *"><set name="message">prose</set></li> 
+<li value="* PAM S *"><set name="message">prose</set></li>
 
 <li value="LAKE MANAGER"><set name="message">prose</set></li>
 <li value="* LAKE MANAGER"><set name="message">prose</set></li>
@@ -648,8 +648,8 @@
 <li value="LAKE MANAGER *"><set name="message">prose</set></li>
 <li value="* LAKE * MANAGER"><set name="message">prose</set></li>
 <li value="LAKE * MANAGER *"><set name="message">prose</set></li>
-<li value="* LAKE MANAGER *"><set name="message">prose</set></li> 
-<li value="* LAKE * MANAGER *"><set name="message">prose</set></li> 
+<li value="* LAKE MANAGER *"><set name="message">prose</set></li>
+<li value="* LAKE * MANAGER *"><set name="message">prose</set></li>
 
 <li value="LAKE MANAGER S"><set name="message">prose</set></li>
 <li value="* LAKE MANAGER S"><set name="message">prose</set></li>
@@ -657,8 +657,8 @@
 <li value="LAKE MANAGER S *"><set name="message">prose</set></li>
 <li value="* LAKE * MANAGER S"><set name="message">prose</set></li>
 <li value="LAKE * MANAGER S *"><set name="message">prose</set></li>
-<li value="* LAKE MANAGER S *"><set name="message">prose</set></li> 
-<li value="* LAKE * MANAGER S *"><set name="message">prose</set></li> 
+<li value="* LAKE MANAGER S *"><set name="message">prose</set></li>
+<li value="* LAKE * MANAGER S *"><set name="message">prose</set></li>
 
 <li value="MANAGER LAKE"><set name="message">prose</set></li>
 <li value="* MANAGER LAKE"><set name="message">prose</set></li>
@@ -666,8 +666,8 @@
 <li value="MANAGER LAKE *"><set name="message">prose</set></li>
 <li value="* MANAGER * LAKE"><set name="message">prose</set></li>
 <li value="MANAGER * LAKE *"><set name="message">prose</set></li>
-<li value="* MANAGER LAKE *"><set name="message">prose</set></li> 
-<li value="* MANAGER * LAKE *"><set name="message">prose</set></li> 
+<li value="* MANAGER LAKE *"><set name="message">prose</set></li>
+<li value="* MANAGER * LAKE *"><set name="message">prose</set></li>
 
 <li value="MANAGES LAKE"><set name="message">prose</set></li>
 <li value="* MANAGES LAKE"><set name="message">prose</set></li>
@@ -675,48 +675,48 @@
 <li value="MANAGES LAKE *"><set name="message">prose</set></li>
 <li value="* MANAGES * LAKE"><set name="message">prose</set></li>
 <li value="MANAGES * LAKE *"><set name="message">prose</set></li>
-<li value="* MANAGES LAKE *"><set name="message">prose</set></li> 
-<li value="* MANAGES * LAKE *"><set name="message">prose</set></li> 
+<li value="* MANAGES LAKE *"><set name="message">prose</set></li>
+<li value="* MANAGES * LAKE *"><set name="message">prose</set></li>
 
 <li value="DENISE WRIGHT"><set name="message">dwright</set></li>
 <li value="* DENISE WRIGHT"><set name="message">dwright</set></li>
 <li value="DENISE WRIGHT *"><set name="message">dwright</set></li>
-<li value="* DENISE WRIGHT *"><set name="message">dwright</set></li>  
+<li value="* DENISE WRIGHT *"><set name="message">dwright</set></li>
 
 <li value="DENISE WRIGHT S"><set name="message">dwright</set></li>
 <li value="* DENISE WRIGHT S"><set name="message">dwright</set></li>
 <li value="DENISE WRIGHT S *"><set name="message">dwright</set></li>
-<li value="* DENISE WRIGHT S *"><set name="message">dwright</set></li> 
+<li value="* DENISE WRIGHT S *"><set name="message">dwright</set></li>
 
 <li value="DENISE"><set name="message">dwright</set></li>
 <li value="* DENISE"><set name="message">dwright</set></li>
 <li value="DENISE *"><set name="message">dwright</set></li>
-<li value="* DENISE *"><set name="message">dwright</set></li>  
+<li value="* DENISE *"><set name="message">dwright</set></li>
 
 <li value="DENISE S"><set name="message">dwright</set></li>
 <li value="* DENISE S"><set name="message">dwright</set></li>
 <li value="DENISE S *"><set name="message">dwright</set></li>
-<li value="* DENISE S *"><set name="message">dwright</set></li> 
+<li value="* DENISE S *"><set name="message">dwright</set></li>
 
 <li value="DARLENE WORKMAN"><set name="message">dworkman</set></li>
 <li value="* DARLENE WORKMAN"><set name="message">dworkman</set></li>
 <li value="DARLENE WORKMAN *"><set name="message">dworkman</set></li>
-<li value="* DARLENE WORKMAN *"><set name="message">dworkman</set></li>  
+<li value="* DARLENE WORKMAN *"><set name="message">dworkman</set></li>
 
 <li value="DARLENE WORKMAN S"><set name="message">dworkman</set></li>
 <li value="* DARLENE WORKMAN S"><set name="message">dworkman</set></li>
 <li value="DARLENE WORKMAN S *"><set name="message">dworkman</set></li>
-<li value="* DARLENE WORKMAN S *"><set name="message">dworkman</set></li> 
+<li value="* DARLENE WORKMAN S *"><set name="message">dworkman</set></li>
 
 <li value="DARLENE"><set name="message">dworkman</set></li>
 <li value="* DARLENE"><set name="message">dworkman</set></li>
 <li value="DARLENE *"><set name="message">dworkman</set></li>
-<li value="* DARLENE *"><set name="message">dworkman</set></li>  
+<li value="* DARLENE *"><set name="message">dworkman</set></li>
 
 <li value="DARLENE S"><set name="message">dworkman</set></li>
 <li value="* DARLENE S"><set name="message">dworkman</set></li>
 <li value="DARLENE S *"><set name="message">dworkman</set></li>
-<li value="* DARLENE S *"><set name="message">dworkman</set></li> 
+<li value="* DARLENE S *"><set name="message">dworkman</set></li>
 
 <li value="HEADLANDS MANAGER"><set name="message">dworkman</set></li>
 <li value="* HEADLANDS MANAGER"><set name="message">dworkman</set></li>
@@ -724,8 +724,8 @@
 <li value="HEADLANDS MANAGER *"><set name="message">dworkman</set></li>
 <li value="* HEADLANDS * MANAGER"><set name="message">dworkman</set></li>
 <li value="HEADLANDS * MANAGER *"><set name="message">dworkman</set></li>
-<li value="* HEADLANDS MANAGER *"><set name="message">dworkman</set></li> 
-<li value="* HEADLANDS * MANAGER *"><set name="message">dworkman</set></li> 
+<li value="* HEADLANDS MANAGER *"><set name="message">dworkman</set></li>
+<li value="* HEADLANDS * MANAGER *"><set name="message">dworkman</set></li>
 
 <li value="HEADLANDS MANAGER S"><set name="message">dworkman</set></li>
 <li value="* HEADLANDS MANAGER S"><set name="message">dworkman</set></li>
@@ -733,8 +733,8 @@
 <li value="HEADLANDS MANAGER S *"><set name="message">dworkman</set></li>
 <li value="* HEADLANDS * MANAGER S"><set name="message">dworkman</set></li>
 <li value="HEADLANDS * MANAGER S *"><set name="message">dworkman</set></li>
-<li value="* HEADLANDS MANAGER S *"><set name="message">dworkman</set></li> 
-<li value="* HEADLANDS * MANAGER S *"><set name="message">dworkman</set></li> 
+<li value="* HEADLANDS MANAGER S *"><set name="message">dworkman</set></li>
+<li value="* HEADLANDS * MANAGER S *"><set name="message">dworkman</set></li>
 
 <li value="MANAGER HEADLANDS"><set name="message">dworkman</set></li>
 <li value="* MANAGER HEADLANDS"><set name="message">dworkman</set></li>
@@ -742,8 +742,8 @@
 <li value="MANAGER HEADLANDS *"><set name="message">dworkman</set></li>
 <li value="* MANAGER * HEADLANDS"><set name="message">dworkman</set></li>
 <li value="MANAGER * HEADLANDS *"><set name="message">dworkman</set></li>
-<li value="* MANAGER HEADLANDS *"><set name="message">dworkman</set></li> 
-<li value="* MANAGER * HEADLANDS *"><set name="message">dworkman</set></li> 
+<li value="* MANAGER HEADLANDS *"><set name="message">dworkman</set></li>
+<li value="* MANAGER * HEADLANDS *"><set name="message">dworkman</set></li>
 
 <li value="MANAGES HEADLANDS"><set name="message">dworkman</set></li>
 <li value="* MANAGES HEADLANDS"><set name="message">dworkman</set></li>
@@ -751,28 +751,28 @@
 <li value="MANAGES HEADLANDS *"><set name="message">dworkman</set></li>
 <li value="* MANAGES * HEADLANDS"><set name="message">dworkman</set></li>
 <li value="MANAGES * HEADLANDS *"><set name="message">dworkman</set></li>
-<li value="* MANAGES HEADLANDS *"><set name="message">dworkman</set></li> 
-<li value="* MANAGES * HEADLANDS *"><set name="message">dworkman</set></li> 
+<li value="* MANAGES HEADLANDS *"><set name="message">dworkman</set></li>
+<li value="* MANAGES * HEADLANDS *"><set name="message">dworkman</set></li>
 
 <li value="DAVID NEWYEAR"><set name="message">dnewyear</set></li>
 <li value="* DAVID NEWYEAR"><set name="message">dnewyear</set></li>
 <li value="DAVID NEWYEAR *"><set name="message">dnewyear</set></li>
-<li value="* DAVID NEWYEAR *"><set name="message">dnewyear</set></li>  
+<li value="* DAVID NEWYEAR *"><set name="message">dnewyear</set></li>
 
 <li value="DAVID NEWYEAR S"><set name="message">dnewyear</set></li>
 <li value="* DAVID NEWYEAR S"><set name="message">dnewyear</set></li>
 <li value="DAVID NEWYEAR S *"><set name="message">dnewyear</set></li>
-<li value="* DAVID NEWYEAR S *"><set name="message">dnewyear</set></li> 
+<li value="* DAVID NEWYEAR S *"><set name="message">dnewyear</set></li>
 
 <li value="DAVID"><set name="message">dnewyear</set></li>
 <li value="* DAVID"><set name="message">dnewyear</set></li>
 <li value="DAVID *"><set name="message">dnewyear</set></li>
-<li value="* DAVID *"><set name="message">dnewyear</set></li>  
+<li value="* DAVID *"><set name="message">dnewyear</set></li>
 
 <li value="DAVID S"><set name="message">dnewyear</set></li>
 <li value="* DAVID S"><set name="message">dnewyear</set></li>
 <li value="DAVID S *"><set name="message">dnewyear</set></li>
-<li value="* DAVID S *"><set name="message">dnewyear</set></li> 
+<li value="* DAVID S *"><set name="message">dnewyear</set></li>
 
 <li value="CREATOR"><set name="message">dnewyear</set></li>
 <li value="* CREATOR"><set name="message">dnewyear</set></li>
@@ -782,46 +782,46 @@
 <li value="BUILT YOU"><set name="message">dnewyear</set></li>
 <li value="* BUILT YOU"><set name="message">dnewyear</set></li>
 <li value="BUILT YOU *"><set name="message">dnewyear</set></li>
-<li value="* BUILT YOU *"><set name="message">dnewyear</set></li>  
+<li value="* BUILT YOU *"><set name="message">dnewyear</set></li>
 
 <li value="CREATED YOU"><set name="message">dnewyear</set></li>
 <li value="* CREATED YOU"><set name="message">dnewyear</set></li>
 <li value="CREATED YOU *"><set name="message">dnewyear</set></li>
-<li value="* CREATED YOU *"><set name="message">dnewyear</set></li>  
+<li value="* CREATED YOU *"><set name="message">dnewyear</set></li>
 
 <li value="MADE YOU"><set name="message">dnewyear</set></li>
 <li value="* MADE YOU"><set name="message">dnewyear</set></li>
 <li value="MADE YOU *"><set name="message">dnewyear</set></li>
-<li value="* MADE YOU *"><set name="message">dnewyear</set></li> 
- 
+<li value="* MADE YOU *"><set name="message">dnewyear</set></li>
+
 </condition>
 </think>
 
 <condition name="message">
 
-<li value="no match"><think><set name="topic"><get name="staff attr"/></set></think><srai>STAFFSORT2</srai></li>  
+<li value="no match"><think><set name="topic"><get name="staff attr"/></set></think><srai>STAFFSORT2</srai></li>
 
-<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>  
+<li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
 
-<li value="mplhdls"><think><set name="topic">HDLS ATTRIBUTES</set></think><srai>HDLS ATT</srai></li> 
-<li value="mplmain"><think><set name="topic">MAIN ATTRIBUTES</set></think><srai>MAIN ATT</srai></li> 
-<li value="mplmol"><think><set name="topic">LAKE ATTRIBUTES</set></think><srai>LAKE ATT</srai></li> 
+<li value="mplhdls"><think><set name="topic">HDLS ATTRIBUTES</set></think><srai>HDLS ATT</srai></li>
+<li value="mplmain"><think><set name="topic">MAIN ATTRIBUTES</set></think><srai>MAIN ATT</srai></li>
+<li value="mplmol"><think><set name="topic">LAKE ATTRIBUTES</set></think><srai>LAKE ATT</srai></li>
 
-<li value="dept admin"><think><set name="topic">ADMIN ATTRIBUTES</set></think><srai>ADMIN ATT</srai></li> 
-<li value="dept bldg"><think><set name="topic">BLDG ATTRIBUTES</set></think><srai>BLDG ATT</srai></li> 
-<li value="dept childrens"><think><set name="topic">CHILDRENS ATTRIBUTES</set></think><srai>CHILDRENS ATT</srai></li> 
-<li value="dept circ"><think><set name="topic">CIRC ATTRIBUTES</set></think><srai>CIRC ATT</srai></li> 
-<li value="dept fisc"><think><set name="topic">FINANCE ATTRIBUTES</set></think><srai>FINANCE ATT</srai></li> 
-<li value="dept hr"><think><set name="topic">HR ATTRIBUTES</set></think><srai>HR ATT</srai></li> 
-<li value="dept it"><think><set name="topic">IT ATTRIBUTES</set></think><srai>IT ATT</srai></li> 
-<li value="dept ref"><think><set name="topic">REF ATTRIBUTES</set></think><srai>REF ATT</srai></li> 
-<li value="dept ts"><think><set name="topic">TS ATTRIBUTES</set></think><srai>TS ATT</srai></li> 
+<li value="dept admin"><think><set name="topic">ADMIN ATTRIBUTES</set></think><srai>ADMIN ATT</srai></li>
+<li value="dept bldg"><think><set name="topic">BLDG ATTRIBUTES</set></think><srai>BLDG ATT</srai></li>
+<li value="dept childrens"><think><set name="topic">CHILDRENS ATTRIBUTES</set></think><srai>CHILDRENS ATT</srai></li>
+<li value="dept circ"><think><set name="topic">CIRC ATTRIBUTES</set></think><srai>CIRC ATT</srai></li>
+<li value="dept fisc"><think><set name="topic">FINANCE ATTRIBUTES</set></think><srai>FINANCE ATT</srai></li>
+<li value="dept hr"><think><set name="topic">HR ATTRIBUTES</set></think><srai>HR ATT</srai></li>
+<li value="dept it"><think><set name="topic">IT ATTRIBUTES</set></think><srai>IT ATT</srai></li>
+<li value="dept ref"><think><set name="topic">REF ATTRIBUTES</set></think><srai>REF ATT</srai></li>
+<li value="dept ts"><think><set name="topic">TS ATTRIBUTES</set></think><srai>TS ATT</srai></li>
 
-<li value="adensmore"><think><set name="topic">AD ATTRIBUTES</set></think><srai>AD ATT</srai></li> 
-<li value="ksidorick"><think><set name="topic">KS ATTRIBUTES</set></think><srai>KS ATT</srai></li> 
-<li value="mpelyhes"><think><set name="topic">MP ATTRIBUTES</set></think><srai>MP ATT</srai></li> 
-<li value="bhauer"><think><set name="topic">BH ATTRIBUTES</set></think><srai>BH ATT</srai></li> 
-<li value="gpreske"><think><set name="topic">GP ATTRIBUTES</set></think><srai>GP ATT</srai></li> 
+<li value="adensmore"><think><set name="topic">AD ATTRIBUTES</set></think><srai>AD ATT</srai></li>
+<li value="ksidorick"><think><set name="topic">KS ATTRIBUTES</set></think><srai>KS ATT</srai></li>
+<li value="mpelyhes"><think><set name="topic">MP ATTRIBUTES</set></think><srai>MP ATT</srai></li>
+<li value="bhauer"><think><set name="topic">BH ATTRIBUTES</set></think><srai>BH ATT</srai></li>
+<li value="gpreske"><think><set name="topic">GP ATTRIBUTES</set></think><srai>GP ATT</srai></li>
 <li value="lhawkins"><think><set name="topic">LH ATTRIBUTES</set></think><srai>LH ATT</srai></li>
 <li value="csnyder"><think><set name="topic">CS ATTRIBUTES</set></think><srai>CS ATT</srai></li>
 <li value="gborovic"><think><set name="topic">GB ATTRIBUTES</set></think><srai>GB ATT</srai></li>
@@ -833,7 +833,7 @@
 </condition>
 </template>
 </category>
-</topic>  
-    
-  
-</aiml>  
+</topic>
+
+
+</aiml>

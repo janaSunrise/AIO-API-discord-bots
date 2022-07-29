@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <!--COMMENT-->
 
 <category>
@@ -187,7 +187,7 @@ be in touch with you.
 </condition>
 <think><set name="topic"></set></think>
 </think>
- 
+
 <condition name="message">
 
 <li value="purchase suggestion"><srai>PRCHSGGST</srai></li>
@@ -265,7 +265,7 @@ Tell me about the item. Please enter your library card number and the author, ti
 
 <category>
 <pattern>PSGGSTCONF</pattern>
-<template>Thanks. I'll see that the selectors receive this information. The ordering and acquisition process usually takes about 
+<template>Thanks. I'll see that the selectors receive this information. The ordering and acquisition process usually takes about
 a month. Please check the status of this request then.
 <think>
 <set name="topic"></set>

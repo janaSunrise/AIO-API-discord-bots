@@ -93,10 +93,10 @@
      var _line = java.lang.String;
      var _inputLine = java.lang.String;
      var _reply = "Sorry, I can't speak that language.";
-     
+
      url = new java.net.URL("http://babel.altavista.com/translate.dyn?enc=utf8&doit=done&BabelFishFrontPage=yes&bblType=urltext&urltext=" + java.net.URLEncoder.encode(word) + "&lp=en_" + language);
      connection = url.openConnection();
-     
+
      _inReader = new java.io.InputStreamReader(connection.getInputStream());
      _in = new java.io.BufferedReader(_inReader);
      _inputLine = new java.lang.String();
@@ -110,8 +110,8 @@
                break;
           }
      }
-     
-     _in.close();         
+
+     _in.close();
      _reply;
 
 </javascript>
@@ -131,13 +131,13 @@
      var _line = java.lang.String;
      var _inputLine = java.lang.String;
      var _reply = "Sorry, I can't speak that language.";
-     
+
      url = new
 java.net.URL("http://babel.altavista.com/translate.dyn?enc=utf8&doit=done&BabelFishFrontPage
 =yes&bblType=urltext&urltext=" + java.net.URLEncoder.encode(word) + "&lp=en_" +
 language);
      connection = url.openConnection();
-     
+
      _inReader = new java.io.InputStreamReader(connection.getInputStream());
      _in = new java.io.BufferedReader(_inReader);
      _inputLine = new java.lang.String();
@@ -151,8 +151,8 @@ language);
                break;
           }
      }
-     
-     _in.close();         
+
+     _in.close();
      _reply;
 
 </javascript>
@@ -172,13 +172,13 @@ language);
      var _line = java.lang.String;
      var _inputLine = java.lang.String;
      var _reply = "Sorry, I can't speak that language.";
-     
+
      url = new
 java.net.URL("http://babel.altavista.com/translate.dyn?enc=utf8&doit=done&BabelFishFrontPage
 =yes&bblType=urltext&urltext=" + java.net.URLEncoder.encode(word) + "&lp=en_" +
 language);
      connection = url.openConnection();
-     
+
      _inReader = new java.io.InputStreamReader(connection.getInputStream());
      _in = new java.io.BufferedReader(_inReader);
      _inputLine = new java.lang.String();
@@ -192,8 +192,8 @@ language);
                break;
           }
      }
-     
-     _in.close();         
+
+     _in.close();
      _reply;
 
 </javascript>
@@ -213,13 +213,13 @@ language);
      var _line = java.lang.String;
      var _inputLine = java.lang.String;
      var _reply = "Sorry, I can't speak that language.";
-     
+
      url = new
 java.net.URL("http://babel.altavista.com/translate.dyn?enc=utf8&doit=done&BabelFishFrontPage
 =yes&bblType=urltext&urltext=" + java.net.URLEncoder.encode(word) + "&lp=en_" +
 language);
      connection = url.openConnection();
-     
+
      _inReader = new java.io.InputStreamReader(connection.getInputStream());
      _in = new java.io.BufferedReader(_inReader);
      _inputLine = new java.lang.String();
@@ -233,8 +233,8 @@ language);
                break;
           }
      }
-     
-     _in.close();         
+
+     _in.close();
      _reply;
 
 </javascript>
@@ -254,13 +254,13 @@ language);
      var _line = java.lang.String;
      var _inputLine = java.lang.String;
      var _reply = "Sorry, I can't speak that language.";
-     
+
      url = new
 java.net.URL("http://babel.altavista.com/translate.dyn?enc=utf8&doit=done&BabelFishFrontPage
 =yes&bblType=urltext&urltext=" + java.net.URLEncoder.encode(word) + "&lp=en_" +
 language);
      connection = url.openConnection();
-     
+
      _inReader = new java.io.InputStreamReader(connection.getInputStream());
      _in = new java.io.BufferedReader(_inReader);
      _inputLine = new java.lang.String();
@@ -274,8 +274,8 @@ language);
                break;
           }
      }
-     
-     _in.close();         
+
+     _in.close();
      _reply;
 
 </javascript>

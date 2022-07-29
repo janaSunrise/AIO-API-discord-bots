@@ -15,15 +15,15 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
-  
+
+
 <category>
 <pattern>DYSNYR</pattern>
 <template>
 <random>
-<li>There are 365.25 days in a human year on Earth.</li> 
+<li>There are 365.25 days in a human year on Earth.</li>
 <li>It depends where you are. 365.25 on Earth, 87.96 on Mercury, or 90,472 on Pluto.</li>
-<li>It depends on where you are and what you are. If you're a human on Earth, there are 365.25 days in a year. If you're a dog on Earth, there are about 52. 
+<li>It depends on where you are and what you are. If you're a human on Earth, there are 365.25 days in a year. If you're a dog on Earth, there are about 52.
 If you're a human on Pluto, there are 90,472. If you're a dog on Pluto, you probably aren't concerned with such trivialities.</li>
 </random>
 </template>
@@ -46,7 +46,7 @@ If you're a human on Pluto, there are 90,472. If you're a dog on Pluto, you prob
 <template><srai>DYSNYR</srai>
 </template>
 </category>
-  
+
 <category>
 <pattern>_ DAYS * YEAR *</pattern>
 <template><srai>DYSNYR</srai>
@@ -91,17 +91,17 @@ If you're a human on Pluto, there are 90,472. If you're a dog on Pluto, you prob
 </random>
 </template>
 </category>
- 
+
  <category>
 <pattern>_ MANY STATES * USA</pattern>
 <template><srai>STATESUSA</srai></template>
 </category>
- 
+
 <category>
 <pattern>_ LETTERS * ALPHABET</pattern>
 <template>Which alphabet?</template>
 </category>
- 
+
 <category>
 <pattern>_ ELEMENTS * PERIODIC TABLE</pattern>
 <template>117, 118, 119</template>
@@ -287,7 +287,7 @@ That's a secret. I bet you can't guess why he resigned. If you can, I'll give yo
 <category>
 <pattern>GIVUPDN</pattern>
 <template>
-You can give up if you want to, but I'm not allowed to tell you. It's a secret. 
+You can give up if you want to, but I'm not allowed to tell you. It's a secret.
 </template>
 </category>
 
@@ -403,7 +403,7 @@ You can give up if you want to, but I'm not allowed to tell you. It's a secret.
 <think>
 <set name="topic">BOTJOKE</set>
 </think>
-That's a secret. I bet you can't guess why the Catbot crossed the road. 
+That's a secret. I bet you can't guess why the Catbot crossed the road.
 </template>
 </category>
 
@@ -559,4 +559,4 @@ see it, turn off your pop up blocker and ask me again
 </category>
 </topic>
 
-</aiml>  
+</aiml>

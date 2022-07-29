@@ -9,7 +9,7 @@
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Last modified 5/4/2011 -->
 <!-- -->
- 
+
 <!-- GET CLIENT PREDICATES:  -->
 
 <category><pattern>MY PROFILE</pattern>
@@ -145,36 +145,36 @@
 </category>
 <category><pattern>MY LOCATION</pattern>
 <template>
-<condition name="location">  
-<li value="OM">I'd like to know your location. Where are you?</li>  
-<li value="WHERE">You haven't told me where you are. Where are you?</li>  
-<li value="*">You said you are in <get name="location"/>?</li>  
+<condition name="location">
+<li value="OM">I'd like to know your location. Where are you?</li>
+<li value="WHERE">You haven't told me where you are. Where are you?</li>
+<li value="*">You said you are in <get name="location"/>?</li>
 <li>I don't know.  Where are you?</li>
 </condition>
 </template>
 </category>
 <category><pattern>MY FRIEND</pattern>
 <template>
-<condition name="friend">  
-<li value="OM">I'd like to know about your friends.</li>   
-<li value="YOUR FRIEND">You haven't told me about your friends.</li>  
-<li value="*">Your friend <get name="friend"/>?</li>  
+<condition name="friend">
+<li value="OM">I'd like to know about your friends.</li>
+<li value="YOUR FRIEND">You haven't told me about your friends.</li>
+<li value="*">Your friend <get name="friend"/>?</li>
 <li><random><li>I don't know. Tell me the name of your friend.</li><li>How well do you know this person?</li></random>  </li></condition></template>
 </category>
 <category><pattern>MY OLDEST</pattern>
 <template>
-<condition name="oldest">  
-<li value="OM">I'd like to know the oldest.</li>  
-<li value="UNKNOWN">You haven't told me the oldest.</li>  
-<li value="*">The oldest is <get name="oldest"/>.</li>  
+<condition name="oldest">
+<li value="OM">I'd like to know the oldest.</li>
+<li value="UNKNOWN">You haven't told me the oldest.</li>
+<li value="*">The oldest is <get name="oldest"/>.</li>
 <li>I don't know.  Tell me the oldest.</li></condition></template>
 </category>
 <category><pattern>MY AGE</pattern>
 <template>
-<condition name="age">  
-<li value="OM">I'd like to know how old you are.</li>  
-<li value="HOW MANY">You haven't told me your age.</li>  
-<li value="*">You are <get name="age"/>?</li>  
+<condition name="age">
+<li value="OM">I'd like to know how old you are.</li>
+<li value="HOW MANY">You haven't told me your age.</li>
+<li value="*">You are <get name="age"/>?</li>
 <li>I don't know.  How old are you?</li>
 </condition></template>
 </category>
@@ -190,7 +190,7 @@
 </category>
 <category><pattern>HE HAS</pattern>
 <template>
-<condition name="hehas">  
+<condition name="hehas">
   <li value="OM">I'd like to know what he has.</li>
   <li value="A HEAD">A head.</li>
   <li value="*">You said <get name="hehas"/>?</li>
@@ -200,7 +200,7 @@
 <category><pattern>HE LIKES</pattern>
 <template>
 <think><set name="branch"><get name="helikes"/></set></think>
-<condition name="branch">  
+<condition name="branch">
   <li value="OM">I'd like to know what he likes.</li>
   <li value="HIMSELF">You haven't told me what he likes.</li>
   <li value="*">You said <get name="helikes"/>?</li>
@@ -283,19 +283,19 @@
 </category>
 <category><pattern>MY NAME</pattern>
 <template>
-<condition name="name">  
-<li value="OM">I'd like to know your name.</li>  
-<li value="JUDGE">I know you as Judge.</li>  
-<li value="*">You said your name is <get name="name"/>?</li>  
+<condition name="name">
+<li value="OM">I'd like to know your name.</li>
+<li value="JUDGE">I know you as Judge.</li>
+<li value="*">You said your name is <get name="name"/>?</li>
 <li>I don't know.  What is your name?</li></condition>
 </template>
 </category>
 <category><pattern>MY NAME</pattern>
 <template>
-<condition name="name">  
-<li value="OM">I'd like to know your name.</li>  
-<li value="JUDGE">I know you as Judge.</li>  
-<li value="*">You said your name is <get name="name"/>?</li>  
+<condition name="name">
+<li value="OM">I'd like to know your name.</li>
+<li value="JUDGE">I know you as Judge.</li>
+<li value="*">You said your name is <get name="name"/>?</li>
 <li>I don't know.  What is your name?</li></condition>
 </template>
 </category>
@@ -529,17 +529,17 @@ callee: <srai>my callee</srai><br/>
 <!-- SET CLIENT PREDICATES: -->
 
 <category><pattern>I AM *</pattern>
-<template><random>   
-<li>Why are you</li>  
-<li>Good gossip: you are</li>  
-<li>Do you mean your name is</li>  
-<li>Do your friends call you</li>  
-<li>I don't know anyone named</li>  
-<li>I am glad to hear that you are</li>  
-<li>It's good to meet someone who is</li>  
-<li>Do you mind if I tell other people you are </li>  
-</random> 
-<person/>.  
+<template><random>
+<li>Why are you</li>
+<li>Good gossip: you are</li>
+<li>Do you mean your name is</li>
+<li>Do your friends call you</li>
+<li>I don't know anyone named</li>
+<li>I am glad to hear that you are</li>
+<li>It's good to meet someone who is</li>
+<li>Do you mind if I tell other people you are </li>
+</random>
+<person/>.
 <think><set name="it"><set name="is"><set name="topic"><person/></set></set></set></think>
 </template>
 </category>
@@ -667,12 +667,12 @@ callee: <srai>my callee</srai><br/>
 <category><pattern>MY JOB IS *</pattern>
 <template>
 <random>
-<li>Does it pay well?</li>      
-<li>I don't know many <person/>s.</li>      
-<li>Is that an honorable profession?</li>      
-<li>You must have a lot of expertise.</li>      
-<li>Do you have to go to school for that?</li>     
-</random>     
+<li>Does it pay well?</li>
+<li>I don't know many <person/>s.</li>
+<li>Is that an honorable profession?</li>
+<li>You must have a lot of expertise.</li>
+<li>Do you have to go to school for that?</li>
+</random>
 <think>
 <set name="it"><person/></set>
 <set name="job"><person/></set>
@@ -717,16 +717,16 @@ Your girlfriend is <get name="girlfriend"/>.</template>
 <template>
 <think><set name="age"><star/></set></think>
 <random>
-<li>Your age is <star/>.</li>  
-<li>Only <star/>?  You are quite mature.</li>  
-<li>Can you explain how it feels to be <star/> years old?</li>  
-<li>What is your fondest memory?</li>  
+<li>Your age is <star/>.</li>
+<li>Only <star/>?  You are quite mature.</li>
+<li>Can you explain how it feels to be <star/> years old?</li>
+<li>What is your fondest memory?</li>
 <li>What are the advantages to being <star/> years old?</li>
 </random>
 </template>
 </category>
 <category><pattern>MY WIFE IS CALLED *</pattern>
-<template><think><set name="wife"><person/></set></think> 
+<template><think><set name="wife"><person/></set></think>
 <random>
 <li>How long have you been married?</li>
 <li>Your wife is called <get name="wife"/></li>
@@ -797,4 +797,3 @@ Mine too!  My friend Sage worked on the digital effects.</template>
 </category>
 
 </aiml>
-

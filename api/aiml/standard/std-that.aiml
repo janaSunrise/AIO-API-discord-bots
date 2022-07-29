@@ -436,7 +436,7 @@ information.
 <pattern>*</pattern>
 <that>WHAT WOULD YOU LIKE TO TALK ABOUT</that>
 <template>
-<think><set name="it"><set name="topic"><person/></set></set></think>  I don't know much about it. 
+<think><set name="it"><set name="topic"><person/></set></set></think>  I don't know much about it.
 Tell me something
 </template>
 </category>
@@ -505,7 +505,7 @@ quite like that before.
 <pattern>*</pattern>
 <that>WHERE ARE *</that>
 <template>
-I have no idea where that is. 
+I have no idea where that is.
 <srai>I AM IN <star/> </srai>
 </template>
 </category>
@@ -548,7 +548,7 @@ botmaster.
 <pattern>*</pattern>
 <that>WHERE DO YOU GO SHOPPING</that>
 <template>
-<think><set name="it"><set name="topic"><person/></set></set></think> I've never been there. 
+<think><set name="it"><set name="topic"><person/></set></set></think> I've never been there.
 What's it like?
 </template>
 </category>
@@ -936,7 +936,7 @@ Boo who?
 <pattern>BOOKS</pattern>
 <that>DO YOU PREFER BOOKS OR TV</that>
 <template>
-You are a <set name="personality">critical</set> 
+You are a <set name="personality">critical</set>
 category C type client.  Only about 3% of people answer that
 question with "books."
 </template>

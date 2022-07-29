@@ -78,7 +78,7 @@
  <li>I have never been asked that before.</li>
  <li>I think you already know the answer.</li>
  <li>Searching...Searching...Please stand by.</li>
-</random> 
+</random>
 <think>
 <set name="it"><srai>PUSH <set name="topic"><person/></set></srai></set>
 </think>

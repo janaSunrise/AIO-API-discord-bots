@@ -13,7 +13,7 @@
 
 <!-- Let's introduce the game and decide who goes first -->
 
-<category> 
+<category>
 <pattern>TICTACTOE</pattern>
 <template>
 <think>
@@ -27,7 +27,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>_ FIRST</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -35,7 +35,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>_ SECOND</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -43,7 +43,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>_ 1ST</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -51,7 +51,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>_ 2ND</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -59,7 +59,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>1ST</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -67,7 +67,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>2ND</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -75,7 +75,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>_ 1</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -83,7 +83,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>_ 2</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -91,7 +91,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>1</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -99,7 +99,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>2</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -107,7 +107,7 @@ You can be X and I will be O.<br/>Ok, let's play.<br/>Do you want to go FIRST or
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>FIRST</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -120,7 +120,7 @@ Please enter the square you wish to play.
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>SECOND</pattern>
 <that>DO YOU WANT TO GO FIRST OR SECOND</that>
 <template>
@@ -144,7 +144,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 <!-- Which square does the player want to choose? -->
 <!-- Check that this square hasn't already been played. -->
 
-<category> 
+<category>
 <pattern>1</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -156,7 +156,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>2</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -168,7 +168,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>3</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -180,7 +180,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>4</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -192,7 +192,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>5</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -204,7 +204,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>6</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -216,7 +216,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>7</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -228,7 +228,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>8</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -240,7 +240,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>9</pattern>
 <that>PLEASE ENTER THE SQUARE YOU WISH TO PLAY</that>
 <template>
@@ -252,7 +252,7 @@ I played in <get name="computermove"/>.<br/>Please enter the square you wish to 
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>TTTBADCHOICE</pattern>
 <template>
 <srai>DRAWGRID</srai><br/>That square has already been played.<br/>
@@ -260,7 +260,7 @@ Please enter the square you wish to play.
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>TTTGOODCHOICE *</pattern>
 <template>
 <think><set name="inp"><star/></set>
@@ -283,7 +283,7 @@ Please enter the square you wish to play.
 
 <!-- Has the player won? -->
 
-<category> 
+<category>
 <pattern>TTTCHECKXWIN</pattern>
 <template>
 <think>
@@ -330,7 +330,7 @@ Please enter the square you wish to play.
 
 <!-- Has the computer won? -->
 
-<category> 
+<category>
 <pattern>TTTCHECKOWIN</pattern>
 <template>
 <think>
@@ -384,7 +384,7 @@ Please enter the square you wish to play.
 
 <!-- The computer chooses a random corner to play -->
 
-<category> 
+<category>
 <pattern>TTTGETRANDOMCORNER</pattern>
 <template>
 <random>
@@ -399,7 +399,7 @@ Please enter the square you wish to play.
 
 <!-- The computer puts its O in any square that isn't alerady filled -->
 
-<category> 
+<category>
 <pattern>TTTGETRANDOMSQUARE</pattern>
 <template>
 <think>
@@ -438,7 +438,7 @@ Please enter the square you wish to play.
 
 <!-- The computer's move -->
 
-<category> 
+<category>
 <pattern>TTTCOMPUTERMOVE</pattern>
 <template>
 <condition name="gofirst">
@@ -449,7 +449,7 @@ Please enter the square you wish to play.
 </category>
 
 
-<category> 
+<category>
 <pattern>TTTCOMPUTERMOVE1</pattern>
 <template>
 <think>
@@ -606,7 +606,7 @@ Please enter the square you wish to play.
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>TTTCOMPUTERMOVE2</pattern>
 <template>
 <think>
@@ -791,7 +791,7 @@ Please enter the square you wish to play.
 
 <!-- Draw the tic-tac-toe grid -->
 
-<category> 
+<category>
 <pattern>DRAWGRID</pattern>
 <template>
 <table class="table" bgcolor="#ffffff">
@@ -865,7 +865,7 @@ Please enter the square you wish to play.
 
 <!-- New game, so reset all the squares -->
 
-<category> 
+<category>
 <pattern>RESETTTTBOARD</pattern>
 <template>
 <think>
@@ -894,7 +894,7 @@ Please enter the square you wish to play.
 
 <!-- Game over. Display scores and offer another game -->
 
-<category> 
+<category>
 <pattern>TTTXWIN</pattern>
 <template>
 <srai>DRAWGRID</srai>
@@ -905,7 +905,7 @@ Argh! You won me. That's impossible!<br/>Do you want another game of Tic Tac Toe
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>TTTOWIN</pattern>
 <template>
 You: <get name="playerscore"/><br/>
@@ -925,7 +925,7 @@ Drawn game. Nobody wins.<br/>Do you want another game of Tic Tac Toe?
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>YES</pattern>
 <that>DO YOU WANT ANOTHER GAME OF TIC TAC TOE</that>
 <template>
@@ -937,7 +937,7 @@ Drawn game. Nobody wins.<br/>Do you want another game of Tic Tac Toe?
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>NO</pattern>
 <that>DO YOU WANT ANOTHER GAME OF TIC TAC TOE</that>
 <template>
@@ -952,7 +952,7 @@ Thanks for playing.
 
 <!-- Keep score up to 10 for computer, player and draw -->
 
-<category> 
+<category>
 <pattern>TTTINCRCOMPUTERSCORE</pattern>
 <template>
 <condition name="computerscore">
@@ -971,7 +971,7 @@ Thanks for playing.
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>TTTINCRPLAYERSCORE</pattern>
 <template>
 <condition name="playerscore">
@@ -990,7 +990,7 @@ Thanks for playing.
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>TTTINCRDRAWSCORE</pattern>
 <template>
 <condition name="computerscore">
@@ -1009,14 +1009,14 @@ Thanks for playing.
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>DRAWGRID</pattern>
 <template>
 <get name="s1"/>|<get name="s2"/>|<get name="s3"/><br/>-+-+-<br/><get name="s4"/>|<get name="s5"/>|<get name="s6"/><br/>-+-+-<br/><get name="s7"/>|<get name="s8"/>|<get name="s9"/><br/><br/>
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>TICTACTOE</pattern>
 <template>
 Sorry but we can't really play it in this text box.

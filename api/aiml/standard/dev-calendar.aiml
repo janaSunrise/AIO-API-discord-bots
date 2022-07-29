@@ -74,7 +74,7 @@ case 8:
 case 9:
      m = "October";
      break;
-case 10: 
+case 10:
      m = "November";
      break;
 case 11:
@@ -99,7 +99,7 @@ dow + ", " + m + " " + d + ", " + y;
 <category>
 <pattern>WHAT TIME IS IT</pattern>
 <template>
-The time is <javascript> 
+The time is <javascript>
 <![CDATA[
  var now = new java.util.Date()
  var hour = now.getHours()

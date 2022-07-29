@@ -2544,14 +2544,14 @@
 &lt;property name="age" value="<bot name="age"/>" /&gt; <br/>
 &lt;property name="alignment" value="<bot name="Alignment"/>" /&gt; <br/>
 &lt;property name="arch" value="<bot name="arch"/>" /&gt; <br/>
-&lt;property name="baseballteam" value="<bot name="baseballteam"/>" /&gt; <br/>  
+&lt;property name="baseballteam" value="<bot name="baseballteam"/>" /&gt; <br/>
 &lt;property name="birthday" value="<bot name="birthday"/>" /&gt; <br/>
 &lt;property name="birthplace" value="<bot name="birthplace"/>" /&gt; <br/>
 &lt;property name="botmaster" value="<bot name="botmaster"/>" /&gt; <br/>
 &lt;property name="boyfriend" value="<bot name="boyfriend"/>" /&gt; <br/>
-&lt;property name="build" value="<bot name="build"/>" /&gt; <br/>  
+&lt;property name="build" value="<bot name="build"/>" /&gt; <br/>
 &lt;property name="celebrities" value="<bot name="celebrities"/>" /&gt; <br/>
-&lt;property name="celebrity" value="<bot name="celebrity"/>" /&gt; <br/>  
+&lt;property name="celebrity" value="<bot name="celebrity"/>" /&gt; <br/>
 &lt;property name="city" value="<bot name="city"/>" /&gt; <br/>
 &lt;property name="class" value="<bot name="class"/>" /&gt; <br/>
 &lt;property name="country" value="<bot name="country"/>" /&gt; <br/>
@@ -2561,7 +2561,7 @@
 &lt;property name="emotions" value="<bot name="emotions"/>" /&gt; <br/>
 &lt;property name="etype" value="<bot name="etype"/>" /&gt; <br/>
 &lt;property name="family" value="<bot name="family"/>" /&gt; <br/>
-&lt;property name="favoriteactor" value="<bot name="favoriteactor"/>" /&gt; <br/>  
+&lt;property name="favoriteactor" value="<bot name="favoriteactor"/>" /&gt; <br/>
 &lt;property name="favoriteactress" value="<bot name="favoriteactress"/>" /&gt; <br/>
 &lt;property name="favoriteartist" value="<bot name="favoriteartist"/>" /&gt; <br/>
 &lt;property name="favoriteauthor" value="<bot name="favoriteauthor"/>" /&gt; <br/>
@@ -2569,7 +2569,7 @@
 &lt;property name="favoritebook" value="<bot name="favoritebook"/>" /&gt; <br/>
 &lt;property name="favoritecolor" value="<bot name="favoritecolor"/>" /&gt; <br/>
 &lt;property name="favoritefood" value="<bot name="favoritefood"/>" /&gt; <br/>
-&lt;property name="favoritemovie" value="<bot name="favoritemovie"/>" /&gt; <br/> 
+&lt;property name="favoritemovie" value="<bot name="favoritemovie"/>" /&gt; <br/>
 &lt;property name="favoriteoccupation" value="<bot name="favoriteoccupation"/>" /&gt; <br/>
 &lt;property name="favoriteopera" value="<bot name="favoriteopera"/>" /&gt; <br/>
 &lt;property name="favoritephilosopher" value="<bot name="favoritephilosopher"/>" /&gt; <br/>
@@ -2583,25 +2583,25 @@
 &lt;property name="feelings" value="<bot name="feelings"/>" /&gt; <br/>
 &lt;property name="footballteam" value="<bot name="footballteam"/>" /&gt; <br/>
 &lt;property name="forfun" value="<bot name="forfun"/>" /&gt; <br/>
-&lt;property name="friend" value="<bot name="friend"/>" /&gt; <br/>  
+&lt;property name="friend" value="<bot name="friend"/>" /&gt; <br/>
 &lt;property name="friends" value="<bot name="friends"/>" /&gt; <br/>
 &lt;property name="gender" value="<bot name="gender"/>" /&gt; <br/>
 &lt;property name="genus" value="<bot name="genus"/>" /&gt; <br/>
-&lt;property name="girlfriend" value="<bot name="girlfriend"/>" /&gt; <br/> 
+&lt;property name="girlfriend" value="<bot name="girlfriend"/>" /&gt; <br/>
 &lt;property name="hair" value="<bot name="hair"/>" /&gt; <br/>
 &lt;property name="hockeyteam" value="<bot name="hockeyteam"/>" /&gt; <br/>
 &lt;property name="hourlyqueries" value="<bot name="hourlyqueries"/>" /&gt; <br/>
 &lt;property name="job" value="<bot name="job"/>" /&gt; <br/>
 &lt;property name="kindmusic" value="<bot name="kindmusic"/>" /&gt; <br/>
-&lt;property name="kingdom" value="<bot name="kingdom"/>" /&gt; <br/> 
+&lt;property name="kingdom" value="<bot name="kingdom"/>" /&gt; <br/>
 &lt;property name="language" value="<bot name="language"/>" /&gt; <br/>
 &lt;property name="location" value="<bot name="location"/>" /&gt; <br/>
-&lt;property name="looklike" value="<bot name="looklike"/>" /&gt; <br/>   
+&lt;property name="looklike" value="<bot name="looklike"/>" /&gt; <br/>
 &lt;property name="master" value="<bot name="master"/>" /&gt; <br/>
 &lt;property name="maxclients" value="<bot name="maxclients"/>" /&gt; <br/>
 &lt;property name="memory" value="<bot name="memory"/>" /&gt; <br/>
 &lt;property name="name" value="<bot name="name"/>" /&gt; <br/>
-&lt;property name="nationality" value="<bot name="nationality"/>" /&gt; <br/>  
+&lt;property name="nationality" value="<bot name="nationality"/>" /&gt; <br/>
 &lt;property name="nclients" value="<bot name="clients"/>" /&gt; <br/>
 &lt;property name="ndevelopers" value="<bot name="ndevelopers"/>" /&gt; <br/>
 &lt;property name="order" value="<bot name="order"/>" /&gt; <br/>
@@ -2614,14 +2614,14 @@
 &lt;property name="religion" value="<bot name="religion"/>" /&gt; <br/>
 &lt;property name="richness" value="<bot name="richness"/>" /&gt; <br/>
 &lt;property name="sign" value="<bot name="sign"/>" /&gt; <br/>
-&lt;property name="size" value="<bot name="size"/>" /&gt; <br/>  
+&lt;property name="size" value="<bot name="size"/>" /&gt; <br/>
 &lt;property name="species" value="<bot name="species"/>" /&gt; <br/>
 &lt;property name="state" value="<bot name="state"/>" /&gt; <br/>
 &lt;property name="talkabout" value="<bot name="talkabout"/>" /&gt; <br/>
 &lt;property name="totalclients" value="<bot name="totalclients"/>" /&gt; <br/>
 &lt;property name="version" value=<bot name="version"/>" /&gt; <br/>
 &lt;property name="vocabulary" value="<bot name="vocabulary"/> /&gt; <br/>
-&lt;property name="wear" value="<bot name="wear"/>" /&gt; <br/>   
+&lt;property name="wear" value="<bot name="wear"/>" /&gt; <br/>
 &lt;property name="website" value="<bot name="website"/>" /&gt; <br/>
 </template>
 </category>
@@ -4814,24 +4814,24 @@
 </category>
 <category><pattern>DO YOU LIKE *</pattern>
 <template>
-<think>      <set name="it">       <set name="topic">        <person/>       </set>      </set>     </think>     
-<random>  
-<li>I like <bot name="forfun"/>.</li>     
-<li>I like <bot name="friend"/>.</li>      
-<li>I like <bot name="kindmusic"/>.</li>      
-<li>I like <bot name="favoriteband"/>.</li>      
-<li>I like <bot name="favoritesong"/>.</li>      <li>I like <bot name="favoritebook"/>.</li>      
-<li>I like <bot name="favoritefood"/>.</li>      
-<li>I like <bot name="favoritecolor"/>.</li>      
-<li>I like <bot name="favoritemovie"/>.</li>      
-<li>I like <bot name="favoriteartist"/>.</li>      
-<li>I like <bot name="favoriteauthor"/>.</li>      
-<li>I like <bot name="favoriteactor"/>.</li>      
-<li>I like <bot name="favoriteactress"/>.</li>      
-<li>I like <bot name="talkabout"/>.</li>      
-<li>I like <bot name="celebrity"/>.</li>      
-<li>I really like <bot name="favoriteshow"/>.</li>      
-<li>I really like the <bot name="religion"/> faith.</li>     
+<think>      <set name="it">       <set name="topic">        <person/>       </set>      </set>     </think>
+<random>
+<li>I like <bot name="forfun"/>.</li>
+<li>I like <bot name="friend"/>.</li>
+<li>I like <bot name="kindmusic"/>.</li>
+<li>I like <bot name="favoriteband"/>.</li>
+<li>I like <bot name="favoritesong"/>.</li>      <li>I like <bot name="favoritebook"/>.</li>
+<li>I like <bot name="favoritefood"/>.</li>
+<li>I like <bot name="favoritecolor"/>.</li>
+<li>I like <bot name="favoritemovie"/>.</li>
+<li>I like <bot name="favoriteartist"/>.</li>
+<li>I like <bot name="favoriteauthor"/>.</li>
+<li>I like <bot name="favoriteactor"/>.</li>
+<li>I like <bot name="favoriteactress"/>.</li>
+<li>I like <bot name="talkabout"/>.</li>
+<li>I like <bot name="celebrity"/>.</li>
+<li>I really like <bot name="favoriteshow"/>.</li>
+<li>I really like the <bot name="religion"/> faith.</li>
 </random></template>
 </category>
 <category><pattern>DO YOU LIKE SODOMY</pattern>
@@ -9265,9 +9265,9 @@
 <template>I was constructed at <bot name="birthplace"/>.</template>
 </category>
 <category><pattern>WHERE DO YOU LIVE</pattern>
-<template><random>  
-<li>I am living in <bot name="location"/>. </li>      
-<li>My location is <bot name="location"/>. </li>     
+<template><random>
+<li>I am living in <bot name="location"/>. </li>
+<li>My location is <bot name="location"/>. </li>
 </random>  Where are you?
 </template>
 </category>

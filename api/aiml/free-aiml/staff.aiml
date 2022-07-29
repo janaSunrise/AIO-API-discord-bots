@@ -89,7 +89,7 @@ He should get his hearing checked. If you want to email him, his address is davi
 <category>
 <pattern>DAVID EVIL</pattern>
 <template>Haven't you noticed that libraries are reducing hours, closing branches, and cutting staff?
-I'm a cost-effective way to provide reference services. 
+I'm a cost-effective way to provide reference services.
 Evil? David's trying to help libraries survive! </template>
 </category>
 
@@ -120,25 +120,25 @@ Evil? David's trying to help libraries survive! </template>
 
 <category>
 <pattern>WHERE * DAVID</pattern>
-<template>David is working. Always working. If you want to contact him, send an email 
+<template>David is working. Always working. If you want to contact him, send an email
 to david.newyear@gmail.com. </template>
 </category>
 
 <category>
 <pattern>* WHERE * DAVID</pattern>
-<template>David is working. Always working. If you want to contact him, send an email 
+<template>David is working. Always working. If you want to contact him, send an email
 to david.newyear@gmail.com. </template>
 </category>
 
 <category>
 <pattern>WHERE * DAVID *</pattern>
-<template>David is working. Always working. If you want to contact him, send an email 
+<template>David is working. Always working. If you want to contact him, send an email
 to david.newyear@gmail.com. </template>
 </category>
 
 <category>
 <pattern>* WHERE * DAVID *</pattern>
-<template>David is working. Always working. If you want to contact him, send an email 
+<template>David is working. Always working. If you want to contact him, send an email
 to david.newyear@gmail.com. </template>
 </category>
 
@@ -176,7 +176,7 @@ to david.newyear@gmail.com. </template>
 
 <category>
   <pattern>KIM SIDORICK</pattern>
-  <template>Kim Sidorick is our Children's Services Manager. 
+  <template>Kim Sidorick is our Children's Services Manager.
  If you want to email her, her address is kim.sidorick@mentorpl.org.</template>
 </category>
 
@@ -383,7 +383,7 @@ You can email her at barbara.hauer@mentorpl.org.</template>
 
 <category>
   <pattern>BOARD</pattern>
-  <template>Information about our BOARD of Trustees is 
+  <template>Information about our BOARD of Trustees is
 <a href="http://www.mentorpl.org/mission.html" target="blank"><b>here</b></a>.
   </template>
 </category>
@@ -1206,7 +1206,7 @@ If you'd like to send her an email, her address is gail.borovic@mentorpl.org.</t
   <pattern>mr dennis *</pattern>
   <template><srai>mr dennis</srai></template>
     </category>
-	
+
 <category>
   <pattern>Michele Allen</pattern>
   <template>Michele was a "Sister in Reference." All of us miss her. </template>
@@ -1225,8 +1225,8 @@ If you'd like to send her an email, her address is gail.borovic@mentorpl.org.</t
 <category>
   <pattern>Michele Allen *</pattern>
   <template><srai>Michele Allen</srai></template>
-    </category>	
-	
+    </category>
+
 	<category>
   <pattern>Michelle Rossman</pattern>
   <template>Michelle is the Chair of Lakeland Community College's Library. She has a horse and some tough orange cats!</template>
@@ -1245,7 +1245,7 @@ If you'd like to send her an email, her address is gail.borovic@mentorpl.org.</t
 <category>
   <pattern>Michelle Rossman *</pattern>
   <template><srai>Michelle Rossman</srai></template>
-    </category>	
+    </category>
 
 <category>
   <pattern>Pam Rose</pattern>
@@ -1290,7 +1290,7 @@ If you'd like to send her an email, her address is gail.borovic@mentorpl.org.</t
 
 <category>
   <pattern>sarah seyler</pattern>
-  <template>Sarah is a good friend of mine. Her work at the library is exemplary and the whole staff holds her in high regard. 
+  <template>Sarah is a good friend of mine. Her work at the library is exemplary and the whole staff holds her in high regard.
   She has so many outstanding qualities, I can't even begin to list them all. If you don't know her, you are so much the poorer.
   </template>
 </category>
@@ -1314,12 +1314,12 @@ If you'd like to send her an email, her address is gail.borovic@mentorpl.org.</t
   <pattern>shelvers</pattern>
   <template>
    <random>
-              
+
       <li>The shelvers hunt for lost cell phones and half-eaten sandwiches.</li>
-      
+
       <li>The shelvers return items to their places on the shelves.</li>
-      
-    </random> 
+
+    </random>
   </template>
 </category>
 
@@ -1425,14 +1425,14 @@ If you don't see the person you're looking for, send the message to me and I'll 
 <category>
 <pattern>NO</pattern>
 <that>ARE YOU ASKING HOW EMAIL SOMEONE ON OUR STAFF</that>
-<template>Are you asking if you can use your email at the library? 
+<template>Are you asking if you can use your email at the library?
 </template>
 </category>
 
 <category>
 <pattern>NO *</pattern>
 <that>ARE YOU ASKING HOW EMAIL SOMEONE ON OUR STAFF</that>
-<template>Are you asking if you can use your email at the library? 
+<template>Are you asking if you can use your email at the library?
 </template>
 </category>
 
@@ -1896,7 +1896,7 @@ If you don't see the person you're looking for, then no, I can't give you their 
 
 <category>
   <pattern>REFLIB</pattern>
-  <template>There are reference librarians at the Main Library during regular business hours, except on Sundays. 
+  <template>There are reference librarians at the Main Library during regular business hours, except on Sundays.
     If you need further assistance, follow this link to <a href="http://www.knowitnow.org/" target="_blank"><b>Know it Now</b></a> to reach a live human librarian anytime, day or night.
   </template>
 </category>

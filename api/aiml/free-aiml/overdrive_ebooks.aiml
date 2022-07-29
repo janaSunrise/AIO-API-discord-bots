@@ -15,12 +15,12 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
 <pattern>EBOOK</pattern>
 <template><srai>EBKS</srai></template>
-</category>  
- 
+</category>
+
 <category>
 <pattern>EBOOKS</pattern>
 <template><srai>EBKS</srai></template>
@@ -123,8 +123,8 @@
 <category>
 <pattern>* BOOKS * DOWNLOAD * E READERS</pattern>
 <template><srai>EBKS</srai></template>
-</category>  
-  
+</category>
+
 <category>
 <pattern>OVERDRIVE</pattern>
 <template><srai>EBKS</srai></template>
@@ -1340,7 +1340,7 @@
 <li value="demos"><srai>ODDEMOS</srai></li>
 
 <li value="returning ebooks"><srai>EBKRETURN</srai></li>
-  
+
 <li value="ebook search"><srai>SRCHEBKS</srai></li>
 
 <li value="list of ebooks"><srai>EBKLIST</srai></li>
@@ -1358,7 +1358,7 @@
 <li value="kindle"><srai>GENINFO KINDL</srai></li>
 
 <li value="nook"><srai>GENINFO NKS</srai></li>
- 
+
 <li value="ebook ready"><srai>EBKS READY</srai></li>
 
 <li value="downloadable media"><srai>DWN MEDIA</srai></li>
@@ -1379,4 +1379,4 @@
 </category>
 </topic>
 
-</aiml>  
+</aiml>

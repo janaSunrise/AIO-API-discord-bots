@@ -1353,7 +1353,7 @@ Please enter your date with the date first, then the month, then the year eg: 31
 <category>
 <pattern>XNUMBERONEDATE</pattern>
 <template>
- <get name="n1mastdate"/> 
+ <get name="n1mastdate"/>
 </template>
 </category>
 
@@ -1803,5 +1803,3 @@ Please enter your date with the date first, then the month, then the year eg: 31
 <category><pattern>_ POINT * POINT *</pattern><that>_ AND I WILL TELL YOU WHAT THE UK NUMBER ONE HIT SINGLE WAS ON *</that><template><srai>my birthday is <star/> <star index="2"/> <star index="3"/></srai></template></category>
 
 </aiml>
-
-

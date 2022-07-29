@@ -20,7 +20,7 @@
 
 <category>
 <pattern>BRNCHS</pattern>
-<template>I'm often asked about our branches. What would you like to know about our Branches? 
+<template>I'm often asked about our branches. What would you like to know about our Branches?
 <think>
 <set name="topic">BRANCHES</set>
 </think>
@@ -346,7 +346,7 @@
 </condition>
 <think><set name="topic"></set></think>
 </think>
- 
+
 <condition name="message">
 <li value="no match"><set name="topic"></set><srai>NOMATCH</srai></li>
 
@@ -366,7 +366,7 @@
 </condition>
 </template>
 </category>
-</topic> 
+</topic>
 
 
 <category>

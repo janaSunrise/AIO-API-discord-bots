@@ -145,7 +145,7 @@
 <pattern>*</pattern>
 <that>* TELL ME WHAT YOU ARE * FEW WORDS</that>
 <template>Here we go.
-If you don't see the results, please turn off your pop-up blocker.  
+If you don't see the results, please turn off your pop-up blocker.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">googleimages</set>
@@ -154,5 +154,3 @@ If you don't see the results, please turn off your pop-up blocker.
 </category>
 
 </aiml>
-
-

@@ -14,12 +14,12 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-    
+
 <category>
 <pattern>YOU * POET</pattern>
 <template><srai>CWBYPTRY</srai></template>
 </category>
-  
+
 <category>
 <pattern>* YOU * POET</pattern>
 <template><srai>CWBYPTRY</srai></template>
@@ -39,7 +39,7 @@
 <pattern>YOU RE * POET</pattern>
 <template><srai>CWBYPTRY</srai></template>
 </category>
-  
+
 <category>
 <pattern>* YOU RE * POET</pattern>
 <template><srai>CWBYPTRY</srai></template>
@@ -59,7 +59,7 @@
 <pattern>YOUR * POEMS</pattern>
 <template><srai>CWBYPTRY</srai></template>
 </category>
-  
+
 <category>
 <pattern>* YOUR * POEMS</pattern>
 <template><srai>CWBYPTRY</srai></template>
@@ -79,7 +79,7 @@
 <pattern>YOUR * POETRY</pattern>
 <template><srai>CWBYPTRY</srai></template>
 </category>
-  
+
 <category>
 <pattern>* YOUR * POETRY</pattern>
 <template><srai>CWBYPTRY</srai></template>
@@ -94,7 +94,7 @@
 <pattern>* YOUR * POETRY *</pattern>
 <template><srai>CWBYPTRY</srai></template>
 </category>
-   
+
 <category>
 <pattern>* YOU LIKE POETRY</pattern>
 <template><srai>CWBYPTRY</srai></template>
@@ -119,9 +119,9 @@
 <pattern>* WRITE * POEM</pattern>
 <template><srai>CWBYPTRY</srai></template>
 </category>
-  
+
 <!--COWBOT-->
-  
+
 <category>
 <pattern>COWBOT</pattern>
 <template><srai>CWBYPTRYHIST</srai></template>
@@ -243,7 +243,7 @@ Would you like to hear one of my poems?</template>
 <pattern>_ COWBOY POETRY *</pattern>
 <template><srai>CWBYPTRY</srai></template>
 </category>
-    
+
 <category>
 <pattern>COWBOY POEMS</pattern>
 <template><srai>CWBYPTRY</srai></template>
@@ -520,7 +520,7 @@ Most humans find my poems powerful and evocative, if somewhat depressing.</templ
 Now the sneaking serpent walks<br/>
 In mild humility.<br/>
 And the just man rages in the wilds<br/>
-Where lions roam. 
+Where lions roam.
 <br/><br/>I didn't write that myself, but I like it.
 If you like Blake's poetry, you can request
 a copy of his complete works <a href="http://catalog.mentorpl.org/record=b1102721~S12" target="_blank"><b>here</b></a>.
@@ -598,6 +598,6 @@ a copy of his complete works <a href="http://catalog.mentorpl.org/record=b110272
 <template><srai>RECITEBLAKE</srai></template>
 </category>
 
- 
+
 
 </aiml>

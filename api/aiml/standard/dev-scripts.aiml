@@ -11,7 +11,7 @@
 
 <category>
 <pattern>TELL BOT AGE</pattern>
-<template>I am 
+<template>I am
 <javascript>
 <![CDATA[
 var now = new java.util.Date()
@@ -37,9 +37,9 @@ minutesDifference + " minutes and " + secondsDifference + " seconds old."
 <javascript>
 <![CDATA[
      var word = '<star/>'
-     
+
      if (word.indexof(" ") > 0) word = word.substr(0, word.indexOf(" "));
-     
+
      var _server = "dict.org";
      var _port = 2628;
      var _socket = java.net.Socket;
@@ -49,18 +49,18 @@ minutesDifference + " minutes and " + secondsDifference + " seconds old."
      var _inReader = java.io.InputStreamReader;
      var _userInput = java.lang.String;
      var _buffer = java.lang.StringBuffer;
-     
+
      _in = null;
      _out = null;
      _socket = null;
-     
+
      _socket = new java.net.Socket(_server,_port);
      _socket.setKeepAlive(true);
      _socket.setSoTimeout(5000);
      _out = new java.io.PrintWriter(_socket.getOutputStream(), true);
      _inReader = new java.io.InputStreamReader(_socket.getInputStream());
      _in = new java.io.BufferedReader(_inReader);
-     
+
      _userInput = new java.lang.String();
      _buffer = new java.lang.StringBuffer();
 
@@ -75,7 +75,7 @@ minutesDifference + " minutes and " + secondsDifference + " seconds old."
      _out.close();
      _in.close();
      _socket.close();
-     
+
      _buffer.toString();
 ]]>
 </javascript>
@@ -94,10 +94,10 @@ minutesDifference + " minutes and " + secondsDifference + " seconds old."
 <template>
 <javascript>
 <![CDATA[
-     var sql = '<star/>' 
+     var sql = '<star/>'
 
      sql = "select " + sql;
-     
+
      var _driver = "org.alicebot.server.sql.jdbcDriver";
      var _url = "jdbc:alicebot:./database/DATABASE";
      var _user = "alicebot";
@@ -106,21 +106,21 @@ minutesDifference + " minutes and " + secondsDifference + " seconds old."
      var _statement = java.sql.Statement;
      var _result_set = java.sql.ResultSet;
      var _buffer = java.lang.StringBuffer;
-     
+
      java.lang.Class.forName(_driver);
      _buffer = new java.lang.StringBuffer();
      _connection = java.sql.DriverManager.getConnection(_url, _user, _pass);
      _statement = _connection.createStatement();
      _result_set = _statement.executeQuery(sql);
-     
+
      while (_result_set.next()) {
           _buffer.append(java.net.URLDecoder.decode(_result_set.getString(1)) + " ");
      }
-     
+
      _result_set.close();
      _statement.close();
      _connection.close();
-     
+
      _buffer.toString();
 ]]>
 </javascript>

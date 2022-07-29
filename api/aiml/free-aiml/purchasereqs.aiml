@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <!--SORT HOLD OR PURCH REQ-->
 
 <category>
@@ -186,7 +186,7 @@ O.K. It sounds like you're asking me to recommend a book you might enjoy. What d
 
 <category>
 <pattern>PREQCONF</pattern>
-<template>Thanks. I'll see that the selectors receive this information. The ordering and acquisition process usually takes about 
+<template>Thanks. I'll see that the selectors receive this information. The ordering and acquisition process usually takes about
 a month. Please check the status of this request then.
 <think>
 <set name="topic"></set>

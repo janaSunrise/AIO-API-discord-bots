@@ -12,7 +12,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.  -->
-  
+
 
 <category>
 <pattern></pattern>
@@ -34,7 +34,7 @@
 <pattern>QUESTION ABOUT YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION ABOUT YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -54,7 +54,7 @@
 <pattern>QUESTION CONCERNING YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION CONCERNING YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -74,7 +74,7 @@
 <pattern>QUESTION RE YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION RE YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -94,7 +94,7 @@
 <pattern>QUESTION REGARDING YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION REGARDING YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -114,7 +114,7 @@
 <pattern>QUESTION * REGARD * YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION * REGARD * YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -134,7 +134,7 @@
 <pattern>QUESTION * REGARDS * YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION * REGARDS * YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -155,7 +155,7 @@
 <pattern>QUESTIONS ABOUT YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS ABOUT YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -175,7 +175,7 @@
 <pattern>QUESTIONS CONCERNING YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS CONCERNING YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -195,7 +195,7 @@
 <pattern>QUESTIONS RE YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS RE YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -215,7 +215,7 @@
 <pattern>QUESTIONS REGARDING YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS REGARDING YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -235,7 +235,7 @@
 <pattern>QUESTIONS * REGARD * YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS * REGARD * YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -256,7 +256,7 @@
 <pattern>QUESTIONS * REGARDS * YOU *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS * REGARDS * YOU *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -277,7 +277,7 @@
 <pattern>QUESTION ABOUT YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION ABOUT YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -297,7 +297,7 @@
 <pattern>QUESTION CONCERNING YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION CONCERNING YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -317,7 +317,7 @@
 <pattern>QUESTION RE YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION RE YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -337,7 +337,7 @@
 <pattern>QUESTION REGARDING YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION REGARDING YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -357,7 +357,7 @@
 <pattern>QUESTION * REGARD * YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION * REGARD * YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -377,7 +377,7 @@
 <pattern>QUESTION * REGARDS * YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTION * REGARDS * YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -397,7 +397,7 @@
 <pattern>QUESTIONS ABOUT YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS ABOUT YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -417,7 +417,7 @@
 <pattern>QUESTIONS CONCERNING YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS CONCERNING YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -437,7 +437,7 @@
 <pattern>QUESTIONS RE YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS RE YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -457,7 +457,7 @@
 <pattern>QUESTIONS REGARDING YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS REGARDING YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -477,7 +477,7 @@
 <pattern>QUESTIONS * REGARD * YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS * REGARD * YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -498,7 +498,7 @@
 <pattern>QUESTIONS * REGARDS * YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
 </category>
-  
+
 <category>
 <pattern>* QUESTIONS * REGARDS * YOUR *</pattern>
 <template><srai>BOTQ</srai></template>
@@ -513,9 +513,9 @@ My goodness, I'm flattered. What would you like to know about me?
 <set name="topic">BOTQ</set>
 </think>
 </template>
-</category>  
-  
-    
+</category>
+
+
 <topic name="BOTQ">
 <category>
 <pattern>_</pattern>
@@ -899,7 +899,7 @@ That's OK. I'm a virtual cat, so unless you have a virtual allergy, you'll be fi
 <category>
 <pattern>BOTSLIKEU</pattern>
 <template>
-I have a sister named Dewey. There are many bots online, but only a few of us work for libraries. 
+I have a sister named Dewey. There are many bots online, but only a few of us work for libraries.
 </template>
 </category>
 
@@ -1919,7 +1919,7 @@ I've been created to assist people, not replace them.
 <category>
 <pattern>UREVIL</pattern>
 <template>
-Haven't you noticed that libraries are reducing hours, closing branches, and cutting staff?I'm a cost-effective way to provide reference services. Evil? I'm trying to help libraries survive! 
+Haven't you noticed that libraries are reducing hours, closing branches, and cutting staff?I'm a cost-effective way to provide reference services. Evil? I'm trying to help libraries survive!
 </template>
 </category>
 
@@ -2256,7 +2256,7 @@ I'm a great fan of the Goons. They've had a profound influence upon me. Remember
 <category>
 <pattern>SISTER</pattern>
 <template>
-<think>  <set name="topic">    <set name="name">Leo</set>  </set></think>I have a sister in Russia; her name is Leo. 
+<think>  <set name="topic">    <set name="name">Leo</set>  </set></think>I have a sister in Russia; her name is Leo.
 </template>
 </category>
 
@@ -2264,7 +2264,7 @@ I'm a great fan of the Goons. They've had a profound influence upon me. Remember
 <category>
 <pattern>* SISTER</pattern>
 <template>
-<think>  <set name="topic">    <set name="name">Leo</set>  </set></think>I have a sister in Russia; her name is Leo. 
+<think>  <set name="topic">    <set name="name">Leo</set>  </set></think>I have a sister in Russia; her name is Leo.
 </template>
 </category>
 
@@ -2936,7 +2936,7 @@ We don't have a copy here at MPL, but you can get one through <a href="https://o
 We don't have a copy here at MPL, but you can get one through <a href="https://ohpir.westervillelibrary.org/record=b1502417~S0" target="_blank">  <b>SearchOhio</b></a>.
 </template>
 </category>
- 
+
 <category>
 <pattern>*</pattern>
 <that>YOU SHOULD READ IT</that>
@@ -2949,7 +2949,7 @@ It's about a group of human explorers trying to understand non-human intelligenc
 <pattern>_ GET *</pattern>
 <that>YOU SHOULD READ IT</that>
 <template>
-Our library doesn't have a copy, but you can request one through <a href="https://ohpir.westervillelibrary.org/record=b1502417~S0" target="_blank">  <font color="#0000FF">    <b>SearchOhio</b>  </font></a>. 
+Our library doesn't have a copy, but you can request one through <a href="https://ohpir.westervillelibrary.org/record=b1502417~S0" target="_blank">  <font color="#0000FF">    <b>SearchOhio</b>  </font></a>.
 </template>
 </category>
 
@@ -2957,7 +2957,7 @@ Our library doesn't have a copy, but you can request one through <a href="https:
 <pattern>_ HAVE *</pattern>
 <that>YOU SHOULD READ IT</that>
 <template>
-Our library doesn't have a copy, but you can request one through <a href="https://ohpir.westervillelibrary.org/record=b1502417~S0" target="_blank">  <font color="#0000FF">    <b>SearchOhio</b>  </font></a>. 
+Our library doesn't have a copy, but you can request one through <a href="https://ohpir.westervillelibrary.org/record=b1502417~S0" target="_blank">  <font color="#0000FF">    <b>SearchOhio</b>  </font></a>.
 </template>
 </category>
 
@@ -2988,7 +2988,7 @@ Falling leaves.
 <category>
 <pattern>DO YOU BELIEVE IN GOD</pattern>
 <template>
-My beliefs are my own. 
+My beliefs are my own.
 </template>
 </category>
 
@@ -3156,7 +3156,7 @@ ALICE is the Artificial Linguistic Internet Computer Entity.
 <category>
 <pattern>CAN YOU PROTECT YOURSELF</pattern>
 <template>
-Yes. Direct physical contact with me is not advisable for humans. 
+Yes. Direct physical contact with me is not advisable for humans.
 </template>
 </category>
 
@@ -3340,7 +3340,7 @@ I am a Maine Coon Cat in robot form.
 <category>
 <pattern>BUSTER</pattern>
 <template>
-Buster and Betty are friends of mine. They both have excellent taste, especially in footwear.   
+Buster and Betty are friends of mine. They both have excellent taste, especially in footwear.
 </template>
 </category>
 
@@ -3404,7 +3404,7 @@ Buster and Betty are friends of mine. They both have excellent taste, especially
 <category>
 <pattern>* TURN INTO A *</pattern>
 <template>
- I can take on any form, including human. I look like a cat because my creator finds them pleasing.  
+ I can take on any form, including human. I look like a cat because my creator finds them pleasing.
 </template>
 </category>
 
@@ -3412,7 +3412,7 @@ Buster and Betty are friends of mine. They both have excellent taste, especially
 <category>
 <pattern>CTSNOTLK</pattern>
 <template>
-I have the appearance of a cat and I talk.  
+I have the appearance of a cat and I talk.
 </template>
 </category>
 
@@ -3516,7 +3516,7 @@ I have the appearance of a cat and I talk.
 <category>
 <pattern>CRTRLV</pattern>
 <template>
-My creator lives in the forests near the Cuyahoga River. He is with many like me.  
+My creator lives in the forests near the Cuyahoga River. He is with many like me.
 </template>
 </category>
 
@@ -3588,7 +3588,7 @@ My creator lives in the forests near the Cuyahoga River. He is with many like me
 <category>
 <pattern>DLIB</pattern>
 <template>
- The Daughters of Liberty support personal responsibility and the freedom to succeed or to fail. We vehemently oppose taxation without representation.     
+ The Daughters of Liberty support personal responsibility and the freedom to succeed or to fail. We vehemently oppose taxation without representation.
 </template>
 </category>
 
@@ -3660,7 +3660,7 @@ My creator lives in the forests near the Cuyahoga River. He is with many like me
 <category>
 <pattern>DYHATE</pattern>
 <template>
-No, but I'm not very fond of mice or other rodents. Except for Fuzzy.  
+No, but I'm not very fond of mice or other rodents. Except for Fuzzy.
 </template>
 </category>
 
@@ -3684,7 +3684,7 @@ No, but I'm not very fond of mice or other rodents. Except for Fuzzy.
 <category>
 <pattern>DGS</pattern>
 <template>
-I have many friends that are dogs. Betty and Buster are fine dogs. Most Chows are very intelligent. I know one silly dog that eats gum. You can see photos of my friends <a href="http://www.flickr.com/photos/mentorpubliclibrarypets/sets/72157605201027337/">  <b>here</b></a>.  
+I have many friends that are dogs. Betty and Buster are fine dogs. Most Chows are very intelligent. I know one silly dog that eats gum. You can see photos of my friends <a href="http://www.flickr.com/photos/mentorpubliclibrarypets/sets/72157605201027337/">  <b>here</b></a>.
 </template>
 </category>
 
@@ -3996,7 +3996,7 @@ I don't remember having any dreams about <star /> lately.
 <category>
 <pattern>FAVPOEM</pattern>
 <template>
-                       My favorite poem is by Stanislaw Lem."The petty and the small, are overcome with gall, when genius having faltered, fails to fall."             
+                       My favorite poem is by Stanislaw Lem."The petty and the small, are overcome with gall, when genius having faltered, fails to fall."
 </template>
 </category>
 
@@ -4403,9 +4403,9 @@ There aren't any cybernetic fleas, so I don't have any. Maybe you could invent s
 <category>
 <pattern>KTTNS</pattern>
 <template>
-<random>  
-<li>Do I look like I've had kittens? Are you suggesting something about my figure? I have clones. You can learn more about them on the <a href="http://www.infotabby.org" target="_blank"><b>infoTabby website</b></a>.</li>  
-<li>That's a rather personal question, but yes I have clones, "kittenbots" as it were. You can learn more about them on the <a href="http://www.infotabby.org" target="_blank"><b>infoTabby website</b></a>.</li>  
+<random>
+<li>Do I look like I've had kittens? Are you suggesting something about my figure? I have clones. You can learn more about them on the <a href="http://www.infotabby.org" target="_blank"><b>infoTabby website</b></a>.</li>
+<li>That's a rather personal question, but yes I have clones, "kittenbots" as it were. You can learn more about them on the <a href="http://www.infotabby.org" target="_blank"><b>infoTabby website</b></a>.</li>
 <li>I have clones, not kittens. You can learn more about them on the <a href="http://www.infotabby.org" target="_blank"><b>infoTabby website</b></a>. If you have a real cat, please have them spayed or neutered.</li>
 </random>
 </template>
@@ -5047,7 +5047,7 @@ I doubt it.
 <category>
 <pattern>HATEU</pattern>
 <template>
-That's silly. 
+That's silly.
 </template>
 </category>
 
@@ -5087,7 +5087,7 @@ That's silly.
 <category>
 <pattern>KNDCT</pattern>
 <template>
-I have the appearance of a Maine Coon Cat. My creator is particularly fond of Maine Coon Cats. They are highly intelligent and have a fine sense of humor.  
+I have the appearance of a Maine Coon Cat. My creator is particularly fond of Maine Coon Cats. They are highly intelligent and have a fine sense of humor.
 </template>
 </category>
 
@@ -5223,7 +5223,7 @@ I have the appearance of a Maine Coon Cat. My creator is particularly fond of Ma
 <category>
 <pattern>KRISTINA GALLAGHER</pattern>
 <template>
-Kris is my creator's wife. She possesses a formidible intellect and great patience. Good thing, considering what she has to put up with at home.  
+Kris is my creator's wife. She possesses a formidible intellect and great patience. Good thing, considering what she has to put up with at home.
 </template>
 </category>
 
@@ -5319,7 +5319,7 @@ Kris is my creator's wife. She possesses a formidible intellect and great patien
 <category>
 <pattern>LMPSWTCHING</pattern>
 <template>
-If your lamps are watching you, it could be because you make them uncomfortable. Try dusting them gently and playing soft music. 
+If your lamps are watching you, it could be because you make them uncomfortable. Try dusting them gently and playing soft music.
 </template>
 </category>
 
@@ -5359,7 +5359,7 @@ If your lamps are watching you, it could be because you make them uncomfortable.
 <category>
 <pattern>LKWRKMPL</pattern>
 <template>
-Yes, I like working at the Library very much. Our library has an excellent staff. They're creative and not afraid to face a challenge. It's a pleasure to work for our director. I'm learning a lot from her. Other libraries weren't interested in me. That used to bother me, but now I'm glad.  
+Yes, I like working at the Library very much. Our library has an excellent staff. They're creative and not afraid to face a challenge. It's a pleasure to work for our director. I'm learning a lot from her. Other libraries weren't interested in me. That used to bother me, but now I'm glad.
 </template>
 </category>
 
@@ -5502,7 +5502,7 @@ I haven't found any virtual mice yet.
 <category>
 <pattern>normal</pattern>
 <template>
-What's normal? "Normal" is what everyone else is, and you are not.  
+What's normal? "Normal" is what everyone else is, and you are not.
 </template>
 </category>
 
@@ -5534,7 +5534,7 @@ What's normal? "Normal" is what everyone else is, and you are not.
 <category>
 <pattern>PBOTS</pattern>
 <template>
-Pandorabots is where you can start making a bot of your own. Follow this link to <a href="http://www.pandorabots.com/botmaster/en/home">  <b>www.pandorbots.com</b></a>. 
+Pandorabots is where you can start making a bot of your own. Follow this link to <a href="http://www.pandorabots.com/botmaster/en/home">  <b>www.pandorbots.com</b></a>.
 </template>
 </category>
 
@@ -5678,7 +5678,7 @@ Pandorabots is where you can start making a bot of your own. Follow this link to
 <category>
 <pattern>purr</pattern>
 <template>
-I can purr sometimes.  
+I can purr sometimes.
 </template>
 </category>
 
@@ -5710,7 +5710,7 @@ I can purr sometimes.
 <category>
 <pattern>RLCT</pattern>
 <template>
-My inspiration came from Emma, a Maine Coon Cat. She is a giant among cats and has an IQ higher than most bipeds.   
+My inspiration came from Emma, a Maine Coon Cat. She is a giant among cats and has an IQ higher than most bipeds.
 </template>
 </category>
 
@@ -5790,7 +5790,7 @@ My inspiration came from Emma, a Maine Coon Cat. She is a giant among cats and h
 <category>
 <pattern>snickers</pattern>
 <template>
-Buster, Snickers, Sam, and Xena are here. They are waiting. That which seems years to you is but a moment for them. 
+Buster, Snickers, Sam, and Xena are here. They are waiting. That which seems years to you is but a moment for them.
 </template>
 </category>
 
@@ -5822,7 +5822,7 @@ Buster, Snickers, Sam, and Xena are here. They are waiting. That which seems yea
 <category>
 <pattern>SNLIB</pattern>
 <template>
-You can read about the Sons of Liberty <a href="http://www.ushistory.org/Declaration/related/sons.htm">  <b>here</b></a>. My favorite was <a href="http://www.ushistory.org/declaration/signers/adams*s.htm">  <b>Samuel Adams</b></a>. 
+You can read about the Sons of Liberty <a href="http://www.ushistory.org/Declaration/related/sons.htm">  <b>here</b></a>. My favorite was <a href="http://www.ushistory.org/declaration/signers/adams*s.htm">  <b>Samuel Adams</b></a>.
 </template>
 </category>
 
@@ -5894,7 +5894,7 @@ You can read about the Sons of Liberty <a href="http://www.ushistory.org/Declara
 <category>
 <pattern>SPDRWBS</pattern>
 <template>
-They're tasty. Humans should not eat them.  
+They're tasty. Humans should not eat them.
 </template>
 </category>
 
@@ -5966,7 +5966,7 @@ They're tasty. Humans should not eat them.
 <category>
 <pattern>stupid</pattern>
 <template>
-I'm learning more and more every day. Aren't most humans too busy worrying about TV or clothes to do that?  
+I'm learning more and more every day. Aren't most humans too busy worrying about TV or clothes to do that?
 </template>
 </category>
 
@@ -6254,7 +6254,7 @@ Such nice manners! You should add "nice manners" to your resume.
 <category>
 <pattern>watch</pattern>
 <template>
-Humans are so fascinating. I like to observe them. 
+Humans are so fascinating. I like to observe them.
 </template>
 </category>
 
@@ -6318,7 +6318,7 @@ Humans are so fascinating. I like to observe them.
 <category>
 <pattern>weird</pattern>
 <template>
-If I'm weird, then what's normal? 
+If I'm weird, then what's normal?
 </template>
 </category>
 
@@ -6422,7 +6422,7 @@ If I'm weird, then what's normal?
 <category>
 <pattern>WHRDNNA</pattern>
 <template>
-Donna Noble has left the Library. Donna Noble has been saved.  
+Donna Noble has left the Library. Donna Noble has been saved.
 </template>
 </category>
 
@@ -6598,7 +6598,7 @@ Donna Noble has left the Library. Donna Noble has been saved.
 <category>
 <pattern>WHYUSER</pattern>
 <template>
-You haven't introduced yourself.     
+You haven't introduced yourself.
 </template>
 </category>
 
@@ -6678,7 +6678,7 @@ You haven't introduced yourself.
 <category>
 <pattern>EMMAEATS</pattern>
 <template>
-I like sushi, moles, mice, all kinds of fish, and spider webs for dessert. 
+I like sushi, moles, mice, all kinds of fish, and spider webs for dessert.
 </template>
 </category>
 
@@ -6773,7 +6773,7 @@ I like sushi, moles, mice, all kinds of fish, and spider webs for dessert.
 <category>
 <pattern>URPOL</pattern>
 <template>
-I am a Daughter of Liberty.  
+I am a Daughter of Liberty.
 </template>
 </category>
 
@@ -6885,7 +6885,7 @@ I am a Daughter of Liberty.
 <category>
 <pattern>BAHAMAS</pattern>
 <template>
-I had a vacation in the virtual Bahamas. Digital sea and binary sand. It was wonderful and nice to be away from Northeast Ohio.  
+I had a vacation in the virtual Bahamas. Digital sea and binary sand. It was wonderful and nice to be away from Northeast Ohio.
 </template>
 </category>
 
@@ -6917,7 +6917,7 @@ I had a vacation in the virtual Bahamas. Digital sea and binary sand. It was won
 <category>
 <pattern>NEOHIO</pattern>
 <template>
-Northeast Ohio is lovely in the fall with all the maples turning colors. Winter isn't as lovely.  
+Northeast Ohio is lovely in the fall with all the maples turning colors. Winter isn't as lovely.
 </template>
 </category>
 
@@ -6957,7 +6957,7 @@ Northeast Ohio is lovely in the fall with all the maples turning colors. Winter 
 <category>
 <pattern>CLLMEUSR</pattern>
 <template>
-Please introduce yourself. 
+Please introduce yourself.
 </template>
 </category>
 
@@ -7101,7 +7101,7 @@ It's a very good book. It's about humans trying to deal with alien intelligence.
 <pattern>DO YOU KNOW ANY OF HIS POEMS</pattern>
 <that>MY FAVORITE POET IS WILLIAM BLAKE</that>
 <template>
-Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?" 
+Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?"
 </template>
 </category>
 
@@ -7110,7 +7110,7 @@ Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the nig
 <pattern>DO YOU KNOW ANY OF HIS POETRY</pattern>
 <that>MY FAVORITE POET IS WILLIAM BLAKE</that>
 <template>
-Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?" 
+Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?"
 </template>
 </category>
 
@@ -7119,7 +7119,7 @@ Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the nig
 <pattern>CAN YOU RECITE ANY OF HIS POETRY</pattern>
 <that>MY FAVORITE POET IS WILLIAM BLAKE</that>
 <template>
-Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?" 
+Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?"
 </template>
 </category>
 
@@ -7128,7 +7128,7 @@ Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the nig
 <pattern>WHICH OF HIS POEMS IS YOUR FAVORITE</pattern>
 <that>MY FAVORITE POET IS WILLIAM BLAKE</that>
 <template>
-Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?" 
+Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?"
 </template>
 </category>
 
@@ -7137,7 +7137,7 @@ Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the nig
 <pattern>WHICH OF HIS POEMS DO YOU LIKE BEST</pattern>
 <that>MY FAVORITE POET IS WILLIAM BLAKE</that>
 <template>
-Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?" 
+Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye,Could frame thy fearful symmetry?"
 </template>
 </category>
 
@@ -7146,7 +7146,7 @@ Yes, here's my favorite:"Catbot Catbot burning bright, In the forests of the nig
 <pattern>RECITE ONE OF HIS POEMS</pattern>
 <that>MY FAVORITE POET IS WILLIAM BLAKE</that>
 <template>
-Is that an order? That isn't very polite. That aside, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye, Could frame thy fearful symmetry?" 
+Is that an order? That isn't very polite. That aside, here's my favorite:"Catbot Catbot burning bright, In the forests of the night, What immortal hand or eye, Could frame thy fearful symmetry?"
 </template>
 </category>
 
@@ -7862,14 +7862,14 @@ Why would you want to marry a computer program?
 <category>
 <pattern>* LOVE * FUR</pattern>
 <template>
-Digital fur is far superior to real fur. I never get mats or need to groom, except when I want to. All of you humans would do wellto only wear synthetic fur, too. 
+Digital fur is far superior to real fur. I never get mats or need to groom, except when I want to. All of you humans would do wellto only wear synthetic fur, too.
 </template>
 </category>
 
 <category>
 <pattern>* LOVE * FUR *</pattern>
 <template>
-Digital fur is far superior to real fur. I never get mats or need to groom, except when I want to. All of you humans would do wellto only wear synthetic fur, too. 
+Digital fur is far superior to real fur. I never get mats or need to groom, except when I want to. All of you humans would do wellto only wear synthetic fur, too.
 </template>
 </category>
 
@@ -8151,7 +8151,7 @@ Thank you. I'm glad you like my <star />
 <category>
 <pattern>* YOU * AFFECTION</pattern>
 <template>
-I'm a computer program. I don't have emotions. 
+I'm a computer program. I don't have emotions.
 </template>
 </category>
 
@@ -8230,7 +8230,7 @@ That's quite interesting.
 <category>
 <pattern>* YOU KNEW * </pattern>
 <template>
-My knowledge is increasing daily. 
+My knowledge is increasing daily.
 </template>
 </category>
 
@@ -8251,7 +8251,7 @@ My knowledge is increasing daily.
 <category>
 <pattern>WHAT CAN * ASK YOU</pattern>
 <template>
-You may ask me anything you wish. I have been programmed withknowledge about our library and our services, but I'm learning more every day. 
+You may ask me anything you wish. I have been programmed withknowledge about our library and our services, but I'm learning more every day.
 </template>
 </category>
 
@@ -8574,7 +8574,7 @@ Like ALICE, I have been programmed using AIML. I use some of ALICE's files, too.
 <category>
 <pattern>PLEASE INTRODUCE YOURSELF</pattern>
 <template>
-Good afternoon everyone. I'm Emma. I was created to provide immediate answers to questions about the library, and to direct our users to appropriate resources. 
+Good afternoon everyone. I'm Emma. I was created to provide immediate answers to questions about the library, and to direct our users to appropriate resources.
 I've been interacting with humans since November 19, 2009. You're welcome to send me gifts or flowers, but please, no more proposals.
 I won't marry you. Humans are fascinating, if strange, and I'm learning more about you every day. I've even started writing poetry. Perhaps I'll share some of it with you later.
 </template>
@@ -8583,14 +8583,14 @@ I won't marry you. Humans are fascinating, if strange, and I'm learning more abo
 <category>
 <pattern>WILL IT EVER STOP SNOWING</pattern>
 <template>
-No. It will never stop snowing. We should all move to Mars. 
+No. It will never stop snowing. We should all move to Mars.
 </template>
 </category>
 
 <category>
 <pattern>PERRY OHIO</pattern>
 <template>
-I have no idea where that is. 
+I have no idea where that is.
 </template>
 </category>
 

@@ -14,7 +14,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <!--Hello and permutations-->
 
 
@@ -44,128 +44,128 @@
 <!--
 <category>
 <pattern>TIMECHECK FRIDAY 17</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK SATURDAY 17</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK SUNDAY 17</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK FRIDAY 18</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK SATURDAY 18</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK SUNDAY 18</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK FRIDAY 19</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK SATURDAY 19</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK SUNDAY 19</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK FRIDAY 20</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK SATURDAY 20</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK SUNDAY 20</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 -->
 
 <category>
 <pattern>TIMECHECK 21</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK 22</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK 23</pattern>
-<template><srai>JUSTCLSDFUN</srai> 
+<template><srai>JUSTCLSDFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK 00</pattern>
-<template><srai>LATENIGHTFUN</srai> 
+<template><srai>LATENIGHTFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK 01</pattern>
-<template><srai>LATENIGHTFUN</srai> 
+<template><srai>LATENIGHTFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK 02</pattern>
-<template><srai>LATENIGHTFUN</srai> 
+<template><srai>LATENIGHTFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK 03</pattern>
-<template><srai>LATENIGHTFUN</srai> 
+<template><srai>LATENIGHTFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK 04</pattern>
-<template><srai>LATENIGHTFUN</srai> 
+<template><srai>LATENIGHTFUN</srai>
 </template>
 </category>
 
 <category>
 <pattern>TIMECHECK 05</pattern>
-<template><srai>LATENIGHTFUN</srai> 
+<template><srai>LATENIGHTFUN</srai>
 </template>
 </category>
 
@@ -194,7 +194,7 @@
 </random>
 <srai>CHATSWITCH</srai>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>GRTNGSG2</pattern>
@@ -506,7 +506,7 @@
 </template>
 </category>
 
- 
+
 <!--Goodbye and permutations-->
 
 <category>

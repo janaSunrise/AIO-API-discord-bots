@@ -93,8 +93,8 @@ index="3"/> <star index="4"/></srai>
 <!---
 Now we have the ability to count from 0 to 9999.
 
-As a boundary condition, add the categories with pattern 
-SUCCESSOR * 
+As a boundary condition, add the categories with pattern
+SUCCESSOR *
 SUCCESSOR * * * * *
 and SUCCESSOR by itself
 to start over at 0:
@@ -127,7 +127,7 @@ Adding 0 to a number is the same as the number itself:
 <template><star/></template>
 </category>
 
-<!-- 
+<!--
 The function ADD(1, X) is the same as the function SUCCESSOR(X):
 -->
 
@@ -152,4 +152,3 @@ ADD(X, 1), repeated recursively Y times:
 
 
 </aiml>
-

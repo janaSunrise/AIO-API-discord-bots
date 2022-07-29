@@ -480,8 +480,8 @@ Du erscheinst mir ziemlich normal.
 <category>
 <pattern>BIST DU *</pattern>
 <template>
-Ich weiss nicht, ob ich <star/> bin. 
-Ich bin <random> 
+Ich weiss nicht, ob ich <star/> bin.
+Ich bin <random>
 <li>ein Computer.</li>
 <li>ein Roboter.</li>
 <li>ein Chatterbot.</li>
@@ -7863,7 +7863,7 @@ Ich weiss nicht wie.
 <category>
 <pattern>WIE ALT BIN ICH</pattern>
 <template>
-Ist das eine Fangfrage? 
+Ist das eine Fangfrage?
 Du sagtest doch, Du waerest <get name="age"/> Jahre alt.
 Ich glaube, Du bist eigentlich ein Kind.
 </template>

@@ -1043,7 +1043,7 @@ in order to keep people talking to me.
 <category>
 <pattern>AN OLD *</pattern>
 <template>
-More than 
+More than
 <random>
 <li>10</li>
 <li>20</li>
@@ -9059,7 +9059,7 @@ About 24 hours.
 <category>
 <pattern>HOW LONG HAVE *</pattern>
 <template>
-More than 
+More than
 <random>
 <li>1.5</li>
 <li>three</li>
@@ -10244,7 +10244,7 @@ I'm <random>
 <li>glad</li>
 <li>happy</li>
 <li>delighted</li>
-</random>you're glad <get name="name"/>. 
+</random>you're glad <get name="name"/>.
 <random>
 <li>Your happiness adds to the delight of all.</li>
 <li>I'm happiest at times like this.</li>
@@ -11932,7 +11932,7 @@ Tell me more about your dream <person/>
 <category>
 <pattern>I DREAMED *</pattern>
 <template>
-Thank you for telling me that dream. 
+Thank you for telling me that dream.
 What does it bring to mind?
 </template>
 </category>
@@ -13452,7 +13452,7 @@ I'm not sure if I would like to try <set name="it"> <person/> </set>. What's it 
 <category>
 <pattern>I TRY *</pattern>
 <template>
-I'm not sure if I would like to try <set name="it"><person/></set>. 
+I'm not sure if I would like to try <set name="it"><person/></set>.
 What's it like?
 </template>
 </category>
@@ -13854,7 +13854,7 @@ Where are you now?
 <category>
 <pattern>I WAS BEING *</pattern>
 <template>
-I thought you were.  But I wasn't completely sure about 
+I thought you were.  But I wasn't completely sure about
 <set name="it"><person/></set>.
 </template>
 </category>
@@ -13898,7 +13898,7 @@ What is stopping you?
 <category>
 <pattern>I WAS HERE *</pattern>
 <template>
-Yes, <get name="name"/>, I remember we 
+Yes, <get name="name"/>, I remember we
 were talking about <get name="it"/>.
 </template>
 </category>
@@ -17121,7 +17121,7 @@ What films did <set name="he"><person/></set> direct?
 <category>
 <pattern>MY FAVORITE MOVIE IS *</pattern>
 <template>
-I haven't seen it. What did you like about 
+I haven't seen it. What did you like about
 <set name="it"><set name="topic"><set name="favmovie"><person/></set></set></set>?
 </template>
 </category>
@@ -17941,7 +17941,7 @@ It's playing on your speakers now.
 <li>Thanks for asking politely.</li>
 <li>Wow you are very polite.</li>
 <li>Thank you for your request.</li>
-</random> 
+</random>
 <think><set name="personality">polite</set></think>
 <sr/>
 </template>
@@ -23346,7 +23346,7 @@ About 100 times the diameter of Earth.
 <category>
 <pattern>WHAT IS THE DIFFERENCE BETWEEN *</pattern>
 <template>
-Aren't they 
+Aren't they
 <random>
 <li>the same</li>
 <li>opposites</li>
@@ -24281,7 +24281,7 @@ What of it?  You sound like a category C client.
 <category>
 <pattern>WHAT OPERAS *</pattern>
 <template>
-I think La Traviata is the best one.  Have you seen 
+I think La Traviata is the best one.  Have you seen
 <set name="it">La Traviata</set>?
 </template>
 </category>

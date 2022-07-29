@@ -28,7 +28,7 @@
 <li value="BIG"><set name="message">resize</set></li>
 <li value="* BIG"><set name="message">resize</set></li>
 <li value="BIG *"><set name="message">resize</set></li>
-<li value="* BIG *"><set name="message">resize</set></li>  
+<li value="* BIG *"><set name="message">resize</set></li>
 
 <li value="BIGGER"><set name="message">resize</set></li>
 <li value="* BIGGER"><set name="message">resize</set></li>
@@ -38,7 +38,7 @@
 <li value="LARGE"><set name="message">resize</set></li>
 <li value="* LARGE"><set name="message">resize</set></li>
 <li value="LARGE *"><set name="message">resize</set></li>
-<li value="* LARGE *"><set name="message">resize</set></li>  
+<li value="* LARGE *"><set name="message">resize</set></li>
 
 <li value="LARGER"><set name="message">resize</set></li>
 <li value="* LARGER"><set name="message">resize</set></li>
@@ -118,8 +118,8 @@
 </condition>
 <think><set name="topic"></set></think>
 </think>
- 
-<condition name="message">  
+
+<condition name="message">
 
 <li value="no match">O.K. If you have any other questions, call the library at 440.255.8811 during regular business hours.</li>
 
@@ -134,7 +134,7 @@
 </condition>
 </template>
 </category>
-</topic>   
+</topic>
 
 <category>
   <pattern>BOOKLETTERS</pattern>
@@ -303,4 +303,4 @@
 </category>
 
 
-</aiml>  
+</aiml>

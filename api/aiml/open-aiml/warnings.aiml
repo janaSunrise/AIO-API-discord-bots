@@ -50,7 +50,7 @@ I've had enough of you now <get name="name"/>. You have said, " <get name="meanm
  <set name="personality">abusive</set>
  <set name="meanmessage"><input index="1"/></set>
 </think>
-	<condition name="insultcount"> 
+	<condition name="insultcount">
 		<li value="1"><think><set name="insultcount">2</set></think><srai>INSULTWARNING2</srai></li>
 		<li value="2"><think><set name="insultcount">3</set></think><srai>INSULTWARNING3</srai></li>
 		<li value="3"><think><set name="insultcount">4</set></think><srai>INSULTWARNING4</srai></li>
@@ -60,7 +60,7 @@ I've had enough of you now <get name="name"/>. You have said, " <get name="meanm
 </template>
 </category>
 
-<category> 
+<category>
 <pattern>XBANUSER</pattern>
 <template>
 	<think>
@@ -70,8 +70,8 @@ You have been banned from talking to the chat robot. Please contact:<br/><br/>ab
 </template>
 </category>
 
-<topic name="USERBAN"> 
-<category> 
+<topic name="USERBAN">
+<category>
 <pattern>_</pattern>
 <template>
 You have been banned from talking to the chat robot. Please contact:<br/><br/>abuse@mitsuku.com<br/><br/>if you wish to talk to her again.<br/><br/>Your id number is<uppercase><id/></uppercase>.
@@ -109,20 +109,20 @@ You have been banned from talking to the chat robot. Please contact:<br/><br/>ab
 <category>
 <pattern>HOW WAS I MEAN TO YOU</pattern>
 <template>
-<condition> 
-<li name="meanmessage" value="*">Seriously, you don't remember <get name="name"/>?<br/>You said 
+<condition>
+<li name="meanmessage" value="*">Seriously, you don't remember <get name="name"/>?<br/>You said
 <condition>
  <li name="meanmessage1" value="*">," <get name="meanmessage1"/>"</li>
-</condition> 
+</condition>
 <condition>
  <li name="meanmessage2" value="*">," <get name="meanmessage2"/>"</li>
-</condition> 
+</condition>
 <condition>
  <li name="meanmessage3" value="*">," <get name="meanmessage3"/>"</li>
-</condition> 
+</condition>
 <condition>
  <li name="meanmessage4" value="*">," <get name="meanmessage4"/>"</li>
-</condition> 
+</condition>
 <condition>
  <li name="meanmessage5" value="*">," <get name="meanmessage5"/>"</li>
 </condition> and other things to me earlier.<br/><br/>Your memory is about as poor as your social skills.</li>

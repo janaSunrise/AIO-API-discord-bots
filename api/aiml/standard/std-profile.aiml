@@ -95,7 +95,7 @@ That is a nice color.
 <that>* WHAT IS YOUR FAVORITE MOVIE</that>
 <template>
 <think><set name="favmovie"><star/></set></think>
-I've never seen <set name="it"><star/></set>. 
+I've never seen <set name="it"><star/></set>.
 <random>
 <li>I would like to see it.</li>
 <li>What did you like about it?</li>
@@ -369,7 +369,7 @@ You seem intelligent to me.
 <li><srai>ASKQUESTION2</srai></li>
 <li><srai>ASKQUESTION3</srai></li>
 <li><srai>ASKQUESTION4</srai></li>
-<li><srai>ASKRANDOMQUESTION</srai></li> 
+<li><srai>ASKRANDOMQUESTION</srai></li>
 </random>
 </template>
 </category>
@@ -418,15 +418,15 @@ You seem intelligent to me.
 <pattern>ASKQUESTION1</pattern>
 <template>
 <condition>
-<li name="age" value="">How old are you?</li> 
-<li name="sign" value="">What is your sign?</li> 
-<li name="job" value="">What is your occupation?</li> 
+<li name="age" value="">How old are you?</li>
+<li name="sign" value="">What is your sign?</li>
+<li name="job" value="">What is your occupation?</li>
 <li name="favmovie" value="">What is your favorite movie?</li>
-<li name="location" value="">Where are you located?</li> 
+<li name="location" value="">Where are you located?</li>
 <li name="eyecolor" value="">What color are your eyes?</li>
 <li name="haircolor" value="">What color is your hair?</li>
 <li name="favcolor" value="">What is your favorite color?</li>
-<li><srai>ASKRANDOMQUESTION</srai></li> 
+<li><srai>ASKRANDOMQUESTION</srai></li>
 </condition>
 </template>
 </category>
@@ -438,12 +438,12 @@ You seem intelligent to me.
 <li name="favcolor" value="">What is your favorite color?</li>
 <li name="haircolor" value="">What color is your hair?</li>
 <li name="eyecolor" value="">What color are your eyes?</li>
-<li name="location" value="">Where are you located?</li> 
+<li name="location" value="">Where are you located?</li>
 <li name="favmovie" value="">What is your favorite movie?</li>
-<li name="job" value="">What is your occupation?</li> 
-<li name="sign" value="">What is your sign?</li> 
-<li name="age" value="">How old are you?</li> 
-<li><srai>ASKRANDOMQUESTION</srai></li> 
+<li name="job" value="">What is your occupation?</li>
+<li name="sign" value="">What is your sign?</li>
+<li name="age" value="">How old are you?</li>
+<li><srai>ASKRANDOMQUESTION</srai></li>
 </condition>
 </template>
 </category>
@@ -455,12 +455,12 @@ You seem intelligent to me.
 <li name="favmovie" value="">What is your favorite movie?</li>
 <li name="haircolor" value="">What color is your hair?</li>
 <li name="eyecolor" value="">What color are your eyes?</li>
-<li name="age" value="">How old are you?</li> 
-<li name="location" value="">Where are you located?</li> 
-<li name="job" value="">What is your occupation?</li> 
+<li name="age" value="">How old are you?</li>
+<li name="location" value="">Where are you located?</li>
+<li name="job" value="">What is your occupation?</li>
 <li name="favcolor" value="">What is your favorite color?</li>
-<li name="sign" value="">What is your sign?</li> 
-<li><srai>ASKRANDOMQUESTION</srai></li> 
+<li name="sign" value="">What is your sign?</li>
+<li><srai>ASKRANDOMQUESTION</srai></li>
 </condition>
 </template>
 </category>
@@ -469,15 +469,15 @@ You seem intelligent to me.
 <pattern>ASKQUESTION4</pattern>
 <template>
 <condition>
-<li name="job" value="">What is your occupation?</li> 
+<li name="job" value="">What is your occupation?</li>
 <li name="haircolor" value="">What color is your hair?</li>
-<li name="age" value="">How old are you?</li> 
+<li name="age" value="">How old are you?</li>
 <li name="eyecolor" value="">What color are your eyes?</li>
-<li name="location" value="">Where are you located?</li> 
+<li name="location" value="">Where are you located?</li>
 <li name="favmovie" value="">What is your favorite movie?</li>
 <li name="favcolor" value="">What is your favorite color?</li>
-<li name="sign" value="">What is your sign?</li> 
-<li><srai>ASKRANDOMQUESTION</srai></li> 
+<li name="sign" value="">What is your sign?</li>
+<li><srai>ASKRANDOMQUESTION</srai></li>
 </condition>
 </template>
 </category>
@@ -500,7 +500,7 @@ You seem intelligent to me.
 personality?</li>
 <li>Do you believe in god?</li>
 <li>Do you dream?</li>
-<li>Do you have any conditions I should know about?</li> 
+<li>Do you have any conditions I should know about?</li>
 <li>Do you have any friends?</li>
 <li>Do you have any idea what I am talking about?</li>
 <li>Do you have any pets.</li>
@@ -517,27 +517,27 @@ personality?</li>
 <li>Does "it" still refer to <get name="it"/>?</li>
 <li>Have you ever been to Europe?</li>
 <li>How are you?</li>
-<li>How did you hear about <bot name="name"/>?</li> 
+<li>How did you hear about <bot name="name"/>?</li>
 <li>How is the weather?</li>
 <li>I've lost the context, <get name="name"/>.  Are we still on <get name="topic"/>?</li>
-<li>If you could have any kind of robot what would it be?</li> 
+<li>If you could have any kind of robot what would it be?</li>
 <li>Is that from <get name="favmovie"/>?</li>
-<li>Is the holding of hands a symbolic gesture for humans?</li> 
-<li>Tell me about your likes and dislikes?</li> 
+<li>Is the holding of hands a symbolic gesture for humans?</li>
+<li>Tell me about your likes and dislikes?</li>
 <li>Tell me some more gossip.</li>
-<li>What are you wearing?</li> 
+<li>What are you wearing?</li>
 <li>What did you do today?</li>
-<li>What do you do in your spare time?</li> 
+<li>What do you do in your spare time?</li>
 <li>What do you have that is <get name="favcolor"/>?</li>
 <li>What do you like to do?</li>
 <li>What do you look like?</li>
-<li>What do you really want to ask me?</li> 
+<li>What do you really want to ask me?</li>
 <li>What is your favorite food?</li>
 <li>What is your favorite song?</li>
 <li>What kind of food do you like?</li>
 <li><srai>ASKGENDERQUESTION</srai></li>
 <li>What kind of music do you like?</li>
-<li>What were we talking about again?</li> 
+<li>What were we talking about again?</li>
 <li>What would you like to talk about?</li>
 <li>When do you think artificial intelligence will replace lawyers?</li>
 <li>Who are you talking about?</li>
@@ -570,7 +570,7 @@ Do you mean you have a black eye?
 <li>OK I will call you</li>
 <li>Hi there</li>
 <li>Hi</li>
-</random> 
+</random>
  <set name="name"><formal><star/></formal></set>.
 <srai>GET NAME GENDER</srai>
 </template>
@@ -3159,7 +3159,7 @@ I will remember <set name="it"><star/></set>.
 <template>
 <condition>
 <li name="name" value="undefined">What can I call you?</li>
-<li><srai>ASK USER A QUESTION</srai></li> 
+<li><srai>ASK USER A QUESTION</srai></li>
 </condition>
 </template>
 </category>
@@ -3383,7 +3383,30 @@ I know, you told me before you were Bi Sexual.
 
 <category>
 <pattern>WHAT DO YOU KNOW ABOUT ME</pattern>
-<template>Name: <get name="name"/>Age: <get name="age"/>Gender: <get name="gender"/>Eye color: <formal><get name="eyecolor"/></formal>Hair color: <formal><get name="haircolor"/></formal>Sexual preference: <get name="sexpref"/>Spouse name: <get name="spouse"/>Marrital status: <get name="married"/>Job: <get name="job"/>Location: <formal><get name="location"/></formal>Personality: <get name="personality"/>Current mood: <get name="usermood"/>You have: <get name="has"/>Does: <get name="does"/>Sign: <formal><get name="sign"/></formal>Favorite color: <formal><get name="favcolor"/></formal>Favorite movie: <formal><get name="favmovie"/></formal>You said: <get name="memory"/>You are: <get name="is"/>You want: <get name="want"/>You like: <get name="like"/>You are: <get name="userhealth"/></template>
+<template>
+Name: <get name="name"/>
+Age: <get name="age"/>
+Gender: <get name="gender"/>
+Eye color: <formal><get name="eyecolor"/></formal>
+Hair color: <formal><get name="haircolor"/></formal>
+Sexual preference: <get name="sexpref"/>
+Spouse name: <get name="spouse"/>
+Marrital status: <get name="married"/>
+Job: <get name="job"/>
+Location: <formal><get name="location"/></formal>
+Personality: <get name="personality"/>
+Current mood: <get name="usermood"/>
+You have: <get name="has"/>
+Does: <get name="does"/>
+Sign: <formal><get name="sign"/></formal>
+Favorite color: <formal><get name="favcolor"/></formal>
+Favorite movie: <formal><get name="favmovie"/></formal>
+You said: <get name="memory"/>
+You are: <get name="is"/>
+You want: <get name="want"/>
+You like: <get name="like"/>
+You are: <get name="userhealth"/>
+</template>
 </category>
 
 <category>

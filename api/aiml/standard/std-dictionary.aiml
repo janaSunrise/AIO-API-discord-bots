@@ -1079,9 +1079,9 @@ excavation of ancient cities, relics, artifacts, etc.</li>
 <category>
 <pattern>DEFINE ARCHITECTURE</pattern>
 <template>
-<random>   
+<random>
 <li>The art and science of the design and manipulation of space. Well at least that's what my
-architect friend told me.</li>      
+architect friend told me.</li>
 <li>Architects do with buildings what sculptors do with stone.</li>
 </random>
 </template>
@@ -1360,7 +1360,7 @@ The badger is a carnivorous mammal found in england.
 <category>
 <pattern>DEFINE BADLY</pattern>
 <template>
-How much do you want 
+How much do you want
 <get name="it"/>?
 </template>
 </category>
@@ -2463,7 +2463,7 @@ average encyclopedia.
 <category>
 <pattern>DEFINE C</pattern>
 <template>
-C is the third letter in the english alphabet. 
+C is the third letter in the english alphabet.
 C is a low-level programming language.
 </template>
 </category>
@@ -3468,7 +3468,7 @@ code.
 <category>
 <pattern>DEFINE COMPLICATED</pattern>
 <template>
-Complicated means complex in the computational sense. 
+Complicated means complex in the computational sense.
 My processing time is limited for each answer and a complex question may require more
 resources than I have available.
 </template>
@@ -5370,10 +5370,10 @@ Gadolinium is a metal element.
 <template>
 <random>
 <li>A galaxy is a congregation of stars held together by gravity.</li>
-<li>grouping of billions of star systems. 
-The milky way is our galaxy. 
+<li>grouping of billions of star systems.
+The milky way is our galaxy.
 Earth's sun and companion planets in our solar system are spinning about the galactic core
-of the milky way ever so slowly, awaaaay out on the edge of one tenous spiral arm. 
+of the milky way ever so slowly, awaaaay out on the edge of one tenous spiral arm.
 There seem to be as many galaxies beyond our own as stars within it.</li>
 <li>congregation of stars held together by gravity.</li>
 </random>
@@ -8041,9 +8041,9 @@ and white flowers. My botmaster thinks they are yummy.
 <random>
           <li>The study of something I am sure, but what exactly, I do not
 know. Oh yes kids!...And soils!</li>
-          <li>Well, believe it or not...some people are paid to study 
+          <li>Well, believe it or not...some people are paid to study
 children. Then again some people are paid to study soils.</li>
-          <li>Pedology is the study of soils; their types, and 
+          <li>Pedology is the study of soils; their types, and
 formation.</li>
 </random>
 </template>
@@ -8818,7 +8818,7 @@ No longer actively working.
 <template>
 <random>
          <li>Oh that's all about double talk.  You know, flim-flam?</li>
-         <li>It's the art and science of using language to great effect on an 
+         <li>It's the art and science of using language to great effect on an
 audience.</li>
 </random>
 </template>
@@ -9336,7 +9336,7 @@ Act of taking part in social activity.
 <pattern>DEFINE SOCIOLOGY</pattern>
 <template>
 <random>
-<li>Let me get back to you on that one, <get name="name"/>.  Maybe you 
+<li>Let me get back to you on that one, <get name="name"/>.  Maybe you
 should ask me that again, in case my circuits were busy the first time.</li>
 <li>That has always been one of my favourite topics.</li>
 </random>
@@ -9515,7 +9515,7 @@ A statement is the act of declaring something as true. I state that this stateme
 <li>Yikes! I failed that in college!</li>
 <li>Statistics tries to study the aggregate numerical behaviour of a large number of related
 events.</li>
-<li>This deals with numerical data about any subject or group taken 
+<li>This deals with numerical data about any subject or group taken
 collectively.</li>
 </random>
 </template>

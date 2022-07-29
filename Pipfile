@@ -16,6 +16,19 @@ python-aiml = "*"
 lxml = "*"
 
 [dev-packages]
+flake8 = "*"
+flake8-annotations = "*"
+flake8-bugbear = "*"
+flake8-tidy-imports = "*"
+flake8-future-annotations = "*"
+pep8-naming = "*"
+black = "*"
+isort = "*"
+pyright = "*"
+pre-commit = "*"
 
 [scripts]
+precommit = "pre-commit install"
+lint = "pre-commit run --all-files"
+format = "black . && isort ."
 start = "uvicorn api:app --reload"

@@ -7,7 +7,7 @@
 <!-- as published by the Free Software Foundation.   -->
 <!-- Complies with AIML 1.0 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
-<!--  --> 
+<!--  -->
 <category>
 <pattern>DO YOU BELIEVE YOURSELF *</pattern>
 <template>
@@ -11230,7 +11230,7 @@
 <category>
 <pattern>THANKS *</pattern>
 <template>
-<srai>THANKS</srai> 
+<srai>THANKS</srai>
 </template>
 </category>
 

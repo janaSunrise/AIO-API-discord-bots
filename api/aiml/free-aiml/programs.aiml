@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
 <pattern>BOOKTALK</pattern>
 <template><srai>BTALKS</srai></template>
@@ -54,7 +54,7 @@
 <category>
 <pattern>BOOK CLUBS</pattern>
 <template><srai>BTALKS</srai></template>
-</category>  
+</category>
 
 <topic name="BOOKTALKS">
 <category>
@@ -619,7 +619,7 @@
 <li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
 
 <li value="no match"><set name="topic"></set><srai>NOMATCH</srai></li>
- 
+
 <li value="date"><srai>BCCAL</srai></li>
 
 <li value="sign up"><srai>BCSU</srai></li>
@@ -627,30 +627,30 @@
 <li value="copy"><srai>BCCOPY</srai></li>
 
 <li value="online book club"><srai>OLBKDISC</srai></li>
-  
+
 <li value="discussion kits"><srai>BKDISCKITS</srai></li>
 
 <li value="monday night"><srai>MNBD</srai></li>
-  
+
 <li value="senior"><srai>SENIORBC</srai></li>
 
  <li value="bcm"><srai>BCM</srai></li>
- 
+
 <li value="book and brush"><srai>BKBRUSH</srai></li>
- 
+
 <li value="profilers"><srai>PROFLRS</srai></li>
-  
-<li value="2030"><srai>2030S</srai></li>    
-  
-<li value="teen bookclub"><srai>BC4TEENS</srai></li>  
-  
+
+<li value="2030"><srai>2030S</srai></li>
+
+<li value="teen bookclub"><srai>BC4TEENS</srai></li>
+
 </condition>
 </template>
 </category>
 </topic>
 
-  
-<!--EVENTS ALL AGES-->  
+
+<!--EVENTS ALL AGES-->
 
 <category>
 <pattern>EVENT</pattern>
@@ -679,7 +679,7 @@
 <srai>EVNTS</srai>
 </template>
 </category>
-  
+
 <topic name="EVENTS">
 <category>
 <pattern>_</pattern>
@@ -1123,7 +1123,7 @@
 <li value="kids programs"><srai>CHPROGS</srai></li>
 
 <li value="paws to read"><srai>P2R</srai></li>
-  
+
 <li value="tiddlywinks"><srai>TDDLY</srai></li>
 
 <li value="kids contests"><srai>CHCONTESTS</srai></li>

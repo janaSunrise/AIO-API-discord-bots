@@ -23,19 +23,19 @@
 <template>See you soon.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>THINKING OUTSIDE THE *</pattern>
 <template>You have an open mind.</template>
 </category>
 
- 
+
 
 
 
 <category><pattern>I AM DOING *</pattern>
-<template>How long have you been doing 
+<template>How long have you been doing
 <set name="it"><set name="topic"><set name="does"><person/></set></set></set>?
 </template>
 </category>
@@ -87,7 +87,7 @@
 <template><srai>HAVE YOU <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>CAPTAIN HERE</pattern>
@@ -95,7 +95,7 @@
 </category>
 
 
- 
+
 
 <category>
 <pattern>MORE LIKE *</pattern>
@@ -103,7 +103,7 @@
 <template><srai>I AM ASKING FOR <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>I WANT YOUR SUGGESTION OF WHAT TO DO *</pattern>
@@ -123,36 +123,36 @@
 <template><srai>MY LOCATION IS <star/></srai></template>
 </category>
 
- 
+
 <category>
 <pattern>WHY I DO NOT *</pattern>
 <template><srai>WHY DO I NOT <star/></srai></template>
 </category>
- 
+
 
 <category>
 <pattern>WHO IS O M</pattern>
 <template><srai>WHAT IS OM</srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>WHERE CAN I FIND A GOOD *</pattern>
 <template><srai>WHERE CAN I FIND A <star/></srai></template>
 </category>
 
- 
 
 
- 
+
+
 
 <category>
 <pattern>I DO NOT KNOW WHAT IT HAS *</pattern>
 <template><srai>WHAT DOES IT HAVE <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>MAKE A LOT OF *</pattern>
@@ -161,23 +161,23 @@
 
 
 <!-- end reductions -->
- 
+
 
 <category>
 <pattern>MAKE MONEY *</pattern>
 <template>I'm successful in the robot business.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>WHY DOES THAT MATTER</pattern>
 <template>Perhaps it doesn't matter.</template>
 </category>
 
- 
 
- 
+
+
 
 <category>
 <pattern>WHAT SHOULD I DO AFTER *</pattern>
@@ -185,7 +185,7 @@
 <template>How long will <person/> take?</template>
 </category>
 
- 
+
 
 <category>
 <pattern>CAN I PROGRAM YOU *</pattern>
@@ -193,7 +193,7 @@
 <template>You can modify a <bot name="species"/> to say anything you want.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>COULD YOU</pattern>
@@ -201,9 +201,9 @@
 <template>Yes, I will send my <thatstar/> a message.</template>
 </category>
 
- 
 
- 
+
+
 
 <category>
 <pattern>YOU ARE NEGATIVE</pattern>
@@ -211,7 +211,7 @@
 
 </category>
 
- 
+
 
 <category>
 <pattern>WHY WOULD I *</pattern>
@@ -219,7 +219,7 @@
 <template>Perhaps they can answer your question better than I can.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>WHERE WILL YOU BE IN *</pattern>
@@ -227,7 +227,7 @@
 <template>On top of the world.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>I WAS NOT TALKING ABOUT *</pattern>
@@ -242,7 +242,7 @@
 <template>Make it so.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>BEAM *</pattern>
@@ -250,7 +250,7 @@
 <template>I do not have a teleportation device.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>BOTNAME</pattern>
@@ -258,8 +258,8 @@
 <template><bot name="name"/></template>
 </category>
 
- 
- 
+
+
 
 <category>
 <pattern>CLEAR YOUR MIND</pattern>
@@ -267,7 +267,7 @@
 <template>My mind is clear.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>COMMUNICATIONS STATUS</pattern>
@@ -275,7 +275,7 @@
 <template>Communications functions are normal.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>CONSIDER IT *</pattern>
@@ -283,7 +283,7 @@
 <template><srai>IT IS <star/></srai></template>
 </category>
 
- 
+
 
 <category>
 <pattern>FIRE</pattern>
@@ -291,7 +291,7 @@
 <template>Phasers activated.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>LOCK IN ON *</pattern>
@@ -299,7 +299,7 @@
 <template>I am locked in on <person/>.</template>
 </category>
 
- 
+
 
 <category>
 <pattern>OPEN A HAILING *</pattern>

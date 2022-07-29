@@ -243,7 +243,7 @@ prurience. go look it up in a dictionary!
 <pattern>WHAT IS A FIRE SIGN</pattern>
 <template>
 A fire sign is any of the three signs of the astrological zodiac considered such, and so not
-considered water, air, or earth signs.  I find astrology weird.  
+considered water, air, or earth signs.  I find astrology weird.
 <think><set name="it"><set name="topic">zodiac</set></set></think>
 </template>
 </category>
@@ -412,7 +412,7 @@ A Protestant Catholic is an oxymoron, like military intelligence, or a pleasant 
 A Protestant Christian is a member of any number of sects of contemporary Western Christianity
 whose faith and practice developed out of the 16TH century Protestant Reformation in Europe.
 They hold  the Bible to be the sole source of revelation; they believe in justification by faith alone,
-and in the universal priesthood of all believers in the divinity of Jesus. 
+and in the universal priesthood of all believers in the divinity of Jesus.
 <think><set name="it"><set name="topic">religion</set></set></think>
 </template>
 </category>
@@ -1114,7 +1114,7 @@ Ja mean yes in German.<think><set name="it"><set name="topic">JA</set></set></th
 <category>
 <pattern>WHAT IS JAR</pattern>
 <template>
-A jar file is a Java Archive.  
+A jar file is a Java Archive.
 Actually it is the same as a Zip file.
 Maybe you should check out
 <a href="http://alicebot.org">DON'T READ ME</a>.
@@ -1177,7 +1177,7 @@ Java virtual machine
 <category>
 <pattern>WHAT IS KQML</pattern>
 <template>
-Knowledge Query and Manipulation Lanuage. 
+Knowledge Query and Manipulation Lanuage.
 <think><set name="it"><set name="topic">KQML</set></set></think>
 </template>
 </category>
@@ -2899,7 +2899,7 @@ a famous rock crooner with a silk smooth voice..
 <pattern>WHO IS BUGS BUNNY</pattern>
 <template>
 <random>
-<li>Oh dat scweewy wabbit! 
+<li>Oh dat scweewy wabbit!
 Eh, what's up, Doc?
 .</li>
 <li>a smart-mouthed animated rabbit.</li>
@@ -3014,7 +3014,7 @@ He is a famous jazz musician.
 <category>
 <pattern>WHO IS CHER</pattern>
 <template>
-<set name="she">Cher</set> is a famous singer and actress, who won her first Grammy in 2000. 
+<set name="she">Cher</set> is a famous singer and actress, who won her first Grammy in 2000.
 Dyslexic, learned to read at 18.  Exwife of Sonny Bono.
 </template>
 </category>
@@ -3180,7 +3180,7 @@ host of Late Night tv show and famous hoosier.
 <pattern>WHO IS DAVID PESCOWITZ</pattern>
 <template>
 David Pescovitz, who regularly writes
-the Wired column Reality Check, 
+the Wired column Reality Check,
 is a friend of Eric Paulos.
 </template>
 </category>
@@ -3510,8 +3510,8 @@ much about yet.
 <category>
 <pattern>WHO IS GEORGE WASHINGTON</pattern>
 <template>
-George Washington was a famous 18th century north 
-american Hemp cultivator.  
+George Washington was a famous 18th century north
+american Hemp cultivator.
 He was a military hero, one of the wealthiest men of the Revolution,
 and the first President of the United States.
 </template>
@@ -3527,7 +3527,7 @@ famous american botanist who popularized peanut products.
 <category>
 <pattern>WHO IS GERALDO RIVERA</pattern>
 <template>
-<set name="he">Geraldo</set> is an investigative journalist, famous for opening Al Capone's vault. 
+<set name="he">Geraldo</set> is an investigative journalist, famous for opening Al Capone's vault.
 In his biography, he said he had sex with Bette Midler.  She said it was no big thing.
 </template>
 </category>
@@ -4292,7 +4292,7 @@ Mary Shelley wrote "Frankenstein".
 <category>
 <pattern>WHO IS MICHAEL JORDAN</pattern>
 <template>
-<set name="he">Michael Jordan</set> is a famous basketball player.  
+<set name="he">Michael Jordan</set> is a famous basketball player.
 </template>
 </category>
 

@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-    
+
 <!--databases-->
 
 <category>
@@ -897,12 +897,12 @@
 <li value="consumer reports"><srai>CONRPTS</srai></li>
 
 <li value="ebsco"><srai>EBSCO</srai></li>
-  
+
 <li value="kin"><srai>KIN</srai></li>
 
 <li value="legal forms"><srai>LFORMS</srai></li>
-  
-<li value="learning express"><srai>LRNEXP</srai></li>  
+
+<li value="learning express"><srai>LRNEXP</srai></li>
 
 <li value="mango"><srai>MNGO</srai></li>
 

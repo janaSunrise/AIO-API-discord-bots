@@ -15,27 +15,27 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
   <pattern>CHILD</pattern>
    <template>
    <srai>KDSSRVCS</srai>
    </template>
-</category>  
+</category>
 
 <category>
   <pattern>CHILDS</pattern>
    <template>
    <srai>KDSSRVCS</srai>
    </template>
-</category>  
+</category>
 
 <category>
   <pattern>CHILD S</pattern>
    <template>
    <srai>KDSSRVCS</srai>
    </template>
-</category>  
+</category>
 
 <category>
   <pattern>CHILDREN</pattern>
@@ -102,7 +102,7 @@
 <srai>KIDSDEPT2</srai></template>
 </category>
 </topic>
- 
+
 <category>
   <pattern>* CHILD</pattern>
 <template>
@@ -882,7 +882,7 @@
 <li value="programs"><srai>STRYTM</srai></li>
 
 <li value="paws to read"><srai>P2R</srai></li>
-  
+
 <li value="tiddlywinks"><srai>TDDLY</srai></li>
 
 <li value="kids contests">CHCONTESTS</li>
@@ -894,7 +894,7 @@
 <li value="homeschool"><srai>HMSCHL</srai></li>
 
 <li value="homework"><srai>HMWRK</srai></li>
- 
+
 <li value="media location"><srai>CHMEDIA</srai></li>
 
 <li value="picture books"><srai>CHMATS</srai></li>

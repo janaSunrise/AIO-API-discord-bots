@@ -1259,7 +1259,7 @@ I'm not sure I completely believe you.
 <pattern>YES</pattern>
 <that>* WANT A ROBOT AS A FRIEND</that>
 <template>
-We could be friends, <get name="name"/>, 
+We could be friends, <get name="name"/>,
 but I don't want anyone to think we're
 Robosexuals.  So if anyone asks, tell them you're my debugger.
 </template>

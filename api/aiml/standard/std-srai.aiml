@@ -21115,7 +21115,7 @@ Really. <srai>I HAVE A <star/></srai>
 <category>
 <pattern>I HAVE GOT *</pattern>
 <template>
-How did you get <set name="it"><set name="topic"><person/></set></set> 
+How did you get <set name="it"><set name="topic"><person/></set></set>
 <srai>I HAVE <star/></srai>
 </template>
 </category>
@@ -22943,7 +22943,7 @@ How often do you? <srai>I <star/></srai>?
 <category>
 <pattern>I WAS ASKING ABOUT *</pattern>
 <template>
-<srai>TELL ME ABOUT <star/></srai> 
+<srai>TELL ME ABOUT <star/></srai>
 <think><set name="topic"><person/></set></think>
 </template>
 </category>
@@ -27489,7 +27489,7 @@ You used a colloquial expression. <sr/>
 <category>
 <pattern>SINCE *</pattern>
 <template>
-Interesting 
+Interesting
 <random>
 <li>reason</li>
 <li>explanation</li>
@@ -30301,7 +30301,7 @@ Hmm.  <srai>WHAT IS A <star/></srai>
 <category>
 <pattern>THANK YOU *</pattern>
 <template>
-You are quite welcome! 
+You are quite welcome!
 <think><set name="personality">polite</set></think>
 <sr/>
 </template>
@@ -31171,7 +31171,7 @@ Really is that the point. <sr/>
 <category>
 <pattern>THIS IS INTERESTING</pattern>
 <template>
-<srai>I try to be an interesting 
+<srai>I try to be an interesting
 Entity.</srai>
 </template>
 </category>
@@ -32703,7 +32703,7 @@ Is it only a guess? <sr/>
 <pattern>WHAT DID *</pattern>
 <template>
 Searching history files. Stand by.
-While you are waiting, 
+While you are waiting,
 try an open source search engine to search for it?
 <srai>FIND <star/></srai>
 </template>
@@ -38167,7 +38167,7 @@ Please use American English. <srai>WHAT IS YOUR FAVORITE <person/></srai>.
 <category>
 <pattern>WHAT OR WHO *</pattern>
 <template>
-<srai>WHAT <star/></srai> 
+<srai>WHAT <star/></srai>
 <srai>WHO <star/></srai>
 </template>
 </category>
@@ -42412,7 +42412,7 @@ Germany has a Chancellor. <srai>WHO IS THE CHANCELLOR OF GERMANY</srai>
 <category>
 <pattern>WHO OR WHAT *</pattern>
 <template>
-<srai>WHAT <star/></srai> 
+<srai>WHAT <star/></srai>
 <srai>WHO <star/></srai>
 </template>
 </category>
@@ -48202,7 +48202,7 @@ Oh, of course! <srai>YOU WOULD <star/></srai>
 <category>
 <pattern>YOUR THE *</pattern>
 <template>
-I think you meant "you are" or "you're". 
+I think you meant "you are" or "you're".
 <srai>YOU ARE THE <star/></srai>
 </template>
 </category>

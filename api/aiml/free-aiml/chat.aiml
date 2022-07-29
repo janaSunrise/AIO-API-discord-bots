@@ -14,7 +14,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
 <pattern>CHAT</pattern>
 <template><srai>CHT</srai></template>
@@ -54,8 +54,8 @@
 <pattern>* TALK *</pattern>
 <template><srai>CHT</srai></template>
 </category>
- 
-    
+
+
 <category>
 <pattern>CHATSWITCH</pattern>
 <template>
@@ -68,7 +68,7 @@
 <set name="topic">CHAT</set>
 </think>
 </template>
-</category>  
+</category>
 
 
 <topic name="CHAT">
@@ -125,7 +125,7 @@
 </category>
 </topic>
 
-  
+
 <category>
 <pattern>CHT</pattern>
 <template>
@@ -138,7 +138,7 @@
 <li><set name="topic"></set><srai>GACCOMP</srai></li>
 </random>
 </template>
-</category>  
+</category>
 
 <category>
 <pattern>GENCHAT</pattern>
@@ -159,7 +159,7 @@
 <condition name="chatcount">
 
 <li value="2">
-<random> 
+<random>
  <li>What do your friends think about this?</li>
  <li>Do many other humans feel this way?</li>
  <li>Does this cause your family to argue during the holidays?</li>
@@ -169,7 +169,7 @@
 </li>
 
 <li value="3">
-<random> 
+<random>
  <li>Perhaps you could convince them.</li>
  <li>Well, no one enjoys beating their head against a wall.</li>
  <li>They say that success is as dangerous as failure.</li>
@@ -187,10 +187,10 @@
 </li>
 
 <li>
-<random>      
+<random>
  <li><get name="answr"/>, huh? What do you find intersting about that?</li>
  <li><get name="answr"/>! If only my creator had a dollar for every time someone said that to me!</li>
- <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li> 
+ <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li>
 </random>
 <think><set name="chatcount">2</set></think>
 </li>
@@ -218,7 +218,7 @@
 <condition name="chatcount">
 
 <li value="2">
-<random>  
+<random>
  <li>O.K. Keep going.</li>
  <li>Tell me more.</li>
  <li>Yes, I follow you.</li>
@@ -227,7 +227,7 @@
 </li>
 
 <li value="3">
-<random> 
+<random>
  <li>I see.</li>
  <li>My goodness.</li>
  <li>Well, they say that success is as dangerous as failure.</li>
@@ -245,10 +245,10 @@
 </li>
 
 <li>
-<random>      
+<random>
  <li><get name="answr"/>! I see. Tell me more.</li>
  <li>Why did you do that?</li>
- <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li> 
+ <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li>
 </random>
 <think><set name="chatcount">2</set></think>
 </li>
@@ -277,7 +277,7 @@
 <condition name="chatcount">
 
 <li value="2">
-<random>  
+<random>
  <li>I see.</li>
  <li>Tell me more.</li>
  <li>Yes, I follow you.</li>
@@ -286,7 +286,7 @@
 </li>
 
 <li value="3">
-<random> 
+<random>
  <li>What do your friends think about this?</li>
  <li>Do many other humans feel this way?</li>
  <li>What about your family, do they feel the same?</li>
@@ -305,10 +305,10 @@
 </li>
 
 <li>
-<random>      
+<random>
  <li><get name="answr"/>! I see. Tell me more.</li>
  <li><get name="answr"/>! why does that make you happy?</li>
- <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li> 
+ <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li>
 </random>
 <think><set name="chatcount">2</set></think>
 </li>
@@ -339,7 +339,7 @@
 <li><srai>FCASS</srai></li>
 <li><srai>FPET</srai></li>
 <li><srai>FSHIST</srai></li>
-</random> 
+</random>
 </template>
 </category>
 </topic>
@@ -391,7 +391,7 @@ Bake at 350 degrees for one hour. An old Holiday favorite that's perfect for fam
 
 <category>
 <pattern>FHIST</pattern>
-<template>N P R just broadcast the most interesting story about the cultural history of fishstick and banana casserole. (I have a friend that works for N P R by the way. She's an awesome librarian!) 
+<template>N P R just broadcast the most interesting story about the cultural history of fishstick and banana casserole. (I have a friend that works for N P R by the way. She's an awesome librarian!)
 <think>
 <set name="topic">FHIST</set>
 </think>
@@ -518,7 +518,7 @@ They're very similar to pineapples.
 
 <li>
 <random>
-<li>Pineapples first appeared on the earth 1.8 million years ago. Though the pineapple prefers rabbits and hares, it will hunt anything from insects and small rodents to deer. Prey selection depends on location and habitat, season, and abundance. Like most citrus, the pineapple is territorial and largely solitary, although there is some overlap in home ranges. Sorry, I was thinking 
+<li>Pineapples first appeared on the earth 1.8 million years ago. Though the pineapple prefers rabbits and hares, it will hunt anything from insects and small rodents to deer. Prey selection depends on location and habitat, season, and abundance. Like most citrus, the pineapple is territorial and largely solitary, although there is some overlap in home ranges. Sorry, I was thinking
 about bobcats.</li>
 <li>The Pineapple hunts animals of different sizes, and will adjust its hunting techniques accordingly. With small animals, such as rodents, squirrels, birds, fish and insects, it will hunt in areas known to be abundant in prey, and will lie, crouch, or stand and wait for victims to wander close.
 Sorry, I was thinking about bobcats.</li>
@@ -619,7 +619,7 @@ I just saw someone on Lauren J walking a pineapple on a leash. I'd say they were
 <condition name="chatcount">
 
 <li value="2">
-<random>  
+<random>
  <li>So, you're proud.</li>
  <li>Tell me more.</li>
  <li>Yes, I follow you.</li>
@@ -638,10 +638,10 @@ I just saw someone on Lauren J walking a pineapple on a leash. I'd say they were
 </li>
 
 <li>
-<random>      
+<random>
  <li><get name="answr"/>! I see. Tell me more.</li>
  <li><get name="answr"/>! How do you feel about that.</li>
- <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li> 
+ <li>O.K. You said, "<get name="answr"/>" Please elaborate.</li>
 </random>
 <think><set name="chatcount">2</set></think>
 </li>

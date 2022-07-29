@@ -18,7 +18,7 @@
 
 
 <category>
-<pattern>LOLCATS</pattern> 
+<pattern>LOLCATS</pattern>
 <template>One of my favorite websites. I'll open it for you. Make sure you pop up blocker is off, or you won't see it.
 <think>
 <set name="search">lolcats</set>
@@ -30,7 +30,7 @@
 <pattern>LOLCATS</pattern>
 <template><srai>LOLCATS</srai></template>
 </category>
- 
+
 <category>
 <pattern>* LOLCATS</pattern>
 <template><srai>LOLCATS</srai></template>

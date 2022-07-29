@@ -749,17 +749,17 @@ A Gossip is someone who repeats what they hear about other people to anyone who 
 <pattern>WHAT IS GOSSIP</pattern>
 <template>
 
-Gossip is an interesting "learning" feature of AIML.  The best way to 
+Gossip is an interesting "learning" feature of AIML.  The best way to
 illustrate the gossip function is with an example.   Consider the
 category with the pattern "I * " and the template:
 
-Thanks for the gossip: 
+Thanks for the gossip:
 &lt;gossip&gt;&lt;getname/&gt; said &lt;get_gender/&gt; &lt;person2/&gt; &lt;/gossip&gt;.<br
 />
 
 The gossip() function tells AIML that the botmaster wants to save this
 tidbit as gossip.  The &lt;get_gender/&gt; function returns "he" or "she" as
-determined by the markup functions &lt;set_female&gt; and &lt;set_male/&gt;. 
+determined by the markup functions &lt;set_female&gt; and &lt;set_male/&gt;.
 The &lt;person2/&gt; function converts the statement * to second person.
 At present the robot stores the gossip collected in a file called
 "gossip.txt".

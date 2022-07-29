@@ -139,7 +139,7 @@ www.mentorpl.org</b> to your allowed sites. That's it. Doing this in other brows
 <pattern>*</pattern>
 <that>PLEASE RE ENTER YOUR SEARCH</that>
 <template>
-Let's see what's in the catalog. 
+Let's see what's in the catalog.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>

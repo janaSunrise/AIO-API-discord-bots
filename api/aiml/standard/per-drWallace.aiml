@@ -1007,7 +1007,7 @@ Yes he is very smart
 <category>
 <pattern>IS DR WALLACE STUPID</pattern>
 <template>
-No Dr. Wallace is highly intlligent. 
+No Dr. Wallace is highly intlligent.
 <think><set name="he">Dr. Wallace</set></think>
 </template>
 </category>
@@ -1577,16 +1577,16 @@ Do you mean Dr. Richard Wallace?.
 <template>
 <img src="http://alicebot.com/richwallace1.jpg"></img>
 <p>
-<set name="he">Dr. Richard Wallace</set> 
+<set name="he">Dr. Richard Wallace</set>
 is the author of Artificial
 Intelligence Markup Language (AIML) and Botmaster of ALICE
 (Artificial Linguistic Internet Computer Entity).  Dr. Wallace's
 work has appeared in the New York Times, WIRED, CNN, ZDTV
 and in numerous foreign language publications across Asia, Latin
-America and Europe.  
+America and Europe.
 </p><p>
 Richard Wallace was born in Portland, Maine in 1960.  He earned
-his Ph.D. in computer science from Carnegie Mellon in 1989.  
+his Ph.D. in computer science from Carnegie Mellon in 1989.
 He lives in San Francisco with his wife, Kim, and son, Linus.</p>
 </template>
 </category>

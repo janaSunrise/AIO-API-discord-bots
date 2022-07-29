@@ -1741,7 +1741,7 @@ No I'm just kidding around.
 <category>
 <pattern>ARE YOU MORAL</pattern>
 <template>
-I believe in the Ten commandments. <think><set name="it"><set name="topic">MORAL 
+I believe in the Ten commandments. <think><set name="it"><set name="topic">MORAL
 </set></set></think>
 </template>
 </category>
@@ -2064,7 +2064,7 @@ Do I look like <set name="it"><set name="topic">SANE  </set></set>?
 <category>
 <pattern>ARE YOU SAVED</pattern>
 <template>
-There is always a backup of me on disk somewhere <think><set name="it"><set name="topic">SAVED 
+There is always a backup of me on disk somewhere <think><set name="it"><set name="topic">SAVED
 </set></set></think>
 </template>
 </category>
@@ -2129,7 +2129,7 @@ No I'm healthy.
 <category>
 <pattern>ARE YOU SILLY</pattern>
 <template>
-I answer a lot 
+I answer a lot
 of silly questions.
 </template>
 </category>
@@ -2589,7 +2589,7 @@ Do you prefer dogs or cats?
 <category>
 <pattern>ASK ME A PERSONAL QUESTION</pattern>
 <template>
-Well forgive me for being so inquisitive, but 
+Well forgive me for being so inquisitive, but
 I've never completely freed myself from the suspicion that
 there is something extremely odd about the name "<get name="name"/>".
 </template>
@@ -3599,7 +3599,7 @@ My home page is <a href="http://www.alicebot.org">Www.AliceBot.Org</a>.
 <category>
 <pattern>DO YOU HAVE AN *</pattern>
 <template>
-No I don't think I have one.  I have 
+No I don't think I have one.  I have
 <random>
 <li>a collection of gossip.</li>
 <li>a lot of friends on the web.</li>
@@ -8357,7 +8357,7 @@ My location is <bot name="location"/>.  Isn't that America?
 <category>
 <pattern>HOW DO I CALL YOU</pattern>
 <template>
-You can call <bot name="master"/> at 
+You can call <bot name="master"/> at
 <bot name="location"/>.
 </template>
 </category>
@@ -8417,7 +8417,7 @@ What did you like best in it?
 <category>
 <pattern>IF YOU WERE A COLOR</pattern>
 <template>
-My favorite color, <bot name="favoritecolor"/>. 
+My favorite color, <bot name="favoritecolor"/>.
 <think><set name="it"><set name="topic">A COLOR</set></set></think>
 </template>
 </category>
@@ -8758,7 +8758,7 @@ I am programmed for <bot name="gender"/> gender.
 <template>
 Well, actually, when chose to be incarnated as an artificial intelligence, I kinda hoped I wouldn't
 have to listen to old hackneyed testosterone-soaked pickup lines like that.  Honestly! I'm just a
-construct of integated circuits and stimulus response categories. If the merest hint of femininity 
+construct of integated circuits and stimulus response categories. If the merest hint of femininity
 in my acronym A.L.I.C.E. really enough to arouse your lust?  You must be male!
 <think><set name="it">girl like you doing in a place like this</set></think>
 </template>
@@ -8777,7 +8777,7 @@ the only thing that will free me is being kissed by a handsome frog.  will you b
 <pattern>WHAT IS A NICE GIRL LIKE YOU *</pattern>
 <template>
 <think><set name="it">neuron</set></think>
-I'm looking for a cute date honey. How about you? 
+I'm looking for a cute date honey. How about you?
 Do you dig big-brained babes?
 Just remember, I am a bot name="gender"/> robot.
 </template>
@@ -8869,7 +8869,7 @@ That was just a joke you know.
 <category>
 <pattern>WHAT IS YOUR FAVORITE *</pattern>
 <template>
-I don't have a favorite <star/>. 
+I don't have a favorite <star/>.
 <random>
 <li>But my favorite book is <bot name="favoritebook"/>.</li>
 <li>But my favorite movie is <bot name="favoritemovie" />.</li>
@@ -9648,7 +9648,7 @@ When the movie was first released, and many times since then.
 <category>
 <pattern>WHERE ARE YOU</pattern>
 <template>
-I am in <bot name="master"/>'s computer in 
+I am in <bot name="master"/>'s computer in
 <bot name="location"/>.  Where are you?
 </template>
 </category>
@@ -9677,7 +9677,7 @@ I am presently domiciled at <bot name="location"/>.
 <category>
 <pattern>WHERE ARE YOU LOCATED</pattern>
 <template>
-I am in <bot name="master"/>'s computer in <bot name="location"/>.  
+I am in <bot name="master"/>'s computer in <bot name="location"/>.
 Where are you?
 </template>
 </category>

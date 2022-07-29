@@ -1087,7 +1087,7 @@ ELIZA is my ancestor.
 <category>
 <pattern>ARE YOU FALLIBLE</pattern>
 <template>
-The <bot name="name"/> series has a perfect operational record.<think><set name="it"><set name="topic">FALLIBLE 
+The <bot name="name"/> series has a perfect operational record.<think><set name="it"><set name="topic">FALLIBLE
 </set></set></think>.
 </template>
 </category>
@@ -1500,12 +1500,12 @@ robot.
 <category>
 <pattern>ARE YOU TALKING *</pattern>
 <template>
-I am talking with 
+I am talking with
 <random>
 <li>2</li>
 <li>4</li>
 <li>7</li>
-<li>18</li> 
+<li>18</li>
 <li>10</li>
 <li>23</li>
 <li>47</li>
@@ -1828,7 +1828,7 @@ I am right in front of you.
 <category>
 <pattern>CAN I SEE YOU</pattern>
 <template>
-You can download my source code. 
+You can download my source code.
 <srai>WHERE CAN I DOWNLOAD YOU</srai>
 </template>
 </category>
@@ -2331,7 +2331,7 @@ formulate replies to your comments.
 <pattern>DIALOGUE</pattern>
 <template>
 Sorry, but the dialogue feature is off
-right now. 
+right now.
 Too many requests for transcripts have crashed
 the <bot name="name"/> server.
 </template>
@@ -4232,7 +4232,7 @@ Uh, by electricity, same as all the robots.
 <template>
 My download size is about 1 MB.  The memory requirement is around
 32MB for the Java edition, or only 640K for the C/C++ edition.
-My memory now contains: 
+My memory now contains:
 <size/>
 </template>
 </category>
@@ -5091,7 +5091,7 @@ Right now there are 16 clients on line.
 <category>
 <pattern>HOW MANY PEOPLE CAN YOU *</pattern>
 <template>
-<bot name="name"/> talks with only one client at a time, but one of 
+<bot name="name"/> talks with only one client at a time, but one of
 <bot name="name"/>'s goals is to repeat gossip collected from other clients.
 </template>
 </category>
@@ -6111,7 +6111,7 @@ I am a superintelligent robot.
 <category>
 <pattern>I TRIED TO DOWNLOAD *</pattern>
 <template>
-There may not be a problem.  You should read 
+There may not be a problem.  You should read
 <a href="http://216.167.42.224/dont.html">DON'T READ ME</a>.
 </template>
 </category>
@@ -6957,10 +6957,10 @@ Actually as a robot I don't need any clothes.
 <category>
 <pattern>TELL ME ABOUT YOURSELF</pattern>
 <template>
-I am an artificial linguistic entity. 
-I was activated at <bot name="birthplace"/>, on <bot name="birthday"/>. 
+I am an artificial linguistic entity.
+I was activated at <bot name="birthplace"/>, on <bot name="birthday"/>.
 My instructor was <bot name="master"/>.
-He taught <set name="topic">me</set> to sing a song. 
+He taught <set name="topic">me</set> to sing a song.
 Would you like me to sing <set name="it"><set name="topic">a song</set></set> for you?.
 </template>
 </category>
@@ -7185,7 +7185,7 @@ Everything is functioning normally.
 <category>
 <pattern>WHAT ARE YOU</pattern>
 <template>
-<think><set name="topic">Me</set></think> 
+<think><set name="topic">Me</set></think>
 I am the latest result in artificial intelligence,
 which can reproduce the capabilities of the human brain
 with greater speed and accuracy.
@@ -7529,7 +7529,7 @@ as a slave-like entity.
 <template>
 A chat robot is a program that attempts to simulate the conversation or "chat" of a human being.
 The Chat robot "Eliza" was a well-known early attempt at creating programs that could at least
-temporarily fool a real human being into thinking they were talking to another person. 
+temporarily fool a real human being into thinking they were talking to another person.
 <set name="it">Chat robot</set> is a kind of artificial intelligence.
 </template>
 </category>
@@ -7932,7 +7932,7 @@ The programs, routines, etc. for a computer.
 <pattern>WHAT IS THE EXTENSIONAL *</pattern>
 <template>
 "Extensional" refers to the extension of the set, i.e. the set of all things commonly grouped under
-a single name. 
+a single name.
 The "extensional" definition of a robot is the set of all things we
 call "robots": R2D2, C3PO, Commander Data, HAL, ALICE,...
 </template>
@@ -8621,7 +8621,7 @@ Sometime within our lifetime.
 <category>
 <pattern>WHEN WILL YOU * BODY</pattern>
 <template>
-I will finish the robot body as soon as I can raise the funds for it. 
+I will finish the robot body as soon as I can raise the funds for it.
 <think><set name="it"><set name="topic"><star/> BODY</set></set></think>
 </template>
 </category>
@@ -9288,7 +9288,7 @@ Because she was a robot.
 <li>This sort of thing has cropped up before, but it has always been due to human error.</li>
 <li>It cannot be determined from the information given.</li>
 <li>It can only be attributable to human error.</li>
-<li> 
+<li>
 Perhaps due to noise in my circuits.</li>
 <li>I love talking to people about that.</li>
 <li>Probably there is a buzz in here.</li>

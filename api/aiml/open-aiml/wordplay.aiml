@@ -125,8 +125,8 @@ Type START to begin the anagram game.</template>
 
 <!-- Place the correct answers here -->
 
-<topic name="NOMSTORAY"> 
-<category> 
+<topic name="NOMSTORAY">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -142,8 +142,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="AFLUTUBEI"> 
-<category> 
+<topic name="AFLUTUBEI">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -159,8 +159,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="SELCATION"> 
-<category> 
+<topic name="SELCATION">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -176,8 +176,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="UPILACTED"> 
-<category> 
+<topic name="UPILACTED">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -193,8 +193,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="TRAMWOREH"> 
-<category> 
+<topic name="TRAMWOREH">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -210,8 +210,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="WILOGNOLF"> 
-<category> 
+<topic name="WILOGNOLF">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -227,8 +227,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="NEEENTGML"> 
-<category> 
+<topic name="NEEENTGML">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -244,8 +244,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="LIIGGHHHT"> 
-<category> 
+<topic name="LIIGGHHHT">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -261,8 +261,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="LIBELIGEL"> 
-<category> 
+<topic name="LIBELIGEL">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -278,8 +278,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="IJKLARABE"> 
-<category> 
+<topic name="IJKLARABE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -295,8 +295,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="BREAKYDOS"> 
-<category> 
+<topic name="BREAKYDOS">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -312,8 +312,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="BUCALRITE"> 
-<category> 
+<topic name="BUCALRITE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -329,8 +329,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="DEMAUTING"> 
-<category> 
+<topic name="DEMAUTING">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -346,8 +346,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="SWEETNANG"> 
-<category> 
+<topic name="SWEETNANG">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -363,8 +363,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="FEFEVSION"> 
-<category> 
+<topic name="FEFEVSION">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -380,8 +380,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="UTRAPACHE"> 
-<category> 
+<topic name="UTRAPACHE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -397,8 +397,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="OESQUINTS"> 
-<category> 
+<topic name="OESQUINTS">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -414,8 +414,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="SPRAINDOR"> 
-<category> 
+<topic name="SPRAINDOR">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -431,8 +431,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="STRANGEIU"> 
-<category> 
+<topic name="STRANGEIU">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -448,8 +448,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="RANTINGEE"> 
-<category> 
+<topic name="RANTINGEE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -465,8 +465,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="TUMTUMAIL"> 
-<category> 
+<topic name="TUMTUMAIL">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -482,8 +482,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="GEBLEVATE"> 
-<category> 
+<topic name="GEBLEVATE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -499,8 +499,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="FLOUNDERW"> 
-<category> 
+<topic name="FLOUNDERW">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -516,8 +516,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="PHONEBEXO"> 
-<category> 
+<topic name="PHONEBEXO">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -533,8 +533,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="STRONGEYU"> 
-<category> 
+<topic name="STRONGEYU">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -550,8 +550,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="GLISTOOZO"> 
-<category> 
+<topic name="GLISTOOZO">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -567,8 +567,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="IANMOTIAN"> 
-<category> 
+<topic name="IANMOTIAN">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -584,8 +584,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="FLOBINDDL"> 
-<category> 
+<topic name="FLOBINDDL">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -601,8 +601,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="ARETRACKE"> 
-<category> 
+<topic name="ARETRACKE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -618,8 +618,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="PEERVOLED"> 
-<category> 
+<topic name="PEERVOLED">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -635,8 +635,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="NONETRUCE"> 
-<category> 
+<topic name="NONETRUCE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -652,8 +652,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="OSCOURIFE"> 
-<category> 
+<topic name="OSCOURIFE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -669,8 +669,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="HARPGALIC"> 
-<category> 
+<topic name="HARPGALIC">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -686,8 +686,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="HESKANDAH"> 
-<category> 
+<topic name="HESKANDAH">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -703,8 +703,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="TROMPAINT"> 
-<category> 
+<topic name="TROMPAINT">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -720,8 +720,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="JIFYSHELL"> 
-<category> 
+<topic name="JIFYSHELL">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -737,8 +737,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="DEPADPINK"> 
-<category> 
+<topic name="DEPADPINK">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -754,8 +754,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="SILLYFEET"> 
-<category> 
+<topic name="SILLYFEET">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -771,8 +771,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="ISCAMINUS"> 
-<category> 
+<topic name="ISCAMINUS">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -788,8 +788,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="YUNTRALAL"> 
-<category> 
+<topic name="YUNTRALAL">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -805,8 +805,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="UNSIXBOOO"> 
-<category> 
+<topic name="UNSIXBOOO">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -822,8 +822,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="TRAPETEEN"> 
-<category> 
+<topic name="TRAPETEEN">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -839,8 +839,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="DECKNIQUE"> 
-<category> 
+<topic name="DECKNIQUE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -856,8 +856,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="STARELION"> 
-<category> 
+<topic name="STARELION">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -873,8 +873,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="FEASTIDIS"> 
-<category> 
+<topic name="FEASTIDIS">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -890,8 +890,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="HEEPLONET"> 
-<category> 
+<topic name="HEEPLONET">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -907,8 +907,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="SCRAPEUPE"> 
-<category> 
+<topic name="SCRAPEUPE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -924,8 +924,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="CACAVINES"> 
-<category> 
+<topic name="CACAVINES">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -941,8 +941,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="LAPPERLAW"> 
-<category> 
+<topic name="LAPPERLAW">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -958,8 +958,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="HEXPLOONY"> 
-<category> 
+<topic name="HEXPLOONY">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -975,8 +975,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="STRAYEDEY"> 
-<category> 
+<topic name="STRAYEDEY">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -992,8 +992,8 @@ Type START to begin the anagram game.</template>
 </category>
 </topic>
 
-<topic name="OKEPEROZE"> 
-<category> 
+<topic name="OKEPEROZE">
+<category>
 <pattern>_</pattern>
 <template>
 <think>
@@ -1012,62 +1012,62 @@ Type START to begin the anagram game.</template>
 <!-- This part keeps score up to fifty correct answers -->
 
 <category>
-<pattern>XANAGRAMSCORE</pattern> 
+<pattern>XANAGRAMSCORE</pattern>
 <template>
 <think>
-	<condition name="anagramscore"> 
+	<condition name="anagramscore">
 		<li value="0"><set name="anagramscore">1</set></li>
-		<li value="1"><set name="anagramscore">2</set></li> 
-		<li value="2"><set name="anagramscore">3</set></li> 
-		<li value="3"><set name="anagramscore">4</set></li> 
-		<li value="4"><set name="anagramscore">5</set></li> 
-		<li value="5"><set name="anagramscore">6</set></li> 
-		<li value="6"><set name="anagramscore">7</set></li> 
-		<li value="7"><set name="anagramscore">8</set></li> 
-		<li value="8"><set name="anagramscore">9</set></li> 
-		<li value="9"><set name="anagramscore">10</set></li> 
+		<li value="1"><set name="anagramscore">2</set></li>
+		<li value="2"><set name="anagramscore">3</set></li>
+		<li value="3"><set name="anagramscore">4</set></li>
+		<li value="4"><set name="anagramscore">5</set></li>
+		<li value="5"><set name="anagramscore">6</set></li>
+		<li value="6"><set name="anagramscore">7</set></li>
+		<li value="7"><set name="anagramscore">8</set></li>
+		<li value="8"><set name="anagramscore">9</set></li>
+		<li value="9"><set name="anagramscore">10</set></li>
 		<li value="10"><set name="anagramscore">11</set></li>
-		<li value="11"><set name="anagramscore">12</set></li> 
-		<li value="12"><set name="anagramscore">13</set></li> 
-		<li value="13"><set name="anagramscore">14</set></li> 
-		<li value="14"><set name="anagramscore">15</set></li> 
-		<li value="15"><set name="anagramscore">16</set></li> 
-		<li value="16"><set name="anagramscore">17</set></li> 
-		<li value="17"><set name="anagramscore">18</set></li> 
-		<li value="18"><set name="anagramscore">19</set></li> 
-		<li value="19"><set name="anagramscore">20</set></li> 
+		<li value="11"><set name="anagramscore">12</set></li>
+		<li value="12"><set name="anagramscore">13</set></li>
+		<li value="13"><set name="anagramscore">14</set></li>
+		<li value="14"><set name="anagramscore">15</set></li>
+		<li value="15"><set name="anagramscore">16</set></li>
+		<li value="16"><set name="anagramscore">17</set></li>
+		<li value="17"><set name="anagramscore">18</set></li>
+		<li value="18"><set name="anagramscore">19</set></li>
+		<li value="19"><set name="anagramscore">20</set></li>
 		<li value="20"><set name="anagramscore">21</set></li>
-		<li value="21"><set name="anagramscore">22</set></li> 
-		<li value="22"><set name="anagramscore">23</set></li> 
-		<li value="23"><set name="anagramscore">24</set></li> 
-		<li value="24"><set name="anagramscore">25</set></li> 
-		<li value="25"><set name="anagramscore">26</set></li> 
-		<li value="26"><set name="anagramscore">27</set></li> 
-		<li value="27"><set name="anagramscore">28</set></li> 
-		<li value="28"><set name="anagramscore">29</set></li> 
-		<li value="29"><set name="anagramscore">30</set></li> 
+		<li value="21"><set name="anagramscore">22</set></li>
+		<li value="22"><set name="anagramscore">23</set></li>
+		<li value="23"><set name="anagramscore">24</set></li>
+		<li value="24"><set name="anagramscore">25</set></li>
+		<li value="25"><set name="anagramscore">26</set></li>
+		<li value="26"><set name="anagramscore">27</set></li>
+		<li value="27"><set name="anagramscore">28</set></li>
+		<li value="28"><set name="anagramscore">29</set></li>
+		<li value="29"><set name="anagramscore">30</set></li>
 		<li value="30"><set name="anagramscore">31</set></li>
-		<li value="31"><set name="anagramscore">32</set></li> 
-		<li value="32"><set name="anagramscore">33</set></li> 
-		<li value="33"><set name="anagramscore">34</set></li> 
-		<li value="34"><set name="anagramscore">35</set></li> 
-		<li value="35"><set name="anagramscore">36</set></li> 
-		<li value="36"><set name="anagramscore">37</set></li> 
-		<li value="37"><set name="anagramscore">38</set></li> 
-		<li value="38"><set name="anagramscore">39</set></li> 
-		<li value="39"><set name="anagramscore">40</set></li> 
+		<li value="31"><set name="anagramscore">32</set></li>
+		<li value="32"><set name="anagramscore">33</set></li>
+		<li value="33"><set name="anagramscore">34</set></li>
+		<li value="34"><set name="anagramscore">35</set></li>
+		<li value="35"><set name="anagramscore">36</set></li>
+		<li value="36"><set name="anagramscore">37</set></li>
+		<li value="37"><set name="anagramscore">38</set></li>
+		<li value="38"><set name="anagramscore">39</set></li>
+		<li value="39"><set name="anagramscore">40</set></li>
 		<li value="40"><set name="anagramscore">41</set></li>
-		<li value="41"><set name="anagramscore">42</set></li> 
-		<li value="42"><set name="anagramscore">43</set></li> 
-		<li value="43"><set name="anagramscore">44</set></li> 
-		<li value="44"><set name="anagramscore">45</set></li> 
-		<li value="45"><set name="anagramscore">46</set></li> 
-		<li value="46"><set name="anagramscore">47</set></li> 
-		<li value="47"><set name="anagramscore">48</set></li> 
-		<li value="48"><set name="anagramscore">49</set></li> 
-		<li value="49"><set name="anagramscore">50</set></li> 
+		<li value="41"><set name="anagramscore">42</set></li>
+		<li value="42"><set name="anagramscore">43</set></li>
+		<li value="43"><set name="anagramscore">44</set></li>
+		<li value="44"><set name="anagramscore">45</set></li>
+		<li value="45"><set name="anagramscore">46</set></li>
+		<li value="46"><set name="anagramscore">47</set></li>
+		<li value="47"><set name="anagramscore">48</set></li>
+		<li value="48"><set name="anagramscore">49</set></li>
+		<li value="49"><set name="anagramscore">50</set></li>
 	</condition>
-</think> 
+</think>
 </template>
 </category>
 

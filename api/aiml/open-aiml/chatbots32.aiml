@@ -16,7 +16,7 @@
 <pattern>XCHECKANIMAL *</pattern>
 <template>
 <think>
-	<set name="animal">UNKNOWN</set> 
+	<set name="animal">UNKNOWN</set>
 	<set name="legs">UNKNOWN</set>
 	<set name="lives">UNKNOWN</set>
 	<set name="eats">UNKOWN</set>
@@ -29,7 +29,7 @@
 <pattern>XCHECKANIMAL DOG</pattern>
 <template>
 <think>
-	<set name="animal">dog</set> 
+	<set name="animal">dog</set>
 	<set name="legs">4</set>
 	<set name="lives">in a kennel</set>
 	<set name="eats">meat</set>
@@ -42,7 +42,7 @@
 <pattern>XCHECKANIMAL CHICKEN</pattern>
 <template>
 <think>
-	<set name="animal">chicken</set> 
+	<set name="animal">chicken</set>
 	<set name="legs">2</set>
 	<set name="lives">on a farm</set>
 	<set name="eats">corn</set>
@@ -55,7 +55,7 @@
 <pattern>XCHECKANIMAL GIRAFFE</pattern>
 <template>
 <think>
-	<set name="animal">giraffe</set> 
+	<set name="animal">giraffe</set>
 	<set name="legs">4</set>
 	<set name="lives">in Africa</set>
 	<set name="eats">leaves</set>
@@ -68,7 +68,7 @@
 <pattern>XCHECKANIMAL SPIDER</pattern>
 <template>
 <think>
-	<set name="animal">spider</set> 
+	<set name="animal">spider</set>
 	<set name="legs">8</set>
 	<set name="lives">in a web</set>
 	<set name="eats">flies</set>
@@ -81,7 +81,7 @@
 <pattern>XCHECKANIMAL COW</pattern>
 <template>
 <think>
-	<set name="animal">cow</set> 
+	<set name="animal">cow</set>
 	<set name="legs">4</set>
 	<set name="lives">on a farm</set>
 	<set name="eats">grass</set>
@@ -166,17 +166,17 @@
 <think>
 <set name="searchfor"><star/></set>
 
-<learn>	
-<category>	 
-<pattern>XCHECKMATCH</pattern>	 
+<learn>
+<category>
+<pattern>XCHECKMATCH</pattern>
 <template>
 <srai>BOTCOMPARE <get name="legs"/> XSPLIT <get name="searchfor"/></srai>
 <condition name="match">
 <li value="YES"><set name="list"><get name="list"/><br/>
 <get name="animal"/></set></li>
-</condition>	 
-</template>	
-</category> 
+</condition>
+</template>
+</category>
 </learn>
 
 </think>
@@ -192,17 +192,17 @@
 <think>
 <set name="searchfor"><star/> <star index="2"/></set>
 
-<learn>	
-<category>	 
-<pattern>XCHECKMATCH</pattern>	 
+<learn>
+<category>
+<pattern>XCHECKMATCH</pattern>
 <template>
 <srai>BOTCOMPARE <get name="lives"/> <get name="says"/> XSPLIT <get name="searchfor"/></srai>
 <condition name="match">
 <li value="YES"><set name="list"><get name="list"/><br/>
 <get name="animal"/></set></li>
-</condition>	 
-</template>	
-</category> 
+</condition>
+</template>
+</category>
 </learn>
 
 </think>
@@ -218,18 +218,18 @@
 <think>
 <set name="searchfor"><star/></set>
 
-<learn>	
-<category>	 
-<pattern>XCHECKMATCH</pattern>	 
+<learn>
+<category>
+<pattern>XCHECKMATCH</pattern>
 <template>
 <srai>BOTCOMPARE <get name="eats"/> XSPLIT <get name="searchfor"/></srai>
 <condition name="match">
 <li value="YES"><set name="list"><get name="list"/><br/>
 A <get name="animal"/> eats <get name="eats"/> and has <get name="legs"/> legs.
 </set></li>
-</condition>	 
-</template>	
-</category> 
+</condition>
+</template>
+</category>
 </learn>
 
 </think>
@@ -245,17 +245,17 @@ A <get name="animal"/> eats <get name="eats"/> and has <get name="legs"/> legs.
 <think>
 <set name="searchfor"><star/></set>
 
-<learn>	
-<category>	 
-<pattern>XCHECKMATCH</pattern>	 
+<learn>
+<category>
+<pattern>XCHECKMATCH</pattern>
 <template>
 <srai>BOTCOMPARE <get name="says"/> XSPLIT <get name="searchfor"/></srai>
 <condition name="match">
 <li value="YES"><set name="list"><get name="list"/><br/>
 <get name="animal"/></set></li>
-</condition>	 
-</template>	
-</category> 
+</condition>
+</template>
+</category>
 </learn>
 
 </think>
@@ -267,7 +267,7 @@ A <get name="animal"/> eats <get name="eats"/> and has <get name="legs"/> legs.
 
 <category>
 <pattern>DOES A * HAVE MORE LEGS THAN A *</pattern>
-<template> 
+<template>
 <think>
 <srai>XCHECKANIMAL <star/></srai>
 <set name="legs1"><get name="legs"/></set>

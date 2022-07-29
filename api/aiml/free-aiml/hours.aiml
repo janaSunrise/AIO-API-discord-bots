@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
 <pattern>TIMEDATETEST</pattern>
 <template>TIMECHECK <date locale="en_US" timezone="-5" format="%A %H"/>
@@ -502,7 +502,7 @@
 </topic>
 
 <!--HOLIDAYS-->
- 
+
 <category>
 <pattern>NWYREVEHRS</pattern>
 <template>The Library is closed on New Years Eve.</template>
@@ -599,8 +599,8 @@
 
 
 <li value="MONDAY 12 11 2012"><set name="message">vet day 12</set></li>
-<li value="WEDNESDAY 21 11 2012"><set name="message">turkey day eve 12</set></li> 
-<li value="THURSDAY 22 11 2012"><set name="message">turkey day 12</set></li> 
+<li value="WEDNESDAY 21 11 2012"><set name="message">turkey day eve 12</set></li>
+<li value="THURSDAY 22 11 2012"><set name="message">turkey day 12</set></li>
 <li value="MONDAY 24 12 2012"><set name="message">xmas eve 12</set></li>
 <li value="TUESDAY 25 12 2012"><set name="message">xmas day 12</set></li>
 <li value="MONDAY 31 12 2012"><set name="message">newyears eve 12</set></li>
@@ -795,7 +795,7 @@
 <set name="time"><date locale="en_US" timezone="-5" format="%I:%M %p"/></set>
 <set name="topic">ROPREMID</set>
 </think>
-It's <get name="time"/> and the library is closed. 
+It's <get name="time"/> and the library is closed.
 <srai>REOPEN PREMID</srai>
 </template>
 </category>
@@ -807,7 +807,7 @@ It's <get name="time"/> and the library is closed.
 <set name="time"><date locale="en_US" timezone="-5" format="%I:%M %p"/></set>
 <set name="topic">ROPOSTMID</set>
 </think>
-It's <get name="time"/> and the library is closed. 
+It's <get name="time"/> and the library is closed.
 <srai>REOPEN POSTMID</srai>
 </template>
 </category>
@@ -847,7 +847,7 @@ both Branches are open from 9:00 am until 5:00 pm. <srai>HRSLNK</srai></template
 <think>
 <set name="date"><date format="%A, %B %d, %Y"/></set>
 </think>
-Today is <get name="date"/>. The Main Library is open from 11:00 am until 5:00 pm. 
+Today is <get name="date"/>. The Main Library is open from 11:00 am until 5:00 pm.
 Both Branches are closed. <srai>HRSLNK</srai></template>
 </category>
 
@@ -1042,8 +1042,8 @@ How can I help you?</li>
 
 
 <li value="MONDAY 11 11 2012"><set name="message">vet day 12</set></li>
-<li value="WEDNESDAY 20 11 2012"><set name="message">turkey day eve 12</set></li> 
-<li value="THURSDAY 21 11 2012"><set name="message">turkey day 12</set></li> 
+<li value="WEDNESDAY 20 11 2012"><set name="message">turkey day eve 12</set></li>
+<li value="THURSDAY 21 11 2012"><set name="message">turkey day 12</set></li>
 <li value="MONDAY 23 12 2012"><set name="message">xmas eve 12</set></li>
 <li value="TUESDAY 24 12 2012"><set name="message">xmas day 12</set></li>
 <li value="MONDAY 30 12 2012"><set name="message">newyears eve 12</set></li>
@@ -1207,8 +1207,8 @@ closed.</template>
 
 
 <li value="MONDAY 13 11 2012"><set name="message">vet day 12</set></li>
-<li value="WEDNESDAY 22 11 2012"><set name="message">turkey day eve 12</set></li> 
-<li value="THURSDAY 23 11 2012"><set name="message">turkey day 12</set></li> 
+<li value="WEDNESDAY 22 11 2012"><set name="message">turkey day eve 12</set></li>
+<li value="THURSDAY 23 11 2012"><set name="message">turkey day 12</set></li>
 <li value="MONDAY 25 12 2012"><set name="message">xmas eve 12</set></li>
 <li value="TUESDAY 26 12 2012"><set name="message">xmas day 12</set></li>
 <li value="MONDAY 01 01 2013"><set name="message">newyears eve 12</set></li>
@@ -5326,4 +5326,4 @@ closed.</template>
 </category>
 
 </aiml>
- 
+

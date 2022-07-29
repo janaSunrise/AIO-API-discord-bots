@@ -11,7 +11,7 @@
 
 <!-- Sets topic to SHUTUP ready for main category -->
 
-<category> 
+<category>
 <pattern>SHUT UP</pattern>
 <template>
 	<think>
@@ -29,8 +29,8 @@
 
 <!-- The bot will not respond until the user says sorry -->
 
-<topic name="SHUTUP"> 
-<category> 
+<topic name="SHUTUP">
+<category>
 <pattern>_</pattern>
 <template>
 	<think>

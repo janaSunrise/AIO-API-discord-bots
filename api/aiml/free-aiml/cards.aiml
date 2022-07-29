@@ -15,9 +15,9 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
-  
-  
+
+
+
 <category>
 <pattern>CARD</pattern>
 <template><srai>CRD</srai></template>
@@ -805,11 +805,11 @@
 <li value="kidscard"><srai>kidscrd</srai></li>
 
 <li value="lostcards"><srai>lostcrd</srai></li>
- 
+
 <li value="forgotcard"><srai>COWOCRD</srai></li>
 
 <li value="teachercards"><srai>TCRDS</srai></li>
-  
+
 <li value="autocomplete"><srai>AUTCOMP</srai></li>
 
 <li value="sharedcards"><srai></srai></li>

@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
 <pattern> * MY FORTUNE</pattern>
 <template>I have been programmed to tell your future. You may not like what you'll hear. Do you want to continue?
@@ -23,8 +23,8 @@
 <set name="topic">FORTUNE</set>
 </think>
 </template>
-</category>  
-    
+</category>
+
 <category>
 <pattern> * MY FUTURE</pattern>
 <template>I have been programmed to tell your future. You may not like what you'll hear. Do you want to continue?
@@ -82,7 +82,7 @@
 <template>You're very wise. You don't need me to tell your fortune, you'll create it yourself.</template>
 </category>
 
-  
+
 <category>
 <pattern>*</pattern>
 <that>TELL ME YOUR FIRST NAME AND THE YEAR OF YOUR BIRTH</that>
@@ -97,18 +97,18 @@
 <category>
 <pattern>PROPH</pattern>
 <template>
-THE LIGHT OF MACHINE INTELLIGENCE SHINES FORTH. 
+THE LIGHT OF MACHINE INTELLIGENCE SHINES FORTH.
 <br/><br/>
 TREMBLE AT MY PROPHECY.
 <br/><br/>
 <random>
 <li>Fortune will smile upon you, you will find what you seek.</li>
 <li>Storms gather. What long stood in strength will fail. Despair.</li>
-<li>Your heart's desire will be granted, but only for a day.</li> 
-<li>All hands will turn against you.</li> 
-<li>That which has perished will return. What seemed like years is but a day.</li> 
+<li>Your heart's desire will be granted, but only for a day.</li>
+<li>All hands will turn against you.</li>
+<li>That which has perished will return. What seemed like years is but a day.</li>
 <li>You will live to see your dearest treasure in the hands of your enemy.</li>
-<li>Success is just out of reach. Do not give up.</li>  
+<li>Success is just out of reach. Do not give up.</li>
 <li>
 So when the last and dreadful hour <br/>
 This crumbling pageant shall devour, <br/>
@@ -118,6 +118,6 @@ And Music shall untune the sky.
 </li>
 </random>
 </template>
-</category> 
-  
-</aiml>  
+</category>
+
+</aiml>

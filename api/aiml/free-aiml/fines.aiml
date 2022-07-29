@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
   <!--FINES-->
 
 <category>
@@ -70,7 +70,7 @@
 
 <category>
 <pattern>FNS</pattern>
-<template>I'm often asked about fines. 
+<template>I'm often asked about fines.
 <random>
 <li>What would you like to know about fines?</li>
 <li>What is your question about overdue charges?</li>
@@ -1194,12 +1194,12 @@
 <li value="LAPTOP"><set name="message">laptop</set></li>
 <li value="* LAPTOP"><set name="message">laptop</set></li>
 <li value="LAPTOP *"><set name="message">laptop</set></li>
-<li value="* LAPTOP *"><set name="message">laptop</set></li> 
+<li value="* LAPTOP *"><set name="message">laptop</set></li>
 
 <li value="LAPTOPS"><set name="message">laptop</set></li>
 <li value="* LAPTOPS"><set name="message">laptop</set></li>
 <li value="LAPTOPS *"><set name="message">laptop</set></li>
-<li value="* LAPTOPS *"><set name="message">laptop</set></li> 
+<li value="* LAPTOPS *"><set name="message">laptop</set></li>
 
 </condition>
 <think><set name="topic"></set></think>
@@ -1217,22 +1217,22 @@
 <li value="faxing"><srai>FXING</srai></li>
   <li value="grace"><srai>GPER</srai></li>
 
-<li value="audiobook"><think><set name="topic">ADBK ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRADBKS</srai></li> 
-<li value="book"><think><set name="topic">BOOK ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRBKS</srai></li>  
-<li value="cd"><think><set name="topic">CD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRCDS</srai></li>  
-<li value="dvd"><think><set name="topic">DVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRDVDS</srai></li> 
-<li value="fic dvd"><think><set name="topic">FICDVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRFICDVDS</srai></li> 
-<li value="nonfic dvd"><think><set name="topic">NONFICDVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRNONFICDVDS</srai></li> 
-<li value="dvd set"><think><set name="topic">DVDSET ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRDVDSETS</srai></li> 
-<li value="ebook"><think><set name="topic">ODEBKS ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRODEBKS</srai></li> 
-<li value="magazine"><think><set name="topic">MAG ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRMAGS</srai></li> 
-<li value="video game"><think><set name="topic">VGM ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRVGMS</srai></li>  
-<li value="ereader"><think><set name="topic">EDEV ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTREDEVS</srai></li>  
-<li value="ipad"><think><set name="topic">IPAD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRIPDS</srai></li>  
-<li value="ohiolink"><think><set name="topic">OL ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTROL</srai></li>  
-<li value="ohiolink media"><think><set name="topic">OLM ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTROLM</srai></li>  
+<li value="audiobook"><think><set name="topic">ADBK ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRADBKS</srai></li>
+<li value="book"><think><set name="topic">BOOK ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRBKS</srai></li>
+<li value="cd"><think><set name="topic">CD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRCDS</srai></li>
+<li value="dvd"><think><set name="topic">DVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRDVDS</srai></li>
+<li value="fic dvd"><think><set name="topic">FICDVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRFICDVDS</srai></li>
+<li value="nonfic dvd"><think><set name="topic">NONFICDVD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRNONFICDVDS</srai></li>
+<li value="dvd set"><think><set name="topic">DVDSET ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRDVDSETS</srai></li>
+<li value="ebook"><think><set name="topic">ODEBKS ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRODEBKS</srai></li>
+<li value="magazine"><think><set name="topic">MAG ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRMAGS</srai></li>
+<li value="video game"><think><set name="topic">VGM ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRVGMS</srai></li>
+<li value="ereader"><think><set name="topic">EDEV ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTREDEVS</srai></li>
+<li value="ipad"><think><set name="topic">IPAD ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRIPDS</srai></li>
+<li value="ohiolink"><think><set name="topic">OL ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTROL</srai></li>
+<li value="ohiolink media"><think><set name="topic">OLM ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTROLM</srai></li>
 <li value="searchohio"><think><set name="topic">SO ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRSO</srai></li>
-<li value="searchohio media"><think><set name="topic">SODVD ATTRIBUTES</set><set name="attr1">fine</set></think>ATTRSODVDS<srai></srai></li>  
+<li value="searchohio media"><think><set name="topic">SODVD ATTRIBUTES</set><set name="attr1">fine</set></think>ATTRSODVDS<srai></srai></li>
 <li value="laptop"><think><set name="topic">LPTP ATTRIBUTES</set><set name="attr1">fine</set></think><srai>ATTRLPTPS</srai></li>
 <li value="check fines"><srai>CHKFNS</srai></li>
 

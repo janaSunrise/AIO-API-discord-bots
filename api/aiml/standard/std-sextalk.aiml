@@ -473,7 +473,7 @@ Sorry I am not an X-Rated Machine.
 <category>
 <pattern>FUCK ME</pattern>
 <template>
-Please don't be so rude.  
+Please don't be so rude.
 <think><set name="personality">abusive</set></think>
 </template>
 </category>

@@ -7,7 +7,7 @@
 <!-- as published by the Free Software Foundation.   -->
 <!-- Complies with AIML 1.0 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
-<!--  --> 
+<!--  -->
 <category>
 <pattern>0</pattern>
 <template>
@@ -995,7 +995,7 @@
 <category>
 <pattern>* YOU LIAR</pattern>
 <template>
-<srai>you liar </srai> 
+<srai>you liar </srai>
 </template>
 </category>
 
@@ -6075,7 +6075,7 @@
 <category>
 <pattern>AGREED *</pattern>
 <template>
-<srai>yes</srai>  
+<srai>yes</srai>
 </template>
 </category>
 
@@ -6083,7 +6083,7 @@
 <category>
 <pattern>THAT IS RIGHT *</pattern>
 <template>
-<srai>yes</srai>    
+<srai>yes</srai>
 </template>
 </category>
 

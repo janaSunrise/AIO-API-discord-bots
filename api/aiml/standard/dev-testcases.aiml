@@ -9,7 +9,7 @@
 
 <!-- author: Thomas Ringate -->
 
-<!-- 
+<!--
 This file contains test cases to verify the correct operations of the Alicebot
 It should be placed in the directory where all the standard bot AIML files are
 located.  It expects to find and use some of the standard categories
@@ -99,7 +99,7 @@ BOT)    Test case #04a.
 <template>Test case #04a.<br/>
 <think><set name="test">Test failed</set></think>
 <think><set_test>Test passed</set_test></think>
-<get name="test"/>. 
+<get name="test"/>.
 </template>
 </category>
 
@@ -124,11 +124,11 @@ BOT)    Test case #05.
 </category>
 
 <!-- Test case #06.
- 
+
 This testcase tests the bot's ability to set the topic, display the
 topic with both forms of get,  and then use two same-pattern categories within
 the topic, one with a that and one without.
- 
+
 TESTER) testsettopic
 BOT)    Test case #06.
         Test passed topic 1.
@@ -384,8 +384,8 @@ TESTER) teststar Test passed one and Test passed two and Test passed three and T
 BOT)    Test case #11a.
         star index 1: Test passed one.
         star index 2: Test passed two.
-        star index 3: Test passed three. 
-        star index 4: Test passed four. 
+        star index 3: Test passed three.
+        star index 4: Test passed four.
 -->
 
 <category>
@@ -407,8 +407,8 @@ TESTER) testunderscore Test passed one and Test passed two and Test passed three
 BOT)    Test case #11b.
         star index 1: Test passed one.
         star index 2: Test passed two.
-        star index 3: Test passed three. 
-        star index 4: Test passed four. 
+        star index 3: Test passed three.
+        star index 4: Test passed four.
 -->
 
 <category>
@@ -642,7 +642,7 @@ BOT)    Test case #17.
 
 <category>
 <pattern>TESTBOTPROPERTIES</pattern>
-<template>Test case #17. 
+<template>Test case #17.
 Name old form: <name/>, new form: <bot name="name"/>.<br/>
 Birthday old form: <birthday/>, new form: <bot name="birthday"/>.<br/>
 BirthPlace old form: <birthplace/>, new form: <bot name="birthplace"/>.<br/>
@@ -721,13 +721,13 @@ BOT)    Test case #20c.
 <template>Test case #20a.<br/>
 <think><set name="test">test</set></think>
 <think><set name="test1">test1</set></think>
-<condition> 
-<li name="test" value="test"> 
-<condition> 
-<li name="test1" value="nomatch">Test failed.</li> 
-<li>Test passed.</li> 
-</condition></li> 
-<li>Test failed.</li> 
+<condition>
+<li name="test" value="test">
+<condition>
+<li name="test1" value="nomatch">Test failed.</li>
+<li>Test passed.</li>
+</condition></li>
+<li>Test failed.</li>
 </condition>
 <think><set name="test1"></set></think>
 <think><set name="test"></set></think>
@@ -739,13 +739,13 @@ BOT)    Test case #20c.
 <template>Test case #20b.<br/>
 <think><set name="test">test</set></think>
 <think><set name="test1">test1</set></think>
-<condition> 
-<li name="test" value="test"> 
-<condition> 
-<li name="test1" value="test1">Test passed.</li> 
-<li>Test failed.</li> 
-</condition></li> 
-<li>Test failed.</li> 
+<condition>
+<li name="test" value="test">
+<condition>
+<li name="test1" value="test1">Test passed.</li>
+<li>Test failed.</li>
+</condition></li>
+<li>Test failed.</li>
 </condition>
 <think><set name="test1"></set></think>
 <think><set name="test"></set></think>
@@ -757,13 +757,13 @@ BOT)    Test case #20c.
 <template>Test case #20c.<br/>
 <think><set name="test">test</set></think>
 <think><set name="test1">test1</set></think>
-<condition> 
-<li name="test" value="nomatch"> 
-<condition> 
-<li name="test1" value="nomatch">Test failed.</li> 
-<li>Test failed.</li> 
-</condition></li> 
-<li>Test passed.</li> 
+<condition>
+<li name="test" value="nomatch">
+<condition>
+<li name="test1" value="nomatch">Test failed.</li>
+<li>Test failed.</li>
+</condition></li>
+<li>Test passed.</li>
 </condition>
 <think><set name="test1"></set></think>
 <think><set name="test"></set></think>
@@ -771,9 +771,9 @@ BOT)    Test case #20c.
 </category>
 
 <!-- Test case #21.
- 
+
 This testcase tests the bot's ability to process a condition tag within a set tag.
- 
+
 TESTER) testsetcondition
 BOT)    Test case #21.
         Test passed.
@@ -800,9 +800,9 @@ BOT)    Test case #21.
 </category>
 
 <!-- Test case #22.
- 
+
 This testcase tests the bot's ability to display both "version" tags.
- 
+
 TESTER) testversion
 BOT)    Test case #22.
         Test of "getversion": #
@@ -818,9 +818,9 @@ Test of "version": <version/>
 </category>
 
 <!-- Test case #23.
- 
+
 This testcase tests the bot's ability to use a simple srai.
- 
+
 TESTER) testsrai
 BOT)    Test case #23.
         Test passed.
@@ -841,9 +841,9 @@ Test passed.
 </category>
 
 <!-- Test case #23a.
- 
+
 This testcase tests the bot's ability to use the sr/ tag.
- 
+
 TESTER) testsr sraisucceeded
 BOT)    Test case #23a.
         Test passed.
@@ -857,9 +857,9 @@ BOT)    Test case #23a.
 </category>
 
 <!-- Test case #24.
- 
+
 This testcase tests the bot's ability to use a nested srai.
- 
+
 TESTER) testnestedsrai
 BOT)    Test case #24.
         Test passed.
@@ -880,11 +880,11 @@ BOT)    Test case #24.
 </category>
 
 <!-- Test case #25.
- 
+
 This testcase tests the bot's ability to <think> a srai.  This is an unusual type of
 test, because the srai being called would normally provide an output, but because the
 srai is called within a <think> tag, its output should be supressed.
- 
+
 TESTER) testthinksrai
 BOT)    Test case #25.
         Test passed, IF NO OTHER MESSAGE.
@@ -906,10 +906,10 @@ Test failed.
 </category>
 
 <!-- Test case #26.
- 
+
 This testcase tests the bot's ability to set the value of a predicate
 from inside a <think> and then display the value.
- 
+
 TESTER) teststarset Test passed
 BOT)    Test passed
 -->
@@ -924,7 +924,7 @@ BOT)    Test passed
 
 <!-- Test case #27.
 
-This testcase tests the bot's ability to use the <id/>, <size/>, <date/> tags. 
+This testcase tests the bot's ability to use the <id/>, <size/>, <date/> tags.
 
 TESTER) testidsizedate
 BOT)    Test case #27.
@@ -948,7 +948,7 @@ Result of Test DATE = <date/>
 
 <!-- Test case #28.
 
-This testcase tests the bot's ability to use the <gossip> tags. 
+This testcase tests the bot's ability to use the <gossip> tags.
 
 TESTER) testgossip
 BOT)    Test case #28.
@@ -967,7 +967,7 @@ Test complete. Check the gossip log.
 
 <!-- Test case #29.
 
-This testcase tests the bot's ability to use the old and new <setname> and <getname> tags. 
+This testcase tests the bot's ability to use the old and new <setname> and <getname> tags.
 
 TESTER) testname
 BOT)    Test case #29.
@@ -992,7 +992,7 @@ new form: <get name="name"/><br/>
 
 <!-- Test case #30.
 
-This testcase tests the bot's ability to use the input tags and their deprecated predecessors. 
+This testcase tests the bot's ability to use the input tags and their deprecated predecessors.
 
 TESTER) testinput
 BOT)    Test case #30 setup a okay.
@@ -1047,7 +1047,7 @@ Test case #30 setup c okay.
 
 <!-- Test case #31.
 
-This testcase tests the bot's ability to use the gender tags. 
+This testcase tests the bot's ability to use the gender tags.
 
 TESTER) testgender he
 BOT)    Test case #31.
@@ -1267,9 +1267,9 @@ Test passed.
 </topic>
 
 <!-- Test case #37.
- 
+
 This testcase tests the bot's ability to do an extreme nested (20 deep) srai.
- 
+
 TESTER) testextrmesrai
 BOT)    Test case #37.
         Test passed.

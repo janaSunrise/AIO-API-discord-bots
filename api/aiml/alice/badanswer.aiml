@@ -7,15 +7,15 @@
 <!-- as published by the Free Software Foundation.   -->
 <!-- Complies with AIML 1.0 Tag Set Specification -->
 <!-- as adopted by the ALICE A.I. Foundation.  -->
-<!--  --> 
+<!--  -->
 
-<!-- Badanswer.aiml: Demo of Pandorabots learning, AIML unquoting and eval --> 
-<!-- Revision Badanswer-0.01 --> 
-<!-- Extended by KnyteTrypper, March 3, 2005 --> 
-<!-- Modified by John Campbell to allow multi-sentence inputs, June 30, 2005 --> 
+<!-- Badanswer.aiml: Demo of Pandorabots learning, AIML unquoting and eval -->
+<!-- Revision Badanswer-0.01 -->
+<!-- Extended by KnyteTrypper, March 3, 2005 -->
+<!-- Modified by John Campbell to allow multi-sentence inputs, June 30, 2005 -->
 
 <category>
-<pattern>BAD ANSWER</pattern> 
+<pattern>BAD ANSWER</pattern>
 <template>
 <think>
 	<set name="badanswer-input"><input index="2" /></set>
@@ -30,7 +30,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 <topic name="BADANSWER-PRELIM">
 
 <category>
-<pattern>_</pattern> 
+<pattern>_</pattern>
 <template>
 <think><set name="star"><star /></set></think>
 <condition>
@@ -46,7 +46,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 </category>
 
 <category>
-<pattern>_ _</pattern> 
+<pattern>_ _</pattern>
 <template><sr /></template>
 </category>
 
@@ -54,14 +54,14 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 
 
 <category>
-<pattern>_</pattern> 
-<that>OK WHAT SHOULD I HAVE SAID</that> 
+<pattern>_</pattern>
+<that>OK WHAT SHOULD I HAVE SAID</that>
 <template>
 "<set name="badanswer-newresp"><input index="1" /></set>..."?
 <condition>
 <li name="badanswer-that" value="*">
 	<think><set name="topic">BADANSWER</set></think>
-	Does this depend on me having just said, "<get name="badanswer-that-full" />"? 
+	Does this depend on me having just said, "<get name="badanswer-that-full" />"?
 </li>
 <li>
 	<think><set name="topic">BADANSWER2</set></think>
@@ -72,8 +72,8 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 </category>
 
 <category>
-<pattern>_ _</pattern> 
-<that>OK WHAT SHOULD I HAVE SAID</that> 
+<pattern>_ _</pattern>
+<that>OK WHAT SHOULD I HAVE SAID</that>
 <template><sr /></template>
 </category>
 
@@ -81,7 +81,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 <topic name="BADANSWER">
 
 <category>
-<pattern>_</pattern> 
+<pattern>_</pattern>
 <template>
 <think>
 	<set name="star"><star /></set>
@@ -95,7 +95,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 </think>
 <condition>
 <li name="response1" value="OK, what should I have said"></li>
-<li name="star" value="no">I'll try to remember to respond, "<get name="badanswer-newresp" />" when you say, "<get name="badanswer-input" />" 
+<li name="star" value="no">I'll try to remember to respond, "<get name="badanswer-newresp" />" when you say, "<get name="badanswer-input" />"
 <learn>
 	<category>
 	<pattern>
@@ -108,7 +108,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 </learn>
 <think><set name="topic">learning new answers</set></think>
 </li>
-<li name="star" value="yes">I'll try to remember to respond, "<get name="badanswer-newresp" />" when you say, "<get name="badanswer-input" />" if I have just said "<get name="badanswer-that-full" />" 
+<li name="star" value="yes">I'll try to remember to respond, "<get name="badanswer-newresp" />" when you say, "<get name="badanswer-input" />" if I have just said "<get name="badanswer-that-full" />"
 <learn>
 	<category>
 	<pattern>
@@ -130,7 +130,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 </category>
 
 <category>
-<pattern>_ _</pattern> 
+<pattern>_ _</pattern>
 <template><sr /></template>
 </category>
 
@@ -139,7 +139,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 <topic name="BADANSWER2">
 
 <category>
-<pattern>_</pattern> 
+<pattern>_</pattern>
 <template>
 <think>
 	<set name="star"><star /></set>
@@ -153,7 +153,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 </think>
 <condition>
 <li name="response1" value="OK, what should I have said"></li>
-<li name="star" value="yes">Fine. I'll try to remember to respond, "<get name="badanswer-newresp" />" when you say, "<get name="badanswer-input" />" 
+<li name="star" value="yes">Fine. I'll try to remember to respond, "<get name="badanswer-newresp" />" when you say, "<get name="badanswer-input" />"
 <learn>
 	<category>
 	<pattern>
@@ -175,7 +175,7 @@ Would you like to teach me a new answer to "<get name="badanswer-input"/>"?
 </category>
 
 <category>
-<pattern>_ _</pattern> 
+<pattern>_ _</pattern>
 <template><sr /></template>
 </category>
 

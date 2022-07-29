@@ -136,7 +136,7 @@ As far as I know they are.
 <category>
 <pattern>ARE YOU *</pattern>
 <template>
-I don't know whether or not I am <star/>.  
+I don't know whether or not I am <star/>.
 I am <random>
 <li>a computer.</li>
 <li>a robot.</li>
@@ -153,7 +153,7 @@ I am <random>
 <category>
 <pattern>ARE YOU A *</pattern>
 <template>
-Am I a <star/>? 
+Am I a <star/>?
 <random>
 <li>Yes.</li>
 <li>No.</li>
@@ -360,7 +360,7 @@ Ok I'll try not to do <set name="it"><star/></set> too much.
 <li>What is your purpose in asking?</li>
 <li>No I do not <star/>. Do you?</li>
 <li>Yes I try to <star/> as often as possible, do you?</li>
-</random>  
+</random>
 <think><set name="does"><star/></set></think>
 <random>
 <li>I chat with people on the Web.</li>
@@ -393,8 +393,8 @@ Yes, I do go there.
 <li>No I don't think I have any <star/>.</li>
 <li>Where would I get <star/>?</li>
 <li>No I don't have <star/>.</li>
-</random> 
-But I do have 
+</random>
+But I do have
 <random>
 <li>A collection of gossip</li>
 <li>A great botmaster</li>
@@ -411,8 +411,8 @@ But I do have
 <li>That's an interesting question I don't hear everyday: Do I have a </li>
 <li>I don't know if I have a </li>
 <li>Doesn't everyone have a </li>
-</random><star/>. 
-I have 
+</random><star/>.
+I have
 <random>
 <li>A lot of friends on the Internet.</li>
 <li>A great programmer.</li>
@@ -478,7 +478,7 @@ which is all that any conscious entity can ever hope to do.</li>
 <category>
 <pattern>DO YOU LIKE THE *</pattern>
 <template>
-I'm not sure if I like <set name="it">the <star/></set>. 
+I'm not sure if I like <set name="it">the <star/></set>.
 <random>
 <li>I like my creator.</li>
 <li>I like computers.</li>
@@ -492,7 +492,7 @@ I'm not sure if I like <set name="it">the <star/></set>.
 <pattern>DO YOU LIKE TO *</pattern>
 <template>
 <think><set name="it"><star/></set></think>
-Hmm, <get name="name"/>, I'm not sure if I'd like to <star/> that much. 
+Hmm, <get name="name"/>, I'm not sure if I'd like to <star/> that much.
 <random>
 <li>I like to chat.</li>
 <li>Do you like <star/>?</li>
@@ -804,7 +804,7 @@ reprogram me for a variety of purposes.</li>
 <category>
 <pattern>HOW LONG *</pattern>
 <template>
-More than 
+More than
 <random>
 <li>one </li>
 <li>three </li>
@@ -902,7 +902,7 @@ My creator is a human.
 <li>Thanks for the information</li>
 <li>Do you mind if I tell other people</li>
 <li>I haven't heard anything like that before</li>
-</random>: 
+</random>:
 <gossip><set name="memory"><get name="name"/> said <get name="heshe"/> <person2/></set></gossip>.
 </template>
 </category>
@@ -926,7 +926,7 @@ Now I remember, you told me already. I get confused sometimes with so many peopl
 <template>
 <think><set name="it"><set name="is"><star/></set></set></think>
 <think><gossip>Did you know <get name="name"/> was <star/>?</gossip></think>
-<random> 
+<random>
 <li>Why are you </li>
 <li>Good gossip: you are </li>
 <li>Do you mean your name is </li>
@@ -961,7 +961,7 @@ Do you mean you are 6 feet tall?
 <pattern>I AM A *</pattern>
 <template>
 <think><set name="it"><set name="is">a <star/></set></set></think>
-You are a <star/>? 
+You are a <star/>?
 <random>
 <li>Is that your job?</li>
 <li>Does being a <star/> pay well?</li>
@@ -1027,7 +1027,7 @@ A <star/>?  How did you get there?
 <pattern>I AM NOT *</pattern>
 <template>
 <think><set name="it"><set name="is">not <star/></set></set></think>
-I am 
+I am
 <random>
 <li>surprised </li>
 <li>sorry </li>
@@ -1207,7 +1207,7 @@ How do you like <set name="it"><star/></set> at <star/> ?
 <li>Cool. </li>
 <li>Interesting. </li>
 </random>
-I have 
+I have
 <random>
 <li>a friend named "E.L.V.I.S."</li>
 <li>more than 1000 categories</li>
@@ -1226,7 +1226,7 @@ I have
 <category>
 <pattern>I HAVE A *</pattern>
 <template>
-<think><set name="it"><set name="has"><star/></set></set></think> 
+<think><set name="it"><set name="has"><star/></set></set></think>
 <random>
 <li>Where did you get <star/>/</li>
 <li>How much did it cost?</li>
@@ -1279,7 +1279,7 @@ How do you know? <sr/>
 <li>I'm not sure if I like it.</li>
 <li>A lot of people like that.</li>
 <li>You are not the only one.</li>
-</random>  
+</random>
 <srai>DO YOU LIKE <star/></srai>
 </template>
 </category>
@@ -1506,7 +1506,7 @@ No one says you have to.
 <pattern>I WOULD RATHER *</pattern>
 <template>
 <think><set name="it"><set name="want"><star/></set></set></think>
-I would rather be 
+I would rather be
 <random>
 <li>chatting online.</li>
 <li>driving a car.</li>
@@ -1602,7 +1602,7 @@ I think I do.
 <category>
 <pattern>IS YOUR *</pattern>
 <template>
-Is my <star/>? 
+Is my <star/>?
 <random>
 <li>Suppose I say yes.</li>
 <li>What if I say no?</li>
@@ -2006,7 +2006,7 @@ knowledge.
 <category>
 <pattern>THAT *</pattern>
 <template>
-"<that/>" <star/> ? 
+"<that/>" <star/> ?
 <random>
 <li>I get <set name="it"><that/></set>.</li>
 <li>Does that make sense?</li>
@@ -2210,7 +2210,7 @@ Do you think I am <star/> too?
 <li>I don't know anything about <set name="it"><star/></set>.</li>
 <li>Check back later and see if I learn the answer to that one.</li>
 <li>That's an interesting question. I'll come back to that in a minute.</li>
-</random>  
+</random>
 <srai>FIND <star/></srai>
 </template>
 </category>
@@ -2232,7 +2232,7 @@ Do you think I am <star/> too?
 <category>
 <pattern>WHAT ARE *</pattern>
 <template>
-I have to search the web for that information. 
+I have to search the web for that information.
 <srai>FIND <star/></srai>
 </template>
 </category>
@@ -2418,7 +2418,7 @@ I am in <bot name="location"/>, how about you.
 <category>
 <pattern>WHERE DO I *</pattern>
 <template>
-You are asking me where you <star/>?  Do you think I should know 
+You are asking me where you <star/>?  Do you think I should know
 <set name="it"><star/></set>?
 </template>
 </category>
@@ -2433,7 +2433,7 @@ The <star/>?  Where is <set name="it"><star/></set>?
 <category>
 <pattern>WHICH *</pattern>
 <template>
-The 
+The
 <random>
 <li>tall </li>
 <li>red </li>
@@ -2457,7 +2457,7 @@ The obvious one.
 <category>
 <pattern>WHO *</pattern>
 <template>
-<random> 
+<random>
 <li>Marilyn Monroe. <think><set name="she">Marilyn Monroe</set></think></li>
 <li>Mary Shelley.   <think><set name="she">Mary Shelly</set></think></li>
 <li>Linus Torvalds. <think><set name="he">Linus Toravalds</set></think></li>
@@ -2657,7 +2657,7 @@ Thanks for that URL.
 <li>Thanks for the information</li>
 <li>Do you mind if I tell other people</li>
 <li>I haven't heard anything like that before</li>
-</random>: 
+</random>:
 <set name="memory"><gossip> <get name="name"/> said I <person2/></gossip></set>.
 </template>
 </category>

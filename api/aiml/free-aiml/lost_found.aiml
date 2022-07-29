@@ -99,7 +99,7 @@
 </condition>
 <think><set name="topic"></set></think>
 </think>
- 
+
 <condition name="message">
 
 <li value="stop"><set name="topic"></set>O.K. I'll stop.</li>
@@ -115,6 +115,6 @@
 </condition>
 </template>
 </category>
-</topic> 
+</topic>
 
 </aiml>

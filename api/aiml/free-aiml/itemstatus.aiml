@@ -16,7 +16,7 @@
   See the License for the specific language governing permissions and
   limitations under the License.-->
 
-  
+
 <category>
 <pattern>CHECK SHELF</pattern>
 <template><srai>CHKSHLF</srai></template>
@@ -178,7 +178,7 @@
 <pattern>S OH REQUESTED</pattern>
 <template><srai>SOREQ</srai></template>
 </category>
- 
+
 <category>
 <pattern>* S OH REQUESTED</pattern>
 <template><srai>SOREQ</srai></template>

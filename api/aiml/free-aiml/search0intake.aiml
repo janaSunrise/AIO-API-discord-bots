@@ -14,7 +14,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <!--NO MATCH FROM CONDITIONS-->
 
 <category>
@@ -22,9 +22,9 @@
 <template>
 <random>
 <li>I think it best if you call the library at 440.255.8811 during regular business hours with this question.</li>
-<li>I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>  
-<li>I don't understand your question. Please call the library at 440.255.8811 during regular business hours for assistance.</li> 
-<li>Your input doesn't match anything in my knowledge base. Please call the library at 440.255.8811 during regular business hours for assistance.</li> 
+<li>I'm not sure what you're asking. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+<li>I don't understand your question. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
+<li>Your input doesn't match anything in my knowledge base. Please call the library at 440.255.8811 during regular business hours for assistance.</li>
 </random>
 </template>
 </category>
@@ -47,7 +47,7 @@
 
 <category>
 <pattern>ANSWRQ</pattern>
-<template>I can answer many questions about the library and our services. I can help you find items in our catalog, on our website, and in selected databases. 
+<template>I can answer many questions about the library and our services. I can help you find items in our catalog, on our website, and in selected databases.
 How can I assist you?
 <think>
 <set name="topic">UDCSRCH2</set>
@@ -156,7 +156,7 @@ How can I assist you?
 
 <category>
 <pattern>ASKQ</pattern>
-<template>Ask away! I can answer many questions about the library and our services. I can help you find items in our catalog, on our website, and in selected databases. 
+<template>Ask away! I can answer many questions about the library and our services. I can help you find items in our catalog, on our website, and in selected databases.
 How can I assist you?
 <think>
 <set name="topic">UDCSORT1</set>
@@ -255,10 +255,10 @@ How can I assist you?
 <template><srai>FIND4ME</srai></template>
 </category>
 
-<category> 
-<pattern>HELP</pattern> 
-<template><srai>ANSWRQ</srai></template> 
-</category>  
+<category>
+<pattern>HELP</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
 
 <category>
 <pattern>INFORMATION</pattern>
@@ -303,7 +303,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 </topic>
 
@@ -315,7 +315,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -326,7 +326,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 
@@ -338,7 +338,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -349,7 +349,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 
@@ -361,7 +361,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -372,7 +372,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -383,7 +383,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -394,7 +394,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -405,7 +405,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -416,7 +416,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -427,7 +427,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -438,173 +438,173 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
-<category> 
-<pattern>* HELP</pattern> 
+<category>
+<pattern>* HELP</pattern>
 <template>
 <think>
 <set name="answr"><star/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
-</category> 
+</template>
+</category>
 
-<category> 
-<pattern>HELP *</pattern> 
+<category>
+<pattern>HELP *</pattern>
 <template>
 <think>
 <set name="answr"><star/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
-</category> 
+</template>
+</category>
 
-<category> 
-<pattern>* HELP *</pattern> 
+<category>
+<pattern>* HELP *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 
-<category> 
-<pattern>HELP ME FIND *</pattern> 
+<category>
+<pattern>HELP ME FIND *</pattern>
 <template>
 <think>
 <set name="answr"><star/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
-<category> 
-<pattern>* HELP ME FIND *</pattern> 
+<category>
+<pattern>* HELP ME FIND *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
-<category> 
-<pattern>HELP * LOOK *</pattern> 
+<category>
+<pattern>HELP * LOOK *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
-</category>  
+</template>
+</category>
 
-<category> 
-<pattern>* HELP * LOOK *</pattern> 
+<category>
+<pattern>* HELP * LOOK *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
-<category> 
-<pattern>HELP * FINDING *</pattern> 
+<category>
+<pattern>HELP * FINDING *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
-</category> 
+</template>
+</category>
 
-<category> 
-<pattern>* HELP * FINDING *</pattern> 
+<category>
+<pattern>* HELP * FINDING *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
-<category> 
-<pattern>HELP * LOOKING *</pattern> 
+<category>
+<pattern>HELP * LOOKING *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
-</category>  
+</template>
+</category>
 
-<category> 
-<pattern>* HELP * LOOKING *</pattern> 
+<category>
+<pattern>* HELP * LOOKING *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
-<category> 
-<pattern>HELP * SEARCH *</pattern> 
+<category>
+<pattern>HELP * SEARCH *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
-</category> 
+</template>
+</category>
 
-<category> 
-<pattern>* HELP * SEARCH *</pattern> 
+<category>
+<pattern>* HELP * SEARCH *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
-<category> 
-<pattern>HELP * SEARCHING *</pattern> 
+<category>
+<pattern>HELP * SEARCHING *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
-<category> 
-<pattern>* HELP * SEARCHING *</pattern> 
+<category>
+<pattern>* HELP * SEARCHING *</pattern>
 <template>
 <think>
 <set name="answr"><star index="1"/><star index="2"/><star index="3"/></set>
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -615,7 +615,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -626,7 +626,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -637,7 +637,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -648,7 +648,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -659,7 +659,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -670,7 +670,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -681,7 +681,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -692,7 +692,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -703,7 +703,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 <category>
@@ -714,7 +714,7 @@ How can I assist you?
 <set name="topic">UDCSORT</set>
 </think>
 <srai>UDCSORT</srai>
-</template> 
+</template>
 </category>
 
 
@@ -828,25 +828,25 @@ How can I assist you?
 <template><srai>CATSRCH</srai></template>
 </category>
 
-<category> 
-<pattern>I * AUDIOBOOK</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * AUDIOBOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * AUDIOBOOK*</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * AUDIOBOOK*</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * AUDIOBOOKS</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category>  
+<category>
+<pattern>I * AUDIOBOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * AUDIOBOOKS *</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category>  
+<category>
+<pattern>I * AUDIOBOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
 <category>
 <pattern>AUDIO BOOK</pattern>
@@ -927,25 +927,25 @@ How can I assist you?
 <template><srai>CATSRCH</srai></template>
 </category>
 
-<category> 
-<pattern>I * AUDIO BOOK</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * AUDIO BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * AUDIO BOOK*</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * AUDIO BOOK*</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * AUDIO BOOKS</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category>  
+<category>
+<pattern>I * AUDIO BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * AUDIO BOOKS *</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category>  
+<category>
+<pattern>I * AUDIO BOOKS *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
 <!--BOOK/S-->
 
@@ -1039,38 +1039,38 @@ How can I assist you?
 <template><srai>CATSRCH</srai></template>
 </category>
 
-<category> 
-<pattern>I * BOOK</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * BOOK</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * BOOK *</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * BOOK *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * BOOKS</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category>  
+<category>
+<pattern>I * BOOKS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * BOOKS ON *</pattern> 
+<category>
+<pattern>I * BOOKS ON *</pattern>
 <template>
 <think>
 <set name="searcharg"><star index="2"/></set>
 </think>
-<srai>DIRCATSRCH</srai></template> 
-</category>  
+<srai>DIRCATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * BOOKS ABOUT *</pattern> 
+<category>
+<pattern>I * BOOKS ABOUT *</pattern>
 <template>
 <think>
 <set name="searcharg"><star index="2"/></set>
 </think>
-<srai>DIRCATSRCH</srai></template> 
-</category>  
+<srai>DIRCATSRCH</srai></template>
+</category>
 
 <!--BOOKS ON CD-->
 
@@ -1162,25 +1162,25 @@ How can I assist you?
 <pattern>* HAVE * BOOKS ON CD *</pattern>
 <template><srai>CATSRCH</srai></template>
 </category>
-<category> 
-<pattern>I * BOOK ON CD</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * BOOK ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * BOOK ON CD*</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * BOOK ON CD*</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * BOOKS ON CD</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category>  
+<category>
+<pattern>I * BOOKS ON CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * BOOKS ON CD *</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category>  
+<category>
+<pattern>I * BOOKS ON CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
 <!--PASS SEARCH FOR CDS-->
 
@@ -1309,24 +1309,24 @@ How can I assist you?
 <srai>CATSRCH</srai>
 </template>
 </category>
-<category> 
-<pattern>I * CD</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * CD</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * CD *</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * CD *</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * CDS</pattern> 
-<template><srai>CATSRCH</srai></template> 
-</category> 
+<category>
+<pattern>I * CDS</pattern>
+<template><srai>CATSRCH</srai></template>
+</category>
 
-<category> 
-<pattern>I * CDS *</pattern> 
-<template><srai>CATSRCH</srai></template> 
+<category>
+<pattern>I * CDS *</pattern>
+<template><srai>CATSRCH</srai></template>
 </category>
 
 <category>
@@ -1794,32 +1794,32 @@ How can I assist you?
 
 <!--WHAT DO YOU DO-->
 
-<category> 
-<pattern>WHAT * YOU DO</pattern> 
-<template><srai>ANSWRQ</srai></template> 
-</category> 
+<category>
+<pattern>WHAT * YOU DO</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
 
-<category> 
-<pattern>WHAT * YOU DO *</pattern> 
-<template><srai>ANSWRQ</srai></template> 
-</category> 
+<category>
+<pattern>WHAT * YOU DO *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
 
-<category> 
-<pattern>WHAT * YOU DOING</pattern> 
-<template><srai>ANSWRQ</srai></template> 
-</category> 
+<category>
+<pattern>WHAT * YOU DOING</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
 
-<category> 
-<pattern>WHAT * YOU DOING *</pattern> 
-<template><srai>ANSWRQ</srai></template> 
-</category> 
+<category>
+<pattern>WHAT * YOU DOING *</pattern>
+<template><srai>ANSWRQ</srai></template>
+</category>
 
 <!--AU SEARCH MPL CAT-->
 
 <category>
 <pattern>AUTHOR IS *</pattern>
 <template>
-Let's take a look in our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let's take a look in our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -1830,7 +1830,7 @@ Let's take a look in our catalog for <star/>.  If you don't see the results, ple
 <category>
 <pattern>_ AUTHOR IS *</pattern>
 <template>
-Let's take a look in our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let's take a look in our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -1841,7 +1841,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>AUTHOR OF *</pattern>
 <template>
-Let's take a look in our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let's take a look in our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -1852,7 +1852,7 @@ Let's take a look in our catalog for <star/>.  If you don't see the results, ple
 <category>
 <pattern>_ AUTHOR OF *</pattern>
 <template>
-Let's take a look in our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let's take a look in our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -1866,7 +1866,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>AUTOBIOGRAPHY ABOUT *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -1877,7 +1877,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ AUTOBIOGRAPHY ABOUT *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -1888,7 +1888,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>AUTOBIOGRAPHY OF *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -1899,7 +1899,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ AUTOBIOGRAPHY OF *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -1910,7 +1910,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>AUTOBIOGRAPHY ON *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -1921,7 +1921,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ AUTOBIOGRAPHY ON *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -1932,7 +1932,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>AUTOBIOGRAPHIES ABOUT *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -1943,7 +1943,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ AUTOBIOGRAPHIES ABOUT *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -1954,7 +1954,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>AUTOBIOGRAPHIES OF *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -1965,7 +1965,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ AUTOBIOGRAPHIES OF *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -1976,7 +1976,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>AUTOBIOGRAPHIES ON *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -1987,7 +1987,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ AUTOBIOGRAPHIES ON *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2000,7 +2000,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>BIOGRAPHY ABOUT *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2011,7 +2011,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ BIOGRAPHY ABOUT *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2022,7 +2022,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>BIOGRAPHY OF *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2033,7 +2033,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ BIOGRAPHY OF *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2044,7 +2044,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>BIOGRAPHY ON *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2055,7 +2055,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ BIOGRAPHY ON *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2066,7 +2066,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>BIOGRAPHIES ABOUT *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2077,7 +2077,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ BIOGRAPHIES ABOUT *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2088,7 +2088,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>BIOGRAPHIES OF *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2099,7 +2099,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ BIOGRAPHIES OF *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2110,7 +2110,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>BIOGRAPHIES ON *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2121,7 +2121,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>_ BIOGRAPHIES ON *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2134,7 +2134,7 @@ Let's take a look in our catalog for <star index="2"/>.  If you don't see the re
 <category>
 <pattern>CALL NUMBER IS *</pattern>
 <template>
-Let's see what's in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let's see what's in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catcall</set>
@@ -2145,7 +2145,7 @@ Let's see what's in our catalog.  If you don't see the results, please turn off 
 <category>
 <pattern>ISBN IS *</pattern>
 <template>
-Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catisbn</set>
@@ -2156,7 +2156,7 @@ Let me check our catalog.  If you don't see the results, please turn off your po
 <category>
 <pattern>KEYWORD IS *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2167,7 +2167,7 @@ Let me check our catalog.  If you don't see the results, please turn off your po
 <category>
 <pattern>KEYWORDS ARE *</pattern>
 <template>
-<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+<star/>. Let's see what we have in our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2178,7 +2178,7 @@ Let me check our catalog.  If you don't see the results, please turn off your po
 <category>
 <pattern>SUBJECT IS *</pattern>
 <template>
-You're looking for materials about <star/>. Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+You're looking for materials about <star/>. Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catsubj</set>
@@ -2189,7 +2189,7 @@ You're looking for materials about <star/>. Let me check our catalog.  If you do
 <category>
 <pattern>TITLE IS *</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">cattitle</set>
@@ -2200,7 +2200,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>TOPIC IS *</pattern>
 <template>
-You've entered <star/> as your topic. Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+You've entered <star/> as your topic. Let me check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2213,7 +2213,7 @@ You've entered <star/> as your topic. Let me check our catalog.  If you don't se
 <category>
 <pattern>WHO WROTE *</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">cattitle</set>
@@ -2224,7 +2224,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>_ WHO WROTE *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">cattitle</set>
@@ -2235,7 +2235,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>_ AUTHOR OF *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">cattitle</set>
@@ -2249,7 +2249,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>_ BY *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2263,7 +2263,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>_ HAVE * IN *</pattern>
 <template>
-Let's check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let's check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2274,7 +2274,7 @@ Let's check our catalog.  If you don't see the results, please turn off your pop
 <category>
 <pattern>_ HAVE * ON *</pattern>
 <template>
-Let's check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let's check our catalog.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2287,7 +2287,7 @@ Let's check our catalog.  If you don't see the results, please turn off your pop
 <category>
 <pattern>* HAVE ANY * BOOKS </pattern>
 <template>
-Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2298,7 +2298,7 @@ Let me check our catalog for <star index="2"/> books. If you don't see the resul
 <category>
 <pattern>* HAVE ANY * BOOKS *</pattern>
 <template>
-Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2309,7 +2309,7 @@ Let me check our catalog for <star index="2"/> books. If you don't see the resul
 <category>
 <pattern>* HAVE ANY * CDS </pattern>
 <template>
-Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2320,7 +2320,7 @@ Let me check our catalog for <star index="2"/> books. If you don't see the resul
 <category>
 <pattern>* HAVE ANY * CDS *</pattern>
 <template>
-Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2331,7 +2331,7 @@ Let me check our catalog for <star index="2"/> books. If you don't see the resul
 <category>
 <pattern>* HAVE ANY * DVDS </pattern>
 <template>
-Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2342,7 +2342,7 @@ Let me check our catalog for <star index="2"/> books. If you don't see the resul
 <category>
 <pattern>* HAVE ANY * DVDS *</pattern>
 <template>
-Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/> books. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2355,7 +2355,7 @@ Let me check our catalog for <star index="2"/> books. If you don't see the resul
 <category>
 <pattern>DO YOU HAVE BOOKS ABOUT * </pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2366,7 +2366,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A BOOK ABOUT * </pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2377,7 +2377,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE BOOKS ON * </pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2388,7 +2388,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A BOOK ON * </pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2399,7 +2399,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A COPY OF * </pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2410,7 +2410,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A COPY OF THE BOOK * </pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2421,7 +2421,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE THE BOOK * </pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2432,7 +2432,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE * ON CD</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2443,7 +2443,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A COPY OF * ON CD</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2454,7 +2454,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A COPY OF THE CD *</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2465,7 +2465,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE * ON CD *</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2476,7 +2476,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A COPY OF * ON CD *</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2487,7 +2487,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE * ON DVD</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2498,7 +2498,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A COPY OF * ON DVD</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2509,7 +2509,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A COPY OF DVD *</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2520,7 +2520,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE * ON DVD *</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2531,7 +2531,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU HAVE A COPY OF * ON DVD *</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2544,7 +2544,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>DO YOU * DVD * </pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2556,7 +2556,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>DO YOU * MOVIE * </pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2569,7 +2569,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>LOOK FOR * BOOK</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2580,7 +2580,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>* LOOK FOR * BOOK</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2591,7 +2591,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* LOOK FOR * BOOK *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2602,7 +2602,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>LOOK * BOOK ABOUT *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2613,7 +2613,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* LOOK * BOOK ABOUT *</pattern>
 <template>
-Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="3"/></set>
 <set name="search">catkey</set>
@@ -2625,7 +2625,7 @@ Let me check our catalog for <star index="3"/>.  If you don't see the results, p
 <category>
 <pattern>LOOKING * BOOK ABOUT *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2636,7 +2636,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* LOOKING * BOOK ABOUT *</pattern>
 <template>
-Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="3"/></set>
 <set name="search">catkey</set>
@@ -2647,7 +2647,7 @@ Let me check our catalog for <star index="3"/>.  If you don't see the results, p
 <category>
 <pattern>LOOK FOR * BOOKS</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2658,7 +2658,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>* LOOK FOR * BOOKS</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2669,7 +2669,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* LOOK FOR * BOOKS *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2680,7 +2680,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>LOOK * BOOKS ABOUT *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2691,7 +2691,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* LOOK * BOOKS ABOUT *</pattern>
 <template>
-Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="3"/></set>
 <set name="search">catkey</set>
@@ -2703,7 +2703,7 @@ Let me check our catalog for <star index="3"/>.  If you don't see the results, p
 <category>
 <pattern>LOOKING * BOOKS ABOUT *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2714,7 +2714,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* LOOKING * BOOKS ABOUT *</pattern>
 <template>
-Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="3"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="3"/></set>
 <set name="search">catkey</set>
@@ -2725,7 +2725,7 @@ Let me check our catalog for <star index="3"/>.  If you don't see the results, p
 <category>
 <pattern>SEARCH FOR * BOOKS</pattern>
 <template>
-Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2736,7 +2736,7 @@ Let me check our catalog for <star/>.  If you don't see the results, please turn
 <category>
 <pattern>* SEARCH FOR * BOOKS</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2747,7 +2747,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* SEARCH FOR * BOOKS *</pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">catkey</set>
@@ -2758,7 +2758,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* FIND A BOOK ABOUT * </pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2769,7 +2769,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* FIND BOOKS ABOUT * </pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2780,7 +2780,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* FIND A BOOK ON * </pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -2791,7 +2791,7 @@ Let me check our catalog for <star index="2"/>.  If you don't see the results, p
 <category>
 <pattern>* FIND BOOKS ON * </pattern>
 <template>
-Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check our catalog for <star index="2"/>.  If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">catkey</set>
@@ -3338,7 +3338,7 @@ Here are the closest matches based on this input.
 <!--GOOGLE-->
 
 <category>
-<pattern>OPEN GOOGLE</pattern> 
+<pattern>OPEN GOOGLE</pattern>
 <template>
  Here you go. If you don't see Google, turn off your pop-up blocker and ask again.
 <think>
@@ -3348,7 +3348,7 @@ Here are the closest matches based on this input.
 </category>
 
 <category>
-<pattern>OPEN GOOGLE *</pattern> 
+<pattern>OPEN GOOGLE *</pattern>
 <template>
  Here you go. If you don't see Google, turn off your pop-up blocker and ask again.
 <think>
@@ -3372,7 +3372,7 @@ Here are the closest matches based on this input.
 <pattern>*</pattern>
 <that>WHAT * GOOGLE</that>
 <template>
-Let's see what we can find. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let's see what we can find. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">google</set>
@@ -3403,7 +3403,7 @@ Let's see what we can find. If you don't see the results, please turn off your p
 <!--Ohio Web Library-->
 
 <category>
-<pattern>OHIO WEB LIBRARY SEARCH IS *</pattern> 
+<pattern>OHIO WEB LIBRARY SEARCH IS *</pattern>
 <template>
 I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker and ask me again. You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
 <think>
@@ -3414,7 +3414,7 @@ I'm opening a link to The Ohio Web Library which contains a variety of magazine 
 </category>
 
 <category>
-<pattern>OHIO WEB LIBRARY SEARCH *</pattern> 
+<pattern>OHIO WEB LIBRARY SEARCH *</pattern>
 <template>
 I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker and ask me again. You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
 <think>
@@ -3425,7 +3425,7 @@ I'm opening a link to The Ohio Web Library which contains a variety of magazine 
 </category>
 
 <category>
-<pattern>OWL SEARCH IS *</pattern> 
+<pattern>OWL SEARCH IS *</pattern>
 <template>
 I'm opening a link to The Ohio Web Library which contains a variety of magazine and journal articles to help you.  If you don't see the results, please turn off your pop-up blocker and ask me again. You may also want to check with a librarian during our regular hours of business, or, if you need an immediate answer try <a href="http://www.knowitnow.org/" target="_blank" ><b>Know it Now</b></a>, which is available 24 hours a day.
 <think>
@@ -3440,7 +3440,7 @@ I'm opening a link to The Ohio Web Library which contains a variety of magazine 
 <category>
 <pattern>WA SEARCH IS *</pattern>
 <template>
-Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">wolframalpha</set>
@@ -3451,7 +3451,7 @@ Let me check Wolfram Alpha. If you don't see the results, please turn off your p
 <category>
 <pattern>WOLFRAM ALPHA SEARCH IS *</pattern>
 <template>
-Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">wolframalpha</set>
@@ -3462,7 +3462,7 @@ Let me check Wolfram Alpha. If you don't see the results, please turn off your p
 <category>
 <pattern>WOLFRAM ALPHA SEARCH *</pattern>
 <template>
-Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">wolframalpha</set>
@@ -3473,7 +3473,7 @@ Let me check Wolfram Alpha. If you don't see the results, please turn off your p
 <category>
 <pattern>EQUATION IS *</pattern>
 <template>
-Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">wolframalpha</set>
@@ -3484,7 +3484,7 @@ Let me check Wolfram Alpha. If you don't see the results, please turn off your p
 <category>
 <pattern>MATH PROBLEM IS *</pattern>
 <template>
-Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again. 
+Let me check Wolfram Alpha. If you don't see the results, please turn off your pop-up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">wolframalpha</set>
@@ -3496,7 +3496,7 @@ Let me check Wolfram Alpha. If you don't see the results, please turn off your p
 
 <category>
 <pattern>WRTPPR</pattern>
-<template>I can't write papers for you, but here's a link to the library's <a href="http://www.mentorpl.org/homework.html" target="_blank"><b>Homework Help Page</b></a>. If you need more help, please call 
+<template>I can't write papers for you, but here's a link to the library's <a href="http://www.mentorpl.org/homework.html" target="_blank"><b>Homework Help Page</b></a>. If you need more help, please call
 our Reference Staff at 440.255.8811 extension 215 during regular business hours, or follow this link to <a href="http://www.knowitnow.org/" target="_blank"><b>Know it Now</b></a> to chat with a live, human librarian for around the
 clock help.</template>
 </category>
@@ -3567,7 +3567,7 @@ clock help.</template>
 <pattern>400 BAD REQUEST *</pattern>
 <template><srai>PRXYERR</srai></template>
 </category>
- 
+
 <category>
 <pattern>UNSUPPORTED METHOD</pattern>
 <template><srai>PRXYERR</srai></template>
@@ -3587,5 +3587,5 @@ clock help.</template>
 <pattern>UNSUPPORTED METHOD *</pattern>
 <template><srai>PRXYERR</srai></template>
 </category>
-  
-</aiml>  
+
+</aiml>

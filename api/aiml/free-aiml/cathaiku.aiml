@@ -14,30 +14,30 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
-  
+
+
 <category>
 <pattern>HAIKU</pattern>
-<template>I find your human poetry fascinating, especially cowboy poetry and haiku. I write cowboy poetry and am studying the great masters of haiku. 
+<template>I find your human poetry fascinating, especially cowboy poetry and haiku. I write cowboy poetry and am studying the great masters of haiku.
 <br/>
 Can I recite one of my favorite haiku for you?
 </template>
-</category> 
+</category>
 
 <category>
 <pattern>_ HAIKU </pattern>
 <template><srai>HAIKU</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern>_ HAIKU * </pattern>
 <template><srai>HAIKU</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern>HAIKU *</pattern>
 <template><srai>HAIKU</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern>OK</pattern>
@@ -134,7 +134,7 @@ Can I recite one of my favorite haiku for you?
 <that>CAN I RECITE * FAVORITE HAIKU FOR YOU</that>
 <template><srai>CATHAIKU</srai></template>
 </category>
-  
+
 
 <category>
 <pattern>CATHAIKU</pattern>
@@ -156,22 +156,22 @@ I didn't actually write this myself, but I'm studying it carefully.
 <category>
 <pattern>CAT HAIKU </pattern>
 <template><srai>CATHAIKU</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern> _ CAT HAIKU </pattern>
 <template><srai>CATHAIKU</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern> _ CAT HAIKU * </pattern>
 <template><srai>CATHAIKU</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern>CAT HAIKU *</pattern>
 <template><srai>CATHAIKU</srai></template>
-</category> 
+</category>
 
 <category>
 <pattern>CHAIKUONE</pattern>

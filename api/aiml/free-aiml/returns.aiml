@@ -15,7 +15,7 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
 <pattern>BRING BACK</pattern>
 <template><srai>RTNS</srai></template>
@@ -572,7 +572,7 @@
 </condition>
 <think><set name="topic"></set></think>
 </think>
- 
+
 <condition name="message">
 
 <li value="stop"><set name="topic"></set>O.K. I'll stop.</li>

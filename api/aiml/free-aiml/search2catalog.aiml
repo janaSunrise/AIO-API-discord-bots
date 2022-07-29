@@ -14,16 +14,16 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   See the License for the specific language governing permissions and
   limitations under the License.-->
-  
+
 <category>
-<pattern>Q1</pattern>  
+<pattern>Q1</pattern>
 <template>
 You entered <b><get name="answr"/></b>. Is this something you want to borrow from the library? Like a book or movie or CD?
 <think>
 <set name="topic">CATSWITCH</set>
 </think>
 </template>
-</category> 
+</category>
 
 
 <topic name="CATSWITCH">
@@ -84,8 +84,8 @@ You entered <b><get name="answr"/></b>. Is this something you want to borrow fro
 </condition>
 </template>
 </category>
-</topic>  
-   
+</topic>
+
 <!--LIBRARY CATALOGS-->
 
 <category>
@@ -129,7 +129,7 @@ You entered <b><get name="answr"/></b>. Is this something you want to borrow fro
 <that>PLEASE ENTER * SEARCH OUR CATALOG</that>
 <template>
 Great. Let's look in the catalog. I hope you remembered to turn off your pop up blocker or you won't see the results.
-If we don't have the item you want, type the words "KEEP LOOKING" and I'll see if we can get it from another library. 
+If we don't have the item you want, type the words "KEEP LOOKING" and I'll see if we can get it from another library.
 <br/><br/>
 <srai>0CONCL</srai>
 <think>
@@ -149,14 +149,14 @@ Let's try OhioLINK. You can request an OhioLINK item the same way you'd request 
 <set name="search">ohlnkkey</set>
 </think></template>
 </category>
-  
-  
+
+
 <!--PRE DIRECT SEARCH-->
 
- 
+
 <category>
 <pattern>PREDIRCATSRCH</pattern>
-<template> 
+<template>
 <srai><get name="answr"/></srai>
 </template>
 </category>
@@ -897,12 +897,12 @@ Let's try OhioLINK. You can request an OhioLINK item the same way you'd request 
 <srai>DIROWLSRCH</srai>
 </template>
 </category>
-  
+
 <category>
 <pattern>DIRCATSRCH</pattern>
 <template>
 Great. Let's look in the catalog. I hope you remembered to turn off your pop up blocker or you won't see the results.
-If we don't have the item you want, type the words "KEEP LOOKING" and I'll see if we can get it from another library. 
+If we don't have the item you want, type the words "KEEP LOOKING" and I'll see if we can get it from another library.
 <br/><br/>
 <srai>0CONCL</srai>
 <think>
@@ -914,11 +914,11 @@ If we don't have the item you want, type the words "KEEP LOOKING" and I'll see i
 <category>
 <pattern>*</pattern>
 <that>* GET IT FROM ANOTHER LIBRARY</that>
-<template>O.K. 
+<template>O.K.
 <srai>REFRDCT</srai><br/><br/>
 <srai>0CONCL</srai></template>
 </category>
-  
+
 <category>
 <pattern>REFRDCT</pattern>
 <template>
@@ -938,7 +938,7 @@ a human librarian anytime.
 <pattern>DIROWLSRCH</pattern>
 <template>
 Great. Let's look in the Ohio Web Library. I hope you remembered to turn off your pop up blocker or you won't see the results.
-If they don't have the article you want, type the words "KEEP LOOKING" and I'll see what we can find in Google Scholar. 
+If they don't have the article you want, type the words "KEEP LOOKING" and I'll see what we can find in Google Scholar.
 <br/><br/>
 <srai>0CONCL</srai>
 <think>
@@ -980,7 +980,7 @@ O.K. Here are the results from Google Scholar.
 </think>
 </template>
 </category>
-</topic>  
-  
-    
-</aiml> 
+</topic>
+
+
+</aiml>

@@ -19,9 +19,9 @@
 
 
 <category>
-<pattern>ASKWA</pattern> 
+<pattern>ASKWA</pattern>
 <template>
-Let's check Wolfram Alpha. It's a very smart website. If you don't see the results, please turn off your pop-up blocker.  
+Let's check Wolfram Alpha. It's a very smart website. If you don't see the results, please turn off your pop-up blocker.
 <think>
 <set name="searcharg"><star/></set>
 <set name="search">wolframalpha</set>
@@ -30,9 +30,9 @@ Let's check Wolfram Alpha. It's a very smart website. If you don't see the resul
 </category>
 
 <category>
-<pattern>ASKWA2</pattern> 
+<pattern>ASKWA2</pattern>
 <template>
-Let's check Wolfram Alpha. It's a very smart website. If you don't see the results, please turn off your pop-up blocker.  
+Let's check Wolfram Alpha. It's a very smart website. If you don't see the results, please turn off your pop-up blocker.
 <think>
 <set name="searcharg"><star index="2"/></set>
 <set name="search">wolframalpha</set>
@@ -41,31 +41,31 @@ Let's check Wolfram Alpha. It's a very smart website. If you don't see the resul
 </category>
 
 <category>
-<pattern>WOLFRAM ALPHA *</pattern> 
+<pattern>WOLFRAM ALPHA *</pattern>
 <template><srai>ASKWA</srai>
 </template>
 </category>
 
 <category>
-<pattern>ASK WOLFRAM ALPHA *</pattern> 
+<pattern>ASK WOLFRAM ALPHA *</pattern>
 <template><srai>ASKWA</srai>
 </template>
 </category>
 
 <category>
-<pattern>* ASK WOLFRAM ALPHA *</pattern> 
+<pattern>* ASK WOLFRAM ALPHA *</pattern>
 <template><srai>ASKWA2</srai>
 </template>
 </category>
 
 <category>
-<pattern>SEARCH WOLFRAM ALPHA FOR *</pattern> 
+<pattern>SEARCH WOLFRAM ALPHA FOR *</pattern>
 <template><srai>ASKWA</srai>
 </template>
 </category>
- 
+
 <category>
-<pattern>* SEARCH WOLFRAM ALPHA FOR *</pattern> 
+<pattern>* SEARCH WOLFRAM ALPHA FOR *</pattern>
 <template><srai>ASKWA2</srai>
 </template>
 </category>
@@ -93,12 +93,12 @@ Let's check Wolfram Alpha. It's a very smart website. If you don't see the resul
 <!--DISTANCE-->
 
 <category>
-<pattern>WAPASS</pattern> 
+<pattern>WAPASS</pattern>
 <template>
-Let's check Wolfram Alpha. It's a very smart website. If you don't see the results, please turn off your pop-up blocker and ask again. 
+Let's check Wolfram Alpha. It's a very smart website. If you don't see the results, please turn off your pop-up blocker and ask again.
 <think>
 <set name="search">wolframalpha</set>
-</think> 
+</think>
 </template>
 </category>
 
@@ -187,5 +187,5 @@ Let's check Wolfram Alpha. It's a very smart website. If you don't see the resul
 </think>
 </template>
 </category>
- 
+
 </aiml>

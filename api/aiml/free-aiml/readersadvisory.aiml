@@ -86,7 +86,7 @@
 
 <category>
 <pattern>2RDRSAD</pattern>
-<template>I'm still learning how to do readers advisory, so I can only give you partial help. I'll look in Google for books like <star index="2"/>. This should open 
+<template>I'm still learning how to do readers advisory, so I can only give you partial help. I'll look in Google for books like <star index="2"/>. This should open
 in a new window or tab. If you don't see the results, turn off your pop up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="2"/> readalikes</set>
@@ -133,7 +133,7 @@ in a new window or tab. If you don't see the results, turn off your pop up block
 
 <category>
 <pattern>3RDRSAD</pattern>
-<template>I'm still learning how to do readers advisory, so I can only give you partial help. I'll look in Google for books like <star index="3"/>. This should open 
+<template>I'm still learning how to do readers advisory, so I can only give you partial help. I'll look in Google for books like <star index="3"/>. This should open
 in a new window or tab. If you don't see the results, turn off your pop up blocker and ask me again.
 <think>
 <set name="searcharg"><star index="3"/> readalikes</set>
@@ -233,7 +233,7 @@ Using as a doorstop?</template>
 <category>
 <pattern>*</pattern>
 <that>TELL ME WHAT KIND OF BOOKS YOU LIKE IN NO MORE THAN THREE WORDS</that>
-<template>You entered <b><star/></b>. Let's see what's in our catalog. You should see 
+<template>You entered <b><star/></b>. Let's see what's in our catalog. You should see
 the results as a new window or tab. If you don't, turn off your pop up blocker and ask me again.
 <think>
 <set name="searcharg"><star/></set>
@@ -252,7 +252,7 @@ or title now.</template>
 <pattern>*</pattern>
 <that>PLEASE ENTER A FAVORITE AUTHOR OR TITLE NOW</that>
 <template>
-I'll look in Google for <star/> read alikes. This should open 
+I'll look in Google for <star/> read alikes. This should open
 in a new window or tab. If you don't see the results, turn off your pop up blocker and ask me again.
 <think>
 <set name="searcharg"><star/> readalikes</set>
