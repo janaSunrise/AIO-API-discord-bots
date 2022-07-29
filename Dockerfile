@@ -10,9 +10,9 @@ ENV PIPENV_HIDE_EMOJIS=1 \
 
 # Get the dependencies ready
 RUN apt-get -y update \
+    && apt-get clean \
     && apt-get install git -y \
     && rm -rf /root/.cache/pip/* \
-    && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
 # Install pipenv

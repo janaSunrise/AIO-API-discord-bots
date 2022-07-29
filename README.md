@@ -31,7 +31,7 @@ Docker mini guide:
 - To rebuild the container: `docker-compose --build`
 
 **NOTE**: The server runs on `127.0.0.1:8000` in dev environment, and `0.0.0.0:80` in Production environment.
-You can change them as needed, in the respective docker compose files and use them. (If you're using docker 
+You can change them as needed, in the respective docker compose files and use them. (If you're using docker
 for development or self-hosting your own instance).
 
 ### Self hosting without docker
