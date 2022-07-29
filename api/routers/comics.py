@@ -8,7 +8,7 @@ router = APIRouter(
     prefix="/comics",
     tags=["Comics endpoint"],
     responses={
-        404: {"description": "Not found"},
+        404: {"error": "Not found"},
     },
 )
 
