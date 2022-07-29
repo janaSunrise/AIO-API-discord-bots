@@ -39,13 +39,13 @@ except exceptions.MissingRequiredAttributeException:
     logger.error("Please set correct reddit environment variables to run.")
 
 # Load all the JSON files
-with open("assets/subreddits.json") as f:
+with open("api/assets/subreddits.json") as f:
     subreddits = json.load(f)
 
-with open("assets/nsfw_subreddits.json") as f:
+with open("api/assets/nsfw_subreddits.json") as f:
     nsfw_subreddits = json.load(f)
 
-with open("assets/text_game_responses.json") as f:
+with open("api/assets/text_games_response.json") as f:
     text_game_responses = json.load(f)
 
 # Study router utils
