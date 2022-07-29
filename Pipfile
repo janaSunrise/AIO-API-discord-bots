@@ -3,18 +3,19 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
 
-[dev-packages]
-
 [packages]
 fastapi = {extras = ["all"], version = "*"}
-asyncpraw = "*"
 loguru = "*"
-slowapi = "*"
 aiohttp = "*"
+python-decouple = "*"
+asyncpraw = "*"
+slowapi = "*"
 beautifulsoup4 = "*"
 html2text = "*"
 python-aiml = "*"
 lxml = "*"
+
+[dev-packages]
 
 [scripts]
 start = "uvicorn api:app --reload"
