@@ -29,6 +29,10 @@ def get_modules_list(package: types.ModuleType) -> Iterable[str]:
         if not hasattr(imported, "router"):
             continue
 
+        # If the module has the attribute `__autoload__` set to False, skip.
+        if not getattr(imported, "__autoload__", True):
+            continue
+
         yield submodule.name
 
 
