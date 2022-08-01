@@ -28,6 +28,17 @@ class LoggerConfig:
     )
 
 
+class RedditConfig:
+    IMGUR_LINKS = (
+        "https://imgur.com/",
+        "https://i.imgur.com/",
+        "http://i.imgur.com/",
+        "http://imgur.com",
+        "https://m.imgur.com",
+    )
+    ACCEPTED_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif")
+
+
 # Reddit client
 try:
     reddit = Reddit(
