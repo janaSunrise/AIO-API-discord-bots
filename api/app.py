@@ -1,6 +1,7 @@
 import importlib
+from typing import Callable
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, Response
 from loguru import logger
 from slowapi import Limiter, _rate_limit_exceeded_handler  # type: ignore
 from slowapi.errors import RateLimitExceeded
@@ -33,6 +34,18 @@ async def on_start_up() -> None:
 async def on_shutdown() -> None:
     """Cleanup hook."""
     await app.state.http_client.stop()
+
+
+@app.middleware("http")
+async def error_handler(request: Request, callnext: Callable) -> Response:
+    try:
+        return await callnext(request)
+    except Exception as exc:
+        log = logger.opt(depth=1)
+
+        log.error(f"Error: {exc!r}", exc_info=True)
+
+        return Response("Internal server error", status_code=500)
 
 
 # Configure the ratelimiting
