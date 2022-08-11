@@ -59,6 +59,60 @@ with open("api/assets/nsfw_subreddits.json") as f:
 with open("api/assets/text_games_response.json") as f:
     text_game_responses = json.load(f)
 
+# 8 Ball responses
+BALL_REPLIES = {
+    "positive": (
+        "Absolutely!",
+        "Affirmative!",
+        "Alright.",
+        "Aye aye, cap'n!",
+        "Can do!",
+        "I'll allow it.",
+        "I got you.",
+        "No problem.",
+        "Of course!",
+        "Okay.",
+        "ROGER THAT",
+        "Sure.",
+        "Sure thing!",
+        "Yeah okay.",
+        "Yep.",
+        "You got it!",
+        "You're the boss!",
+    ),
+    "negative": (
+        "Certainly not.",
+        "Fat chance.",
+        "Huh? No.",
+        "I don't think so.",
+        "I'm sorry Dave, I'm afraid I can't do that.",
+        "Nah.",
+        "Naw.",
+        "NEGATORY.",
+        "No way, José.",
+        "Noooooo!!",
+        "Nope.",
+        "Not gonna happen.",
+        "Not in a million years.",
+        "Not in my house!",
+        "Not likely.",
+        "Nuh-uh.",
+        "Out of the question.",
+    ),
+    "error": (
+        "Are you trying to kill me?",
+        "Do you mind?",
+        "I can't believe you've done this",
+        "In the future, don't do that.",
+        "Noooooo!!",
+        "Please don't do that.",
+        "That was a mistake.",
+        "You blew it.",
+        "You have to stop.",
+        "You're bad at computers.",
+    ),
+}
+
 # Study router utils
 RESPONSES = {
     200: True,
