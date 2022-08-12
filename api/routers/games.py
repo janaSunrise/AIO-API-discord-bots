@@ -14,7 +14,9 @@ router = APIRouter(
     },
 )
 
-get_random_text_response = lambda category: random.choice(text_game_responses[category])
+
+def get_random_text_response(category):
+    return random.choice(text_game_responses[category])
 
 
 @router.get("/8ball")
