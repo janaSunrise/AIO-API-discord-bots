@@ -16,10 +16,10 @@ async def joke(request: Request, explicit: bool = False) -> dict:
     """Get a random joke."""
     http_client = request.app.state.http_client
 
-    if explicit:
-        url = "http://api.icndb.com/jokes/random"
-    else:
-        url = "http://api.icndb.com/jokes/random?exclude=[explicit]"
+    url = "http://api.icndb.com/jokes/random"
+
+    if not explicit:
+        url += "?exclude=[explicit]"
 
     async with http_client().get(url) as resp:
         json = await resp.json()
