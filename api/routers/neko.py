@@ -52,7 +52,7 @@ async def lewd(request: Request) -> dict[str, str]:
 
 
 @router.get("/blowjob")
-async def neko_blowjob(request: Request) -> dict[str, str]:
+async def blowjob(request: Request) -> dict[str, str]:
     http_client = request.app.state.http_client
     sources = ("images/nsfw/gif/blow_job", "images/nsfw/img/blowjob_lewd")
     url = await neko_get(http_client, random.choice(sources))
@@ -61,7 +61,7 @@ async def neko_blowjob(request: Request) -> dict[str, str]:
 
 
 @router.get("/pussy")
-async def neko_pussy(request: Request) -> dict[str, str]:
+async def pussy(request: Request) -> dict[str, str]:
     http_client = request.app.state.http_client
     sources = (
         "images/nsfw/gif/pussy_wank",
