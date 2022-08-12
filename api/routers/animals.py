@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from fastapi import APIRouter, Request
 
 router = APIRouter(
@@ -10,7 +12,7 @@ router = APIRouter(
 
 
 @router.get("/cat")
-async def cat(request: Request) -> dict:
+async def cat(request: Request) -> dict[str, str]:
     """Get a random cat image."""
     http_client = request.app.state.http_client
 
@@ -20,19 +22,8 @@ async def cat(request: Request) -> dict:
     return {"url": json["link"]}
 
 
-@router.get("/cat-fact")
-async def cat_fact(request: Request) -> dict:
-    """Get a random cat fact."""
-    http_client = request.app.state.http_client
-
-    async with http_client().get("https://some-random-api.ml/facts/cat") as resp:
-        json = await resp.json()
-
-    return {"fact": json["fact"]}
-
-
 @router.get("/dog")
-async def dog(request: Request) -> dict:
+async def dog(request: Request) -> dict[str, str]:
     http_client = request.app.state.http_client
 
     async with http_client().get("https://dog.ceo/api/breeds/image/random") as resp:
@@ -41,30 +32,8 @@ async def dog(request: Request) -> dict:
     return {"url": json["message"]}
 
 
-@router.get("/dog-fact")
-async def dog_fact(request: Request) -> dict:
-    """Get a random dog image."""
-    http_client = request.app.state.http_client
-
-    async with http_client().get("https://some-random-api.ml/facts/dog") as resp:
-        json = await resp.json()
-
-    return {"fact": json["fact"]}
-
-
-@router.get("/panda-fact")
-async def panda_fact(request: Request) -> dict:
-    """Get a random interesting fact about pandas."""
-    http_client = request.app.state.http_client
-
-    async with http_client().get("https://some-random-api.ml/facts/panda") as resp:
-        json = await resp.json()
-
-    return {"fact": json["fact"]}
-
-
 @router.get("/fox")
-async def fox(request: Request) -> dict:
+async def fox(request: Request) -> dict[str, str]:
     """Get a random fox image."""
     http_client = request.app.state.http_client
 
@@ -75,7 +44,7 @@ async def fox(request: Request) -> dict:
 
 
 @router.get("/panda")
-async def panda(request: Request) -> dict:
+async def panda(request: Request) -> dict[str, str]:
     """Get a random panda image."""
     http_client = request.app.state.http_client
 
@@ -86,7 +55,7 @@ async def panda(request: Request) -> dict:
 
 
 @router.get("/koala")
-async def koala(request: Request) -> dict:
+async def koala(request: Request) -> dict[str, str]:
     """Get a random koala image."""
     http_client = request.app.state.http_client
 
@@ -97,7 +66,7 @@ async def koala(request: Request) -> dict:
 
 
 @router.get("/birb")
-async def birb(request: Request) -> dict:
+async def birb(request: Request) -> dict[str, str]:
     """Get a random bird image."""
     http_client = request.app.state.http_client
 
@@ -108,7 +77,7 @@ async def birb(request: Request) -> dict:
 
 
 @router.get("/duck")
-async def duck(request: Request) -> dict:
+async def duck(request: Request) -> dict[str, str]:
     """Get a random duck image."""
     http_client = request.app.state.http_client
 
@@ -116,3 +85,36 @@ async def duck(request: Request) -> dict:
         json = await resp.json()
 
     return {"url": json["url"]}
+
+
+@router.get("/cat-fact")
+async def cat_fact(request: Request) -> dict[str, str]:
+    """Get a random cat fact."""
+    http_client = request.app.state.http_client
+
+    async with http_client().get("https://some-random-api.ml/facts/cat") as resp:
+        json = await resp.json()
+
+    return {"fact": json["fact"]}
+
+
+@router.get("/dog-fact")
+async def dog_fact(request: Request) -> dict[str, str]:
+    """Get a random dog image."""
+    http_client = request.app.state.http_client
+
+    async with http_client().get("https://some-random-api.ml/facts/dog") as resp:
+        json = await resp.json()
+
+    return {"fact": json["fact"]}
+
+
+@router.get("/panda-fact")
+async def panda_fact(request: Request) -> dict[str, str]:
+    """Get a random interesting fact about pandas."""
+    http_client = request.app.state.http_client
+
+    async with http_client().get("https://some-random-api.ml/facts/panda") as resp:
+        json = await resp.json()
+
+    return {"fact": json["fact"]}

@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import random
 
 from fastapi import APIRouter, Request
@@ -16,7 +18,7 @@ NASA_API = APIConfig.NASA_API
 
 
 @router.get("/apod")
-async def apod(request: Request) -> dict:
+async def apod(request: Request) -> dict[str, str]:
     """Get the astronomy picture of the day."""
     http_client = request.app.state.http_client
 
@@ -33,7 +35,7 @@ async def apod(request: Request) -> dict:
 
 
 @router.get("/nasa-search")
-async def nasa_search(request: Request, query: str) -> dict:
+async def nasa_search(request: Request, query: str) -> dict[str, str]:
     """Lookup nasa for your queries."""
     http_client = request.app.state.http_client
 
@@ -43,6 +45,7 @@ async def nasa_search(request: Request, query: str) -> dict:
         data = await resp.json()
 
     items = data["collection"]["items"]
+
     if len(items) > 0:
         rand_item = random.randint(0, len(items) - 1)
         item = items[rand_item]
@@ -52,11 +55,12 @@ async def nasa_search(request: Request, query: str) -> dict:
             "img": item["links"][0]["href"],
             "id": item["data"][0]["nasa_id"],
         }
+
     return {"error": "No results found!"}
 
 
 @router.get("/epic")
-async def epic(request: Request, maximum: int = 1) -> dict:
+async def epic(request: Request, maximum: int = 1) -> dict[str, list[dict[str, str]]]:
     """Get to know about a nasa EPIC."""
     http_client = request.app.state.http_client
 
@@ -65,16 +69,18 @@ async def epic(request: Request, maximum: int = 1) -> dict:
     ) as response:
         json = await response.json()
 
-    result = {}
+    result = []
 
     for i in range(min(maximum, len(json))):
-        result[i] = {
-            "description": json[i].get("caption"),
-            "img": (
-                "https://epic.gsfc.nasa.gov/epic-archive/jpg/"
-                + json[i]["image"]  # noqa: W503
-                + ".jpg"  # noqa: W503
-            ),
-        }
+        result.append(
+            {
+                "description": json[i].get("caption"),
+                "img": (
+                    "https://epic.gsfc.nasa.gov/epic-archive/jpg/"
+                    + json[i]["image"]  # noqa: W503
+                    + ".jpg"  # noqa: W503
+                ),
+            }
+        )
 
-    return result
+    return {"result": result}
